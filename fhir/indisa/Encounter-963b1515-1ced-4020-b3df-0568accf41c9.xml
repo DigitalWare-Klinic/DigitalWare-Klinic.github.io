@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="963b1515-1ced-4020-b3df-0568accf41c9"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: 12334556 (OFFICIAL)</p><p><b>status</b>: arrived</p><h3>StatusHistories</h3><table class="grid"><tr><td>-</td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>finished</td><td>2020-02-08 --&gt; 2020-03-01</td></tr></table><h3>ClassHistories</h3><table class="grid"><tr><td>-</td><td><b>Class</b></td></tr><tr><td>*</td><td><span title="{http://terminology.hl7.org/ValueSet/v3-ActEncounterCode AMB}">ambulatory</span></td></tr></table><p><b>type</b>: <span title="Codes: {http://hl7.org/fhir/ValueSet/encounter-type OKI}">Outpatient Kenacort injection</span></p><p><b>subject</b>: <a href="Patient/Patient.id">Patient/Patient.id</a></p><p><b>episodeOfCare</b>: <a href="EpisodeOfCare/EpisodeOfCare.id">EpisodeOfCare/EpisodeOfCare.id</a></p><p><b>basedOn</b>: <a href="ServiceRequest/ServiceRequest.id">ServiceRequest/ServiceRequest.id</a></p><h3>Participants</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td>*</td><td><span title="Codes: {http://hl7.org/fhir/ValueSet/encounter-participant-type ADM}">admitter</span></td><td><a href="Practitioner/Practitioner.id">Practitioner/Practitioner.id</a></td></tr></table><p><b>appointment</b>: <a href="Appointment/Appointment.id">Appointment/Appointment.id</a></p><p><b>period</b>: 20/01/2021, 8:00:00 a. m. --&gt; 20/01/2021, 8:30:00 a. m.</p><p><b>reasonReference</b>: <a href="Condition/Condition.id ">Condition/Condition.id </a></p><h3>Diagnoses</h3><table class="grid"><tr><td>-</td><td><b>Condition</b></td><td><b>Use</b></td></tr><tr><td>*</td><td><a href="Condition/Condition.id">Condition/Condition.id</a></td><td><span title="Codes: {http://hl7.org/fhir/ValueSet/diagnosis-role AD}">Admission diagnosis</span></td></tr></table><p><b>account</b>: <a href="Account/Account.id">Account/Account.id</a></p><p><b>serviceProvider</b>: <a href="Organization/Organization.id">Organization/Organization.id</a></p><p><b>partOf</b>: <a href="Encounter/Encounter.id">Encounter/Encounter.id</a></p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://example.org/encounter-identifiers"/>
+    <value value="12334556"/>
+  </identifier>
+  <status value="arrived"/>
+  <statusHistory>
+    <status value="finished"/>
+    <period>
+      <start value="2020-02-08"/>
+      <end value="2020-03-01"/>
+    </period>
+  </statusHistory>
+  <classHistory>
+    <class>
+      <system value="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"/>
+      <code value="AMB"/>
+      <display value="ambulatory"/>
+    </class>
+  </classHistory>
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/encounter-type"/>
+      <code value="OKI"/>
+      <display value="Outpatient Kenacort injection"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/Patient.id"/>
+  </subject>
+  <episodeOfCare>
+    <reference value="EpisodeOfCare/EpisodeOfCare.id"/>
+  </episodeOfCare>
+  <basedOn>
+    <reference value="ServiceRequest/ServiceRequest.id"/>
+  </basedOn>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/ValueSet/encounter-participant-type"/>
+        <code value="ADM"/>
+        <display value="admitter"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/Practitioner.id"/>
+    </individual>
+  </participant>
+  <appointment>
+    <reference value="Appointment/Appointment.id"/>
+  </appointment>
+  <period>
+    <start value="2021-01-20T08:00:00-05:00"/>
+    <end value="2021-01-20T08:30:00-05:00"/>
+  </period>
+  <reasonReference>
+    <reference value="Condition/Condition.id "/>
+  </reasonReference>
+  <diagnosis>
+    <condition>
+      <reference value="Condition/Condition.id"/>
+    </condition>
+    <use>
+      <coding>
+        <system value="http://hl7.org/fhir/ValueSet/diagnosis-role"/>
+        <code value="AD"/>
+        <display value="Admission diagnosis"/>
+      </coding>
+    </use>
+  </diagnosis>
+  <account>
+    <reference value="Account/Account.id"/>
+  </account>
+  <serviceProvider>
+    <reference value="Organization/Organization.id"/>
+  </serviceProvider>
+  <partOf>
+    <reference value="Encounter/Encounter.id"/>
+  </partOf>
+</Encounter>

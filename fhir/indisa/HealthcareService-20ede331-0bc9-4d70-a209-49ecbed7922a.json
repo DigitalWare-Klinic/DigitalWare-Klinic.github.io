@@ -1,0 +1,158 @@
+{
+  "resourceType": "HealthcareService",
+  "id": "20ede331-0bc9-4d70-a209-49ecbed7922a",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b style=\"color: maroon\">Exception generating Narrative: Unknown Content id @  START_TAG seen ...&lt;value&gt;\\n    &lt;id value=\"89456746578\"/&gt;... @7:30</b></p></div>"
+  },
+  "extension": [
+    {
+      "id": "servicePartOf",
+      "url": "https://www.digitalware.com.co/salud/fhir/extension/servicePartOf",
+      "valueReference": {
+        "reference": "HealthcareService/20ede331-0bc9-4d70-a209-49ecbed7922b"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://MinChile/CodeHab-Service",
+      "_value": {
+        "id": "89456746578"
+      }
+    }
+  ],
+  "active": true,
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "27",
+          "display": "Specialist Medical"
+        }
+      ]
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "186",
+          "display": "Obstetrics y Gynaecology"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "394586005",
+          "display": "Ginecologia"
+        }
+      ]
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/IDAreaGinecologia"
+    }
+  ],
+  "name": "Servicio Ginecologia",
+  "comment": "Servicio de Ginecologia y Obstetricia",
+  "serviceProvisionCode": [
+    {
+      "coding": [
+        {
+          "system": "https://www.digitalware.com.co/salud/fhir/codesystem/provision-codes",
+          "code": "SURA",
+          "display": "Prioridad para salud Suramericana"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://www.digitalware.com.co/salud/fhir/codesystem/provision-codes",
+          "code": "KERALTY",
+          "display": "Prioridad para salud Keralty"
+        }
+      ]
+    }
+  ],
+  "program": [
+    {
+      "coding": [
+        {
+          "system": "https://www.digitalware.com.co/salud/fhir/codesystem/program-codes",
+          "code": "P01",
+          "display": "Programa de Gestantes Salud Suramericana"
+        }
+      ]
+    }
+  ],
+  "characteristic": [
+    {
+      "coding": [
+        {
+          "system": "https://MinChile/procedure-code",
+          "code": "P0016",
+          "display": "Parto"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://MinChile/procedure-code",
+          "code": "P0134",
+          "display": "Citologia"
+        }
+      ]
+    }
+  ],
+  "referralMethod": [
+    {
+      "coding": [
+        {
+          "system": "https://www.digitalware.com.co/salud/fhir/codesystem/referen-codes",
+          "code": "R057",
+          "display": "Pacientes de Compensar no requieren orden de remision"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://www.digitalware.com.co/salud/fhir/codesystem/referen-codes",
+          "code": "R175",
+          "display": "Pacientes de Famisionar requieren orden de remision"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://www.digitalware.com.co/salud/fhir/codesystem/referen-codes",
+          "code": "R578",
+          "display": "Se requiere consulta previa con Medicina General"
+        }
+      ]
+    }
+  ],
+  "appointmentRequired": true,
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon"
+      ],
+      "availableStartTime": "08:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "availabilityExceptions": "No se atiende Fines de semana"
+}

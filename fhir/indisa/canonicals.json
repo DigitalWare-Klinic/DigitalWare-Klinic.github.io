@@ -1,0 +1,289 @@
+[
+  {
+    "id": "fhir.digital-ware.klinic-api-fhir",
+    "type": "ImplementationGuide",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/ImplementationGuide/fhir.digital-ware.klinic-api-fhir",
+    "version": "1.0",
+    "name": "klinicapifhir"
+  },
+  {
+    "id": "AvailableTelemedicine",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/AvailableTelemedicine",
+    "version": "1.0",
+    "name": "AvailableTelemedicine"
+  },
+  {
+    "id": "BedWithOxygen",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/BedWithOxygen",
+    "version": "1.0",
+    "name": "BedWithOxygen"
+  },
+  {
+    "id": "BirthPlace",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/BirthPlace",
+    "version": "1.0",
+    "name": "BirthPlace"
+  },
+  {
+    "id": "CancelationDateTime",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CancelationDateTime",
+    "version": "1.0",
+    "name": "CancelationDateTime"
+  },
+  {
+    "id": "CancelationSanction",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CancelationSanction",
+    "version": "1.0",
+    "name": "CancelationSanction"
+  },
+  {
+    "id": "Census",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Census",
+    "version": "1.0",
+    "name": "Census"
+  },
+  {
+    "id": "ChargeBed",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ChargeBed",
+    "version": "1.0",
+    "name": "ChargeBed"
+  },
+  {
+    "id": "Disability",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Disability",
+    "version": "1.0",
+    "name": "Disability"
+  },
+  {
+    "id": "EducationalLevel",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/EducationalLevel",
+    "version": "1.0",
+    "name": "EducationalLevel"
+  },
+  {
+    "id": "EmployerOrganization",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/EmployerOrganization",
+    "version": "1.0",
+    "name": "EmployerOrganization"
+  },
+  {
+    "id": "Fathersfamily",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Fathersfamily",
+    "version": "1.0",
+    "name": "Fathersfamily"
+  },
+  {
+    "id": "GenderIdentity",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/GenderIdentity",
+    "version": "1.0",
+    "name": "GenderIdentity"
+  },
+  {
+    "id": "IdExpeditionPlace",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/IdExpeditionPlace",
+    "version": "1.0",
+    "name": "IdExpeditionPlace"
+  },
+  {
+    "id": "LocationAreaKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/LocationAreaKlinic",
+    "version": "1.0",
+    "name": "LocationAreaKlinic"
+  },
+  {
+    "id": "LocationBedKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/LocationBedKlinic",
+    "version": "1.0",
+    "name": "LocationBedKlinic"
+  },
+  {
+    "id": "LocationBuildingKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/LocationBuildingKlinic",
+    "version": "1.0",
+    "name": "LocationBuildingKlinic"
+  },
+  {
+    "id": "LocationFunctionalUnitKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/LocationFunctionalUnitKlinic",
+    "version": "1.0",
+    "name": "LocationFunctionalUnitKlinic"
+  },
+  {
+    "id": "LocationRoomKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/LocationRoomKlinic",
+    "version": "1.0",
+    "name": "LocationRoomKlinic"
+  },
+  {
+    "id": "Mothersfamily",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Mothersfamily",
+    "version": "1.0",
+    "name": "Mothersfamily"
+  },
+  {
+    "id": "MultipleOccupation",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/MultipleOccupation",
+    "version": "1.0",
+    "name": "MultipleOccupation"
+  },
+  {
+    "id": "Nationality",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Nationality",
+    "version": "1.0",
+    "name": "Nationality"
+  },
+  {
+    "id": "NewBorn",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/NewBorn",
+    "version": "1.0",
+    "name": "NewBorn"
+  },
+  {
+    "id": "Ocupation",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Ocupation",
+    "version": "1.0",
+    "name": "Ocupation"
+  },
+  {
+    "id": "OrganizationHealthcareProvider",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/OrganizationHealthcareProvider",
+    "version": "1.0",
+    "name": "OrganizationHealthcareProvider"
+  },
+  {
+    "id": "OrganizationName",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/OrganizationName",
+    "version": "1.0",
+    "name": "OrganizationName"
+  },
+  {
+    "id": "OrganizationTelecom",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/OrganizationTelecom",
+    "version": "1.0",
+    "name": "OrganizationTelecom"
+  },
+  {
+    "id": "PatientEthnicity",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PatientEthnicity",
+    "version": "1.0",
+    "name": "PatientEthnicity"
+  },
+  {
+    "id": "PatientKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PatientKlinic",
+    "version": "1.0",
+    "name": "PatientKlinic"
+  },
+  {
+    "id": "PatientPopulationGroup",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PatientPopulationGroup",
+    "version": "1.0",
+    "name": "PatientPopulationGroup"
+  },
+  {
+    "id": "PerfilAppointment",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PerfilAppointment",
+    "version": "1.0",
+    "name": "PerfilAppointment"
+  },
+  {
+    "id": "Personid",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Personid",
+    "version": "1.0",
+    "name": "Personid"
+  },
+  {
+    "id": "PractitionerKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PractitionerKlinic",
+    "version": "1.0",
+    "name": "PractitionerKlinic"
+  },
+  {
+    "id": "ProfileHealthcareService",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileHealthcareService",
+    "version": "1.0",
+    "name": "ProfileHealthcareService"
+  },
+  {
+    "id": "ProfileSchedule",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileSchedule",
+    "version": "1.0",
+    "name": "ProfileSchedule"
+  },
+  {
+    "id": "QuotaPatient",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/QuotaPatient",
+    "version": "1.0",
+    "name": "QuotaPatient"
+  },
+  {
+    "id": "RegionalLocationIdentifier",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier",
+    "version": "1.0",
+    "name": "RegionalLocationIdentifier"
+  },
+  {
+    "id": "ServicePartOf",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ServicePartOf",
+    "version": "1.0",
+    "name": "ServicePartOf"
+  },
+  {
+    "id": "SlotKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/SlotKlinic",
+    "version": "1.0",
+    "name": "SlotKlinic"
+  },
+  {
+    "id": "VirtualBed",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/VirtualBed",
+    "version": "1.0",
+    "name": "VirtualBed"
+  },
+  {
+    "id": "hoursOfOperation",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/hoursOfOperation",
+    "version": "1.0",
+    "name": "HoursOfOperation"
+  }
+]

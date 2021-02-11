@@ -1,0 +1,195 @@
+{
+  "resourceType": "Appointment",
+  "id": "05c86b7b-4fad-4f1b-a470-9755953b5d5b",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: 403</p><p><b>status</b>: cancelled</p><p><b>cancelationReason</b>: <span title=\"Codes: {https://www.digitalware.com.co/salud/fhir/identifiers/reasons-cancelaction fad33226-d4f5-4168-8243-0a52a8934401}\">Paciente</span></p><p><b>serviceCategory</b>: <span title=\"Codes: {http://snomed.info/sct 27}\">Specialist Medical</span></p><p><b>serviceType</b>: <span title=\"Codes: {http://snomed.info/sct 186}\">Obstetrics y Gynaecology</span>, <span title=\"Codes: {https://www.digitalware.com.co/salud/fhir/CodeSystem/appointment-types c113e46f-5f39-484d-a04d-965e52a00002}\">Cita Especialista</span>, <span title=\"Codes: {https://www.digitalware.com.co/salud/fhir/CodeSystem/local-procedure-codes 120d0fe9-9347-4b40-8405-0006a280f769}\">ANTIGENO POLIPEPTIDO DE TEJIDO O ANTIGENO DE PROLIFERACION CELULAR AUTOMATIZADO</span></p><p><b>specialty</b>: <span title=\"Codes: {http://snomed.info/sct 394586005}\">Ginecologo</span></p><p><b>appointmentType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0276 WALKIN}, {https://www.digitalware.com.co/salud/fhir/CodeSystem/appointment-types 47b66eb5-0947-455b-b069-54765c996f6f}\">A previously unscheduled walk-in visit</span></p><p><b>start</b>: 20/01/2021, 8:00:00 a. m.</p><p><b>end</b>: 20/01/2021, 8:30:00 a. m.</p><p><b>minutesDuration</b>: 30</p><p><b>created</b>: 5/01/2021, 10:00:00 a. m.</p><p><b>basedOn</b>: <span>GN-4567</span></p><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/participant-type LOC}\">location</span></p><p><b>actor</b>: <a href=\"Location/500a06da-38fd-44ec-89e9-4f31e1f6d8bd\">Location/500a06da-38fd-44ec-89e9-4f31e1f6d8bd</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/participant-type LOC}\">location</span></p><p><b>actor</b>: <a href=\"Location/c245fc46-254a-438c-b1e8-2bac445397a6\">Location/c245fc46-254a-438c-b1e8-2bac445397a6</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/participant-type CON}\">consultant</span></p><p><b>actor</b>: <a href=\"Location/4f831938-a767-4735-9c51-306b2bfd9c9d\">Location/4f831938-a767-4735-9c51-306b2bfd9c9d</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/participant-type SBJ}\">subject</span></p><p><b>actor</b>: <a href=\"Patient/Patient.Id\">Patient/Patient.Id</a></p><p><b>status</b>: accepted</p></blockquote><p><b>requestedPeriod</b>: 2021-01-01 --&gt; 2021-01-31</p></div>"
+  },
+  "extension": [
+    {
+      "id": "cancelationDateTime",
+      "url": "https://www.digitalware.com.co/salud/fhir/StrutureDefinition/cancelation-datetime",
+      "valueDateTime": "2021-01-10T10:00:00-05:00"
+    },
+    {
+      "id": "cancelationSanction",
+      "url": "https://www.digitalware.com.co/salud/fhir/StrutureDefinition/cancelation-sanction",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://www.digitalware.com.co/salud/fhir/identifiers/cancelation-sanction",
+            "code": "a2f430d7-e5c6-4ed5-b7d7-34906cc83217",
+            "display": "Cancelación anticipada"
+          }
+        ],
+        "text": "$35000"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://example.org/appointment-identifiers",
+      "value": "403"
+    }
+  ],
+  "status": "cancelled",
+  "cancelationReason": {
+    "coding": [
+      {
+        "system": "https://www.digitalware.com.co/salud/fhir/identifiers/reasons-cancelaction",
+        "code": "fad33226-d4f5-4168-8243-0a52a8934401",
+        "display": "Paciente"
+      }
+    ]
+  },
+  "serviceCategory": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "27",
+          "display": "Specialist Medical"
+        }
+      ]
+    }
+  ],
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "186",
+          "display": "Obstetrics y Gynaecology"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://www.digitalware.com.co/salud/fhir/CodeSystem/appointment-types",
+          "code": "c113e46f-5f39-484d-a04d-965e52a00002",
+          "display": "Cita Especialista"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://www.digitalware.com.co/salud/fhir/CodeSystem/local-procedure-codes",
+          "code": "120d0fe9-9347-4b40-8405-0006a280f769",
+          "display": "ANTIGENO POLIPEPTIDO DE TEJIDO O ANTIGENO DE PROLIFERACION CELULAR AUTOMATIZADO"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "394586005",
+          "display": "Ginecologo"
+        }
+      ]
+    }
+  ],
+  "appointmentType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+        "code": "WALKIN",
+        "display": "A previously unscheduled walk-in visit"
+      },
+      {
+        "system": "https://www.digitalware.com.co/salud/fhir/CodeSystem/appointment-types",
+        "code": "47b66eb5-0947-455b-b069-54765c996f6f",
+        "display": "Prioritaria"
+      }
+    ]
+  },
+  "start": "2021-01-20T08:00:00-05:00",
+  "end": "2021-01-20T08:30:00-05:00",
+  "minutesDuration": 30,
+  "created": "2021-01-05T10:00:00-05:00",
+  "basedOn": [
+    {
+      "display": "GN-4567"
+    }
+  ],
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/participant-type",
+              "code": "LOC",
+              "display": "location"
+            }
+          ]
+        }
+      ],
+      "actor": {
+        "reference": "Location/500a06da-38fd-44ec-89e9-4f31e1f6d8bd"
+      },
+      "status": "accepted"
+    },
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/participant-type",
+              "code": "LOC",
+              "display": "location"
+            }
+          ]
+        }
+      ],
+      "actor": {
+        "reference": "Location/c245fc46-254a-438c-b1e8-2bac445397a6"
+      },
+      "status": "accepted"
+    },
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/participant-type",
+              "code": "CON",
+              "display": "consultant"
+            }
+          ]
+        }
+      ],
+      "actor": {
+        "reference": "Location/4f831938-a767-4735-9c51-306b2bfd9c9d"
+      },
+      "status": "accepted"
+    },
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/participant-type",
+              "code": "SBJ",
+              "display": "subject"
+            }
+          ]
+        }
+      ],
+      "actor": {
+        "reference": "Patient/Patient.Id"
+      },
+      "status": "accepted"
+    }
+  ],
+  "requestedPeriod": [
+    {
+      "start": "2021-01-01",
+      "end": "2021-01-31"
+    }
+  ]
+}

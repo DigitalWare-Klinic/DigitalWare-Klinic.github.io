@@ -1,0 +1,237 @@
+{
+  "resourceType": "Patient",
+  "id": "87356d0d-3891-45b7-b678-c623281f8b9c",
+  "meta": {
+    "tag": [
+      {
+        "system": "http://terminology.hl7co.org/CodeSystem/common-tags",
+        "code": "VIP",
+        "display": "very important person"
+      }
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>genderIdentity</b>: <span title=\"Codes: {http://snomed.info/sct 703117000}\">género masculino</span></p><p><b>Birth Place</b>: Chile </p><blockquote><p><b>nationality</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {https://www.iso.org/iso-3166-country-codes.html CL}\">Chile</span></p></blockquote><p><b>identifier</b>: Medical record number: 347827348 (OFFICIAL), id: HC-6ef0a6d7-22009365ae97 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Iván Marcelo Rivera Jofré (OFFICIAL), Iván Rivera(NICKNAME)</p><p><b>telecom</b>: <a href=\"tel:+56(2)1111-1111\">+56(2)1111-1111</a>, <a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:paciente@example.com\">paciente@example.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1975-08-14</p><p><b>deceased</b>: false</p><p><b>address</b>: Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</p><p><b>maritalStatus</b>: <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td></td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0131 C}, {http://snomed.info/sct 66839005}\">Emergency Contact</span></td><td>Jorge Rivera</td><td><a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:contacto@example.com\">contacto@example.com</a></td><td>Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</td></tr></table><h3>Links</h3><table class=\"grid\"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href=\"Patient/2a6d66d1-6f44-49df-8ee9-6ae5c920c6ee\">Patient/2a6d66d1-6f44-49df-8ee9-6ae5c920c6ee</a></td><td>replaces</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "id": "genderIdentity",
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "703117000",
+            "display": "género masculino"
+          }
+        ]
+      }
+    },
+    {
+      "id": "birthPlace",
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "country": "Chile"
+      }
+    },
+    {
+      "id": "nationality",
+      "extension": [
+        {
+          "id": "code",
+          "url": "code",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://www.iso.org/iso-3166-country-codes.html",
+                "code": "CL",
+                "display": "Chile"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality"
+    },
+    {
+      "id": "PatientEthnicity",
+      "url": "https://www.digitalware.com.co/salud/fhir/extension/patient-ethnicity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://deis.cl/fhir/PueblosIndigenasMinsalDecreto643",
+            "code": "01",
+            "display": "Mapuche"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR",
+            "display": "Medical record number"
+          },
+          {
+            "system": "http://registrocivil.cl/RUN",
+            "code": "RUN",
+            "display": "Rol Único Nacional"
+          }
+        ]
+      },
+      "value": "347827348"
+    },
+    {
+      "use": "usual",
+      "system": "https://www.digitalware.com.co/salud/fhir/patient-id",
+      "value": "HC-6ef0a6d7-22009365ae97"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Rivera Jofré",
+      "_family": {
+        "extension": [
+          {
+            "id": "fathers-family",
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-fathers-family",
+            "valueString": "Rivera"
+          },
+          {
+            "id": "mothers-family",
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString": "Jofré"
+          }
+        ]
+      },
+      "given": [
+        "Iván",
+        "Marcelo"
+      ]
+    },
+    {
+      "use": "nickname",
+      "text": "Iván Rivera"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+56(2)1111-1111",
+      "use": "home"
+    },
+    {
+      "system": "phone",
+      "value": "+56(2)2222-2222",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "paciente@example.com"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1975-08-14",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "use": "home",
+      "text": "Eliodoro Yáñez NNN, depto XX, Providencia",
+      "city": "Providencia",
+      "state": "Región Metropolitana",
+      "postalCode": "5555555",
+      "country": "Chile"
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/marital-status",
+        "code": "M",
+        "display": "Married"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "extension": [
+        {
+          "id": "person-id",
+          "url": "https://www.digitalware.com.co/salud/fhir/extension/person-id",
+          "valueIdentifier": {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR",
+                  "display": "Medical record number"
+                },
+                {
+                  "system": "http://registrocivil.cl/RUN",
+                  "code": "RUN",
+                  "display": "Rol Único Nacional"
+                }
+              ]
+            },
+            "value": "134293887929"
+          }
+        }
+      ],
+      "relationship": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+              "code": "C",
+              "display": "Emergency Contact"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "66839005",
+              "display": "padre"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "text": "Jorge Rivera"
+      },
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+56(2)2222-2222",
+          "use": "mobile"
+        },
+        {
+          "system": "email",
+          "value": "contacto@example.com"
+        }
+      ],
+      "address": {
+        "use": "home",
+        "text": "Eliodoro Yáñez NNN, depto XX, Providencia",
+        "city": "Providencia",
+        "state": "Región Metropolitana",
+        "postalCode": "5555555",
+        "country": "Chile"
+      }
+    }
+  ],
+  "link": [
+    {
+      "other": {
+        "reference": "Patient/2a6d66d1-6f44-49df-8ee9-6ae5c920c6ee"
+      },
+      "type": "replaces"
+    }
+  ]
+}
