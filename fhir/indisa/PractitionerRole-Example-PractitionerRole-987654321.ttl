@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/PractitionerRole/Example-PractitionerRole-987654321> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-PractitionerRole-987654321"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>period</b>: 2021-01-01 --&gt; 2022-12-31</p><p><b>practitioner</b>: <a href=\"Practitioner-Example-Practitioner-09709es9d.html\">Generated Summary: Medical Record Number: 8596788ap (OFFICIAL); active; Sebastian Camilo Daza Barrera (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, dbsebastian@example.com; gender: male; birthDate: 1989-03-10</a></p></div>"
+  ];
+  fhir:PractitionerRole.period [
+     fhir:Period.start [ fhir:value "2021-01-01"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2022-12-31"^^xsd:date ]
+  ];
+  fhir:PractitionerRole.practitioner [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Practitioner/Example-Practitioner-09709es9d>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Example-Practitioner-09709es9d" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/PractitionerRole/Example-PractitionerRole-987654321.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

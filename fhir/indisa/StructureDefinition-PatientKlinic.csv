@@ -457,10 +457,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.address.city.extension","regionalLocationIdentifier","","",0,1,"Y","","","Extension {[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier]]} {[]}
-","Identificador regional","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.address.city.value","","","",0,1,"","","","string {[]} {[]}
 ","Primitive value for string","The actual value","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
 "Patient.address.district","","County
@@ -473,10 +469,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.address.district.extension","regionalLocationIdentifier","","",0,1,"Y","","","Extension {[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier]]} {[]}
-","Identificador regional","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.address.district.value","","","",0,1,"","","","string {[]} {[]}
 ","Primitive value for string","The actual value","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
 "Patient.address.state","","Province
@@ -488,10 +480,6 @@ Territory","",1,1,"","","Y","string {[]} {[]}
 "Patient.address.state.extension","","","",0,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.address.state.extension","regionalLocationIdentifier","","",0,1,"Y","","","Extension {[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier]]} {[]}
-","Identificador regional","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.address.state.value","","","",0,1,"","","","string {[]} {[]}
 ","Primitive value for string","The actual value","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
@@ -507,10 +495,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.address.country.extension","","","",0,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.address.country.extension","regionalLocationIdentifier","","",0,1,"Y","","","Extension {[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier]]} {[]}
-","Identificador regional","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.address.country.value","","","",0,1,"","","","string {[]} {[]}
 ","Primitive value for string","The actual value","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""

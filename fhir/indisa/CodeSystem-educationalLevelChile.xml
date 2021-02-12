@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="educationalLevelChile"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://www.subdere.gov.cl/sites/default/files/documentos/CUT_2018_v04.xls defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr></table></div>
+  </text>
+  <url value="http://www.subdere.gov.cl/sites/default/files/documentos/CUT_2018_v04.xls"/>
+  <version value="1.0"/>
+  <name value="educationalLevelChile"/>
+  <title value="Nivel Educativo Chile"/>
+  <status value="active"/>
+  <date value="2021-02-04"/>
+  <publisher value="DigitalWare S.A. - Klinic-HIS"/>
+  <content value="complete"/>
+</CodeSystem>

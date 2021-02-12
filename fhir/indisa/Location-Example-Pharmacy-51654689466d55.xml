@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="Example-Pharmacy-51654689466d55"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>status</b>: active</p><p><b>operationalStatus</b>: <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 U}">Unoccupied</span></p><p><b>name</b>: Farmacia</p><p><b>alias</b>: Farmacia 1</p><p><b>description</b>: Emergency pharmacy.</p><p><b>mode</b>: instance</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType HOSP}">Hospital</span></p><p><b>telecom</b>: ph: 78978994952(WORK)</p><p><b>partOf</b>: <a href="Location/Example-LocationBuilding-7412389635sdf556">Location/Example-LocationBuilding-7412389635sdf556</a></p></div>
+  </text>
+  <status value="active"/>
+  <operationalStatus>
+    <system value="http://terminology.hl7.org/CodeSystem/v2-0116"/>
+    <code value="U"/>
+    <display value="Unoccupied"/>
+  </operationalStatus>
+  <name value="Farmacia"/>
+  <alias value="Farmacia 1"/>
+  <description value="Emergency pharmacy."/>
+  <mode value="instance"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType"/>
+      <code value="HOSP"/>
+      <display value="Hospital"/>
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone"/>
+    <value value="78978994952"/>
+    <use value="work"/>
+  </telecom>
+  <partOf>
+    <reference value="Location/Example-LocationBuilding-7412389635sdf556"/>
+  </partOf>
+</Location>

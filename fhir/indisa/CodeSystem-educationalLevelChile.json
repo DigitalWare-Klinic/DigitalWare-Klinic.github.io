@@ -1,0 +1,16 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "educationalLevelChile",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://www.subdere.gov.cl/sites/default/files/documentos/CUT_2018_v04.xls defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
+  },
+  "url": "http://www.subdere.gov.cl/sites/default/files/documentos/CUT_2018_v04.xls",
+  "version": "1.0",
+  "name": "educationalLevelChile",
+  "title": "Nivel Educativo Chile",
+  "status": "active",
+  "date": "2021-02-04",
+  "publisher": "DigitalWare S.A. - Klinic-HIS",
+  "content": "complete"
+}

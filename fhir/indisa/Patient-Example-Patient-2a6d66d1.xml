@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="Example-Patient-2a6d66d1"/>
+  <meta>
+    <tag>
+      <system value="http://terminology.hl7co.org/CodeSystem/common-tags"/>
+      <code value="VIP"/>
+      <display value="very important person"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>genderIdentity</b>: <span title="Codes: {http://snomed.info/sct 703117000}">Female</span></p><p><b>Birth Place</b>: Santiago de Chile Region Metropolitana Chile </p><blockquote><p><b>nationality</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Urls</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title="Codes: {https://www.iso.org/iso-3166-country-codes.html CL}">Chile</span></p></blockquote><p><b>identifier</b>: Medical record number: 3782734 (OFFICIAL), id: HC-6ef0a6d7-22009365ae97 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Maria Jake (OFFICIAL), Maria Jake(NICKNAME)</p><p><b>telecom</b>: <a href="tel:+56(2)1111-1111">+56(2)1111-1111</a>, <a href="tel:+56(2)2222-2222">+56(2)2222-2222</a>, <a href="mailto:jmaria@example.com">jmaria@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1975-08-14</p><p><b>deceased</b>: false</p><p><b>address</b>: Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</p><p><b>maritalStatus</b>: <span title="Codes: {http://hl7.org/fhir/ValueSet/marital-status M}">Married</span></p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td></td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0131 C}, {http://snomed.info/sct 66839005}">Emergency Contact</span></td><td>Jorge Jake</td><td><a href="tel:+56(2)2222-2222">+56(2)2222-2222</a>, <a href="mailto:jjorge@example.com">jjorge@example.com</a></td><td>Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</td></tr></table><h3>Links</h3><table class="grid"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href="Patient-Example-Patient-87356d0d.html">Generated Summary: Medical record number: 347827348 (OFFICIAL), id: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title="Codes: {http://hl7.org/fhir/ValueSet/marital-status M}">Married</span></a></td><td>replaced-by</td></tr></table></div>
+  </text>
+  <extension id="genderIdentity" url="http://hl7.org/fhir/StructureDefinition/patient-genderIdentity">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="703117000"/>
+        <display value="Female"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension id="birthPlace" url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+    <valueAddress>
+      <city value="Santiago de Chile"/>
+      <state value="Region Metropolitana"/>
+      <country value="Chile"/>
+    </valueAddress>
+  </extension>
+  <extension id="nationality" url="http://hl7.org/fhir/StructureDefinition/patient-nationality">
+    <extension id="code" url="code">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.iso.org/iso-3166-country-codes.html"/>
+          <code value="CL"/>
+          <display value="Chile"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <extension id="PatientEthnicity" url="https://www.digitalware.com.co/salud/fhir/extension/patient-ethnicity">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://deis.cl/fhir/PueblosIndigenasMinsalDecreto643"/>
+        <code value="01"/>
+        <display value="Mapuche"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+        <display value="Medical record number"/>
+      </coding>
+      <coding>
+        <system value="http://registrocivil.cl/RUN"/>
+        <code value="RUN"/>
+        <display value="Rol &#xDA;nico Nacional"/>
+      </coding>
+    </type>
+    <value value="3782734"/>
+  </identifier>
+  <identifier>
+    <use value="usual"/>
+    <system value="https://www.digitalware.com.co/salud/fhir/patient-id"/>
+    <value value="HC-6ef0a6d7-22009365ae97"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Jake">
+      <extension id="fathers-family" url="http://hl7.org/fhir/StructureDefinition/humanname-fathers-family">
+        <valueString value="Jake"/>
+      </extension>
+      <extension id="mothers-family" url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"/>
+    </family>
+    <given value="Maria"/>
+  </name>
+  <name>
+    <use value="nickname"/>
+    <text value="Maria Jake"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+56(2)1111-1111"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="+56(2)2222-2222"/>
+    <use value="mobile"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="jmaria@example.com"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1975-08-14"/>
+  <deceasedBoolean value="false"/>
+  <address>
+    <use value="home"/>
+    <text value="Eliodoro Y&#xE1;&#xF1;ez NNN, depto XX, Providencia"/>
+    <city value="Providencia"/>
+    <state value="Regi&#xF3;n Metropolitana"/>
+    <postalCode value="5555555"/>
+    <country value="Chile"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/marital-status"/>
+      <code value="M"/>
+      <display value="Married"/>
+    </coding>
+  </maritalStatus>
+  <contact>
+    <extension id="person-id" url="https://www.digitalware.com.co/salud/fhir/extension/person-id">
+      <valueIdentifier>
+        <use value="official"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+            <code value="MR"/>
+            <display value="Medical record number"/>
+          </coding>
+          <coding>
+            <system value="http://registrocivil.cl/RUN"/>
+            <code value="RUN"/>
+            <display value="Rol &#xDA;nico Nacional"/>
+          </coding>
+        </type>
+        <value value="134293887929"/>
+      </valueIdentifier>
+    </extension>
+    <relationship>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+        <code value="C"/>
+        <display value="Emergency Contact"/>
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="66839005"/>
+        <display value="padre"/>
+      </coding>
+    </relationship>
+    <name>
+      <text value="Jorge Jake"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="+56(2)2222-2222"/>
+      <use value="mobile"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jjorge@example.com"/>
+    </telecom>
+    <address>
+      <use value="home"/>
+      <text value="Eliodoro Y&#xE1;&#xF1;ez NNN, depto XX, Providencia"/>
+      <city value="Providencia"/>
+      <state value="Regi&#xF3;n Metropolitana"/>
+      <postalCode value="5555555"/>
+      <country value="Chile"/>
+    </address>
+  </contact>
+  <link>
+    <other>
+      <reference value="Patient/Example-Patient-87356d0d"/>
+    </other>
+    <type value="replaced-by"/>
+  </link>
+</Patient>

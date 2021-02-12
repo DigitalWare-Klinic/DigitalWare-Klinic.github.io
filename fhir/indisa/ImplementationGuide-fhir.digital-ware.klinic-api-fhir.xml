@@ -11,7 +11,7 @@
   <name value="klinicapifhir"/>
   <title value="Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A."/>
   <status value="active"/>
-  <date value="2021-02-10T18:43:59-05:00"/>
+  <date value="2021-02-12T10:46:28-05:00"/>
   <publisher value="DigitalWare S.A. - Klinic-HIS"/>
   <description value="FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A."/>
   <packageId value="fhir.digital-ware.klinic-api-fhir"/>
@@ -246,9 +246,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PerfilAppointment"/>
+        <reference value="StructureDefinition/PractitionerKlinic"/>
       </reference>
-      <name value="PerfilAppointment"/>
+      <name value="PractitionerKlinic"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -256,9 +256,20 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PractitionerKlinic"/>
+        <reference value="StructureDefinition/ProfileAppointment"/>
       </reference>
-      <name value="PractitionerKlinic"/>
+      <name value="ProfileAppointment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProfileEncounter"/>
+      </reference>
+      <name value="Encuentro"/>
+      <description value="Encounter of Patient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -597,68 +608,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Appointment"/>
-      </extension>
-      <reference>
-        <reference value="Appointment/05c86b7b-4fad-4f1b-a470-9755953b5d5b"/>
-      </reference>
-      <name value="05c86b7b-4fad-4f1b-a470-9755953b5d5b"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/09709es9d7a090d9f0s9d"/>
-      </reference>
-      <name value="09709es9d7a090d9f0s9d"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/16558949sf878498"/>
-      </reference>
-      <name value="16558949sf878498"/>
-      <description value="Laboratorio de hemocomponentes/ farmacia de urgencias"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="HealthcareService"/>
-      </extension>
-      <reference>
-        <reference value="HealthcareService/20ede331-0bc9-4d70-a209-49ecbed7922a"/>
-      </reference>
-      <name value="20ede331-0bc9-4d70-a209-49ecbed7922a"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/213134sd15148f"/>
-      </reference>
-      <name value="213134sd15148f"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/51654689466d55"/>
-      </reference>
-      <name value="51654689466d55"/>
-      <description value="Laboratorio de hemocomponentes"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -670,23 +619,22 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
+        <valueString value="Appointment"/>
       </extension>
       <reference>
-        <reference value="Location/7819819819bn915"/>
+        <reference value="Appointment/Example-Appointment-05c86b7b-4fad"/>
       </reference>
-      <name value="7819819819bn915"/>
-      <description value="Cama del paciente"/>
+      <name value="Example-Appointment-05c86b7b-4fad"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="Appointment"/>
       </extension>
       <reference>
-        <reference value="Patient/87356d0d-3891-45b7-b678-c623281f8b9c"/>
+        <reference value="Appointment/Example-Appointment-05c86b7b-5drg"/>
       </reference>
-      <name value="87356d0d-3891-45b7-b678-c623281f8b9c"/>
+      <name value="Example-Appointment-05c86b7b-5drg"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -694,9 +642,19 @@
         <valueString value="Encounter"/>
       </extension>
       <reference>
-        <reference value="Encounter/963b1515-1ced-4020-b3df-0568accf41c9"/>
+        <reference value="Encounter/Example-Encounter-963b1515"/>
       </reference>
-      <name value="963b1515-1ced-4020-b3df-0568accf41c9"/>
+      <name value="Example-Encounter-963b1515"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/Example-HealthcareService-20ede331"/>
+      </reference>
+      <name value="Example-HealthcareService-20ede331"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -704,10 +662,137 @@
         <valueString value="Location"/>
       </extension>
       <reference>
-        <reference value="Location/ads51ds5d145212ds"/>
+        <reference value="Location/Example-Laboratory-51654689466d55"/>
       </reference>
-      <name value="ads51ds5d145212ds"/>
-      <description value="Quirof&#xE1;no de procedimientos menores"/>
+      <name value="Example-Laboratory-51654689466d55"/>
+      <description value="Blood component laboratory."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/Example-LocationArea-789789789789"/>
+      </reference>
+      <name value="Example-LocationArea-789789789789"/>
+      <description value="Hospital medical care."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/Example-LocationBed-7819819819bn915"/>
+      </reference>
+      <name value="Example-LocationBed-7819819819bn915"/>
+      <description value="Patient bed."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/Example-LocationFuncionalUnit-16558949sf878498"/>
+      </reference>
+      <name value="Example-LocationFuncionalUnit-16558949sf878498"/>
+      <description value="blood component laboratory / emergency pharmacy"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/Example-LocationLocalUnit-789789789789"/>
+      </reference>
+      <name value="Example-LocationLocalUnit-789789789789"/>
+      <description value="Hospital medical care."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/Example-LocationRoom-1245687952"/>
+      </reference>
+      <name value="Example-LocationRoom-1245687952"/>
+      <description value="Hospitalization room."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/Example-OperatingRoom-ads51ds5d145212ds"/>
+      </reference>
+      <name value="Example-OperatingRoom-ads51ds5d145212ds"/>
+      <description value="Minor procedure operating room."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Example-Organization-213134sd15148f"/>
+      </reference>
+      <name value="Example-Organization-213134sd15148f"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Example-Patient-2a6d66d1"/>
+      </reference>
+      <name value="Example-Patient-2a6d66d1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Example-Patient-87356d0d"/>
+      </reference>
+      <name value="Example-Patient-87356d0d"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/Example-Pharmacy-51654689466d55"/>
+      </reference>
+      <name value="Example-Pharmacy-51654689466d55"/>
+      <description value="Emergency pharmacy."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/Example-Practitioner-09709es9d"/>
+      </reference>
+      <name value="Example-Practitioner-09709es9d"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/Example-PractitionerRole-987654321"/>
+      </reference>
+      <name value="Example-PractitionerRole-987654321"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -715,9 +800,9 @@
         <valueString value="Schedule"/>
       </extension>
       <reference>
-        <reference value="Schedule/d83f2b28-24e6-4464-aefe-be45eaa820d4"/>
+        <reference value="Schedule/Example-Schedule-d83f2b28"/>
       </reference>
-      <name value="d83f2b28-24e6-4464-aefe-be45eaa820d4"/>
+      <name value="Example-Schedule-d83f2b28"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -725,10 +810,20 @@
         <valueString value="Slot"/>
       </extension>
       <reference>
-        <reference value="Slot/f261cf86-786c-46b0-bce7-0fc93aa185f6"/>
+        <reference value="Slot/Example-Slot-f261cf86"/>
       </reference>
-      <name value="f261cf86-786c-46b0-bce7-0fc93aa185f6"/>
+      <name value="Example-Slot-f261cf86"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/educationalLevelChile"/>
+      </reference>
+      <name value="educationalLevelChile"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

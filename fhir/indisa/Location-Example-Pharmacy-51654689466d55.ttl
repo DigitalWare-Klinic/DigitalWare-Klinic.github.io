@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Location/Example-Pharmacy-51654689466d55> a fhir:Location;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Pharmacy-51654689466d55"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>status</b>: active</p><p><b>operationalStatus</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 U}\">Unoccupied</span></p><p><b>name</b>: Farmacia</p><p><b>alias</b>: Farmacia 1</p><p><b>description</b>: Emergency pharmacy.</p><p><b>mode</b>: instance</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType HOSP}\">Hospital</span></p><p><b>telecom</b>: ph: 78978994952(WORK)</p><p><b>partOf</b>: <a href=\"Location/Example-LocationBuilding-7412389635sdf556\">Location/Example-LocationBuilding-7412389635sdf556</a></p></div>"
+  ];
+  fhir:Location.status [ fhir:value "active"];
+  fhir:Location.operationalStatus [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0116" ];
+     fhir:Coding.code [ fhir:value "U" ];
+     fhir:Coding.display [ fhir:value "Unoccupied" ]
+  ];
+  fhir:Location.name [ fhir:value "Farmacia"];
+  fhir:Location.alias [
+     fhir:value "Farmacia 1";
+     fhir:index 0
+  ];
+  fhir:Location.description [ fhir:value "Emergency pharmacy."];
+  fhir:Location.mode [ fhir:value "instance"];
+  fhir:Location.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType" ];
+       fhir:Coding.code [ fhir:value "HOSP" ];
+       fhir:Coding.display [ fhir:value "Hospital" ]
+     ]
+  ];
+  fhir:Location.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "78978994952" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Location.partOf [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationBuilding-7412389635sdf556>;
+     fhir:Reference.reference [ fhir:value "Location/Example-LocationBuilding-7412389635sdf556" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Location/Example-Pharmacy-51654689466d55.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

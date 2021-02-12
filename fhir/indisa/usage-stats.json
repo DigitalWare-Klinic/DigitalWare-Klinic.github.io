@@ -440,16 +440,22 @@
         "title": "Patient Klinic API FHIR"
       }
     ],
-    "Appointment": [
-      {
-        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PerfilAppointment",
-        "title": "PerfilAppointment"
-      }
-    ],
     "Practitioner": [
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PractitionerKlinic",
         "title": "PractitionerKlinic"
+      }
+    ],
+    "Appointment": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileAppointment",
+        "title": "ProfileAppointment"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileEncounter",
+        "title": "Encuentro"
       }
     ],
     "HealthcareService": [
@@ -472,7 +478,7 @@
     ]
   },
   "usage": {
-    "Organization/Organization.id": [
+    "Organization/Example-Organization-213134sd15148f-1": [
       "Organization.partOf"
     ],
     "http://hl7.org/fhir/StructureDefinition/Location-BedWithOxygen": [
@@ -603,20 +609,11 @@
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/QuotaPatient": [
       "Schedule"
     ],
-    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier": [
-      "Patient.address.city",
-      "Patient.address.country",
-      "Patient.address.district",
-      "Patient.address.state"
-    ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ServicePartOf": [
       "HealthcareService"
     ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/VirtualBed": [
       "Location"
-    ],
-    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/hoursOfOperation": [
-      "Schedule.planningHorizon"
     ],
     "https://www.digitalware.com.co/salud/fhir/StructureDefinition/available-telemedicine": [
       "Schedule"

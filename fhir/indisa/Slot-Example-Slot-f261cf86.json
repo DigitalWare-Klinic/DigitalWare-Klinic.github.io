@@ -1,0 +1,47 @@
+{
+  "resourceType": "Slot",
+  "id": "Example-Slot-f261cf86",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>serviceType</b>: <span title=\"Codes: {http://hl7.org/fhir/ValueSet/service-type 186}\">Obstetrics and Gynaecology</span></p><p><b>specialty</b>: <span title=\"Codes: {http://hl7.org/fhir/ValueSet/c80-practice-codes 394586005}\">Gynecology</span></p><p><b>appointmentType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0276 ROUTINE}\">Routine appointment</span></p><p><b>schedule</b>: <a href=\"Schedule-Example-Schedule-d83f2b28.html\">Generated Summary: id: 403; active; <span title=\"Codes: \">Pediatrica</span>; <span title=\"Codes: {http://snomed.info/sct 185316007}\">encuentro indirecto</span>, <span title=\"Codes: {http://snomed.info/sct 308467007}\">atendido en establecimiento</span>; <span title=\"Codes: {http://snomed.info/sct 394586005}\">Ginecologia</span>; planningHorizon: 2021-01-01 --&gt; 2021-01-31</a></p><p><b>status</b>: free</p><p><b>start</b>: 20/01/2021, 8:00:00 a. m.</p><p><b>end</b>: 20/01/2021, 8:30:00 a. m.</p><p><b>overbooked</b>: false</p><p><b>comment</b>: Not served on weekends</p></div>"
+  },
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/ValueSet/service-type",
+          "code": "186",
+          "display": "Obstetrics and Gynaecology"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+          "code": "394586005",
+          "display": "Gynecology"
+        }
+      ]
+    }
+  ],
+  "appointmentType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+        "code": "ROUTINE",
+        "display": "Routine appointment"
+      }
+    ]
+  },
+  "schedule": {
+    "reference": "Schedule/Example-Schedule-d83f2b28"
+  },
+  "status": "free",
+  "start": "2021-01-20T08:00:00-05:00",
+  "end": "2021-01-20T08:30:00-05:00",
+  "overbooked": false,
+  "comment": "Not served on weekends"
+}

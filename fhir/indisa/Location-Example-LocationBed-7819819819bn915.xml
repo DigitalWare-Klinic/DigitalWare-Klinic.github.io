@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="Example-LocationBed-7819819819bn915"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b style="color: maroon">Exception generating Narrative: unknown extension http://hl7.org/fhir/StructureDefinition/Location-VirtualBed</b></p></div>
+  </text>
+  <extension id="VirtualBed" url="http://hl7.org/fhir/StructureDefinition/Location-VirtualBed"/>
+  <extension id="Census" url="http://hl7.org/fhir/StructureDefinition/Location-Census"/>
+  <extension id="ChargeBed" url="http://hl7.org/fhir/StructureDefinition/Location-ChargeBed"/>
+  <extension id="BedWithOxygen" url="http://hl7.org/fhir/StructureDefinition/Location-BedWithOxygen"/>
+  <status value="active"/>
+  <operationalStatus>
+    <system value="http://terminology.hl7.org/CodeSystem/v2-0116"/>
+    <code value="o"/>
+    <display value="Occupied"/>
+  </operationalStatus>
+  <name value="Cama 2"/>
+  <alias value="C2"/>
+  <description value="Patient bed."/>
+  <mode value="instance"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType"/>
+      <code value="HU"/>
+      <display value="Hospital unit"/>
+    </coding>
+  </type>
+  <partOf>
+    <reference value="Location/Example-LocationRoom-1245687952"/>
+  </partOf>
+</Location>

@@ -1,0 +1,127 @@
+{
+  "resourceType": "Schedule",
+  "id": "Example-Schedule-d83f2b28",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: 403</p><p><b>active</b>: true</p><p><b>serviceCategory</b>: <span title=\"Codes: \">Pediatrica</span></p><p><b>serviceType</b>: <span title=\"Codes: {http://snomed.info/sct 185316007}\">encuentro indirecto</span>, <span title=\"Codes: {http://snomed.info/sct 308467007}\">atendido en establecimiento</span></p><p><b>specialty</b>: <span title=\"Codes: {http://snomed.info/sct 394586005}\">Ginecologia</span></p><p><b>actor</b>: </p><ul><li><a href=\"Location/Example-LocationBuilding-7412389635sdf556d\">Location/Example-LocationBuilding-7412389635sdf556d</a></li><li><a href=\"Location-Example-LocationRoom-1245687952.html\">Generated Summary: status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 o}\">Occupied</span>; name: Habitación 202; alias: H202; description: Hospitalization room.; mode: instance; <span title=\"Codes: {http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType HU}\">Hospital unit</span></a></li><li><a href=\"Location-Example-LocationArea-789789789789.html\">Generated Summary: status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 o}\">Ocupado</span>; name: Servicio hospitalario; alias: Hospitalización; description: Hospital medical care.; mode: kind; <span title=\"Codes: {http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType HU}\">Hospital unit</span>; Phone: +56 12355611</a></li></ul><p><b>planningHorizon</b>: 2021-01-01 --&gt; 2021-01-31</p></div>"
+  },
+  "extension": [
+    {
+      "id": "quotaPatient",
+      "url": "https://www.digitalware.com.co/salud/fhir/StructureDefinition/quota-patients",
+      "valueInteger": 1
+    },
+    {
+      "id": "availableTelemedicine",
+      "url": "https://www.digitalware.com.co/salud/fhir/StructureDefinition/available-telemedicine",
+      "valueBoolean": false
+    },
+    {
+      "id": "slotTime",
+      "url": "https://www.digitalware.com.co/salud/fhir/StructureDefinition/slots-time",
+      "valueInteger": 30
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://www.digitalware.com.co/salud/fhir/identifiers/agenda-identifiers",
+      "value": "403"
+    }
+  ],
+  "active": true,
+  "serviceCategory": [
+    {
+      "text": "Pediatrica"
+    }
+  ],
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "185316007",
+          "display": "encuentro indirecto"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "308467007",
+          "display": "atendido en establecimiento"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "394586005",
+          "display": "Ginecologia"
+        }
+      ]
+    }
+  ],
+  "actor": [
+    {
+      "reference": "Location/Example-LocationBuilding-7412389635sdf556d"
+    },
+    {
+      "reference": "Location/Example-LocationRoom-1245687952"
+    },
+    {
+      "reference": "Location/Example-LocationArea-789789789789"
+    }
+  ],
+  "planningHorizon": {
+    "extension": [
+      {
+        "id": "hoursOfOperation",
+        "extension": [
+          {
+            "id": "day",
+            "url": "day",
+            "valueCode": "mon"
+          },
+          {
+            "id": "startTime",
+            "url": "startTime",
+            "valueTime": "08:00:00"
+          },
+          {
+            "id": "endTime",
+            "url": "endTime",
+            "valueTime": "12:00:00"
+          }
+        ],
+        "url": "https://www.digitalware.com.co/salud/fhir/StrutureDefinition/hours-of-operation"
+      },
+      {
+        "id": "hoursOfOperation",
+        "extension": [
+          {
+            "id": "day",
+            "url": "day",
+            "valueCode": "tue"
+          },
+          {
+            "id": "startTime",
+            "url": "startTime",
+            "valueTime": "14:00:00"
+          },
+          {
+            "id": "endTime",
+            "url": "endTime",
+            "valueTime": "16:00:00"
+          }
+        ],
+        "url": "https://www.digitalware.com.co/salud/fhir/StrutureDefinition/hours-of-operation"
+      }
+    ],
+    "start": "2021-01-01",
+    "end": "2021-01-31"
+  }
+}

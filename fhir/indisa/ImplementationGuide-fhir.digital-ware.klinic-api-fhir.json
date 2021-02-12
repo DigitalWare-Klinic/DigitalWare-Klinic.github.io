@@ -10,7 +10,7 @@
   "name": "klinicapifhir",
   "title": "Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.",
   "status": "active",
-  "date": "2021-02-10T18:43:59-05:00",
+  "date": "2021-02-12T10:46:28-05:00",
   "publisher": "DigitalWare S.A. - Klinic-HIS",
   "description": "FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A.",
   "packageId": "fhir.digital-ware.klinic-api-fhir",
@@ -369,9 +369,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/PerfilAppointment"
+          "reference": "StructureDefinition/PractitionerKlinic"
         },
-        "name": "PerfilAppointment",
+        "name": "PractitionerKlinic",
         "exampleBoolean": false
       },
       {
@@ -382,9 +382,23 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/PractitionerKlinic"
+          "reference": "StructureDefinition/ProfileAppointment"
         },
-        "name": "PractitionerKlinic",
+        "name": "ProfileAppointment",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileEncounter"
+        },
+        "name": "Encuentro",
+        "description": "Encounter of Patient.",
         "exampleBoolean": false
       },
       {
@@ -818,86 +832,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Appointment"
-          }
-        ],
-        "reference": {
-          "reference": "Appointment/05c86b7b-4fad-4f1b-a470-9755953b5d5b"
-        },
-        "name": "05c86b7b-4fad-4f1b-a470-9755953b5d5b",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Practitioner"
-          }
-        ],
-        "reference": {
-          "reference": "Practitioner/09709es9d7a090d9f0s9d"
-        },
-        "name": "09709es9d7a090d9f0s9d",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
-          }
-        ],
-        "reference": {
-          "reference": "Location/16558949sf878498"
-        },
-        "name": "16558949sf878498",
-        "description": "Laboratorio de hemocomponentes/ farmacia de urgencias",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "HealthcareService"
-          }
-        ],
-        "reference": {
-          "reference": "HealthcareService/20ede331-0bc9-4d70-a209-49ecbed7922a"
-        },
-        "name": "20ede331-0bc9-4d70-a209-49ecbed7922a",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/213134sd15148f"
-        },
-        "name": "213134sd15148f",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
-          }
-        ],
-        "reference": {
-          "reference": "Location/51654689466d55"
-        },
-        "name": "51654689466d55",
-        "description": "Laboratorio de hemocomponentes",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Location"
           }
         ],
@@ -912,27 +846,26 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
+            "valueString": "Appointment"
           }
         ],
         "reference": {
-          "reference": "Location/7819819819bn915"
+          "reference": "Appointment/Example-Appointment-05c86b7b-4fad"
         },
-        "name": "7819819819bn915",
-        "description": "Cama del paciente",
+        "name": "Example-Appointment-05c86b7b-4fad",
         "exampleBoolean": true
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
+            "valueString": "Appointment"
           }
         ],
         "reference": {
-          "reference": "Patient/87356d0d-3891-45b7-b678-c623281f8b9c"
+          "reference": "Appointment/Example-Appointment-05c86b7b-5drg"
         },
-        "name": "87356d0d-3891-45b7-b678-c623281f8b9c",
+        "name": "Example-Appointment-05c86b7b-5drg",
         "exampleBoolean": true
       },
       {
@@ -943,9 +876,22 @@
           }
         ],
         "reference": {
-          "reference": "Encounter/963b1515-1ced-4020-b3df-0568accf41c9"
+          "reference": "Encounter/Example-Encounter-963b1515"
         },
-        "name": "963b1515-1ced-4020-b3df-0568accf41c9",
+        "name": "Example-Encounter-963b1515",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "HealthcareService"
+          }
+        ],
+        "reference": {
+          "reference": "HealthcareService/Example-HealthcareService-20ede331"
+        },
+        "name": "Example-HealthcareService-20ede331",
         "exampleBoolean": true
       },
       {
@@ -956,10 +902,173 @@
           }
         ],
         "reference": {
-          "reference": "Location/ads51ds5d145212ds"
+          "reference": "Location/Example-Laboratory-51654689466d55"
         },
-        "name": "ads51ds5d145212ds",
-        "description": "Quirofáno de procedimientos menores",
+        "name": "Example-Laboratory-51654689466d55",
+        "description": "Blood component laboratory.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          }
+        ],
+        "reference": {
+          "reference": "Location/Example-LocationArea-789789789789"
+        },
+        "name": "Example-LocationArea-789789789789",
+        "description": "Hospital medical care.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          }
+        ],
+        "reference": {
+          "reference": "Location/Example-LocationBed-7819819819bn915"
+        },
+        "name": "Example-LocationBed-7819819819bn915",
+        "description": "Patient bed.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          }
+        ],
+        "reference": {
+          "reference": "Location/Example-LocationFuncionalUnit-16558949sf878498"
+        },
+        "name": "Example-LocationFuncionalUnit-16558949sf878498",
+        "description": "blood component laboratory / emergency pharmacy",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          }
+        ],
+        "reference": {
+          "reference": "Location/Example-LocationLocalUnit-789789789789"
+        },
+        "name": "Example-LocationLocalUnit-789789789789",
+        "description": "Hospital medical care.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          }
+        ],
+        "reference": {
+          "reference": "Location/Example-LocationRoom-1245687952"
+        },
+        "name": "Example-LocationRoom-1245687952",
+        "description": "Hospitalization room.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          }
+        ],
+        "reference": {
+          "reference": "Location/Example-OperatingRoom-ads51ds5d145212ds"
+        },
+        "name": "Example-OperatingRoom-ads51ds5d145212ds",
+        "description": "Minor procedure operating room.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Example-Organization-213134sd15148f"
+        },
+        "name": "Example-Organization-213134sd15148f",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/Example-Patient-2a6d66d1"
+        },
+        "name": "Example-Patient-2a6d66d1",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/Example-Patient-87356d0d"
+        },
+        "name": "Example-Patient-87356d0d",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          }
+        ],
+        "reference": {
+          "reference": "Location/Example-Pharmacy-51654689466d55"
+        },
+        "name": "Example-Pharmacy-51654689466d55",
+        "description": "Emergency pharmacy.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Example-Practitioner-09709es9d"
+        },
+        "name": "Example-Practitioner-09709es9d",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PractitionerRole"
+          }
+        ],
+        "reference": {
+          "reference": "PractitionerRole/Example-PractitionerRole-987654321"
+        },
+        "name": "Example-PractitionerRole-987654321",
         "exampleBoolean": true
       },
       {
@@ -970,9 +1079,9 @@
           }
         ],
         "reference": {
-          "reference": "Schedule/d83f2b28-24e6-4464-aefe-be45eaa820d4"
+          "reference": "Schedule/Example-Schedule-d83f2b28"
         },
-        "name": "d83f2b28-24e6-4464-aefe-be45eaa820d4",
+        "name": "Example-Schedule-d83f2b28",
         "exampleBoolean": true
       },
       {
@@ -983,10 +1092,23 @@
           }
         ],
         "reference": {
-          "reference": "Slot/f261cf86-786c-46b0-bce7-0fc93aa185f6"
+          "reference": "Slot/Example-Slot-f261cf86"
         },
-        "name": "f261cf86-786c-46b0-bce7-0fc93aa185f6",
+        "name": "Example-Slot-f261cf86",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/educationalLevelChile"
+        },
+        "name": "educationalLevelChile",
+        "exampleBoolean": false
       }
     ],
     "page": {

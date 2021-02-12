@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "klinicapifhir"];
   fhir:ImplementationGuide.title [ fhir:value "Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A."];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-02-10T18:43:59-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-02-12T10:46:28-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "DigitalWare S.A. - Klinic-HIS"];
   fhir:ImplementationGuide.description [ fhir:value "FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A."];
   fhir:ImplementationGuide.packageId [ fhir:value "fhir.digital-ware.klinic-api-fhir"];
@@ -356,10 +356,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PerfilAppointment>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/PerfilAppointment" ]
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PractitionerKlinic>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PractitionerKlinic" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PerfilAppointment" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PractitionerKlinic" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 8;
@@ -369,13 +369,27 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PractitionerKlinic>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/PractitionerKlinic" ]
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileAppointment>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ProfileAppointment" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PractitionerKlinic" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ProfileAppointment" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileEncounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ProfileEncounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encuentro" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounter of Patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -388,7 +402,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HealthcareService" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -402,7 +416,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Schedule patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -415,7 +429,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SlotKlinic" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -428,7 +442,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Admite telemedicina:" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -442,7 +456,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicator if a bed has oxygen or not" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -456,7 +470,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Localizacon geografica de nacimiento del paciente." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -470,7 +484,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cancellation of the appointment." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -484,7 +498,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Penalty for cancellation of appointment." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -498,7 +512,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Census bed indicator" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -512,7 +526,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicator if a bed was charged or not" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -526,7 +540,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Discapacidad del paciente." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -540,7 +554,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nivel de educacion del paciente" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -554,7 +568,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Empresa donde labora el paciente" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -568,7 +582,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Primer apellido del profesional de salud." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -582,7 +596,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genero con el cual el paciente se identifica." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -595,7 +609,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HoursOfOperation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -609,7 +623,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Lugar expedicion identificacion paciente" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -623,7 +637,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Segundo apellido del profesional de salud." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -637,7 +651,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes whether a location admits multiple patients or professionals" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -651,7 +665,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nacionalidad del paciente." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -665,7 +679,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension que permite registrar si el paciente es o no un recien nacido." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -679,7 +693,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ocupacion del paciente" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 31;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -693,7 +707,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Empresa del paciente" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 32;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -707,7 +721,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Telefono contacto empresa del paciente" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 33;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -721,7 +735,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Grupo etnico del paciente." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 34;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -735,7 +749,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Grupo poblacional al que pertenece el paciente." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 35;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -749,7 +763,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identificacion del paciente." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 36;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -762,7 +776,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cupo pacientes:" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 37;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -775,7 +789,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identificador regional" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 38;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -788,7 +802,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Subservicio" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 39;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -802,87 +816,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicator if a bed is virtual or not" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 40;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Appointment" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Appointment/05c86b7b-4fad-4f1b-a470-9755953b5d5b>;
-         fhir:Reference.reference [ fhir:value "Appointment/05c86b7b-4fad-4f1b-a470-9755953b5d5b" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "05c86b7b-4fad-4f1b-a470-9755953b5d5b" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
        fhir:index 41;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Practitioner" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Practitioner/09709es9d7a090d9f0s9d>;
-         fhir:Reference.reference [ fhir:value "Practitioner/09709es9d7a090d9f0s9d" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "09709es9d7a090d9f0s9d" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 42;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Location" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/16558949sf878498>;
-         fhir:Reference.reference [ fhir:value "Location/16558949sf878498" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "16558949sf878498" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Laboratorio de hemocomponentes/ farmacia de urgencias" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 43;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "HealthcareService" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/HealthcareService/20ede331-0bc9-4d70-a209-49ecbed7922a>;
-         fhir:Reference.reference [ fhir:value "HealthcareService/20ede331-0bc9-4d70-a209-49ecbed7922a" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "20ede331-0bc9-4d70-a209-49ecbed7922a" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 44;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Organization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Organization/213134sd15148f>;
-         fhir:Reference.reference [ fhir:value "Organization/213134sd15148f" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "213134sd15148f" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 45;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Location" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/51654689466d55>;
-         fhir:Reference.reference [ fhir:value "Location/51654689466d55" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "51654689466d55" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Laboratorio de hemocomponentes" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -896,6 +830,72 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Clinica y urgencias" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Appointment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Appointment/Example-Appointment-05c86b7b-4fad>;
+         fhir:Reference.reference [ fhir:value "Appointment/Example-Appointment-05c86b7b-4fad" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-Appointment-05c86b7b-4fad" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Appointment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Appointment/Example-Appointment-05c86b7b-5drg>;
+         fhir:Reference.reference [ fhir:value "Appointment/Example-Appointment-05c86b7b-5drg" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-Appointment-05c86b7b-5drg" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Encounter/Example-Encounter-963b1515>;
+         fhir:Reference.reference [ fhir:value "Encounter/Example-Encounter-963b1515" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-Encounter-963b1515" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "HealthcareService" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/HealthcareService/Example-HealthcareService-20ede331>;
+         fhir:Reference.reference [ fhir:value "HealthcareService/Example-HealthcareService-20ede331" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-HealthcareService-20ede331" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-Laboratory-51654689466d55>;
+         fhir:Reference.reference [ fhir:value "Location/Example-Laboratory-51654689466d55" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-Laboratory-51654689466d55" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Blood component laboratory." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
        fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
@@ -903,37 +903,39 @@
          fhir:Extension.valueString [ fhir:value "Location" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/7819819819bn915>;
-         fhir:Reference.reference [ fhir:value "Location/7819819819bn915" ]
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationArea-789789789789>;
+         fhir:Reference.reference [ fhir:value "Location/Example-LocationArea-789789789789" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "7819819819bn915" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cama del paciente" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-LocationArea-789789789789" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hospital medical care." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Patient" ]
+         fhir:Extension.valueString [ fhir:value "Location" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/87356d0d-3891-45b7-b678-c623281f8b9c>;
-         fhir:Reference.reference [ fhir:value "Patient/87356d0d-3891-45b7-b678-c623281f8b9c" ]
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationBed-7819819819bn915>;
+         fhir:Reference.reference [ fhir:value "Location/Example-LocationBed-7819819819bn915" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "87356d0d-3891-45b7-b678-c623281f8b9c" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-LocationBed-7819819819bn915" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient bed." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Encounter" ]
+         fhir:Extension.valueString [ fhir:value "Location" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Encounter/963b1515-1ced-4020-b3df-0568accf41c9>;
-         fhir:Reference.reference [ fhir:value "Encounter/963b1515-1ced-4020-b3df-0568accf41c9" ]
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationFuncionalUnit-16558949sf878498>;
+         fhir:Reference.reference [ fhir:value "Location/Example-LocationFuncionalUnit-16558949sf878498" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "963b1515-1ced-4020-b3df-0568accf41c9" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-LocationFuncionalUnit-16558949sf878498" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "blood component laboratory / emergency pharmacy" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 50;
@@ -943,38 +945,158 @@
          fhir:Extension.valueString [ fhir:value "Location" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/ads51ds5d145212ds>;
-         fhir:Reference.reference [ fhir:value "Location/ads51ds5d145212ds" ]
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationLocalUnit-789789789789>;
+         fhir:Reference.reference [ fhir:value "Location/Example-LocationLocalUnit-789789789789" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ads51ds5d145212ds" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Quirofáno de procedimientos menores" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-LocationLocalUnit-789789789789" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hospital medical care." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Schedule" ]
+         fhir:Extension.valueString [ fhir:value "Location" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Schedule/d83f2b28-24e6-4464-aefe-be45eaa820d4>;
-         fhir:Reference.reference [ fhir:value "Schedule/d83f2b28-24e6-4464-aefe-be45eaa820d4" ]
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationRoom-1245687952>;
+         fhir:Reference.reference [ fhir:value "Location/Example-LocationRoom-1245687952" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "d83f2b28-24e6-4464-aefe-be45eaa820d4" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-LocationRoom-1245687952" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hospitalization room." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-OperatingRoom-ads51ds5d145212ds>;
+         fhir:Reference.reference [ fhir:value "Location/Example-OperatingRoom-ads51ds5d145212ds" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-OperatingRoom-ads51ds5d145212ds" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minor procedure operating room." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Organization/Example-Organization-213134sd15148f>;
+         fhir:Reference.reference [ fhir:value "Organization/Example-Organization-213134sd15148f" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-Organization-213134sd15148f" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-2a6d66d1>;
+         fhir:Reference.reference [ fhir:value "Patient/Example-Patient-2a6d66d1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-Patient-2a6d66d1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d>;
+         fhir:Reference.reference [ fhir:value "Patient/Example-Patient-87356d0d" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-Patient-87356d0d" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-Pharmacy-51654689466d55>;
+         fhir:Reference.reference [ fhir:value "Location/Example-Pharmacy-51654689466d55" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-Pharmacy-51654689466d55" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Emergency pharmacy." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Practitioner/Example-Practitioner-09709es9d>;
+         fhir:Reference.reference [ fhir:value "Practitioner/Example-Practitioner-09709es9d" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-Practitioner-09709es9d" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/PractitionerRole/Example-PractitionerRole-987654321>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/Example-PractitionerRole-987654321" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-PractitionerRole-987654321" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Schedule" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Schedule/Example-Schedule-d83f2b28>;
+         fhir:Reference.reference [ fhir:value "Schedule/Example-Schedule-d83f2b28" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-Schedule-d83f2b28" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Slot" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Slot/f261cf86-786c-46b0-bce7-0fc93aa185f6>;
-         fhir:Reference.reference [ fhir:value "Slot/f261cf86-786c-46b0-bce7-0fc93aa185f6" ]
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Slot/Example-Slot-f261cf86>;
+         fhir:Reference.reference [ fhir:value "Slot/Example-Slot-f261cf86" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "f261cf86-786c-46b0-bce7-0fc93aa185f6" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-Slot-f261cf86" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/educationalLevelChile>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/educationalLevelChile" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "educationalLevelChile" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

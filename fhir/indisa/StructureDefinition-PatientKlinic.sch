@@ -658,7 +658,6 @@
     <sch:title>f:Patient/f:address/f:city</sch:title>
     <sch:rule context="f:Patient/f:address/f:city">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier']) &lt;= 1">extension with URL = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -673,15 +672,12 @@
     <sch:rule context="f:Patient/f:address/f:city/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>f:Patient/f:address/f:district</sch:title>
     <sch:rule context="f:Patient/f:address/f:district">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier']) &lt;= 1">extension with URL = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -696,15 +692,12 @@
     <sch:rule context="f:Patient/f:address/f:district/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>f:Patient/f:address/f:state</sch:title>
     <sch:rule context="f:Patient/f:address/f:state">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier']) &lt;= 1">extension with URL = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -719,8 +712,6 @@
     <sch:rule context="f:Patient/f:address/f:state/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -733,7 +724,6 @@
     <sch:title>f:Patient/f:address/f:country</sch:title>
     <sch:rule context="f:Patient/f:address/f:country">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier']) &lt;= 1">extension with URL = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -746,8 +736,6 @@
   <sch:pattern>
     <sch:title>Patient.address.country.extension</sch:title>
     <sch:rule context="f:Patient/f:address/f:country/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>

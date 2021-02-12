@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/educationalLevelChile> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "educationalLevelChile"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://www.subdere.gov.cl/sites/default/files/documentos/CUT_2018_v04.xls defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://www.subdere.gov.cl/sites/default/files/documentos/CUT_2018_v04.xls"];
+  fhir:CodeSystem.version [ fhir:value "1.0"];
+  fhir:CodeSystem.name [ fhir:value "educationalLevelChile"];
+  fhir:CodeSystem.title [ fhir:value "Nivel Educativo Chile"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-02-04"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "DigitalWare S.A. - Klinic-HIS"];
+  fhir:CodeSystem.content [ fhir:value "complete"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/educationalLevelChile.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

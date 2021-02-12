@@ -1,0 +1,245 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Patient-87356d0d"];
+  fhir:Resource.meta [
+     fhir:Meta.tag [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7co.org/CodeSystem/common-tags" ];
+       fhir:Coding.code [ fhir:value "VIP" ];
+       fhir:Coding.display [ fhir:value "very important person" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "https://hl7co.github.io/digitalware/klinic-api-fhir/CodeSystem/payors" ];
+       fhir:Coding.code [ fhir:value "Payor" ];
+       fhir:Coding.display [ fhir:value "Pagador o asegurador" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>genderIdentity</b>: <span title=\"Codes: {http://snomed.info/sct 703117000}\">Female</span></p><p><b>Birth Place</b>: Santiago de Chile Region Metropolitana Chile </p><blockquote><p><b>nationality</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {https://www.iso.org/iso-3166-country-codes.html CL}\">Chile</span></p></blockquote><p><b>identifier</b>: Medical record number: 347827348 (OFFICIAL), id: HC-6ef0a6d7 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME)</p><p><b>telecom</b>: <a href=\"tel:+56(2)1111-1111\">+56(2)1111-1111</a>, <a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:jjmaria@example.com\">jjmaria@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1975-08-14</p><p><b>deceased</b>: false</p><p><b>address</b>: Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</p><p><b>maritalStatus</b>: <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td></td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0131 C}, {http://snomed.info/sct 66839005}\">Emergency Contact</span></td><td>Jorge Jake</td><td><a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:jjorge@example.com\">jjorge@example.com</a></td><td>Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</td></tr></table><h3>Links</h3><table class=\"grid\"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href=\"Patient-Example-Patient-2a6d66d1.html\">Generated Summary: Medical record number: 3782734 (OFFICIAL), id: HC-6ef0a6d7-22009365ae97 (USUAL); active; Maria Jake (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></td><td>replaces</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "genderIdentity" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:703117000;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "703117000" ];
+         fhir:Coding.display [ fhir:value "Female" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "birthPlace" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthPlace" ];
+     fhir:Extension.valueAddress [
+       fhir:Address.city [ fhir:value "Santiago de Chile" ];
+       fhir:Address.state [ fhir:value "Region Metropolitana" ];
+       fhir:Address.country [ fhir:value "Chile" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Element.id [ fhir:value "nationality" ];
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "code" ];
+       fhir:Extension.url [ fhir:value "code" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://www.iso.org/iso-3166-country-codes.html" ];
+           fhir:Coding.code [ fhir:value "CL" ];
+           fhir:Coding.display [ fhir:value "Chile" ]
+         ]
+       ]
+     ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-nationality" ]
+  ], [
+     fhir:index 3;
+     fhir:Element.id [ fhir:value "PatientEthnicity" ];
+     fhir:Extension.url [ fhir:value "https://www.digitalware.com.co/salud/fhir/extension/patient-ethnicity" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://deis.cl/fhir/PueblosIndigenasMinsalDecreto643" ];
+         fhir:Coding.code [ fhir:value "01" ];
+         fhir:Coding.display [ fhir:value "Mapuche" ]
+       ]
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "MR" ];
+         fhir:Coding.display [ fhir:value "Medical record number" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "http://registrocivil.cl/RUN" ];
+         fhir:Coding.code [ fhir:value "RUN" ];
+         fhir:Coding.display [ fhir:value "Rol Único Nacional" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "347827348" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "usual" ];
+     fhir:Identifier.system [ fhir:value "https://www.digitalware.com.co/salud/fhir/patient-id" ];
+     fhir:Identifier.value [ fhir:value "HC-6ef0a6d7" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [
+       fhir:value "Jake Jofré";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Element.id [ fhir:value "fathers-family" ];
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-fathers-family" ];
+         fhir:Extension.valueString [ fhir:value "Jake" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.id [ fhir:value "mothers-family" ];
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family" ];
+         fhir:Extension.valueString [ fhir:value "Jofré" ]
+       ]
+     ];
+     fhir:HumanName.given [
+       fhir:value "Maria";
+       fhir:index 0
+     ], [
+       fhir:value "Victoria";
+       fhir:index 1
+     ]
+  ], [
+     fhir:index 1;
+     fhir:HumanName.use [ fhir:value "nickname" ];
+     fhir:HumanName.text [ fhir:value "Maria Jake" ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "+56(2)1111-1111" ];
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "+56(2)2222-2222" ];
+     fhir:ContactPoint.use [ fhir:value "mobile" ]
+  ], [
+     fhir:index 2;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "jjmaria@example.com" ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1975-08-14"^^xsd:date];
+  fhir:Patient.deceasedBoolean [ fhir:value "false"^^xsd:boolean];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.text [ fhir:value "Eliodoro Yáñez NNN, depto XX, Providencia" ];
+     fhir:Address.city [ fhir:value "Providencia" ];
+     fhir:Address.state [ fhir:value "Región Metropolitana" ];
+     fhir:Address.postalCode [ fhir:value "5555555" ];
+     fhir:Address.country [ fhir:value "Chile" ]
+  ];
+  fhir:Patient.maritalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/marital-status" ];
+       fhir:Coding.code [ fhir:value "M" ];
+       fhir:Coding.display [ fhir:value "Married" ]
+     ]
+  ];
+  fhir:Patient.contact [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "person-id" ];
+       fhir:Extension.url [ fhir:value "https://www.digitalware.com.co/salud/fhir/extension/person-id" ];
+       fhir:Extension.valueIdentifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+             fhir:Coding.code [ fhir:value "MR" ];
+             fhir:Coding.display [ fhir:value "Medical record number" ]
+           ], [
+             fhir:index 1;
+             fhir:Coding.system [ fhir:value "http://registrocivil.cl/RUN" ];
+             fhir:Coding.code [ fhir:value "RUN" ];
+             fhir:Coding.display [ fhir:value "Rol Único Nacional" ]
+           ]
+         ];
+         fhir:Identifier.value [ fhir:value "134293887929" ]
+       ]
+     ];
+     fhir:Patient.contact.relationship [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0131" ];
+         fhir:Coding.code [ fhir:value "C" ];
+         fhir:Coding.display [ fhir:value "Emergency Contact" ]
+       ], [
+         fhir:index 1;
+         a sct:66839005;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "66839005" ];
+         fhir:Coding.display [ fhir:value "padre" ]
+       ]
+     ];
+     fhir:Patient.contact.name [
+       fhir:HumanName.text [ fhir:value "Jorge Jake" ]
+     ];
+     fhir:Patient.contact.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "+56(2)2222-2222" ];
+       fhir:ContactPoint.use [ fhir:value "mobile" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "jjorge@example.com" ]
+     ];
+     fhir:Patient.contact.address [
+       fhir:Address.use [ fhir:value "home" ];
+       fhir:Address.text [ fhir:value "Eliodoro Yáñez NNN, depto XX, Providencia" ];
+       fhir:Address.city [ fhir:value "Providencia" ];
+       fhir:Address.state [ fhir:value "Región Metropolitana" ];
+       fhir:Address.postalCode [ fhir:value "5555555" ];
+       fhir:Address.country [ fhir:value "Chile" ]
+     ]
+  ];
+  fhir:Patient.link [
+     fhir:index 0;
+     fhir:Patient.link.other [
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-2a6d66d1>;
+       fhir:Reference.reference [ fhir:value "Patient/Example-Patient-2a6d66d1" ]
+     ];
+     fhir:Patient.link.type [ fhir:value "replaces" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

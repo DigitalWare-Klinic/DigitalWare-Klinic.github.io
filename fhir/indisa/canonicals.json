@@ -1,5 +1,12 @@
 [
   {
+    "id": "educationalLevelChile",
+    "type": "CodeSystem",
+    "url": "http://www.subdere.gov.cl/sites/default/files/documentos/CUT_2018_v04.xls",
+    "version": "1.0",
+    "name": "educationalLevelChile"
+  },
+  {
     "id": "fhir.digital-ware.klinic-api-fhir",
     "type": "ImplementationGuide",
     "url": "https://digitalware-klinic.github.io/fhir/indisa/ImplementationGuide/fhir.digital-ware.klinic-api-fhir",
@@ -210,13 +217,6 @@
     "name": "PatientPopulationGroup"
   },
   {
-    "id": "PerfilAppointment",
-    "type": "StructureDefinition",
-    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PerfilAppointment",
-    "version": "1.0",
-    "name": "PerfilAppointment"
-  },
-  {
     "id": "Personid",
     "type": "StructureDefinition",
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Personid",
@@ -229,6 +229,20 @@
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PractitionerKlinic",
     "version": "1.0",
     "name": "PractitionerKlinic"
+  },
+  {
+    "id": "ProfileAppointment",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileAppointment",
+    "version": "1.0",
+    "name": "ProfileAppointment"
+  },
+  {
+    "id": "ProfileEncounter",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileEncounter",
+    "version": "1.0",
+    "name": "ProfileEncounter"
   },
   {
     "id": "ProfileHealthcareService",

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="Example-LocationArea-789789789789"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>status</b>: active</p><p><b>operationalStatus</b>: <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 o}">Ocupado</span></p><p><b>name</b>: Servicio hospitalario</p><p><b>alias</b>: Hospitalización</p><p><b>description</b>: Hospital medical care.</p><p><b>mode</b>: kind</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType HU}">Hospital unit</span></p><p><b>telecom</b>: <a href="tel:+5612355611">+56 12355611</a></p><p><b>partOf</b>: <a href="Location/Example-LocationBuilding-7412389635sdf556">Location/Example-LocationBuilding-7412389635sdf556</a></p><h3>HoursOfOperations</h3><table class="grid"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td></tr><tr><td>*</td><td>mon, tue, wed, thu, fri, sat, sun</td><td>true</td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <operationalStatus>
+    <system value="http://terminology.hl7.org/CodeSystem/v2-0116"/>
+    <code value="o"/>
+    <display value="Ocupado"/>
+  </operationalStatus>
+  <name value="Servicio hospitalario"/>
+  <alias value="Hospitalizaci&#xF3;n"/>
+  <description value="Hospital medical care."/>
+  <mode value="kind"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType"/>
+      <code value="HU"/>
+      <display value="Hospital unit"/>
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone"/>
+    <value value="+56 12355611"/>
+    <use value="work"/>
+  </telecom>
+  <partOf>
+    <reference value="Location/Example-LocationBuilding-7412389635sdf556"/>
+  </partOf>
+  <hoursOfOperation>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <daysOfWeek value="fri"/>
+    <daysOfWeek value="sat"/>
+    <daysOfWeek value="sun"/>
+    <allDay value="true"/>
+  </hoursOfOperation>
+</Location>
