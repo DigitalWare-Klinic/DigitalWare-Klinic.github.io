@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Coverage xmlns="http://hl7.org/fhir">
+  <id value="Example-Coverage-fa7a589f"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>status</b>: active</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/coverage-selfpay PUBLICPOL}, {http://digitalware.com.co/salud/fhir/CodeSystem/coverages-type-cl FON}">public healthcare</span></p><p><b>policyHolder</b>: <a href="Patient-Example-Patient-87356d0d.html">Generated Summary: Medical record number: 347827348 (OFFICIAL), id: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title="Codes: {http://hl7.org/fhir/ValueSet/marital-status M}">Married</span></a></p><p><b>subscriber</b>: <a href="Patient-Example-Patient-87356d0d.html">Generated Summary: Medical record number: 347827348 (OFFICIAL), id: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title="Codes: {http://hl7.org/fhir/ValueSet/marital-status M}">Married</span></a></p><p><b>beneficiary</b>: <a href="Patient-Example-Patient-87356d0d.html">Generated Summary: Medical record number: 347827348 (OFFICIAL), id: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title="Codes: {http://hl7.org/fhir/ValueSet/marital-status M}">Married</span></a></p><p><b>relationship</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}">Self</span></p><p><b>payor</b>: <a href="Organization-Example-Organization-Payor-2910416f.html">Generated Summary: id: EPS0001; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type ins}">Insurance Company</span>; name: Aseguradora Salud Completa</a></p><h3>Classes</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title="Codes: {http://example.com/planes-asegurador 00ff320e-8f5a-4f27-9862-e5083f2705f2}">Plan Meditarráneo</span></td><td>00ff320e-8f5a-4f27-9862-e5083f2705f2</td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/coverage-selfpay"/>
+      <code value="PUBLICPOL"/>
+      <display value="public healthcare"/>
+    </coding>
+    <coding>
+      <system value="http://digitalware.com.co/salud/fhir/CodeSystem/coverages-type-cl"/>
+      <code value="FON"/>
+      <display value="FONASA"/>
+    </coding>
+  </type>
+  <policyHolder>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </policyHolder>
+  <subscriber>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </subscriber>
+  <beneficiary>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </beneficiary>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/subscriber-relationship"/>
+      <code value="self"/>
+      <display value="Self"/>
+    </coding>
+  </relationship>
+  <payor>
+    <reference value="Organization/Example-Organization-Payor-2910416f"/>
+  </payor>
+  <class>
+    <type>
+      <coding>
+        <system value="http://example.com/planes-asegurador"/>
+        <code value="00ff320e-8f5a-4f27-9862-e5083f2705f2"/>
+        <display value="Plan Meditarr&#xE1;neo"/>
+      </coding>
+    </type>
+    <value value="00ff320e-8f5a-4f27-9862-e5083f2705f2"/>
+  </class>
+</Coverage>

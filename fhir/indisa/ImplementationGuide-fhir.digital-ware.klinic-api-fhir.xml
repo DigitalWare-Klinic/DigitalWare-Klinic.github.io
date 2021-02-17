@@ -11,7 +11,7 @@
   <name value="klinicapifhir"/>
   <title value="Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A."/>
   <status value="active"/>
-  <date value="2021-02-12T10:46:28-05:00"/>
+  <date value="2021-02-16T22:23:11-05:00"/>
   <publisher value="DigitalWare S.A. - Klinic-HIS"/>
   <description value="FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A."/>
   <packageId value="fhir.digital-ware.klinic-api-fhir"/>
@@ -235,10 +235,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PatientKlinic"/>
+        <reference value="StructureDefinition/PractitionerKlinic"/>
       </reference>
-      <name value="Patient Klinic API FHIR"/>
-      <description value="Perfil HL7 FHIR para el recurso Patient refinado para el contexto Klinic API FHIR."/>
+      <name value="PractitionerKlinic"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -246,9 +245,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PractitionerKlinic"/>
+        <reference value="StructureDefinition/ProfileAccountKlinic"/>
       </reference>
-      <name value="PractitionerKlinic"/>
+      <name value="Account"/>
+      <description value="Account patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -266,9 +266,20 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ProfileEncounter"/>
+        <reference value="StructureDefinition/ProfileCoverageKlinic"/>
       </reference>
-      <name value="Encuentro"/>
+      <name value="Coverage patient"/>
+      <description value="patient&#39;s health coverage policy."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProfileEncounterKlinic"/>
+      </reference>
+      <name value="Encounter"/>
       <description value="Encounter of Patient."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -280,6 +291,17 @@
         <reference value="StructureDefinition/ProfileHealthcareService"/>
       </reference>
       <name value="HealthcareService"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProfilePatientKlinic"/>
+      </reference>
+      <name value="Patient"/>
+      <description value="HL7 FHIR profile for Patient resource refined for Klinic API FHIR context."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -301,6 +323,16 @@
         <reference value="StructureDefinition/SlotKlinic"/>
       </reference>
       <name value="SlotKlinic"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AccountAmount"/>
+      </reference>
+      <name value="Account Amount"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -333,6 +365,17 @@
       </reference>
       <name value="Lugar de nacimiento"/>
       <description value="Localizacon geografica de nacimiento del paciente."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BonusAmount"/>
+      </reference>
+      <name value="Bonus Amount"/>
+      <description value="Bonus amount"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -377,6 +420,39 @@
       </reference>
       <name value="ChargeBed"/>
       <description value="Indicator if a bed was charged or not"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ClinicalDischargeType"/>
+      </reference>
+      <name value="Clinical discharge type"/>
+      <description value="Clinical discharge type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/consultationsAmount"/>
+      </reference>
+      <name value="Consultations Amount"/>
+      <description value="Consultations amount"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/copaymentAmount"/>
+      </reference>
+      <name value="Copayment Amount"/>
+      <description value="Copayment amount"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -453,6 +529,28 @@
       </reference>
       <name value="Lugar expedicion identificacion paciente"/>
       <description value="Lugar expedicion identificacion paciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedicalFeesKlinic"/>
+      </reference>
+      <name value="Medical Fees"/>
+      <description value="Medical fees"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medicationAmount"/>
+      </reference>
+      <name value="Medication Amount"/>
+      <description value="Medication amount"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -580,9 +678,31 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/RateModality"/>
+      </reference>
+      <name value="Rate modality"/>
+      <description value="Rate modality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/RegionalLocationIdentifier"/>
       </reference>
       <name value="Identificador regional"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Religion"/>
+      </reference>
+      <name value="Religion"/>
+      <description value="Religion patient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -600,6 +720,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/suppliesAmount"/>
+      </reference>
+      <name value="Supplies Amount"/>
+      <description value="Supplies amount"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/VirtualBed"/>
       </reference>
       <name value="VirtualBed"/>
@@ -608,13 +739,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
+        <valueString value="Account"/>
       </extension>
       <reference>
-        <reference value="Location/7412389635sdf556"/>
+        <reference value="Account/Example-Account-6f674e96"/>
       </reference>
-      <name value="7412389635sdf556"/>
-      <description value="Clinica y urgencias"/>
+      <name value="Example-Account-6f674e96"/>
+      <description value="Cuenta referente a las atenciones del paciente en el ambito ambulatorio."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -639,12 +770,42 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/Example-Coverage-fa7a571e"/>
+      </reference>
+      <name value="Example-Coverage-fa7a571e"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/Example-Coverage-fa7a589f"/>
+      </reference>
+      <name value="Example-Coverage-fa7a589f"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Encounter"/>
       </extension>
       <reference>
         <reference value="Encounter/Example-Encounter-963b1515"/>
       </reference>
       <name value="Example-Encounter-963b1515"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/Example-Encounter-963y1945"/>
+      </reference>
+      <name value="Example-Encounter-963y1945"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -688,6 +849,17 @@
       </reference>
       <name value="Example-LocationBed-7819819819bn915"/>
       <description value="Patient bed."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/Example-LocationBuilding-7412389635sdf556"/>
+      </reference>
+      <name value="Example-LocationBuilding-7412389635sdf556"/>
+      <description value="Clinic and emergencies"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -742,6 +914,16 @@
         <reference value="Organization/Example-Organization-213134sd15148f"/>
       </reference>
       <name value="Example-Organization-213134sd15148f"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Example-Organization-Payor-2910416f"/>
+      </reference>
+      <name value="Example-Organization-Payor-2910416f"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

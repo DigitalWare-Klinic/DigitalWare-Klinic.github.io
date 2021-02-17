@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>FHIR.DIGITAL-WARE.KLINIC-API-FHIR\Example-Encounter-963y1945 - XML Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1.61"}
+    h3,h4,h5,h6{--heading-prefix:"1.61"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.</span><br/>1.0 - trial-use</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a name="38c4e9c6-a74a-4216-8452-d11ebaa025f4">​</a><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+        <!-- <li>
+        <a href="downloads.html">Downloads</a>
+      </li> -->
+    </ul>
+  </li>
+</ul>      
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Example-Encounter-963y1945</b></li>
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <div id="segment-content">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A. - Local Development build (v1.0). See the <a href="https://digitalware-klinic.github.io/fhir/indisa/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Encounter-Example-Encounter-963y1945.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Encounter-Example-Encounter-963y1945.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Encounter-Example-Encounter-963y1945.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Example-Encounter-963y1945 - XML Representation</h2>
+
+<p><a href="Encounter-Example-Encounter-963y1945.xml" no-download="true">Raw xml</a> | <a download="null" href="Encounter-Example-Encounter-963y1945.xml">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml"><code class="language-xml">
+
+&lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">Encounter</a> xmlns="http://hl7.org/fhir"&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Example-Encounter-963y1945"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style="color: maroon"&gt;Exception generating Narrative: null&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>="clinicalDischargeType"&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://digitalware.com.co/salud/fhir/CodeSystem/clinicaldischarges-type-INDISA"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="03"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Alta Medica"/&gt;
+    &lt;/valueCoding&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>="rateModality"&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://digitalware.com.co/salud/fhir/CodeSystem/rates-modality-INDISA"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="MODEVENT"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="EVENTO"/&gt;
+    &lt;/valueCoding&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="official"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://example.org/encounter-identifiers"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="56386090"/&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory">statusHistory</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="arrived"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.period">period</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2021-01-21T07:00:00-05:00"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2021-01-21T07:10:00-05:00"/&gt;
+    &lt;/period&gt;
+  &lt;/statusHistory&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="IMP"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="inpatient encounter"/&gt;
+  &lt;/class&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceType">serviceType</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://hl7.org/fhir/ValueSet/service-type"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="410"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Pregnancy"/&gt;
+    &lt;/coding&gt;
+  &lt;/serviceType&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.priority">priority</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/ValueSet/v3-ActPriority"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="EL"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="elective"/&gt;
+    &lt;/coding&gt;
+  &lt;/priority&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Patient/Example-Patient-87356d0d"/&gt;
+  &lt;/subject&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.basedOn">basedOn</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ServiceRequest/Example-ServiceRequest-GN4035"/&gt;
+  &lt;/basedOn&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant">participant</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://hl7.org/fhir/ValueSet/encounter-participant-type"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="CON"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Consultant"/&gt;
+      &lt;/coding&gt;
+    &lt;/type&gt;
+  &lt;/participant&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.appointment">appointment</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Appointment/Example-Appointment-05c86b7b-5drg"/&gt;
+  &lt;/appointment&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2021-01-21T07:00:00-05:00"/&gt;
+  &lt;/period&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.reasonCode">reasonCode</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://hl7.org/fhir/ValueSet/encounter-reason"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="888003"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Efecto fetal o neonatal de la pérdida de sangre materna"/&gt;
+    &lt;/coding&gt;
+  &lt;/reasonCode&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.reasonReference">reasonReference</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Observation/Example-Observation-3956g"/&gt;
+  &lt;/reasonReference&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis">diagnosis</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.condition">condition</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Condition/Example-Condition-5647f"/&gt;
+    &lt;/condition&gt;
+  &lt;/diagnosis&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.account">account</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Account/Example-Account-6f678t45"/&gt;
+  &lt;/account&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Location/Example-LocationBed-7819819819bn915"/&gt;
+    &lt;/location&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.period">period</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2021-01-21T08:00:00-05:00"/&gt;
+    &lt;/period&gt;
+  &lt;/location&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Organization/Example-Organization-213134sd15148f"/&gt;
+  &lt;/serviceProvider&gt;
+&lt;/Encounter&gt;</code></pre>
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+      <div class="inner-wrapper">
+        <p><a name="9ed24ac6-c70a-4a58-b610-e04058a07a9b">​</a>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="null">DigitalWare S.A. - Klinic-HIS</a>.  Package fhir.digital-ware.klinic-api-fhir#1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 16, 2021 22:23-0500">2021-02-16</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

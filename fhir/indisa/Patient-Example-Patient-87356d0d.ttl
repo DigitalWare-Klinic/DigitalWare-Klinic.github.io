@@ -24,7 +24,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>genderIdentity</b>: <span title=\"Codes: {http://snomed.info/sct 703117000}\">Female</span></p><p><b>Birth Place</b>: Santiago de Chile Region Metropolitana Chile </p><blockquote><p><b>nationality</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {https://www.iso.org/iso-3166-country-codes.html CL}\">Chile</span></p></blockquote><p><b>identifier</b>: Medical record number: 347827348 (OFFICIAL), id: HC-6ef0a6d7 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME)</p><p><b>telecom</b>: <a href=\"tel:+56(2)1111-1111\">+56(2)1111-1111</a>, <a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:jjmaria@example.com\">jjmaria@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1975-08-14</p><p><b>deceased</b>: false</p><p><b>address</b>: Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</p><p><b>maritalStatus</b>: <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td></td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0131 C}, {http://snomed.info/sct 66839005}\">Emergency Contact</span></td><td>Jorge Jake</td><td><a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:jjorge@example.com\">jjorge@example.com</a></td><td>Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</td></tr></table><h3>Links</h3><table class=\"grid\"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href=\"Patient-Example-Patient-2a6d66d1.html\">Generated Summary: Medical record number: 3782734 (OFFICIAL), id: HC-6ef0a6d7-22009365ae97 (USUAL); active; Maria Jake (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></td><td>replaces</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>genderIdentity</b>: <span title=\"Codes: {http://snomed.info/sct 703117000}\">Female</span></p><p><b>Birth Place</b>: Santiago de Chile Region Metropolitana Chile </p><blockquote><p><b>nationality</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {https://www.iso.org/iso-3166-country-codes.html CL}\">Chile</span></p></blockquote><p><b>disability</b>: <span title=\"Codes: {http://snomed.info/sct 120}\">Fisical</span></p><p><b>religion</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation 1041}\">Roman Catholic Church</span></p><p><b>identifier</b>: Medical record number: 347827348 (OFFICIAL), id: HC-6ef0a6d7 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME)</p><p><b>telecom</b>: <a href=\"tel:+56(2)1111-1111\">+56(2)1111-1111</a>, <a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:jjmaria@example.com\">jjmaria@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1975-08-14</p><p><b>deceased</b>: false</p><p><b>address</b>: Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</p><p><b>maritalStatus</b>: <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td></td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0131 C}, {http://snomed.info/sct 66839005}\">Emergency Contact</span></td><td>Jorge Jake</td><td><a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:jjorge@example.com\">jjorge@example.com</a></td><td>Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</td></tr></table><h3>Links</h3><table class=\"grid\"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href=\"Patient-Example-Patient-2a6d66d1.html\">Generated Summary: Medical record number: 3782734 (OFFICIAL), id: HC-6ef0a6d7-22009365ae97 (USUAL); active; Maria Jake (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></td><td>replaces</td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -67,7 +67,7 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-nationality" ]
   ], [
      fhir:index 3;
-     fhir:Element.id [ fhir:value "PatientEthnicity" ];
+     fhir:Element.id [ fhir:value "patientEthnicity" ];
      fhir:Extension.url [ fhir:value "https://www.digitalware.com.co/salud/fhir/extension/patient-ethnicity" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
@@ -75,6 +75,77 @@
          fhir:Coding.system [ fhir:value "http://deis.cl/fhir/PueblosIndigenasMinsalDecreto643" ];
          fhir:Coding.code [ fhir:value "01" ];
          fhir:Coding.display [ fhir:value "Mapuche" ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Element.id [ fhir:value "patientPopulationGroup" ];
+     fhir:Extension.url [ fhir:value "https://www.digitalware.com.co/salud/fhir/extension/patient-population-group" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.digitalware.com.co/salud/fhir/ValueSet/population-group" ];
+         fhir:Coding.code [ fhir:value "01" ];
+         fhir:Coding.display [ fhir:value "Indigenas" ]
+       ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Element.id [ fhir:value "disability" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-disability" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:120;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "120" ];
+         fhir:Coding.display [ fhir:value "Fisical" ]
+       ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Element.id [ fhir:value "educationalLevel" ];
+     fhir:Extension.url [ fhir:value "https://www.digitalware.com.co/salud/fhir/extension/educational-level" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.digitalware.com.co/salud/fhir/ValueSet/educational-level" ];
+         fhir:Coding.code [ fhir:value "02" ];
+         fhir:Coding.display [ fhir:value "Basica" ]
+       ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:Element.id [ fhir:value "ocupation" ];
+     fhir:Extension.url [ fhir:value "https://www.digitalware.com.co/salud/fhir/extension/ocupation" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.digitalware.com.co/salud/fhir/extension/ocupation" ];
+         fhir:Coding.code [ fhir:value "15" ];
+         fhir:Coding.display [ fhir:value "Ama de casa" ]
+       ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:Element.id [ fhir:value "employerOrganization" ];
+     fhir:Extension.url [ fhir:value "https://www.digitalware.com.co/salud/fhir/extension/employer-organization" ];
+     fhir:Extension.valueString [ fhir:value "Papeleria el Sol" ]
+  ], [
+     fhir:index 9;
+     fhir:Element.id [ fhir:value "newBorn" ];
+     fhir:Extension.url [ fhir:value "https://hl7co.github.io/digitalware/klinic-api-fhir/StructureDefinition/NewBorn" ];
+     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 10;
+     fhir:Element.id [ fhir:value "religion" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-religion" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation" ];
+         fhir:Coding.code [ fhir:value "1041" ];
+         fhir:Coding.display [ fhir:value "Roman Catholic Church" ]
        ]
      ]
   ];

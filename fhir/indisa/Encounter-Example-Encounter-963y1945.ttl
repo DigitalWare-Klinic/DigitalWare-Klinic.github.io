@@ -1,0 +1,145 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Encounter/Example-Encounter-963y1945> a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Encounter-963y1945"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "clinicalDischargeType" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/clinicaldischarges-type-INDISA" ];
+       fhir:Coding.code [ fhir:value "03" ];
+       fhir:Coding.display [ fhir:value "Alta Medica" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "rateModality" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/rates-modality-INDISA" ];
+       fhir:Coding.code [ fhir:value "MODEVENT" ];
+       fhir:Coding.display [ fhir:value "EVENTO" ]
+     ]
+  ];
+  fhir:Encounter.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://example.org/encounter-identifiers" ];
+     fhir:Identifier.value [ fhir:value "56386090" ]
+  ];
+  fhir:Encounter.status [ fhir:value "active"];
+  fhir:Encounter.statusHistory [
+     fhir:index 0;
+     fhir:Encounter.statusHistory.status [ fhir:value "arrived" ];
+     fhir:Encounter.statusHistory.period [
+       fhir:Period.start [ fhir:value "2021-01-21T07:00:00-05:00"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2021-01-21T07:10:00-05:00"^^xsd:dateTime ]
+     ]
+  ];
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" ];
+     fhir:Coding.code [ fhir:value "IMP" ];
+     fhir:Coding.display [ fhir:value "inpatient encounter" ]
+  ];
+  fhir:Encounter.serviceType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/service-type" ];
+       fhir:Coding.code [ fhir:value "410" ];
+       fhir:Coding.display [ fhir:value "Pregnancy" ]
+     ]
+  ];
+  fhir:Encounter.priority [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/ValueSet/v3-ActPriority" ];
+       fhir:Coding.code [ fhir:value "EL" ];
+       fhir:Coding.display [ fhir:value "elective" ]
+     ]
+  ];
+  fhir:Encounter.subject [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d>;
+     fhir:Reference.reference [ fhir:value "Patient/Example-Patient-87356d0d" ]
+  ];
+  fhir:Encounter.basedOn [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/ServiceRequest/Example-ServiceRequest-GN4035>;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/Example-ServiceRequest-GN4035" ]
+  ];
+  fhir:Encounter.participant [
+     fhir:index 0;
+     fhir:Encounter.participant.type [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/encounter-participant-type" ];
+         fhir:Coding.code [ fhir:value "CON" ];
+         fhir:Coding.display [ fhir:value "Consultant" ]
+       ]
+     ]
+  ];
+  fhir:Encounter.appointment [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Appointment/Example-Appointment-05c86b7b-5drg>;
+     fhir:Reference.reference [ fhir:value "Appointment/Example-Appointment-05c86b7b-5drg" ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2021-01-21T07:00:00-05:00"^^xsd:dateTime ]
+  ];
+  fhir:Encounter.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/encounter-reason" ];
+       fhir:Coding.code [ fhir:value "888003" ];
+       fhir:Coding.display [ fhir:value "Efecto fetal o neonatal de la pérdida de sangre materna" ]
+     ]
+  ];
+  fhir:Encounter.reasonReference [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Observation/Example-Observation-3956g>;
+     fhir:Reference.reference [ fhir:value "Observation/Example-Observation-3956g" ]
+  ];
+  fhir:Encounter.diagnosis [
+     fhir:index 0;
+     fhir:Encounter.diagnosis.condition [
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Condition/Example-Condition-5647f>;
+       fhir:Reference.reference [ fhir:value "Condition/Example-Condition-5647f" ]
+     ]
+  ];
+  fhir:Encounter.account [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Account/Example-Account-6f678t45>;
+     fhir:Reference.reference [ fhir:value "Account/Example-Account-6f678t45" ]
+  ];
+  fhir:Encounter.location [
+     fhir:index 0;
+     fhir:Encounter.location.location [
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationBed-7819819819bn915>;
+       fhir:Reference.reference [ fhir:value "Location/Example-LocationBed-7819819819bn915" ]
+     ];
+     fhir:Encounter.location.status [ fhir:value "active" ];
+     fhir:Encounter.location.period [
+       fhir:Period.start [ fhir:value "2021-01-21T08:00:00-05:00"^^xsd:dateTime ]
+     ]
+  ];
+  fhir:Encounter.serviceProvider [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Organization/Example-Organization-213134sd15148f>;
+     fhir:Reference.reference [ fhir:value "Organization/Example-Organization-213134sd15148f" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Encounter/Example-Encounter-963y1945.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

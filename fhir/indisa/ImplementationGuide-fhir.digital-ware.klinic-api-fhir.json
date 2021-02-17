@@ -10,7 +10,7 @@
   "name": "klinicapifhir",
   "title": "Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.",
   "status": "active",
-  "date": "2021-02-12T10:46:28-05:00",
+  "date": "2021-02-16T22:23:11-05:00",
   "publisher": "DigitalWare S.A. - Klinic-HIS",
   "description": "FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A.",
   "packageId": "fhir.digital-ware.klinic-api-fhir",
@@ -355,10 +355,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/PatientKlinic"
+          "reference": "StructureDefinition/PractitionerKlinic"
         },
-        "name": "Patient Klinic API FHIR",
-        "description": "Perfil HL7 FHIR para el recurso Patient refinado para el contexto Klinic API FHIR.",
+        "name": "PractitionerKlinic",
         "exampleBoolean": false
       },
       {
@@ -369,9 +368,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/PractitionerKlinic"
+          "reference": "StructureDefinition/ProfileAccountKlinic"
         },
-        "name": "PractitionerKlinic",
+        "name": "Account",
+        "description": "Account patient",
         "exampleBoolean": false
       },
       {
@@ -395,9 +395,23 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/ProfileEncounter"
+          "reference": "StructureDefinition/ProfileCoverageKlinic"
         },
-        "name": "Encuentro",
+        "name": "Coverage patient",
+        "description": "patient's health coverage policy.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileEncounterKlinic"
+        },
+        "name": "Encounter",
         "description": "Encounter of Patient.",
         "exampleBoolean": false
       },
@@ -412,6 +426,20 @@
           "reference": "StructureDefinition/ProfileHealthcareService"
         },
         "name": "HealthcareService",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfilePatientKlinic"
+        },
+        "name": "Patient",
+        "description": "HL7 FHIR profile for Patient resource refined for Klinic API FHIR context.",
         "exampleBoolean": false
       },
       {
@@ -439,6 +467,19 @@
           "reference": "StructureDefinition/SlotKlinic"
         },
         "name": "SlotKlinic",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/AccountAmount"
+        },
+        "name": "Account Amount",
         "exampleBoolean": false
       },
       {
@@ -480,6 +521,20 @@
         },
         "name": "Lugar de nacimiento",
         "description": "Localizacon geografica de nacimiento del paciente.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BonusAmount"
+        },
+        "name": "Bonus Amount",
+        "description": "Bonus amount",
         "exampleBoolean": false
       },
       {
@@ -536,6 +591,48 @@
         },
         "name": "ChargeBed",
         "description": "Indicator if a bed was charged or not",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ClinicalDischargeType"
+        },
+        "name": "Clinical discharge type",
+        "description": "Clinical discharge type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/consultationsAmount"
+        },
+        "name": "Consultations Amount",
+        "description": "Consultations amount",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/copaymentAmount"
+        },
+        "name": "Copayment Amount",
+        "description": "Copayment amount",
         "exampleBoolean": false
       },
       {
@@ -633,6 +730,34 @@
         },
         "name": "Lugar expedicion identificacion paciente",
         "description": "Lugar expedicion identificacion paciente",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MedicalFeesKlinic"
+        },
+        "name": "Medical Fees",
+        "description": "Medical fees",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/medicationAmount"
+        },
+        "name": "Medication Amount",
+        "description": "Medication amount",
         "exampleBoolean": false
       },
       {
@@ -796,9 +921,37 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/RateModality"
+        },
+        "name": "Rate modality",
+        "description": "Rate modality",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/RegionalLocationIdentifier"
         },
         "name": "Identificador regional",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Religion"
+        },
+        "name": "Religion",
+        "description": "Religion patient.",
         "exampleBoolean": false
       },
       {
@@ -822,6 +975,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/suppliesAmount"
+        },
+        "name": "Supplies Amount",
+        "description": "Supplies amount",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/VirtualBed"
         },
         "name": "VirtualBed",
@@ -832,14 +999,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
+            "valueString": "Account"
           }
         ],
         "reference": {
-          "reference": "Location/7412389635sdf556"
+          "reference": "Account/Example-Account-6f674e96"
         },
-        "name": "7412389635sdf556",
-        "description": "Clinica y urgencias",
+        "name": "Example-Account-6f674e96",
+        "description": "Cuenta referente a las atenciones del paciente en el ambito ambulatorio.",
         "exampleBoolean": true
       },
       {
@@ -872,6 +1039,32 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/Example-Coverage-fa7a571e"
+        },
+        "name": "Example-Coverage-fa7a571e",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/Example-Coverage-fa7a589f"
+        },
+        "name": "Example-Coverage-fa7a589f",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Encounter"
           }
         ],
@@ -879,6 +1072,19 @@
           "reference": "Encounter/Example-Encounter-963b1515"
         },
         "name": "Example-Encounter-963b1515",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/Example-Encounter-963y1945"
+        },
+        "name": "Example-Encounter-963y1945",
         "exampleBoolean": true
       },
       {
@@ -934,6 +1140,20 @@
         },
         "name": "Example-LocationBed-7819819819bn915",
         "description": "Patient bed.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          }
+        ],
+        "reference": {
+          "reference": "Location/Example-LocationBuilding-7412389635sdf556"
+        },
+        "name": "Example-LocationBuilding-7412389635sdf556",
+        "description": "Clinic and emergencies",
         "exampleBoolean": true
       },
       {
@@ -1003,6 +1223,19 @@
           "reference": "Organization/Example-Organization-213134sd15148f"
         },
         "name": "Example-Organization-213134sd15148f",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Example-Organization-Payor-2910416f"
+        },
+        "name": "Example-Organization-Payor-2910416f",
         "exampleBoolean": true
       },
       {

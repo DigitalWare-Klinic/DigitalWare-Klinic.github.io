@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="Example-Encounter-963y1945"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b style="color: maroon">Exception generating Narrative: null</b></p></div>
+  </text>
+  <extension id="clinicalDischargeType">
+    <valueCoding>
+      <system value="http://digitalware.com.co/salud/fhir/CodeSystem/clinicaldischarges-type-INDISA"/>
+      <code value="03"/>
+      <display value="Alta Medica"/>
+    </valueCoding>
+  </extension>
+  <extension id="rateModality">
+    <valueCoding>
+      <system value="http://digitalware.com.co/salud/fhir/CodeSystem/rates-modality-INDISA"/>
+      <code value="MODEVENT"/>
+      <display value="EVENTO"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <system value="https://example.org/encounter-identifiers"/>
+    <value value="56386090"/>
+  </identifier>
+  <status value="active"/>
+  <statusHistory>
+    <status value="arrived"/>
+    <period>
+      <start value="2021-01-21T07:00:00-05:00"/>
+      <end value="2021-01-21T07:10:00-05:00"/>
+    </period>
+  </statusHistory>
+  <class>
+    <system value="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"/>
+    <code value="IMP"/>
+    <display value="inpatient encounter"/>
+  </class>
+  <serviceType>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/service-type"/>
+      <code value="410"/>
+      <display value="Pregnancy"/>
+    </coding>
+  </serviceType>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/ValueSet/v3-ActPriority"/>
+      <code value="EL"/>
+      <display value="elective"/>
+    </coding>
+  </priority>
+  <subject>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </subject>
+  <basedOn>
+    <reference value="ServiceRequest/Example-ServiceRequest-GN4035"/>
+  </basedOn>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/ValueSet/encounter-participant-type"/>
+        <code value="CON"/>
+        <display value="Consultant"/>
+      </coding>
+    </type>
+  </participant>
+  <appointment>
+    <reference value="Appointment/Example-Appointment-05c86b7b-5drg"/>
+  </appointment>
+  <period>
+    <start value="2021-01-21T07:00:00-05:00"/>
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/encounter-reason"/>
+      <code value="888003"/>
+      <display value="Efecto fetal o neonatal de la p&#xE9;rdida de sangre materna"/>
+    </coding>
+  </reasonCode>
+  <reasonReference>
+    <reference value="Observation/Example-Observation-3956g"/>
+  </reasonReference>
+  <diagnosis>
+    <condition>
+      <reference value="Condition/Example-Condition-5647f"/>
+    </condition>
+  </diagnosis>
+  <account>
+    <reference value="Account/Example-Account-6f678t45"/>
+  </account>
+  <location>
+    <location>
+      <reference value="Location/Example-LocationBed-7819819819bn915"/>
+    </location>
+    <status value="active"/>
+    <period>
+      <start value="2021-01-21T08:00:00-05:00"/>
+    </period>
+  </location>
+  <serviceProvider>
+    <reference value="Organization/Example-Organization-213134sd15148f"/>
+  </serviceProvider>
+</Encounter>

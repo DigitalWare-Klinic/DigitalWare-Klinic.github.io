@@ -4,6 +4,13 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/AccountAmount",
+      "title": "Account Amount",
+      "types": [
+        "Money"
+      ]
+    },
+    {
       "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/AvailableTelemedicine",
       "title": "Admite telemedicina:",
       "types": [
@@ -37,6 +44,13 @@
       ]
     },
     {
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/BonusAmount",
+      "title": "Bonus Amount",
+      "types": [
+        "Money"
+      ]
+    },
+    {
       "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CancelationDateTime",
       "title": "Fecha/Hora cancelacion cita",
       "types": [
@@ -61,6 +75,20 @@
       "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ChargeBed",
       "title": "ChargeBed",
       "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ClinicalDischargeType",
+      "title": "Clinical discharge type",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
         "boolean"
       ]
     },
@@ -152,6 +180,17 @@
         "string",
         "string",
         "Period"
+      ]
+    },
+    {
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/MedicalFeesKlinic",
+      "title": "Medical Fees",
+      "types": [
+        "Money",
+        "string",
+        "Extension",
+        "decimal",
+        "code"
       ]
     },
     {
@@ -311,6 +350,20 @@
       ]
     },
     {
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RateModality",
+      "title": "Rate modality",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
       "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RegionalLocationIdentifier",
       "title": "Identificador regional",
       "types": [
@@ -323,6 +376,24 @@
         "string",
         "Period",
         "Reference"
+      ]
+    },
+    {
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Religion",
+      "title": "Religion",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
       ]
     },
     {
@@ -343,6 +414,28 @@
       "title": "VirtualBed",
       "types": [
         "boolean"
+      ]
+    },
+    {
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/consultationsAmount",
+      "title": "Consultations Amount",
+      "types": [
+        "Money",
+        "string",
+        "Extension",
+        "decimal",
+        "code"
+      ]
+    },
+    {
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/copaymentAmount",
+      "title": "Copayment Amount",
+      "types": [
+        "Money",
+        "string",
+        "Extension",
+        "decimal",
+        "code"
       ]
     },
     {
@@ -403,6 +496,28 @@
         "Dosage",
         "Meta"
       ]
+    },
+    {
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/medicationAmount",
+      "title": "Medication Amount",
+      "types": [
+        "Money",
+        "string",
+        "Extension",
+        "decimal",
+        "code"
+      ]
+    },
+    {
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/suppliesAmount",
+      "title": "Supplies Amount",
+      "types": [
+        "Money",
+        "string",
+        "Extension",
+        "decimal",
+        "code"
+      ]
     }
   ],
   "profiles": {
@@ -434,16 +549,16 @@
         "title": "OrganizationHealthcareProvider"
       }
     ],
-    "Patient": [
-      {
-        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PatientKlinic",
-        "title": "Patient Klinic API FHIR"
-      }
-    ],
     "Practitioner": [
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PractitionerKlinic",
         "title": "PractitionerKlinic"
+      }
+    ],
+    "Account": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileAccountKlinic",
+        "title": "Account"
       }
     ],
     "Appointment": [
@@ -452,16 +567,28 @@
         "title": "ProfileAppointment"
       }
     ],
+    "Coverage": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileCoverageKlinic",
+        "title": "Coverage patient"
+      }
+    ],
     "Encounter": [
       {
-        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileEncounter",
-        "title": "Encuentro"
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileEncounterKlinic",
+        "title": "Encounter"
       }
     ],
     "HealthcareService": [
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileHealthcareService",
         "title": "HealthcareService"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfilePatientKlinic",
+        "title": "Patient"
       }
     ],
     "Schedule": [
@@ -480,6 +607,27 @@
   "usage": {
     "Organization/Example-Organization-213134sd15148f-1": [
       "Organization.partOf"
+    ],
+    "http://digitalware.com.co/salud/fhir/StructureDefinition/account-amount": [
+      "Account"
+    ],
+    "http://digitalware.com.co/salud/fhir/StructureDefinition/bonus-amount": [
+      "Account.coverage"
+    ],
+    "http://digitalware.com.co/salud/fhir/StructureDefinition/consultations-amount": [
+      "Account"
+    ],
+    "http://digitalware.com.co/salud/fhir/StructureDefinition/copayment-amount": [
+      "Account.coverage"
+    ],
+    "http://digitalware.com.co/salud/fhir/StructureDefinition/medical-fees": [
+      "Account"
+    ],
+    "http://digitalware.com.co/salud/fhir/StructureDefinition/medication-amount": [
+      "Account"
+    ],
+    "http://digitalware.com.co/salud/fhir/StructureDefinition/supplies-amount": [
+      "Account"
     ],
     "http://hl7.org/fhir/StructureDefinition/Location-BedWithOxygen": [
       "Location"
@@ -522,10 +670,16 @@
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
       "Patient"
     ],
+    "http://hl7.org/fhir/StructureDefinition/patient-disability": [
+      "Patient"
+    ],
     "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity": [
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-religion": [
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
@@ -552,6 +706,9 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/AccountAmount": [
+      "Account"
+    ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/AvailableTelemedicine": [
       "Schedule"
     ],
@@ -560,6 +717,9 @@
     ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/BirthPlace": [
       "Patient"
+    ],
+    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/BonusAmount": [
+      "Account.coverage"
     ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CancelationDateTime": [
       "Appointment"
@@ -573,6 +733,9 @@
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ChargeBed": [
       "Location"
     ],
+    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ClinicalDischargeType": [
+      "Encounter"
+    ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Disability": [
       "Patient"
     ],
@@ -584,6 +747,9 @@
     ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/GenderIdentity": [
       "Patient"
+    ],
+    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/MedicalFeesKlinic": [
+      "Account"
     ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/MultipleOccupation": [
       "Location"
@@ -609,11 +775,29 @@
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/QuotaPatient": [
       "Schedule"
     ],
+    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RateModality": [
+      "Encounter"
+    ],
+    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Religion": [
+      "Patient"
+    ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ServicePartOf": [
       "HealthcareService"
     ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/VirtualBed": [
       "Location"
+    ],
+    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/consultationsAmount": [
+      "Account"
+    ],
+    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/medicationAmount": [
+      "Account"
+    ],
+    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/suppliesAmount": [
+      "Account"
+    ],
+    "https://hl7co.github.io/digitalware/klinic-api-fhir/StructureDefinition/NewBorn": [
+      "Patient"
     ],
     "https://www.digitalware.com.co/salud/fhir/StructureDefinition/available-telemedicine": [
       "Schedule"
@@ -633,7 +817,19 @@
     "https://www.digitalware.com.co/salud/fhir/StrutureDefinition/hours-of-operation": [
       "Schedule.planningHorizon"
     ],
+    "https://www.digitalware.com.co/salud/fhir/extension/educational-level": [
+      "Patient"
+    ],
+    "https://www.digitalware.com.co/salud/fhir/extension/employer-organization": [
+      "Patient"
+    ],
+    "https://www.digitalware.com.co/salud/fhir/extension/ocupation": [
+      "Patient"
+    ],
     "https://www.digitalware.com.co/salud/fhir/extension/patient-ethnicity": [
+      "Patient"
+    ],
+    "https://www.digitalware.com.co/salud/fhir/extension/patient-population-group": [
       "Patient"
     ],
     "https://www.digitalware.com.co/salud/fhir/extension/person-id": [

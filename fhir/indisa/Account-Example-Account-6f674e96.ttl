@@ -1,0 +1,139 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Account/Example-Account-6f674e96> a fhir:Account;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Account-6f674e96"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: 7bdf5072-607d-4284-b048-81334857e4ae</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://digitalware.com.co/salud/fhir/CodeSystem/account-type PART}\">Particular</span></p><p><b>subject</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: Medical record number: 347827348 (OFFICIAL), id: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></p><p><b>servicePeriod</b>: 21/01/2021, 7:15:00 a. m. --&gt; 21/01/2021, 7:50:00 a. m.</p><blockquote><p><b>coverage</b></p><p><b>coverage</b>: <a href=\"Coverage-Example-Coverage-fa7a571e.html\">Generated Summary: status: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/coverage-selfpay EHCPOL}, {http://digitalware.com.co/salud/fhir/CodeSystem/coverages-type-cl ISA}\">extended healthcare</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span></a></p><p><b>priority</b>: 1</p></blockquote><blockquote><p><b>coverage</b></p><p><b>coverage</b>: <a href=\"Coverage-Example-Coverage-fa7a571e.html\">Generated Summary: status: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/coverage-selfpay EHCPOL}, {http://digitalware.com.co/salud/fhir/CodeSystem/coverages-type-cl ISA}\">extended healthcare</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span></a></p></blockquote><p><b>owner</b>: <a href=\"Organization-Example-Organization-213134sd15148f.html\">Generated Summary: id: 1100133335-1 (OFFICIAL), id: 12789312-9 (OFFICIAL); active; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/organization-type prov}\">Healthcare Provider</span>; name: Indisa clinica de la familia; alias: INDISA; Phone: 3430000</a></p><p><b>description</b>: Cuenta referente a las atenciones del paciente en el ambito ambulatorio.</p><h3>Guarantors</h3><table class=\"grid\"><tr><td>-</td><td><b>Party</b></td><td><b>OnHold</b></td><td><b>Period</b></td></tr><tr><td>*</td><td><a href=\"RelatedPerson/Example-RelatedPerson-2374\">RelatedPerson/Example-RelatedPerson-2374</a></td><td>true</td><td>21/01/2021, 7:50:00 a. m. --&gt; 21/01/2021, 8:00:00 a. m.</td></tr></table><p><b>partOf</b>: <a href=\"Account/Example-Account-62fadf1d\">Account/Example-Account-62fadf1d</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "accountAmount" ];
+     fhir:Extension.url [ fhir:value "http://digitalware.com.co/salud/fhir/StructureDefinition/account-amount" ];
+     fhir:Extension.valueMoney [
+       fhir:Money.value [ fhir:value "1300000"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "CLP" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "medicalFees" ];
+     fhir:Extension.url [ fhir:value "http://digitalware.com.co/salud/fhir/StructureDefinition/medical-fees" ];
+     fhir:Extension.valueMoney [
+       fhir:Money.value [ fhir:value "800000"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "CLP" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Element.id [ fhir:value "medicationAmount" ];
+     fhir:Extension.url [ fhir:value "http://digitalware.com.co/salud/fhir/StructureDefinition/medication-amount" ];
+     fhir:Extension.valueMoney [
+       fhir:Money.value [ fhir:value "800000"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "CLP" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Element.id [ fhir:value "suppliesAmount" ];
+     fhir:Extension.url [ fhir:value "http://digitalware.com.co/salud/fhir/StructureDefinition/supplies-amount" ];
+     fhir:Extension.valueMoney [
+       fhir:Money.value [ fhir:value "800000"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "CLP" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Element.id [ fhir:value "consultationsAmount" ];
+     fhir:Extension.url [ fhir:value "http://digitalware.com.co/salud/fhir/StructureDefinition/consultations-amount" ];
+     fhir:Extension.valueMoney [
+       fhir:Money.value [ fhir:value "800000"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "CLP" ]
+     ]
+  ];
+  fhir:Account.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://indisa.cl/account-identifier" ];
+     fhir:Identifier.value [ fhir:value "7bdf5072-607d-4284-b048-81334857e4ae" ]
+  ];
+  fhir:Account.status [ fhir:value "active"];
+  fhir:Account.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/account-type" ];
+       fhir:Coding.code [ fhir:value "PART" ];
+       fhir:Coding.display [ fhir:value "Particular" ]
+     ]
+  ];
+  fhir:Account.subject [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d>;
+     fhir:Reference.reference [ fhir:value "Patient/Example-Patient-87356d0d" ]
+  ];
+  fhir:Account.servicePeriod [
+     fhir:Period.start [ fhir:value "2021-01-21T07:15:00-05:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2021-01-21T07:50:00-05:00"^^xsd:dateTime ]
+  ];
+  fhir:Account.coverage [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "bonusAmount" ];
+       fhir:Extension.url [ fhir:value "http://digitalware.com.co/salud/fhir/StructureDefinition/bonus-amount" ];
+       fhir:Extension.valueMoney [
+         fhir:Money.value [ fhir:value "750000"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "CLP" ]
+       ]
+     ];
+     fhir:Account.coverage.coverage [
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Coverage/Example-Coverage-fa7a571e>;
+       fhir:Reference.reference [ fhir:value "Coverage/Example-Coverage-fa7a571e" ]
+     ];
+     fhir:Account.coverage.priority [ fhir:value "1"^^xsd:positiveInteger ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "copaymentAmount " ];
+       fhir:Extension.url [ fhir:value "http://digitalware.com.co/salud/fhir/StructureDefinition/copayment-amount" ];
+       fhir:Extension.valueMoney [
+         fhir:Money.value [ fhir:value "550000"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "CLP" ]
+       ]
+     ];
+     fhir:Account.coverage.coverage [
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Coverage/Example-Coverage-fa7a571e>;
+       fhir:Reference.reference [ fhir:value "Coverage/Example-Coverage-fa7a571e" ]
+     ]
+  ];
+  fhir:Account.owner [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Organization/Example-Organization-213134sd15148f>;
+     fhir:Reference.reference [ fhir:value "Organization/Example-Organization-213134sd15148f" ]
+  ];
+  fhir:Account.description [ fhir:value "Cuenta referente a las atenciones del paciente en el ambito ambulatorio."];
+  fhir:Account.guarantor [
+     fhir:index 0;
+     fhir:Account.guarantor.party [
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/RelatedPerson/Example-RelatedPerson-2374>;
+       fhir:Reference.reference [ fhir:value "RelatedPerson/Example-RelatedPerson-2374" ]
+     ];
+     fhir:Account.guarantor.onHold [ fhir:value "true"^^xsd:boolean ];
+     fhir:Account.guarantor.period [
+       fhir:Period.start [ fhir:value "2021-01-21T07:50:00-05:00"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2021-01-21T08:00:00-05:00"^^xsd:dateTime ]
+     ]
+  ];
+  fhir:Account.partOf [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Account/Example-Account-62fadf1d>;
+     fhir:Reference.reference [ fhir:value "Account/Example-Account-62fadf1d" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Account/Example-Account-6f674e96.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
