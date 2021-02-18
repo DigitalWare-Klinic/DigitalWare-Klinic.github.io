@@ -84,6 +84,13 @@
     "name": "ClinicalDischargeType"
   },
   {
+    "id": "CoverageIdentificationType",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CoverageIdentificationType",
+    "version": "1.0",
+    "name": "CoverageIdentificationType"
+  },
+  {
     "id": "Disability",
     "type": "StructureDefinition",
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Disability",
@@ -299,6 +306,13 @@
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileSchedule",
     "version": "1.0",
     "name": "ProfileSchedule"
+  },
+  {
+    "id": "ProfileServiceRequestKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileServiceRequestKlinic",
+    "version": "1.0",
+    "name": "ProfileServiceRequestKlinic"
   },
   {
     "id": "QuotaPatient",

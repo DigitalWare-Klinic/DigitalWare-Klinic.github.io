@@ -14,19 +14,11 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Element.id [ fhir:value "clinicalDischargeType" ];
-     fhir:Extension.valueCoding [
-       fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/clinicaldischarges-type-INDISA" ];
-       fhir:Coding.code [ fhir:value "03" ];
-       fhir:Coding.display [ fhir:value "Alta Medica" ]
-     ]
-  ], [
-     fhir:index 1;
      fhir:Element.id [ fhir:value "rateModality" ];
      fhir:Extension.valueCoding [
        fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/rates-modality-INDISA" ];
-       fhir:Coding.code [ fhir:value "MODEVENT" ];
-       fhir:Coding.display [ fhir:value "EVENTO" ]
+       fhir:Coding.code [ fhir:value "cerrada" ];
+       fhir:Coding.display [ fhir:value "cerrada/preferent" ]
      ]
   ];
   fhir:Encounter.identifier [
@@ -35,13 +27,27 @@
      fhir:Identifier.system [ fhir:value "https://example.org/encounter-identifiers" ];
      fhir:Identifier.value [ fhir:value "56386090" ]
   ];
-  fhir:Encounter.status [ fhir:value "active"];
+  fhir:Encounter.status [ fhir:value "finished"];
   fhir:Encounter.statusHistory [
      fhir:index 0;
      fhir:Encounter.statusHistory.status [ fhir:value "arrived" ];
      fhir:Encounter.statusHistory.period [
        fhir:Period.start [ fhir:value "2021-01-21T07:00:00-05:00"^^xsd:dateTime ];
        fhir:Period.end [ fhir:value "2021-01-21T07:10:00-05:00"^^xsd:dateTime ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Encounter.statusHistory.status [ fhir:value "in-progress" ];
+     fhir:Encounter.statusHistory.period [
+       fhir:Period.start [ fhir:value "2021-01-21T07:10:00-05:00"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2021-01-23T10:45:00-05:00"^^xsd:dateTime ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Encounter.statusHistory.status [ fhir:value "finished" ];
+     fhir:Encounter.statusHistory.period [
+       fhir:Period.start [ fhir:value "2021-01-23T10:45:00-05:00"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2021-01-23T11:00:00-05:00"^^xsd:dateTime ]
      ]
   ];
   fhir:Encounter.class [
@@ -92,7 +98,8 @@
      fhir:Reference.reference [ fhir:value "Appointment/Example-Appointment-05c86b7b-5drg" ]
   ];
   fhir:Encounter.period [
-     fhir:Period.start [ fhir:value "2021-01-21T07:00:00-05:00"^^xsd:dateTime ]
+     fhir:Period.start [ fhir:value "2021-01-21T07:00:00-05:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2021-01-23T11:00:00-05:00"^^xsd:dateTime ]
   ];
   fhir:Encounter.reasonCode [
      fhir:index 0;
@@ -111,8 +118,30 @@
   fhir:Encounter.diagnosis [
      fhir:index 0;
      fhir:Encounter.diagnosis.condition [
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Condition/Example-Condition-3490d>;
+       fhir:Reference.reference [ fhir:value "Condition/Example-Condition-3490d" ]
+     ];
+     fhir:Encounter.diagnosis.use [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/diagnosis-role" ];
+         fhir:Coding.code [ fhir:value "AD" ];
+         fhir:Coding.display [ fhir:value "Admission diagnosis" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Encounter.diagnosis.condition [
        fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Condition/Example-Condition-5647f>;
        fhir:Reference.reference [ fhir:value "Condition/Example-Condition-5647f" ]
+     ];
+     fhir:Encounter.diagnosis.use [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/diagnosis-role" ];
+         fhir:Coding.code [ fhir:value "DD" ];
+         fhir:Coding.display [ fhir:value "Discharge diagnosis" ]
+       ]
      ]
   ];
   fhir:Encounter.account [
@@ -120,15 +149,43 @@
      fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Account/Example-Account-6f678t45>;
      fhir:Reference.reference [ fhir:value "Account/Example-Account-6f678t45" ]
   ];
+  fhir:Encounter.hospitalization [
+     fhir:Encounter.hospitalization.preAdmissionIdentifier [
+       fhir:Identifier.use [ fhir:value "official" ];
+       fhir:Identifier.system [ fhir:value "https://example.org/preadmision-identifiers" ];
+       fhir:Identifier.value [ fhir:value "7649" ]
+     ];
+     fhir:Encounter.hospitalization.origin [
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationRoom-1245687952>;
+       fhir:Reference.reference [ fhir:value "Location/Example-LocationRoom-1245687952" ]
+     ];
+     fhir:Encounter.hospitalization.admitSource [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/admit-source" ];
+         fhir:Coding.code [ fhir:value "mp" ];
+         fhir:Coding.display [ fhir:value "Medical Practitioner/physician referral" ]
+       ]
+     ];
+     fhir:Encounter.hospitalization.dischargeDisposition [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/discharge-disposition" ];
+         fhir:Coding.code [ fhir:value "home" ];
+         fhir:Coding.display [ fhir:value "home" ]
+       ]
+     ]
+  ];
   fhir:Encounter.location [
      fhir:index 0;
      fhir:Encounter.location.location [
        fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationBed-7819819819bn915>;
        fhir:Reference.reference [ fhir:value "Location/Example-LocationBed-7819819819bn915" ]
      ];
-     fhir:Encounter.location.status [ fhir:value "active" ];
+     fhir:Encounter.location.status [ fhir:value "completed" ];
      fhir:Encounter.location.period [
-       fhir:Period.start [ fhir:value "2021-01-21T08:00:00-05:00"^^xsd:dateTime ]
+       fhir:Period.start [ fhir:value "2021-01-21T08:00:00-05:00"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2021-01-23T11:00:00-05:00"^^xsd:dateTime ]
      ]
   ];
   fhir:Encounter.serviceProvider [

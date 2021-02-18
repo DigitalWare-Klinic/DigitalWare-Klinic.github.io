@@ -5,18 +5,11 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b style="color: maroon">Exception generating Narrative: null</b></p></div>
   </text>
-  <extension id="clinicalDischargeType">
-    <valueCoding>
-      <system value="http://digitalware.com.co/salud/fhir/CodeSystem/clinicaldischarges-type-INDISA"/>
-      <code value="03"/>
-      <display value="Alta Medica"/>
-    </valueCoding>
-  </extension>
   <extension id="rateModality">
     <valueCoding>
       <system value="http://digitalware.com.co/salud/fhir/CodeSystem/rates-modality-INDISA"/>
-      <code value="MODEVENT"/>
-      <display value="EVENTO"/>
+      <code value="cerrada"/>
+      <display value="cerrada/preferent"/>
     </valueCoding>
   </extension>
   <identifier>
@@ -24,12 +17,26 @@
     <system value="https://example.org/encounter-identifiers"/>
     <value value="56386090"/>
   </identifier>
-  <status value="active"/>
+  <status value="finished"/>
   <statusHistory>
     <status value="arrived"/>
     <period>
       <start value="2021-01-21T07:00:00-05:00"/>
       <end value="2021-01-21T07:10:00-05:00"/>
+    </period>
+  </statusHistory>
+  <statusHistory>
+    <status value="in-progress"/>
+    <period>
+      <start value="2021-01-21T07:10:00-05:00"/>
+      <end value="2021-01-23T10:45:00-05:00"/>
+    </period>
+  </statusHistory>
+  <statusHistory>
+    <status value="finished"/>
+    <period>
+      <start value="2021-01-23T10:45:00-05:00"/>
+      <end value="2021-01-23T11:00:00-05:00"/>
     </period>
   </statusHistory>
   <class>
@@ -71,6 +78,7 @@
   </appointment>
   <period>
     <start value="2021-01-21T07:00:00-05:00"/>
+    <end value="2021-01-23T11:00:00-05:00"/>
   </period>
   <reasonCode>
     <coding>
@@ -84,19 +92,63 @@
   </reasonReference>
   <diagnosis>
     <condition>
+      <reference value="Condition/Example-Condition-3490d"/>
+    </condition>
+    <use>
+      <coding>
+        <system value="http://hl7.org/fhir/ValueSet/diagnosis-role"/>
+        <code value="AD"/>
+        <display value="Admission diagnosis"/>
+      </coding>
+    </use>
+  </diagnosis>
+  <diagnosis>
+    <condition>
       <reference value="Condition/Example-Condition-5647f"/>
     </condition>
+    <use>
+      <coding>
+        <system value="http://hl7.org/fhir/ValueSet/diagnosis-role"/>
+        <code value="DD"/>
+        <display value="Discharge diagnosis"/>
+      </coding>
+    </use>
   </diagnosis>
   <account>
     <reference value="Account/Example-Account-6f678t45"/>
   </account>
+  <hospitalization>
+    <preAdmissionIdentifier>
+      <use value="official"/>
+      <system value="https://example.org/preadmision-identifiers"/>
+      <value value="7649"/>
+    </preAdmissionIdentifier>
+    <origin>
+      <reference value="Location/Example-LocationRoom-1245687952"/>
+    </origin>
+    <admitSource>
+      <coding>
+        <system value="http://hl7.org/fhir/ValueSet/admit-source"/>
+        <code value="mp"/>
+        <display value="Medical Practitioner/physician referral"/>
+      </coding>
+    </admitSource>
+    <dischargeDisposition>
+      <coding>
+        <system value="http://digitalware.com.co/salud/fhir/CodeSystem/discharge-disposition"/>
+        <code value="home"/>
+        <display value="home"/>
+      </coding>
+    </dischargeDisposition>
+  </hospitalization>
   <location>
     <location>
       <reference value="Location/Example-LocationBed-7819819819bn915"/>
     </location>
-    <status value="active"/>
+    <status value="completed"/>
     <period>
       <start value="2021-01-21T08:00:00-05:00"/>
+      <end value="2021-01-23T11:00:00-05:00"/>
     </period>
   </location>
   <serviceProvider>

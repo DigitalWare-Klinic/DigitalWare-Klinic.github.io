@@ -428,6 +428,7 @@
         "path": "Extension.value[x].code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+        "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size\r\n\r\nPossible values:  abierta / libre elección, cerrada/preferente, GES-CAEC.",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
@@ -619,6 +620,7 @@
       {
         "id": "Extension.value[x].code",
         "path": "Extension.value[x].code",
+        "comment": "Note that FHIR strings SHALL NOT exceed 1MB in size\r\n\r\nPossible values:  abierta / libre elección, cerrada/preferente, GES-CAEC.",
         "min": 1
       },
       {

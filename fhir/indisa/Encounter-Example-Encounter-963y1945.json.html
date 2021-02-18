@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"1.61"}
-    h3,h4,h5,h6{--heading-prefix:"1.61"}</style>
+    <style type="text/css">h2{--heading-prefix:"1.63"}
+    h3,h4,h5,h6{--heading-prefix:"1.63"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -69,7 +69,7 @@
             <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul class="nav navbar-nav">
-  <li><a name="639d0633-53d8-4e38-ab78-dfa61b638ff0">​</a><a href="index.html">IG Home</a></li>
+  <li><a name="998a1e69-eb25-415e-8088-e9639659777c">​</a><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">
@@ -169,19 +169,11 @@
   },
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.extension">extension</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.id">id</a>" : "clinicalDischargeType",
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://digitalware.com.co/salud/fhir/CodeSystem/clinicaldischarges-type-INDISA",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "03",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Alta Medica"
-      }
-    },
-    {
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.id">id</a>" : "rateModality",
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://digitalware.com.co/salud/fhir/CodeSystem/rates-modality-INDISA",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "MODEVENT",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "EVENTO"
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "cerrada",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "cerrada/preferent"
       }
     }
   ],
@@ -192,13 +184,27 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "56386090"
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "finished",
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory">statusHistory</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.status">status</a>" : "arrived",
       "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.period">period</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2021-01-21T07:00:00-05:00",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2021-01-21T07:10:00-05:00"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.status">status</a>" : "in-progress",
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.period">period</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2021-01-21T07:10:00-05:00",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2021-01-23T10:45:00-05:00"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.status">status</a>" : "finished",
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.period">period</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2021-01-23T10:45:00-05:00",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2021-01-23T11:00:00-05:00"
       }
     }
   ],
@@ -254,7 +260,8 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2021-01-21T07:00:00-05:00"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2021-01-21T07:00:00-05:00",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2021-01-23T11:00:00-05:00"
   },
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.reasonCode">reasonCode</a>" : [
     {
@@ -275,7 +282,30 @@
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis">diagnosis</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.condition">condition</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Condition/Example-Condition-3490d"
+      },
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.use">use</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "AD",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Admission diagnosis"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.condition">condition</a>" : {
         "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Condition/Example-Condition-5647f"
+      },
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.use">use</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "DD",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Discharge diagnosis"
+          }
+        ]
       }
     }
   ],
@@ -284,14 +314,43 @@
       "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Account/Example-Account-6f678t45"
     }
   ],
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization">hospitalization</a>" : {
+    "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.preAdmissionIdentifier">preAdmissionIdentifier</a>" : {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://example.org/preadmision-identifiers",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "7649"
+    },
+    "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.origin">origin</a>" : {
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Location/Example-LocationRoom-1245687952"
+    },
+    "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.admitSource">admitSource</a>" : {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/ValueSet/admit-source",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "mp",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Medical Practitioner/physician referral"
+        }
+      ]
+    },
+    "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.dischargeDisposition">dischargeDisposition</a>" : {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://digitalware.com.co/salud/fhir/CodeSystem/discharge-disposition",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "home",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "home"
+        }
+      ]
+    }
+  },
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>" : {
         "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Location/Example-LocationBed-7819819819bn915"
       },
-      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">status</a>" : "active",
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">status</a>" : "completed",
       "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.period">period</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2021-01-21T08:00:00-05:00"
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2021-01-21T08:00:00-05:00",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2021-01-23T11:00:00-05:00"
       }
     }
   ],
@@ -325,8 +384,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="986e3db0-c2cb-409f-8a22-33ec49b8a1a1">​</a>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="null">DigitalWare S.A. - Klinic-HIS</a>.  Package fhir.digital-ware.klinic-api-fhir#1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 16, 2021 22:23-0500">2021-02-16</span>
+        <p><a name="fb41e07e-8941-4654-9b12-fc72169749c6">​</a>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="null">DigitalWare S.A. - Klinic-HIS</a>.  Package fhir.digital-ware.klinic-api-fhir#1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 18, 2021 06:24-0500">2021-02-18</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

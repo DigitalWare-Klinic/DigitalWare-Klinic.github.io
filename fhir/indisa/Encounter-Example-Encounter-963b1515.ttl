@@ -17,8 +17,8 @@
      fhir:Element.id [ fhir:value "rateModality" ];
      fhir:Extension.valueCoding [
        fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/rates-modality-INDISA" ];
-       fhir:Coding.code [ fhir:value "MODEVENT" ];
-       fhir:Coding.display [ fhir:value "EVENTO" ]
+       fhir:Coding.code [ fhir:value "cerrada" ];
+       fhir:Coding.display [ fhir:value "cerrada/preferente" ]
      ]
   ];
   fhir:Encounter.identifier [

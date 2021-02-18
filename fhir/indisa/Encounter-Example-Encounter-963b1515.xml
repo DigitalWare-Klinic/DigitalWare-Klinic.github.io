@@ -8,8 +8,8 @@
   <extension id="rateModality">
     <valueCoding>
       <system value="http://digitalware.com.co/salud/fhir/CodeSystem/rates-modality-INDISA"/>
-      <code value="MODEVENT"/>
-      <display value="EVENTO"/>
+      <code value="cerrada"/>
+      <display value="cerrada/preferente"/>
     </valueCoding>
   </extension>
   <identifier>

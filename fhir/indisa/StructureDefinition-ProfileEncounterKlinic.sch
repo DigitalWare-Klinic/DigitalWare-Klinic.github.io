@@ -19,7 +19,6 @@
       <sch:assert test="count(f:statusHistory) &lt;= 1">statusHistory: maximum cardinality of 'statusHistory' is 1</sch:assert>
       <sch:assert test="count(f:classHistory) &lt;= 1">classHistory: maximum cardinality of 'classHistory' is 1</sch:assert>
       <sch:assert test="count(f:length) &lt;= 0">length: maximum cardinality of 'length' is 0</sch:assert>
-      <sch:assert test="count(f:hospitalization) &lt;= 0">hospitalization: maximum cardinality of 'hospitalization' is 0</sch:assert>
       <sch:assert test="count(f:location) &gt;= 1">location: minimum cardinality of 'location' is 1</sch:assert>
       <sch:assert test="count(f:location) &lt;= 1">location: maximum cardinality of 'location' is 1</sch:assert>
     </sch:rule>
@@ -94,8 +93,6 @@
     <sch:rule context="f:Encounter/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
@@ -1301,6 +1298,16 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Encounter/f:hospitalization</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:reAdmission) &lt;= 0">reAdmission: maximum cardinality of 'reAdmission' is 0</sch:assert>
+      <sch:assert test="count(f:dietPreference) &lt;= 0">dietPreference: maximum cardinality of 'dietPreference' is 0</sch:assert>
+      <sch:assert test="count(f:specialCourtesy) &lt;= 0">specialCourtesy: maximum cardinality of 'specialCourtesy' is 0</sch:assert>
+      <sch:assert test="count(f:specialArrangement) &lt;= 0">specialArrangement: maximum cardinality of 'specialArrangement' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Encounter.hospitalization</sch:title>
     <sch:rule context="f:Encounter/f:hospitalization">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -1321,9 +1328,77 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Encounter/f:hospitalization/f:preAdmissionIdentifier</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:preAdmissionIdentifier">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
+      <sch:assert test="count(f:type) &lt;= 0">type: maximum cardinality of 'type' is 0</sch:assert>
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:value) &gt;= 1">value: minimum cardinality of 'value' is 1</sch:assert>
+      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
+      <sch:assert test="count(f:period) &lt;= 0">period: maximum cardinality of 'period' is 0</sch:assert>
+      <sch:assert test="count(f:assigner) &lt;= 0">assigner: maximum cardinality of 'assigner' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Encounter.hospitalization.preAdmissionIdentifier</sch:title>
     <sch:rule context="f:Encounter/f:hospitalization/f:preAdmissionIdentifier">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.preAdmissionIdentifier.extension</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:preAdmissionIdentifier/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.preAdmissionIdentifier.use</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:preAdmissionIdentifier/f:use">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.preAdmissionIdentifier.type</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:preAdmissionIdentifier/f:type">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.preAdmissionIdentifier.system</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:preAdmissionIdentifier/f:system">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.preAdmissionIdentifier.value</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:preAdmissionIdentifier/f:value">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.preAdmissionIdentifier.period</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:preAdmissionIdentifier/f:period">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.preAdmissionIdentifier.assigner</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:preAdmissionIdentifier/f:assigner">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Encounter/f:hospitalization/f:origin</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:origin">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:reference) &gt;= 1">reference: minimum cardinality of 'reference' is 1</sch:assert>
+      <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
+      <sch:assert test="count(f:type) &lt;= 0">type: maximum cardinality of 'type' is 0</sch:assert>
+      <sch:assert test="count(f:identifier) &lt;= 0">identifier: maximum cardinality of 'identifier' is 0</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 0">display: maximum cardinality of 'display' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -1333,8 +1408,116 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>Encounter.hospitalization.origin.extension</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:origin/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.origin.reference</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:origin/f:reference">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.origin.type</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:origin/f:type">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.origin.identifier</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:origin/f:identifier">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.origin.display</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:origin/f:display">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Encounter/f:hospitalization/f:admitSource</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:admitSource">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 0">text: maximum cardinality of 'text' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Encounter.hospitalization.admitSource</sch:title>
     <sch:rule context="f:Encounter/f:hospitalization/f:admitSource">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.admitSource.extension</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:admitSource/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Encounter/f:hospitalization/f:admitSource/f:coding</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:admitSource/f:coding">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:version) &lt;= 0">version: maximum cardinality of 'version' is 0</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:display) &gt;= 1">display: minimum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:userSelected) &lt;= 0">userSelected: maximum cardinality of 'userSelected' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.admitSource.coding</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:admitSource/f:coding">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.admitSource.coding.extension</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:admitSource/f:coding/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.admitSource.coding.system</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:admitSource/f:coding/f:system">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.admitSource.coding.version</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:admitSource/f:coding/f:version">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.admitSource.coding.code</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:admitSource/f:coding/f:code">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.admitSource.coding.display</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:admitSource/f:coding/f:display">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.admitSource.coding.userSelected</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:admitSource/f:coding/f:userSelected">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.admitSource.text</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:admitSource/f:text">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -1363,14 +1546,133 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Encounter/f:hospitalization/f:destination</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:destination">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:reference) &gt;= 1">reference: minimum cardinality of 'reference' is 1</sch:assert>
+      <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
+      <sch:assert test="count(f:type) &lt;= 0">type: maximum cardinality of 'type' is 0</sch:assert>
+      <sch:assert test="count(f:identifier) &lt;= 0">identifier: maximum cardinality of 'identifier' is 0</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 0">display: maximum cardinality of 'display' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Encounter.hospitalization.destination</sch:title>
     <sch:rule context="f:Encounter/f:hospitalization/f:destination">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>Encounter.hospitalization.destination.extension</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:destination/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.destination.reference</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:destination/f:reference">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.destination.type</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:destination/f:type">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.destination.identifier</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:destination/f:identifier">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.destination.display</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:destination/f:display">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Encounter/f:hospitalization/f:dischargeDisposition</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:dischargeDisposition">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 0">text: maximum cardinality of 'text' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Encounter.hospitalization.dischargeDisposition</sch:title>
     <sch:rule context="f:Encounter/f:hospitalization/f:dischargeDisposition">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.dischargeDisposition.extension</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:dischargeDisposition/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Encounter/f:hospitalization/f:dischargeDisposition/f:coding</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:dischargeDisposition/f:coding">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:version) &lt;= 0">version: maximum cardinality of 'version' is 0</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:display) &gt;= 1">display: minimum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:userSelected) &lt;= 0">userSelected: maximum cardinality of 'userSelected' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.dischargeDisposition.coding</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:dischargeDisposition/f:coding">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.dischargeDisposition.coding.extension</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:dischargeDisposition/f:coding/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.dischargeDisposition.coding.system</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:dischargeDisposition/f:coding/f:system">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.dischargeDisposition.coding.version</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:dischargeDisposition/f:coding/f:version">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.dischargeDisposition.coding.code</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:dischargeDisposition/f:coding/f:code">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.dischargeDisposition.coding.display</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:dischargeDisposition/f:coding/f:display">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.dischargeDisposition.coding.userSelected</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:dischargeDisposition/f:coding/f:userSelected">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Encounter.hospitalization.dischargeDisposition.text</sch:title>
+    <sch:rule context="f:Encounter/f:hospitalization/f:dischargeDisposition/f:text">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

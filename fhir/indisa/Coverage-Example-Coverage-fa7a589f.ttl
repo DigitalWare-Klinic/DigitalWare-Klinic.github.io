@@ -14,6 +14,16 @@
   ];
   fhir:Coverage.status [ fhir:value "active"];
   fhir:Coverage.type [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "coverageIdentificationType" ];
+       fhir:Extension.url [ fhir:value "https://www.digitalware.com.co/salud/fhir/StrutureDefinition/identification-coverage-type" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/identification-coverage-type" ];
+         fhir:Coding.code [ fhir:value "TB" ];
+         fhir:Coding.display [ fhir:value "TRAMO B" ]
+       ]
+     ];
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/coverage-selfpay" ];

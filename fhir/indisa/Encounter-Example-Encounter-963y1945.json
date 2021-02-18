@@ -7,19 +7,11 @@
   },
   "extension": [
     {
-      "id": "clinicalDischargeType",
-      "valueCoding": {
-        "system": "http://digitalware.com.co/salud/fhir/CodeSystem/clinicaldischarges-type-INDISA",
-        "code": "03",
-        "display": "Alta Medica"
-      }
-    },
-    {
       "id": "rateModality",
       "valueCoding": {
         "system": "http://digitalware.com.co/salud/fhir/CodeSystem/rates-modality-INDISA",
-        "code": "MODEVENT",
-        "display": "EVENTO"
+        "code": "cerrada",
+        "display": "cerrada/preferent"
       }
     }
   ],
@@ -30,13 +22,27 @@
       "value": "56386090"
     }
   ],
-  "status": "active",
+  "status": "finished",
   "statusHistory": [
     {
       "status": "arrived",
       "period": {
         "start": "2021-01-21T07:00:00-05:00",
         "end": "2021-01-21T07:10:00-05:00"
+      }
+    },
+    {
+      "status": "in-progress",
+      "period": {
+        "start": "2021-01-21T07:10:00-05:00",
+        "end": "2021-01-23T10:45:00-05:00"
+      }
+    },
+    {
+      "status": "finished",
+      "period": {
+        "start": "2021-01-23T10:45:00-05:00",
+        "end": "2021-01-23T11:00:00-05:00"
       }
     }
   ],
@@ -92,7 +98,8 @@
     }
   ],
   "period": {
-    "start": "2021-01-21T07:00:00-05:00"
+    "start": "2021-01-21T07:00:00-05:00",
+    "end": "2021-01-23T11:00:00-05:00"
   },
   "reasonCode": [
     {
@@ -113,7 +120,30 @@
   "diagnosis": [
     {
       "condition": {
+        "reference": "Condition/Example-Condition-3490d"
+      },
+      "use": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ValueSet/diagnosis-role",
+            "code": "AD",
+            "display": "Admission diagnosis"
+          }
+        ]
+      }
+    },
+    {
+      "condition": {
         "reference": "Condition/Example-Condition-5647f"
+      },
+      "use": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ValueSet/diagnosis-role",
+            "code": "DD",
+            "display": "Discharge diagnosis"
+          }
+        ]
       }
     }
   ],
@@ -122,14 +152,43 @@
       "reference": "Account/Example-Account-6f678t45"
     }
   ],
+  "hospitalization": {
+    "preAdmissionIdentifier": {
+      "use": "official",
+      "system": "https://example.org/preadmision-identifiers",
+      "value": "7649"
+    },
+    "origin": {
+      "reference": "Location/Example-LocationRoom-1245687952"
+    },
+    "admitSource": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/ValueSet/admit-source",
+          "code": "mp",
+          "display": "Medical Practitioner/physician referral"
+        }
+      ]
+    },
+    "dischargeDisposition": {
+      "coding": [
+        {
+          "system": "http://digitalware.com.co/salud/fhir/CodeSystem/discharge-disposition",
+          "code": "home",
+          "display": "home"
+        }
+      ]
+    }
+  },
   "location": [
     {
       "location": {
         "reference": "Location/Example-LocationBed-7819819819bn915"
       },
-      "status": "active",
+      "status": "completed",
       "period": {
-        "start": "2021-01-21T08:00:00-05:00"
+        "start": "2021-01-21T08:00:00-05:00",
+        "end": "2021-01-23T11:00:00-05:00"
       }
     }
   ],

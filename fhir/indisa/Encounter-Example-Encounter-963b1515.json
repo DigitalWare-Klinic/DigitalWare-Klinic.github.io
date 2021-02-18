@@ -10,8 +10,8 @@
       "id": "rateModality",
       "valueCoding": {
         "system": "http://digitalware.com.co/salud/fhir/CodeSystem/rates-modality-INDISA",
-        "code": "MODEVENT",
-        "display": "EVENTO"
+        "code": "cerrada",
+        "display": "cerrada/preferente"
       }
     }
   ],

@@ -11,7 +11,7 @@
   <name value="klinicapifhir"/>
   <title value="Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A."/>
   <status value="active"/>
-  <date value="2021-02-16T22:23:11-05:00"/>
+  <date value="2021-02-18T06:24:32-05:00"/>
   <publisher value="DigitalWare S.A. - Klinic-HIS"/>
   <description value="FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A."/>
   <packageId value="fhir.digital-ware.klinic-api-fhir"/>
@@ -320,6 +320,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ProfileServiceRequestKlinic"/>
+      </reference>
+      <name value="Service Request"/>
+      <description value="Service request"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/SlotKlinic"/>
       </reference>
       <name value="SlotKlinic"/>
@@ -453,6 +464,17 @@
       </reference>
       <name value="Copayment Amount"/>
       <description value="Copayment amount"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CoverageIdentificationType"/>
+      </reference>
+      <name value="Coverage Identification Type"/>
+      <description value="Identification coverage type"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -985,6 +1007,16 @@
         <reference value="Schedule/Example-Schedule-d83f2b28"/>
       </reference>
       <name value="Example-Schedule-d83f2b28"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/Example-ServiceRequest-4948f6ad"/>
+      </reference>
+      <name value="Example-ServiceRequest-4948f6ad"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

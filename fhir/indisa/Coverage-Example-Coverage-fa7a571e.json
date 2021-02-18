@@ -7,6 +7,17 @@
   },
   "status": "active",
   "type": {
+    "extension": [
+      {
+        "id": "coverageIdentificationType",
+        "url": "https://www.digitalware.com.co/salud/fhir/StrutureDefinition/identification-coverage-type",
+        "valueCoding": {
+          "system": "http://digitalware.com.co/salud/fhir/CodeSystem/identification-coverage-type",
+          "code": "CB",
+          "display": "Cruz Blanca"
+        }
+      }
+    ],
     "coding": [
       {
         "system": "http://terminology.hl7.org/CodeSystem/coverage-selfpay",

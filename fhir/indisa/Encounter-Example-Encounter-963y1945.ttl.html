@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"1.61"}
-    h3,h4,h5,h6{--heading-prefix:"1.61"}</style>
+    <style type="text/css">h2{--heading-prefix:"1.63"}
+    h3,h4,h5,h6{--heading-prefix:"1.63"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -69,7 +69,7 @@
             <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul class="nav navbar-nav">
-  <li><a name="dc04ad2a-6dd0-4a10-8dd7-fcc0dd33494a">​</a><a href="index.html">IG Home</a></li>
+  <li><a name="53856b99-e166-4813-b65b-cc62a175455d">​</a><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">
@@ -176,18 +176,11 @@
   ];
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.extension">fhir:DomainResource.extension</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "clinicalDischargeType" ];
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCoding</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://digitalware.com.co/salud/fhir/CodeSystem/clinicaldischarges-type-INDISA" ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "03" ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Alta Medica" ]     ]
-  ], [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "rateModality" ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCoding</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://digitalware.com.co/salud/fhir/CodeSystem/rates-modality-INDISA" ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "MODEVENT" ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "EVENTO" ]     ]
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "cerrada" ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "cerrada/preferent" ]     ]
   ];
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">fhir:Encounter.identifier</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -195,13 +188,25 @@
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "https://example.org/encounter-identifiers" ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "56386090" ]
   ];
-  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">fhir:Encounter.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "active"];
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">fhir:Encounter.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "finished"];
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory">fhir:Encounter.statusHistory</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.status">fhir:Encounter.statusHistory.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "arrived" ];
      <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.period">fhir:Encounter.statusHistory.period</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-01-21T07:00:00-05:00"^^xsd:dateTime ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-01-21T07:10:00-05:00"^^xsd:dateTime ]     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.status">fhir:Encounter.statusHistory.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "in-progress" ];
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.period">fhir:Encounter.statusHistory.period</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-01-21T07:10:00-05:00"^^xsd:dateTime ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-01-23T10:45:00-05:00"^^xsd:dateTime ]     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.status">fhir:Encounter.statusHistory.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "finished" ];
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.statusHistory.period">fhir:Encounter.statusHistory.period</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-01-23T10:45:00-05:00"^^xsd:dateTime ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-01-23T11:00:00-05:00"^^xsd:dateTime ]     ]
   ];
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">fhir:Encounter.class</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" ];
@@ -244,7 +249,8 @@
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Appointment/Example-Appointment-05c86b7b-5drg" ]
   ];
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">fhir:Encounter.period</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-01-21T07:00:00-05:00"^^xsd:dateTime ]
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-01-21T07:00:00-05:00"^^xsd:dateTime ];
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-01-23T11:00:00-05:00"^^xsd:dateTime ]
   ];
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.reasonCode">fhir:Encounter.reasonCode</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -261,19 +267,56 @@
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis">fhir:Encounter.diagnosis</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.condition">fhir:Encounter.diagnosis.condition</a> [
-       <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Condition/Example-Condition-5647f" ]     ]
+       <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Condition/Example-Condition-3490d" ]     ];
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.use">fhir:Encounter.diagnosis.use</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/ValueSet/diagnosis-role" ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "AD" ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Admission diagnosis" ]       ]     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.condition">fhir:Encounter.diagnosis.condition</a> [
+       <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Condition/Example-Condition-5647f" ]     ];
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.use">fhir:Encounter.diagnosis.use</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/ValueSet/diagnosis-role" ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "DD" ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Discharge diagnosis" ]       ]     ]
   ];
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.account">fhir:Encounter.account</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Account/Example-Account-6f678t45" ]
   ];
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization">fhir:Encounter.hospitalization</a> [
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.preAdmissionIdentifier">fhir:Encounter.hospitalization.preAdmissionIdentifier</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "official" ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "https://example.org/preadmision-identifiers" ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "7649" ]     ];
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.origin">fhir:Encounter.hospitalization.origin</a> [
+       <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Location/Example-LocationRoom-1245687952" ]     ];
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.admitSource">fhir:Encounter.hospitalization.admitSource</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/ValueSet/admit-source" ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "mp" ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Medical Practitioner/physician referral" ]       ]     ];
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.dischargeDisposition">fhir:Encounter.hospitalization.dischargeDisposition</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://digitalware.com.co/salud/fhir/CodeSystem/discharge-disposition" ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "home" ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "home" ]       ]     ]
+  ];
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">fhir:Encounter.location</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">fhir:Encounter.location.location</a> [
        <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Location/Example-LocationBed-7819819819bn915" ]     ];
-     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">fhir:Encounter.location.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "active" ];
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">fhir:Encounter.location.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "completed" ];
      <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.period">fhir:Encounter.location.period</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-01-21T08:00:00-05:00"^^xsd:dateTime ]     ]
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-01-21T08:00:00-05:00"^^xsd:dateTime ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-01-23T11:00:00-05:00"^^xsd:dateTime ]     ]
   ];
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">fhir:Encounter.serviceProvider</a> [
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Organization/Example-Organization-213134sd15148f" ]
@@ -312,8 +355,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="3049d96a-9307-4ef3-bfb8-6f777f14c599">​</a>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="null">DigitalWare S.A. - Klinic-HIS</a>.  Package fhir.digital-ware.klinic-api-fhir#1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 16, 2021 22:23-0500">2021-02-16</span>
+        <p><a name="6c3dbc10-cdd2-4f61-ab3d-f49e67763e96">​</a>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="null">DigitalWare S.A. - Klinic-HIS</a>.  Package fhir.digital-ware.klinic-api-fhir#1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 18, 2021 06:24-0500">2021-02-18</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

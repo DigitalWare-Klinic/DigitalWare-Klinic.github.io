@@ -10,7 +10,7 @@
   "name": "klinicapifhir",
   "title": "Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.",
   "status": "active",
-  "date": "2021-02-16T22:23:11-05:00",
+  "date": "2021-02-18T06:24:32-05:00",
   "publisher": "DigitalWare S.A. - Klinic-HIS",
   "description": "FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A.",
   "packageId": "fhir.digital-ware.klinic-api-fhir",
@@ -464,6 +464,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/ProfileServiceRequestKlinic"
+        },
+        "name": "Service Request",
+        "description": "Service request",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/SlotKlinic"
         },
         "name": "SlotKlinic",
@@ -633,6 +647,20 @@
         },
         "name": "Copayment Amount",
         "description": "Copayment amount",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CoverageIdentificationType"
+        },
+        "name": "Coverage Identification Type",
+        "description": "Identification coverage type",
         "exampleBoolean": false
       },
       {
@@ -1315,6 +1343,19 @@
           "reference": "Schedule/Example-Schedule-d83f2b28"
         },
         "name": "Example-Schedule-d83f2b28",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/Example-ServiceRequest-4948f6ad"
+        },
+        "name": "Example-ServiceRequest-4948f6ad",
         "exampleBoolean": true
       },
       {

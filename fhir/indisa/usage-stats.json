@@ -93,6 +93,20 @@
       ]
     },
     {
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CoverageIdentificationType",
+      "title": "Coverage Identification Type",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
       "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Disability",
       "title": "Discapacidad del paciente",
       "types": [
@@ -597,6 +611,12 @@
         "title": "Schedule patient"
       }
     ],
+    "ServiceRequest": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileServiceRequestKlinic",
+        "title": "Service Request"
+      }
+    ],
     "Slot": [
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/SlotKlinic",
@@ -733,8 +753,8 @@
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ChargeBed": [
       "Location"
     ],
-    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ClinicalDischargeType": [
-      "Encounter"
+    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CoverageIdentificationType": [
+      "Coverage.type"
     ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Disability": [
       "Patient"
@@ -816,6 +836,9 @@
     ],
     "https://www.digitalware.com.co/salud/fhir/StrutureDefinition/hours-of-operation": [
       "Schedule.planningHorizon"
+    ],
+    "https://www.digitalware.com.co/salud/fhir/StrutureDefinition/identification-coverage-type": [
+      "Coverage.type"
     ],
     "https://www.digitalware.com.co/salud/fhir/extension/educational-level": [
       "Patient"

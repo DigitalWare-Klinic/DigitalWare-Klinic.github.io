@@ -442,6 +442,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.value[x].code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
        fhir:ElementDefinition.definition [ fhir:value "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." ];
+       fhir:ElementDefinition.comment [ fhir:value "Note that FHIR strings SHALL NOT exceed 1MB in size\r\n\r\nPossible values:  abierta / libre elección, cerrada/preferente, GES-CAEC." ];
        fhir:ElementDefinition.requirements [ fhir:value "Need to refer to a particular code in the system." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
@@ -630,6 +631,7 @@
        fhir:index 8;
        fhir:Element.id [ fhir:value "Extension.value[x].code" ];
        fhir:ElementDefinition.path [ fhir:value "Extension.value[x].code" ];
+       fhir:ElementDefinition.comment [ fhir:value "Note that FHIR strings SHALL NOT exceed 1MB in size\r\n\r\nPossible values:  abierta / libre elección, cerrada/preferente, GES-CAEC." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
      ], [
        fhir:index 9;

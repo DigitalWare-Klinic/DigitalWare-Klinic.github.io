@@ -7,6 +7,13 @@
   </text>
   <status value="active"/>
   <type>
+    <extension id="coverageIdentificationType" url="https://www.digitalware.com.co/salud/fhir/StrutureDefinition/identification-coverage-type">
+      <valueCoding>
+        <system value="http://digitalware.com.co/salud/fhir/CodeSystem/identification-coverage-type"/>
+        <code value="TB"/>
+        <display value="TRAMO B"/>
+      </valueCoding>
+    </extension>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/coverage-selfpay"/>
       <code value="PUBLICPOL"/>
