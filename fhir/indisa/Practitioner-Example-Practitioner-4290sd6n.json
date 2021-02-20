@@ -1,0 +1,125 @@
+{
+  "resourceType": "Practitioner",
+  "id": "Example-Practitioner-4290sd6n",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: National Person Identifier Chile: 45565700ap (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Maria Camila Perez Aristizabal (OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+56(2)1111-1111\">+56(2)1111-1111</a>, <a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:pamaria@example.com\">pamaria@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1991-06-05</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Registered Nurse: TP134907 (OFFICIAL)</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 309343008}\">Enfermera</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Registered Nurse: TP134907 (OFFICIAL)</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 309446002}\">jefa de enfermeras</span></p></blockquote></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NNCHL",
+            "display": "National Person Identifier Chile"
+          },
+          {
+            "system": "http://registrocivil.cl/RUN",
+            "code": "RUN",
+            "display": "Registro Unico de Nacimiento"
+          }
+        ]
+      },
+      "value": "45565700ap"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Perez Aristizabal",
+      "_family": {
+        "extension": [
+          {
+            "id": "fathers-family",
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-fathers-family",
+            "valueString": "Perez"
+          },
+          {
+            "id": "mothers-family",
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString": "Aristizabal"
+          }
+        ]
+      },
+      "given": [
+        "Maria",
+        "Camila"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+56(2)1111-1111",
+      "use": "home"
+    },
+    {
+      "system": "phone",
+      "value": "+56(2)2222-2222",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "pamaria@example.com"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1991-06-05",
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "RN",
+                "display": "Registered Nurse"
+              }
+            ]
+          },
+          "value": "TP134907"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "309343008",
+            "display": "Enfermera"
+          }
+        ]
+      }
+    },
+    {
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "RN",
+                "display": "Registered Nurse"
+              }
+            ]
+          },
+          "value": "TP134907"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "309446002",
+            "display": "jefa de enfermeras"
+          }
+        ]
+      }
+    }
+  ]
+}

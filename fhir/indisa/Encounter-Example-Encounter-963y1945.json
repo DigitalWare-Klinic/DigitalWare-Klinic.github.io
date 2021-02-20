@@ -130,7 +130,8 @@
             "display": "Admission diagnosis"
           }
         ]
-      }
+      },
+      "rank": 1
     },
     {
       "condition": {
@@ -144,7 +145,8 @@
             "display": "Discharge diagnosis"
           }
         ]
-      }
+      },
+      "rank": 1
     }
   ],
   "account": [
@@ -154,9 +156,7 @@
   ],
   "hospitalization": {
     "preAdmissionIdentifier": {
-      "use": "official",
-      "system": "https://example.org/preadmision-identifiers",
-      "value": "7649"
+      "value": "6037c96f1b3e"
     },
     "origin": {
       "reference": "Location/Example-LocationRoom-1245687952"
@@ -164,12 +164,23 @@
     "admitSource": {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/ValueSet/admit-source",
-          "code": "mp",
-          "display": "Medical Practitioner/physician referral"
+          "system": "http://terminology.hl7.org/CodeSystem/admit-source",
+          "code": "outp",
+          "display": "From outpatient department"
         }
       ]
     },
+    "specialCourtesy": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+            "code": "VIP",
+            "display": "very important person"
+          }
+        ]
+      }
+    ],
     "dischargeDisposition": {
       "coding": [
         {

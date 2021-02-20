@@ -3,7 +3,7 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
   <id value="Example-PractitionerRole-987654321"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>period</b>: 2021-01-01 --&gt; 2022-12-31</p><p><b>practitioner</b>: <a href="Practitioner-Example-Practitioner-09709es9d.html">Generated Summary: Medical Record Number: 8596788ap (OFFICIAL); active; Sebastian Camilo Daza Barrera (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, dbsebastian@example.com; gender: male; birthDate: 1989-03-10</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>period</b>: 2021-01-01 --&gt; 2022-12-31</p><p><b>practitioner</b>: <a href="Practitioner-Example-Practitioner-09709es9d.html">Generated Summary: National Person Identifier Chile: 8596788ap (OFFICIAL); active; Sebastian Camilo Daza Barrera (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, dbsebastian@example.com; gender: male; birthDate: 1989-03-10</a></p></div>
   </text>
   <period>
     <start value="2021-01-01"/>

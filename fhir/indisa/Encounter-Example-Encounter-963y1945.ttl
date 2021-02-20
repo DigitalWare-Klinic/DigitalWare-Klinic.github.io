@@ -128,7 +128,8 @@
          fhir:Coding.code [ fhir:value "AD" ];
          fhir:Coding.display [ fhir:value "Admission diagnosis" ]
        ]
-     ]
+     ];
+     fhir:Encounter.diagnosis.rank [ fhir:value "1"^^xsd:positiveInteger ]
   ], [
      fhir:index 1;
      fhir:Encounter.diagnosis.condition [
@@ -142,7 +143,8 @@
          fhir:Coding.code [ fhir:value "DD" ];
          fhir:Coding.display [ fhir:value "Discharge diagnosis" ]
        ]
-     ]
+     ];
+     fhir:Encounter.diagnosis.rank [ fhir:value "1"^^xsd:positiveInteger ]
   ];
   fhir:Encounter.account [
      fhir:index 0;
@@ -151,9 +153,7 @@
   ];
   fhir:Encounter.hospitalization [
      fhir:Encounter.hospitalization.preAdmissionIdentifier [
-       fhir:Identifier.use [ fhir:value "official" ];
-       fhir:Identifier.system [ fhir:value "https://example.org/preadmision-identifiers" ];
-       fhir:Identifier.value [ fhir:value "7649" ]
+       fhir:Identifier.value [ fhir:value "6037c96f1b3e" ]
      ];
      fhir:Encounter.hospitalization.origin [
        fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationRoom-1245687952>;
@@ -162,9 +162,18 @@
      fhir:Encounter.hospitalization.admitSource [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/admit-source" ];
-         fhir:Coding.code [ fhir:value "mp" ];
-         fhir:Coding.display [ fhir:value "Medical Practitioner/physician referral" ]
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/admit-source" ];
+         fhir:Coding.code [ fhir:value "outp" ];
+         fhir:Coding.display [ fhir:value "From outpatient department" ]
+       ]
+     ];
+     fhir:Encounter.hospitalization.specialCourtesy [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy" ];
+         fhir:Coding.code [ fhir:value "VIP" ];
+         fhir:Coding.display [ fhir:value "very important person" ]
        ]
      ];
      fhir:Encounter.hospitalization.dischargeDisposition [

@@ -1,19 +1,19 @@
 ﻿klinicapifhir : Validation Results
 =========================================
 
-err = 215, warn = 93, info = 71
+err = 220, warn = 102, info = 74
 IG Publisher Version: 1.1.59
-Generated Thu Feb 18 06:31:51 COT 2021. FHIR version 4.0.1 for fhir.digital-ware.klinic-api-fhir#1.0 (canonical = https://digitalware-klinic.github.io/fhir/indisa)
+Generated Sat Feb 20 00:35:11 COT 2021. FHIR version 4.0.1 for fhir.digital-ware.klinic-api-fhir#1.0 (canonical = https://digitalware-klinic.github.io/fhir/indisa)
 
- Build Errors : 1088 / 33 / 0
+ Build Errors : 1153 / 39 / 0
  /home/diana/Descargas/4_IGPublisher/input/ImplementationGuide-fhir.digital-ware.klinic-api-fhir : 0 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/examples/Account-Example-Account-6f674e96 : 16 / 1 / 2
  /home/diana/Descargas/4_IGPublisher/input/examples/Appointment-Example-Appointment-05c86b7b-4fad : 6 / 0 / 7
  /home/diana/Descargas/4_IGPublisher/input/examples/Appointment-Example-Appointment-05c86b7b-5drg : 4 / 0 / 5
- /home/diana/Descargas/4_IGPublisher/input/examples/Coverage-Example-Coverage-fa7a571e : 2 / 0 / 5
- /home/diana/Descargas/4_IGPublisher/input/examples/Coverage-Example-Coverage-fa7a589f : 2 / 0 / 5
+ /home/diana/Descargas/4_IGPublisher/input/examples/Coverage-Example-Coverage-fa7a571e : 2 / 0 / 6
+ /home/diana/Descargas/4_IGPublisher/input/examples/Coverage-Example-Coverage-fa7a589f : 1 / 0 / 5
  /home/diana/Descargas/4_IGPublisher/input/examples/Encounter-Example-Encounter-963b1515 : 14 / 0 / 6
- /home/diana/Descargas/4_IGPublisher/input/examples/Encounter-Example-Encounter-963y1945 : 22 / 0 / 10
+ /home/diana/Descargas/4_IGPublisher/input/examples/Encounter-Example-Encounter-963y1945 : 20 / 0 / 9
  /home/diana/Descargas/4_IGPublisher/input/examples/HealthcareService-Example-HealthcareService-20ede331 : 3 / 0 / 9
  /home/diana/Descargas/4_IGPublisher/input/examples/Location-Example-Laboratory-51654689466d55 : 2 / 0 / 2
  /home/diana/Descargas/4_IGPublisher/input/examples/Location-Example-LocationArea-789789789789 : 3 / 0 / 2
@@ -26,12 +26,13 @@ Generated Thu Feb 18 06:31:51 COT 2021. FHIR version 4.0.1 for fhir.digital-ware
  /home/diana/Descargas/4_IGPublisher/input/examples/Location-Example-Pharmacy-51654689466d55 : 2 / 0 / 2
  /home/diana/Descargas/4_IGPublisher/input/examples/Organization-Example-Organization-213134sd15148f : 4 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/examples/Organization-Example-Organization-Payor-2910416f : 0 / 0 / 1
- /home/diana/Descargas/4_IGPublisher/input/examples/Patient-Example-Patient-2a6d66d1 : 12 / 0 / 10
- /home/diana/Descargas/4_IGPublisher/input/examples/Patient-Example-Patient-87356d0d : 9 / 0 / 10
- /home/diana/Descargas/4_IGPublisher/input/examples/Practitioner-Example-Practitioner-09709es9d : 0 / 0 / 2
+ /home/diana/Descargas/4_IGPublisher/input/examples/Patient-Example-Patient-2a6d66d1 : 14 / 0 / 11
+ /home/diana/Descargas/4_IGPublisher/input/examples/Patient-Example-Patient-87356d0d : 11 / 0 / 11
+ /home/diana/Descargas/4_IGPublisher/input/examples/Practitioner-Example-Practitioner-09709es9d : 1 / 0 / 2
+ /home/diana/Descargas/4_IGPublisher/input/examples/Practitioner-Example-Practitioner-4290sd6n : 1 / 2 / 2
  /home/diana/Descargas/4_IGPublisher/input/examples/PractitionerRole-Example-PractitionerRole-987654321 : 0 / 0 / 1
  /home/diana/Descargas/4_IGPublisher/input/examples/Schedule-Example-Schedule-d83f2b28 : 10 / 0 / 1
- /home/diana/Descargas/4_IGPublisher/input/examples/ServiceRequest-Example-ServiceRequest-4948f6ad : 3 / 0 / 2
+ /home/diana/Descargas/4_IGPublisher/input/examples/ServiceRequest-Example-ServiceRequest-4948f6ad : 2 / 0 / 2
  /home/diana/Descargas/4_IGPublisher/input/examples/Slot-Example-Slot-f261cf86 : 4 / 1 / 2
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-AccountAmount : 0 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-AvailableTelemedicine : 0 / 1 / 1
@@ -44,6 +45,7 @@ Generated Thu Feb 18 06:31:51 COT 2021. FHIR version 4.0.1 for fhir.digital-ware
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-ChargeBed : 0 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-ClinicalDischargeType : 0 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-CoverageIdentificationType : 0 / 1 / 1
+ /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-CulturalGroup : 0 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-Disability : 0 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-EducationalLevel : 0 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-EmployerOrganization : 0 / 1 / 1
@@ -58,7 +60,6 @@ Generated Thu Feb 18 06:31:51 COT 2021. FHIR version 4.0.1 for fhir.digital-ware
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-Ocupation : 0 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-OrganizationName : 0 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-OrganizationTelecom : 0 / 1 / 1
- /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-PatientEthnicity : 0 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-PatientPopulationGroup : 0 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-Personid : 1 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-QuotaPatient : 1 / 1 / 1
@@ -81,13 +82,18 @@ Generated Thu Feb 18 06:31:51 COT 2021. FHIR version 4.0.1 for fhir.digital-ware
  /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-PractitionerKlinic : 3 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-ProfileAccountKlinic : 5 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-ProfileAppointment : 4 / 1 / 1
- /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-ProfileCoverageKlinic : 1 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-ProfileEncounterKlinic : 2 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-ProfileHealthcareService : 3 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-ProfilePatientKlinic : 21 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-ProfileSchedule : 4 / 1 / 1
+ /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-ProfileScheduleKlinic : 4 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-ProfileServiceRequestKlinic : 1 / 1 / 1
  /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-SlotKlinic : 1 / 1 / 1
+ /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-profileCompositionKlinic : 0 / 1 / 1
+ /home/diana/Descargas/4_IGPublisher/input/resources/CodeSystem-Coverage : 0 / 0 / 1
+ /home/diana/Descargas/4_IGPublisher/input/resources/CodeSystem-INDISA : 0 / 0 / 1
+ /home/diana/Descargas/4_IGPublisher/input/resources/CodeSystem-ISAPRES : 0 / 0 / 1
+ /home/diana/Descargas/4_IGPublisher/input/resources/CodeSystem-Tramo : 0 / 0 / 1
  /home/diana/Descargas/4_IGPublisher/input/resources/CodeSystem-educationalLevelChile : 0 / 1 / 1
 </table>
 == n/a ==
@@ -104,10 +110,15 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SlotKlinic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/AccountAmount.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/AvailableTelemedicine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CulturalGroup.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/hoursOfOperation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/QuotaPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/RegionalLocationIdentifier.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ServicePartOf.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/Coverage.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/INDISA.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/ISAPRES.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/Tramo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Appointment/Example-Appointment-05c86b7b-4fad.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Appointment/Example-Appointment-05c86b7b-5drg.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Coverage/Example-Coverage-fa7a571e.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -120,6 +131,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Example-Patient-2a6d66d1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Example-Patient-87356d0d.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/Example-Practitioner-09709es9d.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/Example-Practitioner-4290sd6n.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/Example-PractitionerRole-987654321.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Schedule/Example-Schedule-d83f2b28.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/Example-ServiceRequest-4948f6ad.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -128,8 +140,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Account-Example-Account-6f674e96.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Account-Example-Account-6f674e96.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Account-Example-Account-6f674e96.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Account-Example-Account-6f674e96.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 163, column 2388: The link 'RelatedPerson/Example-RelatedPerson-2374' for "RelatedPerson/Example-RelatedPerson-2374" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Account-Example-Account-6f674e96.html#/html/body/div/div/div/div/div/div/p/a at Line 163, column 2599: The link 'Account/Example-Account-62fadf1d' for "Account/Example-Account-62fadf1d" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Account-Example-Account-6f674e96.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 163, column 2418: The link 'RelatedPerson/Example-RelatedPerson-2374' for "RelatedPerson/Example-RelatedPerson-2374" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Account-Example-Account-6f674e96.html#/html/body/div/div/div/div/div/div/p/a at Line 163, column 2629: The link 'Account/Example-Account-62fadf1d' for "Account/Example-Account-62fadf1d" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Account-Example-Account-6f674e96.html#/html/body/div/div/div/p/a at Line 190, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Account-Example-Account-6f674e96.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Account-Example-Account-6f674e96.json.html#/html/body/div/div/div/p/a at Line 319, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
@@ -157,6 +169,46 @@ ERROR: /home/diana/Descargas/4_IGPublisher/output/Appointment-Example-Appointmen
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Appointment-Example-Appointment-05c86b7b-5drg.ttl.html#/html/body/div/div/div/p/a at Line 342, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Appointment-Example-Appointment-05c86b7b-5drg.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Appointment-Example-Appointment-05c86b7b-5drg.xml.html#/html/body/div/div/div/p/a at Line 327, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Coverage.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Coverage.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Coverage.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Coverage.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Coverage.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Coverage.json.html#/html/body/div/div/div/p/a at Line 207, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Coverage.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Coverage.ttl.html#/html/body/div/div/div/p/a at Line 221, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Coverage.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Coverage.xml.html#/html/body/div/div/div/p/a at Line 208, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-INDISA.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-INDISA.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-INDISA.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-INDISA.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-INDISA.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-INDISA.json.html#/html/body/div/div/div/p/a at Line 207, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-INDISA.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-INDISA.ttl.html#/html/body/div/div/div/p/a at Line 221, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-INDISA.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-INDISA.xml.html#/html/body/div/div/div/p/a at Line 208, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-ISAPRES.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-ISAPRES.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-ISAPRES.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-ISAPRES.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-ISAPRES.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-ISAPRES.json.html#/html/body/div/div/div/p/a at Line 207, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-ISAPRES.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-ISAPRES.ttl.html#/html/body/div/div/div/p/a at Line 221, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-ISAPRES.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-ISAPRES.xml.html#/html/body/div/div/div/p/a at Line 208, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Tramo.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Tramo.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Tramo.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Tramo.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Tramo.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Tramo.json.html#/html/body/div/div/div/p/a at Line 207, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Tramo.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Tramo.ttl.html#/html/body/div/div/div/p/a at Line 221, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Tramo.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-Tramo.xml.html#/html/body/div/div/div/p/a at Line 207, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-educationalLevelChile.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-educationalLevelChile.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/CodeSystem-educationalLevelChile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
@@ -172,21 +224,21 @@ ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a571e.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a571e.html#/html/body/div/div/div/p/a at Line 190, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a571e.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a571e.json.html#/html/body/div/div/div/p/a at Line 263, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a571e.json.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a571e.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a571e.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a571e.ttl.html#/html/body/div/div/div/p/a at Line 281, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a571e.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a571e.xml.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a571e.xml.html#/html/body/div/div/div/p/a at Line 273, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a589f.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a589f.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a589f.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a589f.html#/html/body/div/div/div/p/a at Line 190, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a589f.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a589f.json.html#/html/body/div/div/div/p/a at Line 263, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a589f.json.html#/html/body/div/div/div/p/a at Line 274, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a589f.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a589f.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a589f.ttl.html#/html/body/div/div/div/p/a at Line 273, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a589f.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a589f.xml.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Coverage-Example-Coverage-fa7a589f.xml.html#/html/body/div/div/div/p/a at Line 265, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963b1515.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963b1515.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963b1515.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
@@ -202,11 +254,11 @@ ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-96
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963y1945.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963y1945.html#/html/body/div/div/div/p/a at Line 190, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963y1945.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963y1945.json.html#/html/body/div/div/div/p/a at Line 390, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963y1945.json.html#/html/body/div/div/div/p/a at Line 401, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963y1945.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963y1945.ttl.html#/html/body/div/div/div/p/a at Line 361, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963y1945.ttl.html#/html/body/div/div/div/p/a at Line 368, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963y1945.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963y1945.xml.html#/html/body/div/div/div/p/a at Line 351, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Encounter-Example-Encounter-963y1945.xml.html#/html/body/div/div/div/p/a at Line 359, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/HealthcareService-Example-HealthcareService-20ede331.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/HealthcareService-Example-HealthcareService-20ede331.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/HealthcareService-Example-HealthcareService-20ede331.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
@@ -332,21 +384,21 @@ ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-2a6d66
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-2a6d66d1.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-2a6d66d1.html#/html/body/div/div/div/p/a at Line 190, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-2a6d66d1.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-2a6d66d1.json.html#/html/body/div/div/div/p/a at Line 509, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-2a6d66d1.json.html#/html/body/div/div/div/p/a at Line 531, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-2a6d66d1.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-2a6d66d1.ttl.html#/html/body/div/div/div/p/a at Line 462, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-2a6d66d1.ttl.html#/html/body/div/div/div/p/a at Line 478, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-2a6d66d1.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-2a6d66d1.xml.html#/html/body/div/div/div/p/a at Line 444, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-2a6d66d1.xml.html#/html/body/div/div/div/p/a at Line 461, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-87356d0d.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-87356d0d.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-87356d0d.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-87356d0d.html#/html/body/div/div/div/p/a at Line 190, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-87356d0d.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-87356d0d.json.html#/html/body/div/div/div/p/a at Line 511, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-87356d0d.json.html#/html/body/div/div/div/p/a at Line 533, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-87356d0d.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-87356d0d.ttl.html#/html/body/div/div/div/p/a at Line 465, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-87356d0d.ttl.html#/html/body/div/div/div/p/a at Line 481, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-87356d0d.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-87356d0d.xml.html#/html/body/div/div/div/p/a at Line 447, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Patient-Example-Patient-87356d0d.xml.html#/html/body/div/div/div/p/a at Line 464, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-09709es9d.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-09709es9d.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-09709es9d.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
@@ -357,6 +409,16 @@ ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitio
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-09709es9d.ttl.html#/html/body/div/div/div/p/a at Line 307, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-09709es9d.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-09709es9d.xml.html#/html/body/div/div/div/p/a at Line 288, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-4290sd6n.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-4290sd6n.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-4290sd6n.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-4290sd6n.html#/html/body/div/div/div/p/a at Line 190, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-4290sd6n.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-4290sd6n.json.html#/html/body/div/div/div/p/a at Line 317, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-4290sd6n.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-4290sd6n.ttl.html#/html/body/div/div/div/p/a at Line 307, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-4290sd6n.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Practitioner-Example-Practitioner-4290sd6n.xml.html#/html/body/div/div/div/p/a at Line 288, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/PractitionerRole-Example-PractitionerRole-987654321.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/PractitionerRole-Example-PractitionerRole-987654321.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/PractitionerRole-Example-PractitionerRole-987654321.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
@@ -373,24 +435,23 @@ ERROR: /home/diana/Descargas/4_IGPublisher/output/Schedule-Example-Schedule-d83f
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Schedule-Example-Schedule-d83f2b28.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 163, column 617: The link 'Location/Example-LocationBuilding-7412389635sdf556d' for "Location/Example-LocationBuilding-7412389635sdf556d" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Schedule-Example-Schedule-d83f2b28.html#/html/body/div/div/div/p/a at Line 190, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Schedule-Example-Schedule-d83f2b28.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Schedule-Example-Schedule-d83f2b28.json.html#/html/body/div/div/div/p/a at Line 319, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Schedule-Example-Schedule-d83f2b28.json.html#/html/body/div/div/div/p/a at Line 320, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Schedule-Example-Schedule-d83f2b28.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Schedule-Example-Schedule-d83f2b28.ttl.html#/html/body/div/div/div/p/a at Line 314, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Schedule-Example-Schedule-d83f2b28.ttl.html#/html/body/div/div/div/p/a at Line 315, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Schedule-Example-Schedule-d83f2b28.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/Schedule-Example-Schedule-d83f2b28.xml.html#/html/body/div/div/div/p/a at Line 279, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/Schedule-Example-Schedule-d83f2b28.xml.html#/html/body/div/div/div/p/a at Line 280, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.html#/html/body/div/div/div/div/div/div/p/a at Line 163, column 250: The link 'ServiceRequest/Example-ServiceRequest-294678sc' for "ServiceRequest/Example-ServiceRequest-294678sc" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.html#/html/body/div/div/div/div/div/div/p/a at Line 163, column 381: The link 'ServiceRequest/Example-ServiceRequest-5437326r' for "ServiceRequest/Example-ServiceRequest-5437326r" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.html#/html/body/div/div/div/div/div/div/p/a at Line 163, column 2494: The link 'Condition/Example-Condition-4869c' for "Condition/Example-Condition-4869c" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.html#/html/body/div/div/div/div/div/div/p/a at Line 163, column 226: The link 'ServiceRequest/Example-ServiceRequest-5437326r' for "ServiceRequest/Example-ServiceRequest-5437326r" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.html#/html/body/div/div/div/div/div/div/p/a at Line 163, column 2423: The link 'Condition/Example-Condition-4869c' for "Condition/Example-Condition-4869c" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.html#/html/body/div/div/div/p/a at Line 190, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.json.html#/html/body/div/div/div/p/a at Line 314, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.json.html#/html/body/div/div/div/p/a at Line 307, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.ttl.html#/html/body/div/div/div/p/a at Line 313, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.ttl.html#/html/body/div/div/div/p/a at Line 307, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 74, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.xml.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/ServiceRequest-Example-ServiceRequest-4948f6ad.xml.html#/html/body/div/div/div/p/a at Line 280, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Slot-Example-Slot-f261cf86.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Slot-Example-Slot-f261cf86.change.history.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/Slot-Example-Slot-f261cf86.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
@@ -555,6 +616,20 @@ ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CoverageId
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CoverageIdentificationType.profile.ttl.html#/html/body/div/div/div/p/a at Line 779, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CoverageIdentificationType.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CoverageIdentificationType.profile.xml.html#/html/body/div/div/div/p/a at Line 788, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup-definitions.html#/html/body/div/div/div/p/a at Line 379, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup-mappings.html#/html/body/div/div/div/p/a at Line 251, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup.html#/html/body/div/div/div/p/a at Line 522, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup.profile.history.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup.profile.json.html#/html/body/div/div/div/p/a at Line 1057, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup.profile.ttl.html#/html/body/div/div/div/p/a at Line 938, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-CulturalGroup.profile.xml.html#/html/body/div/div/div/p/a at Line 952, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-Disability-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-Disability-definitions.html#/html/body/div/div/div/p/a at Line 379, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-Disability-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
@@ -847,20 +922,6 @@ ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-Organizati
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-OrganizationTelecom.profile.ttl.html#/html/body/div/div/div/p/a at Line 803, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-OrganizationTelecom.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-OrganizationTelecom.profile.xml.html#/html/body/div/div/div/p/a at Line 800, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity-definitions.html#/html/body/div/div/div/p/a at Line 379, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity-mappings.html#/html/body/div/div/div/p/a at Line 251, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity.html#/html/body/div/div/div/p/a at Line 522, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity.profile.history.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity.profile.json.html#/html/body/div/div/div/p/a at Line 1064, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity.profile.ttl.html#/html/body/div/div/div/p/a at Line 944, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientEthnicity.profile.xml.html#/html/body/div/div/div/p/a at Line 958, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientPopulationGroup-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientPopulationGroup-definitions.html#/html/body/div/div/div/p/a at Line 379, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-PatientPopulationGroup-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
@@ -937,38 +998,22 @@ ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileApp
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileAppointment.profile.ttl.html#/html/body/div/div/div/p/a at Line 7574, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileAppointment.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileAppointment.profile.xml.html#/html/body/div/div/div/p/a at Line 8041, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic-definitions.html#/html/body/div/div/div/p/a at Line 1358, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic-examples.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic-mappings.html#/html/body/div/div/div/p/a at Line 354, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic.html#/html/body/div/div/div/p/a at Line 1127, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic.profile.history.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic.profile.json.html#/html/body/div/div/div/p/a at Line 5763, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic.profile.ttl.html#/html/body/div/div/div/p/a at Line 4929, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileCoverageKlinic.profile.xml.html#/html/body/div/div/div/p/a at Line 5243, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic-definitions.html#/html/body/div/div/div/p/a at Line 2892, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic-definitions.html#/html/body/div/div/div/p/a at Line 3000, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic-examples.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic-mappings.html#/html/body/div/div/div/p/a at Line 507, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic-mappings.html#/html/body/div/div/div/p/a at Line 520, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.html#/html/body/div/div/div/p/a at Line 1925, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.html#/html/body/div/div/div/p/a at Line 1992, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.profile.history.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.profile.json.html#/html/body/div/div/div/p/a at Line 13963, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.profile.json.html#/html/body/div/div/div/p/a at Line 14525, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.profile.ttl.html#/html/body/div/div/div/p/a at Line 11785, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.profile.ttl.html#/html/body/div/div/div/p/a at Line 12249, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.profile.xml.html#/html/body/div/div/div/p/a at Line 12394, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileEncounterKlinic.profile.xml.html#/html/body/div/div/div/p/a at Line 12902, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileHealthcareService-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileHealthcareService-definitions.html#/html/body/div/div/div/p/a at Line 1760, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileHealthcareService-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
@@ -986,21 +1031,21 @@ ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileHea
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileHealthcareService.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileHealthcareService.profile.xml.html#/html/body/div/div/div/p/a at Line 7186, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic-definitions.html#/html/body/div/div/div/p/a at Line 2558, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic-definitions.html#/html/body/div/div/div/p/a at Line 2657, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic-examples.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic-mappings.html#/html/body/div/div/div/p/a at Line 500, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic-mappings.html#/html/body/div/div/div/p/a at Line 512, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 1992, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 2040, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.profile.history.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.profile.json.html#/html/body/div/div/div/p/a at Line 12406, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.profile.json.html#/html/body/div/div/div/p/a at Line 12912, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.profile.ttl.html#/html/body/div/div/div/p/a at Line 10483, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.profile.ttl.html#/html/body/div/div/div/p/a at Line 10895, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.profile.xml.html#/html/body/div/div/div/p/a at Line 11004, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfilePatientKlinic.profile.xml.html#/html/body/div/div/div/p/a at Line 11460, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileSchedule-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileSchedule-definitions.html#/html/body/div/div/div/p/a at Line 901, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileSchedule-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
@@ -1017,6 +1062,22 @@ ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileSch
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileSchedule.profile.ttl.html#/html/body/div/div/div/p/a at Line 3275, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileSchedule.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileSchedule.profile.xml.html#/html/body/div/div/div/p/a at Line 3403, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic-definitions.html#/html/body/div/div/div/p/a at Line 902, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic-examples.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic-mappings.html#/html/body/div/div/div/p/a at Line 291, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic.html#/html/body/div/div/div/p/a at Line 859, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic.profile.history.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic.profile.json.html#/html/body/div/div/div/p/a at Line 3811, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic.profile.ttl.html#/html/body/div/div/div/p/a at Line 3275, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileScheduleKlinic.profile.xml.html#/html/body/div/div/div/p/a at Line 3410, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileServiceRequestKlinic-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileServiceRequestKlinic-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 905, column 262: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-ProfileServiceRequestKlinic-definitions.html#/html/body/div/div/div/p/a at Line 2213, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
@@ -1193,6 +1254,22 @@ ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-medication
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-medicationAmount.profile.ttl.html#/html/body/div/div/div/p/a at Line 663, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-medicationAmount.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-medicationAmount.profile.xml.html#/html/body/div/div/div/p/a at Line 650, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic-definitions.html#/html/body/div/div/div/p/a at Line 1514, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic-examples.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic-mappings.html#/html/body/div/div/div/p/a at Line 381, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic.html#/html/body/div/div/div/p/a at Line 1138, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic.profile.history.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic.profile.json.html#/html/body/div/div/div/p/a at Line 6675, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic.profile.ttl.html#/html/body/div/div/div/p/a at Line 5714, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-profileCompositionKlinic.profile.xml.html#/html/body/div/div/div/p/a at Line 5999, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-suppliesAmount-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-suppliesAmount-definitions.html#/html/body/div/div/div/p/a at Line 313, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-suppliesAmount-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 76, column 9: The link 'index.html' for "IG Home" cannot be resolved
@@ -1208,7 +1285,7 @@ ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-suppliesAm
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-suppliesAmount.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 80, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/StructureDefinition-suppliesAmount.profile.xml.html#/html/body/div/div/div/p/a at Line 652, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
-ERROR: /home/diana/Descargas/4_IGPublisher/output/artifacts.html#/html/body/div/div/div/p/a at Line 949, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/4_IGPublisher/output/artifacts.html#/html/body/div/div/div/p/a at Line 987, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/searchform.html#/html/body/div/div/a/img/div/div/nav/div/div/ul/li/a at Line 63, column 21: The link 'index.html' for "Specification" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/toc.html#/html/body/div/div/nav/div/div/ul/li/a at Line 72, column 9: The link 'index.html' for "IG Home" cannot be resolved
 ERROR: /home/diana/Descargas/4_IGPublisher/output/toc.html#/html/body/div/div/div/p/a at Line 141, column 28: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
@@ -1266,15 +1343,15 @@ ERROR: Coverage/Example-Coverage-fa7a571e: Coverage.type.extension[0]: The exten
 INFORMATION: Coverage/Example-Coverage-fa7a571e: Coverage.type.extension[0].value.ofType(Coding): Code System URI 'http://digitalware.com.co/salud/fhir/CodeSystem/identification-coverage-type' is unknown so the code cannot be validated
 ERROR: Coverage/Example-Coverage-fa7a571e: Coverage.type.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/coverage-selfpay#EHCPOL in http://terminology.hl7.org/CodeSystem/coverage-selfpay for 'http://terminology.hl7.org/CodeSystem/coverage-selfpay#EHCPOL'
 INFORMATION: Coverage/Example-Coverage-fa7a571e: Coverage.type.coding[1]: Code System URI 'http://digitalware.com.co/salud/fhir/CodeSystem/coverages-type-cl' is unknown so the code cannot be validated
-INFORMATION: Coverage/Example-Coverage-fa7a571e: Coverage.class[0].type.coding[0]: Code System URI 'http://example.com/planes-asegurador' is unknown so the code cannot be validated
+INFORMATION: Coverage/Example-Coverage-fa7a571e: Coverage.class[0].type.coding[1]: Code System URI 'http://digitalware.com.co/salud/fhir/CodeSystem/ISAPRES' is unknown so the code cannot be validated
+INFORMATION: Coverage/Example-Coverage-fa7a571e: Coverage.class[1].type.coding[1]: Code System URI 'http://example.com/planes-asegurador' is unknown so the code cannot be validated
 == /home/diana/Descargas/4_IGPublisher/input/examples/Coverage-Example-Coverage-fa7a589f.json ==
 INFORMATION: Coverage/Example-Coverage-fa7a589f: Coverage: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Coverage
 INFORMATION: Coverage/Example-Coverage-fa7a589f: Coverage.type: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/coverage-type (http://hl7.org/fhir/ValueSet/coverage-type), and a code is recommended to come from this value set) (codes = http://terminology.hl7.org/CodeSystem/coverage-selfpay#PUBLICPOL, http://digitalware.com.co/salud/fhir/CodeSystem/coverages-type-cl#FON)
-ERROR: Coverage/Example-Coverage-fa7a589f: Coverage.type.extension[0]: The extension https://www.digitalware.com.co/salud/fhir/StrutureDefinition/identification-coverage-type is unknown, and not allowed here
-INFORMATION: Coverage/Example-Coverage-fa7a589f: Coverage.type.extension[0].value.ofType(Coding): Code System URI 'http://digitalware.com.co/salud/fhir/CodeSystem/identification-coverage-type' is unknown so the code cannot be validated
 ERROR: Coverage/Example-Coverage-fa7a589f: Coverage.type.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/coverage-selfpay#PUBLICPOL in http://terminology.hl7.org/CodeSystem/coverage-selfpay for 'http://terminology.hl7.org/CodeSystem/coverage-selfpay#PUBLICPOL'
 INFORMATION: Coverage/Example-Coverage-fa7a589f: Coverage.type.coding[1]: Code System URI 'http://digitalware.com.co/salud/fhir/CodeSystem/coverages-type-cl' is unknown so the code cannot be validated
-INFORMATION: Coverage/Example-Coverage-fa7a589f: Coverage.class[0].type.coding[0]: Code System URI 'http://example.com/planes-asegurador' is unknown so the code cannot be validated
+INFORMATION: Coverage/Example-Coverage-fa7a589f: Coverage.class[0].type.coding[1]: Code System URI 'http://digitalware.com.co/salud/fhir/CodeSystem/tramos-FONASA' is unknown so the code cannot be validated
+INFORMATION: Coverage/Example-Coverage-fa7a589f: Coverage.class[1].type.coding[1]: Code System URI 'http://example.com/planes-asegurador' is unknown so the code cannot be validated
 == /home/diana/Descargas/4_IGPublisher/input/examples/Encounter-Example-Encounter-963b1515.json ==
 INFORMATION: Encounter/Example-Encounter-963b1515: Encounter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
 ERROR: Encounter/Example-Encounter-963b1515: Encounter.extension[0]: Extension.url is required
@@ -1325,9 +1402,6 @@ INFORMATION: Encounter/Example-Encounter-963y1945: Encounter.diagnosis[1].use: N
 ERROR: Encounter/Example-Encounter-963y1945: Encounter.diagnosis[1].use.coding[0]: The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/diagnosis-role')
 ERROR: Encounter/Example-Encounter-963y1945: Encounter.diagnosis[1].use.coding[0]: Unknown Code System 'http://hl7.org/fhir/ValueSet/diagnosis-role'
 ERROR: Encounter/Example-Encounter-963y1945: Encounter.account[0]: Unable to resolve resource 'Account/Example-Account-6f678t45'
-INFORMATION: Encounter/Example-Encounter-963y1945: Encounter.hospitalization.admitSource: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source), and a code is recommended to come from this value set) (codes = http://hl7.org/fhir/ValueSet/admit-source#mp)
-ERROR: Encounter/Example-Encounter-963y1945: Encounter.hospitalization.admitSource.coding[0]: Unknown Code System 'http://hl7.org/fhir/ValueSet/admit-source'
-ERROR: Encounter/Example-Encounter-963y1945: Encounter.hospitalization.admitSource.coding[0].system: URL value 'http://hl7.org/fhir/ValueSet/admit-source' does not resolve
 INFORMATION: Encounter/Example-Encounter-963y1945: Encounter.hospitalization.dischargeDisposition.coding[0]: Code System URI 'http://digitalware.com.co/salud/fhir/CodeSystem/discharge-disposition' is unknown so the code cannot be validated
 == /home/diana/Descargas/4_IGPublisher/input/examples/HealthcareService-Example-HealthcareService-20ede331.json ==
 INFORMATION: HealthcareService/Example-HealthcareService-20ede331: HealthcareService: Validate resource against profile http://hl7.org/fhir/StructureDefinition/HealthcareService
@@ -1430,6 +1504,9 @@ ERROR: Patient/Example-Patient-2a6d66d1: Patient.extension[7]: The extension htt
 INFORMATION: Patient/Example-Patient-2a6d66d1: Patient.extension[7].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.digitalware.com.co/salud/fhir/extension/ocupation' is unknown so the code cannot be validated
 ERROR: Patient/Example-Patient-2a6d66d1: Patient.extension[8]: The extension https://www.digitalware.com.co/salud/fhir/extension/employer-organization is unknown, and not allowed here
 ERROR: Patient/Example-Patient-2a6d66d1: Patient.extension[9]: The extension https://hl7co.github.io/digitalware/klinic-api-fhir/StructureDefinition/NewBorn is unknown, and not allowed here
+ERROR: Patient/Example-Patient-2a6d66d1: Patient.extension[11]: The extension https://www.digitalware.com.co/salud/fhir/extension/patient-cultural-groups is unknown, and not allowed here
+INFORMATION: Patient/Example-Patient-2a6d66d1: Patient.extension[11].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://deis.cl/fhir/PueblosIndigenasMinsalDecreto643' is unknown so the code cannot be validated
+ERROR: Patient/Example-Patient-2a6d66d1: Patient.identifier[0].type.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0203#NNCHL in http://terminology.hl7.org/CodeSystem/v2-0203 for 'http://terminology.hl7.org/CodeSystem/v2-0203#NNCHL'
 INFORMATION: Patient/Example-Patient-2a6d66d1: Patient.identifier[0].type.coding[1]: Code System URI 'http://registrocivil.cl/RUN' is unknown so the code cannot be validated
 ERROR: Patient/Example-Patient-2a6d66d1: Patient.name[0].family.extension[1]: ext-1: Must have either extensions or value[x], not both [extension.exists() != value.exists()]
 ERROR: Patient/Example-Patient-2a6d66d1: Patient.name[0].family.extension[1]: The Extension 'http://hl7.org/fhir/StructureDefinition/humanname-mothers-family' definition is for a simple extension, so it must contain a value, not extensions
@@ -1453,6 +1530,9 @@ ERROR: Patient/Example-Patient-87356d0d: Patient.extension[7]: The extension htt
 INFORMATION: Patient/Example-Patient-87356d0d: Patient.extension[7].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.digitalware.com.co/salud/fhir/extension/ocupation' is unknown so the code cannot be validated
 ERROR: Patient/Example-Patient-87356d0d: Patient.extension[8]: The extension https://www.digitalware.com.co/salud/fhir/extension/employer-organization is unknown, and not allowed here
 ERROR: Patient/Example-Patient-87356d0d: Patient.extension[9]: The extension https://hl7co.github.io/digitalware/klinic-api-fhir/StructureDefinition/NewBorn is unknown, and not allowed here
+ERROR: Patient/Example-Patient-87356d0d: Patient.extension[11]: The extension https://www.digitalware.com.co/salud/fhir/extension/patient-cultural-groups is unknown, and not allowed here
+INFORMATION: Patient/Example-Patient-87356d0d: Patient.extension[11].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://deis.cl/fhir/PueblosIndigenasMinsalDecreto643' is unknown so the code cannot be validated
+ERROR: Patient/Example-Patient-87356d0d: Patient.identifier[0].type.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0203#NNCHL in http://terminology.hl7.org/CodeSystem/v2-0203 for 'http://terminology.hl7.org/CodeSystem/v2-0203#NNCHL'
 INFORMATION: Patient/Example-Patient-87356d0d: Patient.identifier[0].type.coding[1]: Code System URI 'http://registrocivil.cl/RUN' is unknown so the code cannot be validated
 ERROR: Patient/Example-Patient-87356d0d: Patient.maritalStatus.coding[0]: The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/marital-status')
 ERROR: Patient/Example-Patient-87356d0d: Patient.maritalStatus.coding[0]: Unknown Code System 'http://hl7.org/fhir/ValueSet/marital-status'
@@ -1460,7 +1540,14 @@ ERROR: Patient/Example-Patient-87356d0d: Patient.contact[0].extension[0]: The ex
 INFORMATION: Patient/Example-Patient-87356d0d: Patient.contact[0].extension[0].value.ofType(Identifier).type.coding[1]: Code System URI 'http://registrocivil.cl/RUN' is unknown so the code cannot be validated
 == /home/diana/Descargas/4_IGPublisher/input/examples/Practitioner-Example-Practitioner-09709es9d.json ==
 INFORMATION: Practitioner/Example-Practitioner-09709es9d: Practitioner: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+ERROR: Practitioner/Example-Practitioner-09709es9d: Practitioner.identifier[0].type.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0203#NNCHL in http://terminology.hl7.org/CodeSystem/v2-0203 for 'http://terminology.hl7.org/CodeSystem/v2-0203#NNCHL'
 INFORMATION: Practitioner/Example-Practitioner-09709es9d: Practitioner.identifier[0].type.coding[1]: Code System URI 'http://registrocivil.cl/RUN' is unknown so the code cannot be validated
+== /home/diana/Descargas/4_IGPublisher/input/examples/Practitioner-Example-Practitioner-4290sd6n.json ==
+INFORMATION: Practitioner/Example-Practitioner-4290sd6n: Practitioner: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+ERROR: Practitioner/Example-Practitioner-4290sd6n: Practitioner.identifier[0].type.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0203#NNCHL in http://terminology.hl7.org/CodeSystem/v2-0203 for 'http://terminology.hl7.org/CodeSystem/v2-0203#NNCHL'
+INFORMATION: Practitioner/Example-Practitioner-4290sd6n: Practitioner.identifier[0].type.coding[1]: Code System URI 'http://registrocivil.cl/RUN' is unknown so the code cannot be validated
+WARNING: Practitioner/Example-Practitioner-4290sd6n: Practitioner.qualification[0].identifier[0].type.coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0203#RN should be one of 'Registered Nurse Number' instead of 'Registered Nurse' for 'http://terminology.hl7.org/CodeSystem/v2-0203#RN'
+WARNING: Practitioner/Example-Practitioner-4290sd6n: Practitioner.qualification[1].identifier[0].type.coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0203#RN should be one of 'Registered Nurse Number' instead of 'Registered Nurse' for 'http://terminology.hl7.org/CodeSystem/v2-0203#RN'
 == /home/diana/Descargas/4_IGPublisher/input/examples/PractitionerRole-Example-PractitionerRole-987654321.json ==
 INFORMATION: PractitionerRole/Example-PractitionerRole-987654321: PractitionerRole: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole
 == /home/diana/Descargas/4_IGPublisher/input/examples/Schedule-Example-Schedule-d83f2b28.json ==
@@ -1477,7 +1564,6 @@ ERROR: Schedule/Example-Schedule-d83f2b28: Schedule.planningHorizon.extension[1]
 ERROR: Schedule/Example-Schedule-d83f2b28: Schedule.planningHorizon.extension[1].extension[2]: Duplicate id value 'endTime'
 == /home/diana/Descargas/4_IGPublisher/input/examples/ServiceRequest-Example-ServiceRequest-4948f6ad.json ==
 INFORMATION: ServiceRequest/Example-ServiceRequest-4948f6ad: ServiceRequest: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ServiceRequest
-ERROR: ServiceRequest/Example-ServiceRequest-4948f6ad: ServiceRequest.basedOn[0]: Unable to resolve resource 'ServiceRequest/Example-ServiceRequest-294678sc'
 ERROR: ServiceRequest/Example-ServiceRequest-4948f6ad: ServiceRequest.replaces[0]: Unable to resolve resource 'ServiceRequest/Example-ServiceRequest-5437326r'
 INFORMATION: ServiceRequest/Example-ServiceRequest-4948f6ad: ServiceRequest.code.coding[0]: Code System URI 'http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa' is unknown so the code cannot be validated
 ERROR: ServiceRequest/Example-ServiceRequest-4948f6ad: ServiceRequest.reasonReference[0]: Unable to resolve resource 'Condition/Example-Condition-4869c'
@@ -1522,6 +1608,9 @@ WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/f
 == /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-CoverageIdentificationType.json ==
 INFORMATION: StructureDefinition/CoverageIdentificationType: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CoverageIdentificationType'): The Implementation Guide contains no examples for this extension
+== /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-CulturalGroup.json ==
+INFORMATION: StructureDefinition/CulturalGroup: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CulturalGroup'): The Implementation Guide contains no examples for this extension
 == /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-Disability.json ==
 INFORMATION: StructureDefinition/Disability: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Disability'): The Implementation Guide contains no examples for this extension
@@ -1565,9 +1654,6 @@ WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/f
 == /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-OrganizationTelecom.json ==
 INFORMATION: StructureDefinition/OrganizationTelecom: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/OrganizationTelecom'): The Implementation Guide contains no examples for this extension
-== /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-PatientEthnicity.json ==
-INFORMATION: StructureDefinition/PatientEthnicity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PatientEthnicity'): The Implementation Guide contains no examples for this extension
 == /home/diana/Descargas/4_IGPublisher/input/extensions/StructureDefinition-PatientPopulationGroup.json ==
 INFORMATION: StructureDefinition/PatientPopulationGroup: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PatientPopulationGroup'): The Implementation Guide contains no examples for this extension
@@ -1666,10 +1752,6 @@ INFORMATION: StructureDefinition/ProfileAppointment: StructureDefinition: Valida
 ERROR: StructureDefinition/ProfileAppointment: StructureDefinition: Element Appointment.extension: derived max (*) cannot be greater than base max (1)
 ERROR: StructureDefinition/ProfileAppointment: StructureDefinition: Element Appointment.extension: derived max (*) cannot be greater than base max (1)
 WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileAppointment'): The Implementation Guide contains no examples for this profile
-== /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-ProfileCoverageKlinic.json ==
-INFORMATION: StructureDefinition/ProfileCoverageKlinic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/ProfileCoverageKlinic: StructureDefinition: sdf-21: Default values can only be specified on specializations [differential.element.defaultValue.exists() implies (derivation = 'specialization')]
-WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileCoverageKlinic'): The Implementation Guide contains no examples for this profile
 == /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-ProfileEncounterKlinic.json ==
 ERROR: Encounter.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RateModality]]].Encounter.extension: Element Encounter.extension: derived max (*) cannot be greater than base max (1)
 INFORMATION: StructureDefinition/ProfileEncounterKlinic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
@@ -1685,12 +1767,12 @@ WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/f
 ERROR: Patient.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/GenderIdentity]]].Patient.extension: Element Patient.extension: derived max (*) cannot be greater than base max (1)
 ERROR: Patient.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/BirthPlace]]].Patient.extension: Element Patient.extension: derived max (*) cannot be greater than base max (1)
 ERROR: Patient.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Nationality]]].Patient.extension: Element Patient.extension: derived max (*) cannot be greater than base max (1)
-ERROR: Patient.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PatientEthnicity]]].Patient.extension: Element Patient.extension: derived max (*) cannot be greater than base max (1)
 ERROR: Patient.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PatientPopulationGroup]]].Patient.extension: Element Patient.extension: derived max (*) cannot be greater than base max (1)
 ERROR: Patient.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Disability]]].Patient.extension: Element Patient.extension: derived max (*) cannot be greater than base max (1)
 ERROR: Patient.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/EducationalLevel]]].Patient.extension: Element Patient.extension: derived max (*) cannot be greater than base max (1)
 ERROR: Patient.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Ocupation]]].Patient.extension: Element Patient.extension: derived max (*) cannot be greater than base max (1)
 ERROR: Patient.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/EmployerOrganization]]].Patient.extension: Element Patient.extension: derived max (*) cannot be greater than base max (1)
+ERROR: Patient.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CulturalGroup]]].Patient.extension: Element Patient.extension: derived max (*) cannot be greater than base max (1)
 ERROR: Patient.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Personid]]].Patient.contact.extension: Element Patient.contact.extension: derived max (*) cannot be greater than base max (1)
 INFORMATION: StructureDefinition/ProfilePatientKlinic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/ProfilePatientKlinic: StructureDefinition: sdf-21: Default values can only be specified on specializations [differential.element.defaultValue.exists() implies (derivation = 'specialization')]
@@ -1712,6 +1794,13 @@ INFORMATION: StructureDefinition/ProfileSchedule: StructureDefinition: Validate 
 ERROR: StructureDefinition/ProfileSchedule: StructureDefinition: Element Schedule.extension: derived max (*) cannot be greater than base max (1)
 ERROR: StructureDefinition/ProfileSchedule: StructureDefinition: Element Schedule.extension: derived max (*) cannot be greater than base max (1)
 WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileSchedule'): The Implementation Guide contains no examples for this profile
+== /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-ProfileScheduleKlinic.json ==
+ERROR: Schedule patient.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/AvailableTelemedicine]]].Schedule.extension: Element Schedule.extension: derived max (*) cannot be greater than base max (1)
+ERROR: Schedule patient.extension[[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/QuotaPatient]]].Schedule.extension: Element Schedule.extension: derived max (*) cannot be greater than base max (1)
+INFORMATION: StructureDefinition/ProfileScheduleKlinic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+ERROR: StructureDefinition/ProfileScheduleKlinic: StructureDefinition: Element Schedule.extension: derived max (*) cannot be greater than base max (1)
+ERROR: StructureDefinition/ProfileScheduleKlinic: StructureDefinition: Element Schedule.extension: derived max (*) cannot be greater than base max (1)
+WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileScheduleKlinic'): The Implementation Guide contains no examples for this profile
 == /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-ProfileServiceRequestKlinic.json ==
 INFORMATION: StructureDefinition/ProfileServiceRequestKlinic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/ProfileServiceRequestKlinic: StructureDefinition: sdf-21: Default values can only be specified on specializations [differential.element.defaultValue.exists() implies (derivation = 'specialization')]
@@ -1720,6 +1809,17 @@ WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/f
 INFORMATION: StructureDefinition/SlotKlinic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/SlotKlinic: StructureDefinition: sdf-21: Default values can only be specified on specializations [differential.element.defaultValue.exists() implies (derivation = 'specialization')]
 WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/SlotKlinic'): The Implementation Guide contains no examples for this profile
+== /home/diana/Descargas/4_IGPublisher/input/profiles/StructureDefinition-profileCompositionKlinic.json ==
+INFORMATION: StructureDefinition/profileCompositionKlinic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/profileCompositionKlinic'): The Implementation Guide contains no examples for this profile
+== /home/diana/Descargas/4_IGPublisher/input/resources/CodeSystem-Coverage.json ==
+INFORMATION: CodeSystem/Coverage: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /home/diana/Descargas/4_IGPublisher/input/resources/CodeSystem-INDISA.json ==
+INFORMATION: CodeSystem/INDISA: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /home/diana/Descargas/4_IGPublisher/input/resources/CodeSystem-ISAPRES.json ==
+INFORMATION: CodeSystem/ISAPRES: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /home/diana/Descargas/4_IGPublisher/input/resources/CodeSystem-Tramo.json ==
+INFORMATION: CodeSystem/Tramo: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /home/diana/Descargas/4_IGPublisher/input/resources/CodeSystem-educationalLevelChile.json ==
 INFORMATION: CodeSystem/educationalLevelChile: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 WARNING: CodeSystem/educationalLevelChile: CodeSystem: csd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]

@@ -101,6 +101,7 @@
         <display value="Admission diagnosis"/>
       </coding>
     </use>
+    <rank value="1"/>
   </diagnosis>
   <diagnosis>
     <condition>
@@ -113,26 +114,32 @@
         <display value="Discharge diagnosis"/>
       </coding>
     </use>
+    <rank value="1"/>
   </diagnosis>
   <account>
     <reference value="Account/Example-Account-6f678t45"/>
   </account>
   <hospitalization>
     <preAdmissionIdentifier>
-      <use value="official"/>
-      <system value="https://example.org/preadmision-identifiers"/>
-      <value value="7649"/>
+      <value value="6037c96f1b3e"/>
     </preAdmissionIdentifier>
     <origin>
       <reference value="Location/Example-LocationRoom-1245687952"/>
     </origin>
     <admitSource>
       <coding>
-        <system value="http://hl7.org/fhir/ValueSet/admit-source"/>
-        <code value="mp"/>
-        <display value="Medical Practitioner/physician referral"/>
+        <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+        <code value="outp"/>
+        <display value="From outpatient department"/>
       </coding>
     </admitSource>
+    <specialCourtesy>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy"/>
+        <code value="VIP"/>
+        <display value="very important person"/>
+      </coding>
+    </specialCourtesy>
     <dischargeDisposition>
       <coding>
         <system value="http://digitalware.com.co/salud/fhir/CodeSystem/discharge-disposition"/>

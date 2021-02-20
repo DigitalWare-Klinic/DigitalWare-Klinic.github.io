@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"1.63"}
-    h3,h4,h5,h6{--heading-prefix:"1.63"}</style>
+    <style type="text/css">h2{--heading-prefix:"1.68"}
+    h3,h4,h5,h6{--heading-prefix:"1.68"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -69,7 +69,7 @@
             <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul class="nav navbar-nav">
-  <li><a name="53856b99-e166-4813-b65b-cc62a175455d">​</a><a href="index.html">IG Home</a></li>
+  <li><a name="9c92e3e0-59b0-41b3-8526-3a35f61fb915">​</a><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">
@@ -273,7 +273,8 @@
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/ValueSet/diagnosis-role" ];
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "AD" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Admission diagnosis" ]       ]     ]
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Admission diagnosis" ]       ]     ];
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.rank">fhir:Encounter.diagnosis.rank</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> "1"^^xsd:positiveInteger ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
      <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.condition">fhir:Encounter.diagnosis.condition</a> [
@@ -283,7 +284,8 @@
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/ValueSet/diagnosis-role" ];
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "DD" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Discharge diagnosis" ]       ]     ]
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Discharge diagnosis" ]       ]     ];
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.rank">fhir:Encounter.diagnosis.rank</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> "1"^^xsd:positiveInteger ]
   ];
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.account">fhir:Encounter.account</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -291,17 +293,22 @@
   ];
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization">fhir:Encounter.hospitalization</a> [
      <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.preAdmissionIdentifier">fhir:Encounter.hospitalization.preAdmissionIdentifier</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "official" ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "https://example.org/preadmision-identifiers" ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "7649" ]     ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "6037c96f1b3e" ]     ];
      <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.origin">fhir:Encounter.hospitalization.origin</a> [
        <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Location/Example-LocationRoom-1245687952" ]     ];
      <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.admitSource">fhir:Encounter.hospitalization.admitSource</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/ValueSet/admit-source" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "mp" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Medical Practitioner/physician referral" ]       ]     ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://terminology.hl7.org/CodeSystem/admit-source" ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "outp" ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "From outpatient department" ]       ]     ];
+     <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.specialCourtesy">fhir:Encounter.hospitalization.specialCourtesy</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy" ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "VIP" ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "very important person" ]       ]     ];
      <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.dischargeDisposition">fhir:Encounter.hospitalization.dischargeDisposition</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -355,8 +362,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="6c3dbc10-cdd2-4f61-ab3d-f49e67763e96">​</a>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="null">DigitalWare S.A. - Klinic-HIS</a>.  Package fhir.digital-ware.klinic-api-fhir#1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 18, 2021 06:24-0500">2021-02-18</span>
+        <p><a name="5f9e9fba-fd28-4987-a2db-c453edd92706">​</a>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="null">DigitalWare S.A. - Klinic-HIS</a>.  Package fhir.digital-ware.klinic-api-fhir#1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 20, 2021 00:32-0500">2021-02-20</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -10,7 +10,7 @@
   "name": "klinicapifhir",
   "title": "Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.",
   "status": "active",
-  "date": "2021-02-18T06:24:32-05:00",
+  "date": "2021-02-20T00:32:49-05:00",
   "publisher": "DigitalWare S.A. - Klinic-HIS",
   "description": "FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A.",
   "packageId": "fhir.digital-ware.klinic-api-fhir",
@@ -395,10 +395,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/ProfileCoverageKlinic"
+          "reference": "StructureDefinition/profileCompositionKlinic"
         },
-        "name": "Coverage patient",
-        "description": "patient's health coverage policy.",
+        "name": "Document Electronic",
+        "description": "Compisition Document Electronic",
         "exampleBoolean": false
       },
       {
@@ -439,7 +439,7 @@
           "reference": "StructureDefinition/ProfilePatientKlinic"
         },
         "name": "Patient",
-        "description": "HL7 FHIR profile for Patient resource refined for Klinic API FHIR context.",
+        "description": "Perfil HL7 FHIR para el recurso Patient refinado para el contexto Klinic API FHIR.",
         "exampleBoolean": false
       },
       {
@@ -451,6 +451,20 @@
         ],
         "reference": {
           "reference": "StructureDefinition/ProfileSchedule"
+        },
+        "name": "Schedule patient",
+        "description": "Schedule patient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileScheduleKlinic"
         },
         "name": "Schedule patient",
         "description": "Schedule patient",
@@ -661,6 +675,19 @@
         },
         "name": "Coverage Identification Type",
         "description": "Identification coverage type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CulturalGroup"
+        },
+        "name": "Cultural group",
         "exampleBoolean": false
       },
       {
@@ -894,20 +921,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/PatientEthnicity"
-        },
-        "name": "Grupo etnico paciente",
-        "description": "Grupo etnico del paciente.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/PatientPopulationGroup"
         },
         "name": "Grupo pobacional paciente",
@@ -1021,6 +1034,58 @@
         },
         "name": "VirtualBed",
         "description": "Indicator if a bed is virtual or not",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/Coverage"
+        },
+        "name": "Coverage",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/INDISA"
+        },
+        "name": "INDISA",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ISAPRES"
+        },
+        "name": "ISAPRES",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/Tramo"
+        },
+        "name": "Tramo",
         "exampleBoolean": false
       },
       {
@@ -1317,6 +1382,19 @@
           "reference": "Practitioner/Example-Practitioner-09709es9d"
         },
         "name": "Example-Practitioner-09709es9d",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Example-Practitioner-4290sd6n"
+        },
+        "name": "Example-Practitioner-4290sd6n",
         "exampleBoolean": true
       },
       {

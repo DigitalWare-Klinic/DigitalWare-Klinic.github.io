@@ -3,7 +3,7 @@
   "id": "Example-Practitioner-09709es9d",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: Medical Record Number: 8596788ap (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Sebastian Camilo Daza Barrera (OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+56(2)1111-1111\">+56(2)1111-1111</a>, <a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:dbsebastian@example.com\">dbsebastian@example.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1989-03-10</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Medical license number: TP859678 (OFFICIAL)</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 309343006}\">Médico</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Medical license number: TP859678 (OFFICIAL)</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 83685006}\">Ginecólogo</span></p></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: National Person Identifier Chile: 8596788ap (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Sebastian Camilo Daza Barrera (OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+56(2)1111-1111\">+56(2)1111-1111</a>, <a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:dbsebastian@example.com\">dbsebastian@example.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1989-03-10</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Medical license number: TP859678 (OFFICIAL)</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 309343006}\">Médico</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Medical license number: TP859678 (OFFICIAL)</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 83685006}\">Ginecólogo</span></p></blockquote></div>"
   },
   "identifier": [
     {
@@ -12,8 +12,8 @@
         "coding": [
           {
             "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MR",
-            "display": "Medical Record Number"
+            "code": "NNCHL",
+            "display": "National Person Identifier Chile"
           },
           {
             "system": "http://registrocivil.cl/RUN",

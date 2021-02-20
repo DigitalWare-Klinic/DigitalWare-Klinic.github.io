@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Tramo"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/Tramo defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr></table></div>
+  </text>
+  <url value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/Tramo"/>
+  <version value="1.0"/>
+  <name value="Tramo"/>
+  <status value="active"/>
+  <date value="2021-02-20T00:32:49-05:00"/>
+  <publisher value="DigitalWare S.A. - Klinic-HIS"/>
+  <content value="complete"/>
+</CodeSystem>

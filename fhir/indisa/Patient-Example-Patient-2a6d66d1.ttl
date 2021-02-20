@@ -24,7 +24,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>genderIdentity</b>: <span title=\"Codes: {http://snomed.info/sct 703117000}\">Female</span></p><p><b>Birth Place</b>: Santiago de Chile Region Metropolitana Chile </p><blockquote><p><b>nationality</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {https://www.iso.org/iso-3166-country-codes.html CL}\">Chile</span></p></blockquote><p><b>disability</b>: <span title=\"Codes: {http://snomed.info/sct 120}\">Fisical</span></p><p><b>religion</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation 1041}\">Roman Catholic Church</span></p><p><b>identifier</b>: Medical record number: 3782734 (OFFICIAL), id: HC-6ef0a6d7-22009365ae97 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Maria Jake (OFFICIAL), Maria Jake(NICKNAME)</p><p><b>telecom</b>: <a href=\"tel:+56(2)1111-1111\">+56(2)1111-1111</a>, <a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:jmaria@example.com\">jmaria@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1975-08-14</p><p><b>deceased</b>: false</p><p><b>address</b>: Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</p><p><b>maritalStatus</b>: <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td></td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0131 C}, {http://snomed.info/sct 66839005}\">Emergency Contact</span></td><td>Jorge Jake</td><td><a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:jjorge@example.com\">jjorge@example.com</a></td><td>Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</td></tr></table><h3>Links</h3><table class=\"grid\"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: Medical record number: 347827348 (OFFICIAL), id: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></td><td>replaced-by</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>genderIdentity</b>: <span title=\"Codes: {http://snomed.info/sct 703117000}\">Female</span></p><p><b>Birth Place</b>: Santiago de Chile Region Metropolitana Chile </p><blockquote><p><b>nationality</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {https://www.iso.org/iso-3166-country-codes.html CL}\">Chile</span></p></blockquote><p><b>disability</b>: <span title=\"Codes: {http://snomed.info/sct 120}\">Fisical</span></p><p><b>religion</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation 1041}\">Roman Catholic Church</span></p><p><b>identifier</b>: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Maria Jake (OFFICIAL), Maria Jake(NICKNAME)</p><p><b>telecom</b>: <a href=\"tel:+56(2)1111-1111\">+56(2)1111-1111</a>, <a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:jmaria@example.com\">jmaria@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1975-08-14</p><p><b>deceased</b>: false</p><p><b>address</b>: Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</p><p><b>maritalStatus</b>: <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td></td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0131 C}, {http://snomed.info/sct 66839005}\">Emergency Contact</span></td><td>Jorge Jake</td><td><a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:jjorge@example.com\">jjorge@example.com</a></td><td>Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</td></tr></table><h3>Links</h3><table class=\"grid\"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></td><td>replaced-by</td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -148,6 +148,18 @@
          fhir:Coding.display [ fhir:value "Roman Catholic Church" ]
        ]
      ]
+  ], [
+     fhir:index 11;
+     fhir:Element.id [ fhir:value "culturalGroup" ];
+     fhir:Extension.url [ fhir:value "https://www.digitalware.com.co/salud/fhir/extension/patient-cultural-groups" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://deis.cl/fhir/PueblosIndigenasMinsalDecreto643" ];
+         fhir:Coding.code [ fhir:value "Indio Americano" ];
+         fhir:Coding.display [ fhir:value "1002-5" ]
+       ]
+     ]
   ];
   fhir:Patient.identifier [
      fhir:index 0;
@@ -156,8 +168,8 @@
        fhir:CodeableConcept.coding [
          fhir:index 0;
          fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
-         fhir:Coding.code [ fhir:value "MR" ];
-         fhir:Coding.display [ fhir:value "Medical record number" ]
+         fhir:Coding.code [ fhir:value "NNCHL" ];
+         fhir:Coding.display [ fhir:value "National Person Identifier Chile" ]
        ], [
          fhir:index 1;
          fhir:Coding.system [ fhir:value "http://registrocivil.cl/RUN" ];
@@ -165,12 +177,20 @@
          fhir:Coding.display [ fhir:value "Rol Único Nacional" ]
        ]
      ];
-     fhir:Identifier.value [ fhir:value "3782734" ]
+     fhir:Identifier.value [ fhir:value "347827348" ]
   ], [
      fhir:index 1;
      fhir:Identifier.use [ fhir:value "usual" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "MR" ];
+         fhir:Coding.display [ fhir:value "Medical Record Number" ]
+       ]
+     ];
      fhir:Identifier.system [ fhir:value "https://www.digitalware.com.co/salud/fhir/patient-id" ];
-     fhir:Identifier.value [ fhir:value "HC-6ef0a6d7-22009365ae97" ]
+     fhir:Identifier.value [ fhir:value "HC-6ef0a6d7" ]
   ];
   fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
   fhir:Patient.name [

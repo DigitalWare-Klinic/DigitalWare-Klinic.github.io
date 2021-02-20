@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "Example-Coverage-fa7a571e"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/coverage-selfpay EHCPOL}, {http://digitalware.com.co/salud/fhir/CodeSystem/coverages-type-cl ISA}\">extended healthcare</span></p><p><b>policyHolder</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: Medical record number: 347827348 (OFFICIAL), id: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></p><p><b>subscriber</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: Medical record number: 347827348 (OFFICIAL), id: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></p><p><b>beneficiary</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: Medical record number: 347827348 (OFFICIAL), id: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></p><p><b>relationship</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span></p><p><b>payor</b>: <a href=\"Organization-Example-Organization-Payor-2910416f.html\">Generated Summary: id: EPS0001; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type ins}\">Insurance Company</span>; name: Aseguradora Salud Completa</a></p><h3>Classes</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://example.com/planes-asegurador 00ff320e-8f5a-4f27-9862-e5083f2705f2}\">Plan Meditarráneo</span></td><td>00ff320e-8f5a-4f27-9862-e5083f2705f2</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/coverage-selfpay EHCPOL}, {http://digitalware.com.co/salud/fhir/CodeSystem/coverages-type-cl ISA}\">extended healthcare</span></p><p><b>policyHolder</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></p><p><b>subscriber</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></p><p><b>beneficiary</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></p><p><b>relationship</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span></p><p><b>payor</b>: <a href=\"Organization-Example-Organization-Payor-2910416f.html\">Generated Summary: id: EPS0001; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type ins}\">Insurance Company</span>; name: Aseguradora Salud Completa</a></p><blockquote><p><b>class</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/coverage-class class}, {http://digitalware.com.co/salud/fhir/CodeSystem/ISAPRES db2d}\">Class</span></p><p><b>value</b>: db2d</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/coverage-class plan}, {http://example.com/planes-asegurador 00ff320e-8f5a-4f27-9862-e5083f2705f2}\">Plan</span></p><p><b>value</b>: 00ff320e-8f5a-4f27-9862-e5083f2705f2</p></blockquote></div>"
   ];
   fhir:Coverage.status [ fhir:value "active"];
   fhir:Coverage.type [
@@ -66,6 +66,27 @@
      fhir:Coverage.class.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/coverage-class" ];
+         fhir:Coding.code [ fhir:value "class" ];
+         fhir:Coding.display [ fhir:value "Class" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/ISAPRES" ];
+         fhir:Coding.code [ fhir:value "db2d" ];
+         fhir:Coding.display [ fhir:value "Cruz Blanca" ]
+       ]
+     ];
+     fhir:Coverage.class.value [ fhir:value "db2d" ]
+  ], [
+     fhir:index 1;
+     fhir:Coverage.class.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/coverage-class" ];
+         fhir:Coding.code [ fhir:value "plan" ];
+         fhir:Coding.display [ fhir:value "Plan" ]
+       ], [
+         fhir:index 1;
          fhir:Coding.system [ fhir:value "http://example.com/planes-asegurador" ];
          fhir:Coding.code [ fhir:value "00ff320e-8f5a-4f27-9862-e5083f2705f2" ];
          fhir:Coding.display [ fhir:value "Plan Meditarráneo" ]

@@ -11,7 +11,7 @@
   <name value="klinicapifhir"/>
   <title value="Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A."/>
   <status value="active"/>
-  <date value="2021-02-18T06:24:32-05:00"/>
+  <date value="2021-02-20T00:32:49-05:00"/>
   <publisher value="DigitalWare S.A. - Klinic-HIS"/>
   <description value="FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A."/>
   <packageId value="fhir.digital-ware.klinic-api-fhir"/>
@@ -266,10 +266,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ProfileCoverageKlinic"/>
+        <reference value="StructureDefinition/profileCompositionKlinic"/>
       </reference>
-      <name value="Coverage patient"/>
-      <description value="patient&#39;s health coverage policy."/>
+      <name value="Document Electronic"/>
+      <description value="Compisition Document Electronic"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -301,7 +301,7 @@
         <reference value="StructureDefinition/ProfilePatientKlinic"/>
       </reference>
       <name value="Patient"/>
-      <description value="HL7 FHIR profile for Patient resource refined for Klinic API FHIR context."/>
+      <description value="Perfil HL7 FHIR para el recurso Patient refinado para el contexto Klinic API FHIR."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -310,6 +310,17 @@
       </extension>
       <reference>
         <reference value="StructureDefinition/ProfileSchedule"/>
+      </reference>
+      <name value="Schedule patient"/>
+      <description value="Schedule patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProfileScheduleKlinic"/>
       </reference>
       <name value="Schedule patient"/>
       <description value="Schedule patient"/>
@@ -475,6 +486,16 @@
       </reference>
       <name value="Coverage Identification Type"/>
       <description value="Identification coverage type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CulturalGroup"/>
+      </reference>
+      <name value="Cultural group"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -657,17 +678,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PatientEthnicity"/>
-      </reference>
-      <name value="Grupo etnico paciente"/>
-      <description value="Grupo etnico del paciente."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/PatientPopulationGroup"/>
       </reference>
       <name value="Grupo pobacional paciente"/>
@@ -757,6 +767,46 @@
       </reference>
       <name value="VirtualBed"/>
       <description value="Indicator if a bed is virtual or not"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/Coverage"/>
+      </reference>
+      <name value="Coverage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/INDISA"/>
+      </reference>
+      <name value="INDISA"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ISAPRES"/>
+      </reference>
+      <name value="ISAPRES"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/Tramo"/>
+      </reference>
+      <name value="Tramo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -987,6 +1037,16 @@
         <reference value="Practitioner/Example-Practitioner-09709es9d"/>
       </reference>
       <name value="Example-Practitioner-09709es9d"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/Example-Practitioner-4290sd6n"/>
+      </reference>
+      <name value="Example-Practitioner-4290sd6n"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

@@ -7,6 +7,34 @@
     "name": "educationalLevelChile"
   },
   {
+    "id": "Coverage",
+    "type": "CodeSystem",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/Coverage",
+    "version": "1.0",
+    "name": "Coverage"
+  },
+  {
+    "id": "INDISA",
+    "type": "CodeSystem",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/INDISA",
+    "version": "1.0",
+    "name": "INDISA"
+  },
+  {
+    "id": "ISAPRES",
+    "type": "CodeSystem",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/ISAPRES",
+    "version": "1.0",
+    "name": "ISAPRES"
+  },
+  {
+    "id": "Tramo",
+    "type": "CodeSystem",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/Tramo",
+    "version": "1.0",
+    "name": "Tramo"
+  },
+  {
     "id": "fhir.digital-ware.klinic-api-fhir",
     "type": "ImplementationGuide",
     "url": "https://digitalware-klinic.github.io/fhir/indisa/ImplementationGuide/fhir.digital-ware.klinic-api-fhir",
@@ -89,6 +117,13 @@
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CoverageIdentificationType",
     "version": "1.0",
     "name": "CoverageIdentificationType"
+  },
+  {
+    "id": "CulturalGroup",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CulturalGroup",
+    "version": "1.0",
+    "name": "CulturalGroup"
   },
   {
     "id": "Disability",
@@ -231,13 +266,6 @@
     "name": "OrganizationTelecom"
   },
   {
-    "id": "PatientEthnicity",
-    "type": "StructureDefinition",
-    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PatientEthnicity",
-    "version": "1.0",
-    "name": "PatientEthnicity"
-  },
-  {
     "id": "PatientPopulationGroup",
     "type": "StructureDefinition",
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PatientPopulationGroup",
@@ -273,13 +301,6 @@
     "name": "ProfileAppointment"
   },
   {
-    "id": "ProfileCoverageKlinic",
-    "type": "StructureDefinition",
-    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileCoverageKlinic",
-    "version": "1.0",
-    "name": "ProfileCoverageKlinic"
-  },
-  {
     "id": "ProfileEncounterKlinic",
     "type": "StructureDefinition",
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileEncounterKlinic",
@@ -306,6 +327,13 @@
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileSchedule",
     "version": "1.0",
     "name": "ProfileSchedule"
+  },
+  {
+    "id": "ProfileScheduleKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileScheduleKlinic",
+    "version": "1.0",
+    "name": "ProfileScheduleKlinic"
   },
   {
     "id": "ProfileServiceRequestKlinic",
@@ -390,6 +418,13 @@
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/medicationAmount",
     "version": "1.0",
     "name": "MedicationAmount"
+  },
+  {
+    "id": "profileCompositionKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/profileCompositionKlinic",
+    "version": "1.0",
+    "name": "ProfileCompositionKlinic"
   },
   {
     "id": "suppliesAmount",

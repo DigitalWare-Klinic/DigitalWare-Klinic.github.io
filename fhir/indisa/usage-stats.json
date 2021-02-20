@@ -107,6 +107,24 @@
       ]
     },
     {
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CulturalGroup",
+      "title": "Cultural group",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Disability",
       "title": "Discapacidad del paciente",
       "types": [
@@ -283,24 +301,6 @@
         "code",
         "positiveInt",
         "Period"
-      ]
-    },
-    {
-      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PatientEthnicity",
-      "title": "Grupo etnico paciente",
-      "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
       ]
     },
     {
@@ -581,12 +581,6 @@
         "title": "ProfileAppointment"
       }
     ],
-    "Coverage": [
-      {
-        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileCoverageKlinic",
-        "title": "Coverage patient"
-      }
-    ],
     "Encounter": [
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileEncounterKlinic",
@@ -609,6 +603,10 @@
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileSchedule",
         "title": "Schedule patient"
+      },
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileScheduleKlinic",
+        "title": "Schedule patient"
       }
     ],
     "ServiceRequest": [
@@ -621,6 +619,12 @@
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/SlotKlinic",
         "title": "SlotKlinic"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/profileCompositionKlinic",
+        "title": "Document Electronic"
       }
     ]
   },
@@ -753,8 +757,8 @@
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ChargeBed": [
       "Location"
     ],
-    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CoverageIdentificationType": [
-      "Coverage.type"
+    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CulturalGroup": [
+      "Patient"
     ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Disability": [
       "Patient"
@@ -783,9 +787,6 @@
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Ocupation": [
       "Patient"
     ],
-    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PatientEthnicity": [
-      "Patient"
-    ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PatientPopulationGroup": [
       "Patient"
     ],
@@ -797,9 +798,6 @@
     ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/RateModality": [
       "Encounter"
-    ],
-    "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/Religion": [
-      "Patient"
     ],
     "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ServicePartOf": [
       "HealthcareService"
@@ -847,6 +845,9 @@
       "Patient"
     ],
     "https://www.digitalware.com.co/salud/fhir/extension/ocupation": [
+      "Patient"
+    ],
+    "https://www.digitalware.com.co/salud/fhir/extension/patient-cultural-groups": [
       "Patient"
     ],
     "https://www.digitalware.com.co/salud/fhir/extension/patient-ethnicity": [
