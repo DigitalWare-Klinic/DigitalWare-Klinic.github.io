@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "Example-Organization-Payor-2910416f"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: EPS0001</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type ins}\">Insurance Company</span></p><p><b>name</b>: Aseguradora Salud Completa</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;

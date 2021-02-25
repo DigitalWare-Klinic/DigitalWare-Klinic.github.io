@@ -3,7 +3,7 @@
   "id": "Example-HealthcareService-20ede331",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b style=\"color: maroon\">Exception generating Narrative: Unknown Content id @  START_TAG seen ...&lt;value&gt;\\n    &lt;id value=\"Code45678\"/&gt;... @7:28</b></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
   },
   "extension": [
     {
@@ -30,7 +30,7 @@
         {
           "system": "http://snomed.info/sct",
           "code": "27",
-          "display": "Specialist Medical"
+          "display": "Medico especialista"
         }
       ]
     }
@@ -41,7 +41,7 @@
         {
           "system": "http://snomed.info/sct",
           "code": "186",
-          "display": "Obstetrics y Gynaecology"
+          "display": "obstetricia y ginecologia"
         }
       ]
     }
@@ -52,7 +52,7 @@
         {
           "system": "http://snomed.info/sct",
           "code": "394586005",
-          "display": "Gynecology"
+          "display": "ginecologia"
         }
       ]
     }

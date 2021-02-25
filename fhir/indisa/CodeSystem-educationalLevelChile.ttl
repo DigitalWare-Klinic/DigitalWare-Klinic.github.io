@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "educationalLevelChile"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://www.subdere.gov.cl/sites/default/files/documentos/CUT_2018_v04.xls defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/educationalLevelChile defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://www.subdere.gov.cl/sites/default/files/documentos/CUT_2018_v04.xls"];
+  fhir:CodeSystem.url [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/educationalLevelChile"];
   fhir:CodeSystem.version [ fhir:value "1.0"];
   fhir:CodeSystem.name [ fhir:value "educationalLevelChile"];
   fhir:CodeSystem.title [ fhir:value "Nivel Educativo Chile"];

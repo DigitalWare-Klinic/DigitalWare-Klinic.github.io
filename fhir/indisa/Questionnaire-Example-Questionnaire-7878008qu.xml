@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="Example-Questionnaire-7878008qu"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
+  </text>
+  <url value="https://digitalware-klinic.github.io/fhir/indisa/Questionnaire/Example-Questionnaire-7878008qu"/>
+  <identifier>
+    <use value="usual"/>
+    <system value="https://example.org/questionnaire-identifiers"/>
+    <value value="CNQ7980"/>
+  </identifier>
+  <version value="1.0"/>
+  <title value="Encuesta donacion bano de sangre"/>
+  <status value="active"/>
+  <subjectType value="Questionnaire"/>
+  <date value="2021-02-25T14:30:23-05:00"/>
+  <publisher value="DigitalWare S.A. - Klinic-HIS"/>
+  <item>
+    <linkId value="A"/>
+    <text value="Datos Generales"/>
+    <type value="group"/>
+    <item>
+      <linkId value="A.1"/>
+      <text value="No Plaquetas"/>
+      <type value="boolean"/>
+    </item>
+    <item>
+      <linkId value="A.2"/>
+      <text value="No Plasma"/>
+      <type value="boolean"/>
+    </item>
+    <item>
+      <linkId value="A.3"/>
+      <text value="Grupo Sanguineo"/>
+      <type value="choice"/>
+      <answerOption>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="278149003"/>
+          <display value="grupo sangu&#xED;neo A Rh(D) positivo"/>
+        </valueCoding>
+      </answerOption>
+      <answerOption>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="278150003"/>
+          <display value="grupo sangu&#xED;neo B Rh(D) positivo"/>
+        </valueCoding>
+      </answerOption>
+      <answerOption>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="278151004"/>
+          <display value="grupo sangu&#xED;neo AB Rh(D) positivo"/>
+        </valueCoding>
+      </answerOption>
+      <answerOption>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="278147001"/>
+          <display value="grupo sangu&#xED;neo 0 Rh(D) positivo"/>
+        </valueCoding>
+      </answerOption>
+      <answerOption>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="278152006"/>
+          <display value="grupo sangu&#xED;neo A Rh(D) negativo"/>
+        </valueCoding>
+      </answerOption>
+      <answerOption>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="278153001"/>
+          <display value="grupo sangu&#xED;neo B Rh(D) negativo"/>
+        </valueCoding>
+      </answerOption>
+      <answerOption>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="278154007"/>
+          <display value="grupo sangu&#xED;neo AB Rh(D) negativo"/>
+        </valueCoding>
+      </answerOption>
+      <answerOption>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="278148006"/>
+          <display value="grupo sangu&#xED;neo 0 Rh(D) negativo"/>
+        </valueCoding>
+      </answerOption>
+    </item>
+  </item>
+  <item>
+    <linkId value="1"/>
+    <text value="Ficha del Donante"/>
+    <type value="group"/>
+    <item>
+      <linkId value="1.1"/>
+      <text value="Datos del Donante"/>
+      <type value="reference"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="1.2"/>
+      <text value="Datos del Receptor(Paciente)"/>
+      <type value="reference"/>
+      <required value="true"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="2"/>
+    <text value="Uso exclusivo Banco de Sangre"/>
+    <type value="group"/>
+    <item>
+      <linkId value="2.1"/>
+      <text value="Peso"/>
+      <type value="quantity"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="2.2"/>
+      <text value="Pulso"/>
+      <type value="quantity"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="2.3"/>
+      <text value="Presion Arterial"/>
+      <type value="quantity"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="2.4"/>
+      <text value="Hematocrito(hto)"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="2.5"/>
+      <text value="Hemoglobina(hb)"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="2.6"/>
+      <text value="Aspecto General"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="2.7"/>
+      <text value="Venas"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="2.8"/>
+      <text value="Causa General de Rechazo"/>
+      <type value="string"/>
+      <required value="false"/>
+    </item>
+    <item>
+      <linkId value="2.9"/>
+      <text value="Rechazo"/>
+      <type value="choice"/>
+      <enableWhen>
+        <question value="si la pregunta 2.8 esta diligenciada"/>
+        <operator value="exists"/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="14803004"/>
+          <display value="transitorio"/>
+        </answerCoding>
+      </enableWhen>
+      <enableWhen>
+        <question value="si la pregunta 2.8 esta diligenciada"/>
+        <operator value="exists"/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="261002007"/>
+          <display value="definitivo"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="false"/>
+    </item>
+    <item>
+      <linkId value="2.10"/>
+      <text value="Revision Datos Completos"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="3"/>
+    <text value="Preguntas"/>
+    <type value="group"/>
+    <item>
+      <linkId value="3.1"/>
+      <text value="&#xBF;Se siente ud. bien en este momento?"/>
+      <type value="boolean"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="3.2"/>
+      <text value="&#xBF;Ha ingerido alcohol en las ultimas 12 horas?"/>
+      <type value="boolean"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="3.3"/>
+      <text value="&#xBF;Si es mujer, esta ud. embarazada, ha tenido parto o abortos en los ultimios 6 meses?"/>
+      <type value="boolean"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="3.4"/>
+      <text value="&#xBF;Ha donado sangre alguna vez?"/>
+      <type value="boolean"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="3.5"/>
+      <text value="&#xBF;Ha sido rechazado alguna vez como donante de sangre?"/>
+      <type value="boolean"/>
+      <required value="true"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="4"/>
+    <text value="Consentimiento informado"/>
+    <type value="boolean"/>
+    <required value="true"/>
+  </item>
+  <item>
+    <linkId value="5"/>
+    <text value="Declaracion"/>
+    <type value="boolean"/>
+    <required value="true"/>
+  </item>
+  <item>
+    <linkId value="6"/>
+    <text value="Invitacion"/>
+    <type value="boolean"/>
+    <required value="true"/>
+  </item>
+  <item>
+    <linkId value="7"/>
+    <text value="Duracion de la extracci&#xF3;n"/>
+    <type value="group"/>
+    <item>
+      <linkId value="7.1"/>
+      <text value="Inicio"/>
+      <type value="dateTime"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="7.2"/>
+      <text value="Termino"/>
+      <type value="dateTime"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="7.3"/>
+      <text value="Duraci&#xF3;n"/>
+      <type value="time"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="7.4"/>
+      <text value="Retiro"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="7.5"/>
+      <text value="Brazo"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="7.6"/>
+      <text value="Extractor"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="7.7"/>
+      <text value="Reposo"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="7.8"/>
+      <text value="Entrega Recomendaci&#xF3;n Fisica y Verbal"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="7.8"/>
+      <text value="Autoexclusion"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="7.9"/>
+      <text value="Observaciones - Extraccion Lenta"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="7.10"/>
+      <text value="Observaciones - Extraccion Dificl"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <linkId value="7.11"/>
+      <text value="Otras Observaciones"/>
+      <type value="text"/>
+      <required value="true"/>
+    </item>
+  </item>
+</Questionnaire>

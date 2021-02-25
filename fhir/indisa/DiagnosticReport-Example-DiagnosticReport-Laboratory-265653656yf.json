@@ -1,0 +1,69 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "Example-DiagnosticReport-Laboratory-265653656yf",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://example.org/diagnostic-report-identifiers",
+      "value": "RLB2363636"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/Example-ServiceRequest-Laboratory-4637g6ad"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "108252007",
+          "display": "procedimiento de laboratorio"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "26604007",
+        "display": "hemograma completo"
+      },
+      {
+        "system": "http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa",
+        "code": "301045",
+        "display": "HEMOGRAMA"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Example-Patient-87356d0d"
+  },
+  "encounter": {
+    "reference": "Encounter/Example-Encounter-963b1515"
+  },
+  "effectiveDateTime": "2021-02-25T09:45:00-05:00",
+  "performer": [
+    {
+      "reference": "Practitioner/Example-Practitioner-78456er9f"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/Example-Specimen-Blood-56789856d"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/Example-Observation-643767367434f"
+    }
+  ],
+  "conclusion": "Ullamco eiusmod sunt elit non commodo est dolor."
+}

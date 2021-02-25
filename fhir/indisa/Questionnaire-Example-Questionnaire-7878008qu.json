@@ -1,0 +1,346 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "Example-Questionnaire-7878008qu",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+  },
+  "url": "https://digitalware-klinic.github.io/fhir/indisa/Questionnaire/Example-Questionnaire-7878008qu",
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "https://example.org/questionnaire-identifiers",
+      "value": "CNQ7980"
+    }
+  ],
+  "version": "1.0",
+  "title": "Encuesta donacion bano de sangre",
+  "status": "active",
+  "subjectType": [
+    "Questionnaire"
+  ],
+  "date": "2021-02-25T14:30:23-05:00",
+  "publisher": "DigitalWare S.A. - Klinic-HIS",
+  "item": [
+    {
+      "linkId": "A",
+      "text": "Datos Generales",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "A.1",
+          "text": "No Plaquetas",
+          "type": "boolean"
+        },
+        {
+          "linkId": "A.2",
+          "text": "No Plasma",
+          "type": "boolean"
+        },
+        {
+          "linkId": "A.3",
+          "text": "Grupo Sanguineo",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "278149003",
+                "display": "grupo sanguíneo A Rh(D) positivo"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "278150003",
+                "display": "grupo sanguíneo B Rh(D) positivo"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "278151004",
+                "display": "grupo sanguíneo AB Rh(D) positivo"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "278147001",
+                "display": "grupo sanguíneo 0 Rh(D) positivo"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "278152006",
+                "display": "grupo sanguíneo A Rh(D) negativo"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "278153001",
+                "display": "grupo sanguíneo B Rh(D) negativo"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "278154007",
+                "display": "grupo sanguíneo AB Rh(D) negativo"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "278148006",
+                "display": "grupo sanguíneo 0 Rh(D) negativo"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "1",
+      "text": "Ficha del Donante",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Datos del Donante",
+          "type": "reference",
+          "required": true
+        },
+        {
+          "linkId": "1.2",
+          "text": "Datos del Receptor(Paciente)",
+          "type": "reference",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Uso exclusivo Banco de Sangre",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "Peso",
+          "type": "quantity",
+          "required": true
+        },
+        {
+          "linkId": "2.2",
+          "text": "Pulso",
+          "type": "quantity",
+          "required": true
+        },
+        {
+          "linkId": "2.3",
+          "text": "Presion Arterial",
+          "type": "quantity",
+          "required": true
+        },
+        {
+          "linkId": "2.4",
+          "text": "Hematocrito(hto)",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "2.5",
+          "text": "Hemoglobina(hb)",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "2.6",
+          "text": "Aspecto General",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "2.7",
+          "text": "Venas",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "2.8",
+          "text": "Causa General de Rechazo",
+          "type": "string",
+          "required": false
+        },
+        {
+          "linkId": "2.9",
+          "text": "Rechazo",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "si la pregunta 2.8 esta diligenciada",
+              "operator": "exists",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "14803004",
+                "display": "transitorio"
+              }
+            },
+            {
+              "question": "si la pregunta 2.8 esta diligenciada",
+              "operator": "exists",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "261002007",
+                "display": "definitivo"
+              }
+            }
+          ],
+          "required": false
+        },
+        {
+          "linkId": "2.10",
+          "text": "Revision Datos Completos",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Preguntas",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "¿Se siente ud. bien en este momento?",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "linkId": "3.2",
+          "text": "¿Ha ingerido alcohol en las ultimas 12 horas?",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "linkId": "3.3",
+          "text": "¿Si es mujer, esta ud. embarazada, ha tenido parto o abortos en los ultimios 6 meses?",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "linkId": "3.4",
+          "text": "¿Ha donado sangre alguna vez?",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "linkId": "3.5",
+          "text": "¿Ha sido rechazado alguna vez como donante de sangre?",
+          "type": "boolean",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Consentimiento informado",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "linkId": "5",
+      "text": "Declaracion",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "linkId": "6",
+      "text": "Invitacion",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "linkId": "7",
+      "text": "Duracion de la extracción",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "7.1",
+          "text": "Inicio",
+          "type": "dateTime",
+          "required": true
+        },
+        {
+          "linkId": "7.2",
+          "text": "Termino",
+          "type": "dateTime",
+          "required": true
+        },
+        {
+          "linkId": "7.3",
+          "text": "Duración",
+          "type": "time",
+          "required": true
+        },
+        {
+          "linkId": "7.4",
+          "text": "Retiro",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "7.5",
+          "text": "Brazo",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "7.6",
+          "text": "Extractor",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "7.7",
+          "text": "Reposo",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "7.8",
+          "text": "Entrega Recomendación Fisica y Verbal",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "7.8",
+          "text": "Autoexclusion",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "7.9",
+          "text": "Observaciones - Extraccion Lenta",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "7.10",
+          "text": "Observaciones - Extraccion Dificl",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "7.11",
+          "text": "Otras Observaciones",
+          "type": "text",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

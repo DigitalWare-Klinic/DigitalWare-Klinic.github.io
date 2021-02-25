@@ -1,26 +1,5 @@
 [
   {
-    "id": "educationalLevelChile",
-    "type": "CodeSystem",
-    "url": "http://www.subdere.gov.cl/sites/default/files/documentos/CUT_2018_v04.xls",
-    "version": "1.0",
-    "name": "educationalLevelChile"
-  },
-  {
-    "id": "Coverage",
-    "type": "CodeSystem",
-    "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/Coverage",
-    "version": "1.0",
-    "name": "Coverage"
-  },
-  {
-    "id": "INDISA",
-    "type": "CodeSystem",
-    "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/INDISA",
-    "version": "1.0",
-    "name": "INDISA"
-  },
-  {
     "id": "ISAPRES",
     "type": "CodeSystem",
     "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/ISAPRES",
@@ -28,11 +7,32 @@
     "name": "ISAPRES"
   },
   {
-    "id": "Tramo",
+    "id": "coverage-type-cl",
     "type": "CodeSystem",
-    "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/Tramo",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/coverage-type-cl",
     "version": "1.0",
-    "name": "Tramo"
+    "name": "coverage-type-cl"
+  },
+  {
+    "id": "educationalLevelChile",
+    "type": "CodeSystem",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/educationalLevelChile",
+    "version": "1.0",
+    "name": "educationalLevelChile"
+  },
+  {
+    "id": "rates-modality-INDISA",
+    "type": "CodeSystem",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/rates-modality-INDISA",
+    "version": "1.0",
+    "name": "rates-modality-INDISA"
+  },
+  {
+    "id": "tramos-FONASA",
+    "type": "CodeSystem",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/tramos-FONASA",
+    "version": "1.0",
+    "name": "tramos-FONASA"
   },
   {
     "id": "fhir.digital-ware.klinic-api-fhir",
@@ -40,6 +40,12 @@
     "url": "https://digitalware-klinic.github.io/fhir/indisa/ImplementationGuide/fhir.digital-ware.klinic-api-fhir",
     "version": "1.0",
     "name": "klinicapifhir"
+  },
+  {
+    "id": "Example-Questionnaire-7878008qu",
+    "type": "Questionnaire",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/Questionnaire/Example-Questionnaire-7878008qu",
+    "version": "1.0"
   },
   {
     "id": "AccountAmount",
@@ -110,13 +116,6 @@
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ClinicalDischargeType",
     "version": "1.0",
     "name": "ClinicalDischargeType"
-  },
-  {
-    "id": "CoverageIdentificationType",
-    "type": "StructureDefinition",
-    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CoverageIdentificationType",
-    "version": "1.0",
-    "name": "CoverageIdentificationType"
   },
   {
     "id": "CulturalGroup",
@@ -280,13 +279,6 @@
     "name": "Personid"
   },
   {
-    "id": "PractitionerKlinic",
-    "type": "StructureDefinition",
-    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PractitionerKlinic",
-    "version": "1.0",
-    "name": "PractitionerKlinic"
-  },
-  {
     "id": "ProfileAccountKlinic",
     "type": "StructureDefinition",
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileAccountKlinic",
@@ -299,6 +291,20 @@
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileAppointment",
     "version": "1.0",
     "name": "ProfileAppointment"
+  },
+  {
+    "id": "ProfileCompositionKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileCompositionKlinic",
+    "version": "1.0",
+    "name": "ProfileCompositionKlinic"
+  },
+  {
+    "id": "ProfileCoverageKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileCoverageKlinic",
+    "version": "1.0",
+    "name": "ProfileCoverageKlinic"
   },
   {
     "id": "ProfileEncounterKlinic",
@@ -315,6 +321,13 @@
     "name": "ProfileHealthcareService"
   },
   {
+    "id": "ProfileMessageHeaderKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileMessageHeaderKlinic",
+    "version": "1.0",
+    "name": "ProfileMessageHeaderKlinic"
+  },
+  {
     "id": "ProfilePatientKlinic",
     "type": "StructureDefinition",
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfilePatientKlinic",
@@ -322,11 +335,18 @@
     "name": "ProfilePatientKlinic"
   },
   {
-    "id": "ProfileSchedule",
+    "id": "ProfilePractitionerKlinic",
     "type": "StructureDefinition",
-    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileSchedule",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfilePractitionerKlinic",
     "version": "1.0",
-    "name": "ProfileSchedule"
+    "name": "ProfilePractitionerKlinic"
+  },
+  {
+    "id": "ProfilePractitionerRole",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfilePractitionerRole",
+    "version": "1.0",
+    "name": "ProfilePractitionerRole"
   },
   {
     "id": "ProfileScheduleKlinic",
@@ -420,11 +440,32 @@
     "name": "MedicationAmount"
   },
   {
-    "id": "profileCompositionKlinic",
+    "id": "profileDiagnosticReportLabKlinic",
     "type": "StructureDefinition",
-    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/profileCompositionKlinic",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/profileDiagnosticReportLabKlinic",
     "version": "1.0",
-    "name": "ProfileCompositionKlinic"
+    "name": "ProfileDiagnosticReportLabKlinic"
+  },
+  {
+    "id": "profileObservationLabKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/profileObservationLabKlinic",
+    "version": "1.0",
+    "name": "ProfileObservationLabKlinic"
+  },
+  {
+    "id": "questionnaireResponseSurveyKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/questionnaireResponseSurveyKlinic",
+    "version": "1.0",
+    "name": "QuestionnaireResponseSurveyKlinic"
+  },
+  {
+    "id": "questionnaireSurveyKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/questionnaireSurveyKlinic",
+    "version": "1.0",
+    "name": "QuestionnaireSurveyKlinic"
   },
   {
     "id": "suppliesAmount",

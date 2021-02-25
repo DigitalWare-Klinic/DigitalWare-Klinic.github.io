@@ -10,7 +10,7 @@
   "name": "klinicapifhir",
   "title": "Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.",
   "status": "active",
-  "date": "2021-02-20T00:32:49-05:00",
+  "date": "2021-02-25T14:30:23-05:00",
   "publisher": "DigitalWare S.A. - Klinic-HIS",
   "description": "FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A.",
   "packageId": "fhir.digital-ware.klinic-api-fhir",
@@ -355,19 +355,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/PractitionerKlinic"
-        },
-        "name": "PractitionerKlinic",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/ProfileAccountKlinic"
         },
         "name": "Account",
@@ -395,10 +382,38 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/profileCompositionKlinic"
+          "reference": "StructureDefinition/ProfileCompositionKlinic"
         },
         "name": "Document Electronic",
         "description": "Compisition Document Electronic",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileCoverageKlinic"
+        },
+        "name": "Coverage patient",
+        "description": "patient's health coverage policy.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/profileDiagnosticReportLabKlinic"
+        },
+        "name": "Diagnostic report laboratory",
+        "description": "Diagnostic Report laboratory",
         "exampleBoolean": false
       },
       {
@@ -436,6 +451,34 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/ProfileMessageHeaderKlinic"
+        },
+        "name": "Message header",
+        "description": "Message header",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/profileObservationLabKlinic"
+        },
+        "name": "Observation laboratory",
+        "description": "Observation laboratory",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/ProfilePatientKlinic"
         },
         "name": "Patient",
@@ -450,10 +493,24 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/ProfileSchedule"
+          "reference": "StructureDefinition/ProfilePractitionerKlinic"
         },
-        "name": "Schedule patient",
-        "description": "Schedule patient",
+        "name": "Practitioner",
+        "description": "Practitioner",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfilePractitionerRole"
+        },
+        "name": "Practitioner Role",
+        "description": "Role of practitioner",
         "exampleBoolean": false
       },
       {
@@ -482,6 +539,34 @@
         },
         "name": "Service Request",
         "description": "Service request",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/questionnaireResponseSurveyKlinic"
+        },
+        "name": "Questionnaire response",
+        "description": "Questionnaire responses",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/questionnaireSurveyKlinic"
+        },
+        "name": "Questionnaire",
+        "description": "Questionnaire of Survey",
         "exampleBoolean": false
       },
       {
@@ -661,20 +746,6 @@
         },
         "name": "Copayment Amount",
         "description": "Copayment amount",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/CoverageIdentificationType"
-        },
-        "name": "Coverage Identification Type",
-        "description": "Identification coverage type",
         "exampleBoolean": false
       },
       {
@@ -1044,35 +1115,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/Coverage"
-        },
-        "name": "Coverage",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/INDISA"
-        },
-        "name": "INDISA",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
           "reference": "CodeSystem/ISAPRES"
         },
         "name": "ISAPRES",
+        "description": "This is a coding system that contains the insurance organizations classified in ISAPRES..",
         "exampleBoolean": false
       },
       {
@@ -1083,10 +1129,52 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/Tramo"
+          "reference": "CodeSystem/coverage-type-cl"
         },
-        "name": "Tramo",
+        "name": "coverage-type-cl",
+        "description": "This is a coding system that contains the types of health coverage applicable to the Chilean jurisdiction.",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/rates-modality-INDISA"
+        },
+        "name": "rates-modality-INDISA",
+        "description": "This is a coding system that contains the rate modality codes for the interoperability scenario of INDISA (Chile).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/tramos-FONASA"
+        },
+        "name": "tramos-FONASA",
+        "description": "This is a coding system that contains the the sections (tramos) of FONASA.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MessageHeader"
+          }
+        ],
+        "reference": {
+          "reference": "MessageHeader/97848708-6ea4-4706-892d-bee737630488"
+        },
+        "name": "97848708-6ea4-4706-892d-bee737630488",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1152,6 +1240,58 @@
           "reference": "Coverage/Example-Coverage-fa7a589f"
         },
         "name": "Example-Coverage-fa7a589f",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/Example-DiagnosticReport-Antibiogram-3894"
+        },
+        "name": "Example-DiagnosticReport-Antibiogram-3894",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/Example-DiagnosticReport-Laboratory-265653656yf"
+        },
+        "name": "Example-DiagnosticReport-Laboratory-265653656yf",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/Example-DiagnosticReport-Laboratory-6543g8au"
+        },
+        "name": "Example-DiagnosticReport-Laboratory-6543g8au",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/Example-DiagnosticReport-Laboratory-782823899957f"
+        },
+        "name": "Example-DiagnosticReport-Laboratory-782823899957f",
         "exampleBoolean": true
       },
       {
@@ -1295,6 +1435,136 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Media"
+          }
+        ],
+        "reference": {
+          "reference": "Media/Example-Media-3253255523yf"
+        },
+        "name": "Example-Media-3253255523yf",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Example-Observation-3232352365gf"
+        },
+        "name": "Example-Observation-3232352365gf",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Example-Observation-643767367434f"
+        },
+        "name": "Example-Observation-643767367434f",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Example-Observation-7373847387f"
+        },
+        "name": "Example-Observation-7373847387f",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Example-Observation-Antibiogram-obx0"
+        },
+        "name": "Example-Observation-Antibiogram-obx0",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Example-Observation-Antibiogram-obx1"
+        },
+        "name": "Example-Observation-Antibiogram-obx1",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Example-Observation-Antibiogram-obx2"
+        },
+        "name": "Example-Observation-Antibiogram-obx2",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Example-Observation-Antibiogram-obx3"
+        },
+        "name": "Example-Observation-Antibiogram-obx3",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Example-Observation-Antibiogram-obx4"
+        },
+        "name": "Example-Observation-Antibiogram-obx4",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Example-Observation-Antibiogram-obx5"
+        },
+        "name": "Example-Observation-Antibiogram-obx5",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Location"
           }
         ],
@@ -1401,6 +1671,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Example-Practitioner-78456er9f"
+        },
+        "name": "Example-Practitioner-78456er9f",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "PractitionerRole"
           }
         ],
@@ -1408,6 +1691,32 @@
           "reference": "PractitionerRole/Example-PractitionerRole-987654321"
         },
         "name": "Example-PractitionerRole-987654321",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/Example-Questionnaire-7878008qu"
+        },
+        "name": "Example-Questionnaire-7878008qu",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/Example-QuestionnaireResponse-7878008qu"
+        },
+        "name": "Example-QuestionnaireResponse-7878008qu",
         "exampleBoolean": true
       },
       {
@@ -1440,6 +1749,58 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/Example-ServiceRequest-Laboratory-4637g6ad"
+        },
+        "name": "Example-ServiceRequest-Laboratory-4637g6ad",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/Example-ServiceRequest-Laboratory-5688g6ay"
+        },
+        "name": "Example-ServiceRequest-Laboratory-5688g6ay",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/Example-ServiceRequest-Laboratory-6745g6at"
+        },
+        "name": "Example-ServiceRequest-Laboratory-6745g6at",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/Example-ServiceRequest-Laboratory-7856f89ad"
+        },
+        "name": "Example-ServiceRequest-Laboratory-7856f89ad",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Slot"
           }
         ],
@@ -1447,6 +1808,45 @@
           "reference": "Slot/Example-Slot-f261cf86"
         },
         "name": "Example-Slot-f261cf86",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Example-document-99294f378fec"
+        },
+        "name": "Example-document-99294f378fec",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Example-document-c1b9fc94f1af"
+        },
+        "name": "Example-document-c1b9fc94f1af",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MessageHeader"
+          }
+        ],
+        "reference": {
+          "reference": "MessageHeader/d3c28245-6e76-4816-8bef-07bde3c45e7c"
+        },
+        "name": "d3c28245-6e76-4816-8bef-07bde3c45e7c",
         "exampleBoolean": true
       },
       {

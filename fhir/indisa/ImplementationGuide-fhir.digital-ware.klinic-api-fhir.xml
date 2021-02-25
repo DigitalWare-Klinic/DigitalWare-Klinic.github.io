@@ -11,7 +11,7 @@
   <name value="klinicapifhir"/>
   <title value="Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A."/>
   <status value="active"/>
-  <date value="2021-02-20T00:32:49-05:00"/>
+  <date value="2021-02-25T14:30:23-05:00"/>
   <publisher value="DigitalWare S.A. - Klinic-HIS"/>
   <description value="FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A."/>
   <packageId value="fhir.digital-ware.klinic-api-fhir"/>
@@ -235,16 +235,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PractitionerKlinic"/>
-      </reference>
-      <name value="PractitionerKlinic"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/ProfileAccountKlinic"/>
       </reference>
       <name value="Account"/>
@@ -266,10 +256,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/profileCompositionKlinic"/>
+        <reference value="StructureDefinition/ProfileCompositionKlinic"/>
       </reference>
       <name value="Document Electronic"/>
       <description value="Compisition Document Electronic"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProfileCoverageKlinic"/>
+      </reference>
+      <name value="Coverage patient"/>
+      <description value="patient&#39;s health coverage policy."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/profileDiagnosticReportLabKlinic"/>
+      </reference>
+      <name value="Diagnostic report laboratory"/>
+      <description value="Diagnostic Report laboratory"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -298,6 +310,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ProfileMessageHeaderKlinic"/>
+      </reference>
+      <name value="Message header"/>
+      <description value="Message header"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/profileObservationLabKlinic"/>
+      </reference>
+      <name value="Observation laboratory"/>
+      <description value="Observation laboratory"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ProfilePatientKlinic"/>
       </reference>
       <name value="Patient"/>
@@ -309,10 +343,21 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ProfileSchedule"/>
+        <reference value="StructureDefinition/ProfilePractitionerKlinic"/>
       </reference>
-      <name value="Schedule patient"/>
-      <description value="Schedule patient"/>
+      <name value="Practitioner"/>
+      <description value="Practitioner"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProfilePractitionerRole"/>
+      </reference>
+      <name value="Practitioner Role"/>
+      <description value="Role of practitioner"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -335,6 +380,28 @@
       </reference>
       <name value="Service Request"/>
       <description value="Service request"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/questionnaireResponseSurveyKlinic"/>
+      </reference>
+      <name value="Questionnaire response"/>
+      <description value="Questionnaire responses"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/questionnaireSurveyKlinic"/>
+      </reference>
+      <name value="Questionnaire"/>
+      <description value="Questionnaire of Survey"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -475,17 +542,6 @@
       </reference>
       <name value="Copayment Amount"/>
       <description value="Copayment amount"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/CoverageIdentificationType"/>
-      </reference>
-      <name value="Coverage Identification Type"/>
-      <description value="Identification coverage type"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -774,29 +830,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/Coverage"/>
-      </reference>
-      <name value="Coverage"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/INDISA"/>
-      </reference>
-      <name value="INDISA"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
         <reference value="CodeSystem/ISAPRES"/>
       </reference>
       <name value="ISAPRES"/>
+      <description value="This is a coding system that contains the insurance organizations classified in ISAPRES.."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -804,10 +841,43 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/Tramo"/>
+        <reference value="CodeSystem/coverage-type-cl"/>
       </reference>
-      <name value="Tramo"/>
+      <name value="coverage-type-cl"/>
+      <description value="This is a coding system that contains the types of health coverage applicable to the Chilean jurisdiction."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/rates-modality-INDISA"/>
+      </reference>
+      <name value="rates-modality-INDISA"/>
+      <description value="This is a coding system that contains the rate modality codes for the interoperability scenario of INDISA (Chile)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tramos-FONASA"/>
+      </reference>
+      <name value="tramos-FONASA"/>
+      <description value="This is a coding system that contains the the sections (tramos) of FONASA."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/97848708-6ea4-4706-892d-bee737630488"/>
+      </reference>
+      <name value="97848708-6ea4-4706-892d-bee737630488"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -858,6 +928,46 @@
         <reference value="Coverage/Example-Coverage-fa7a589f"/>
       </reference>
       <name value="Example-Coverage-fa7a589f"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/Example-DiagnosticReport-Antibiogram-3894"/>
+      </reference>
+      <name value="Example-DiagnosticReport-Antibiogram-3894"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/Example-DiagnosticReport-Laboratory-265653656yf"/>
+      </reference>
+      <name value="Example-DiagnosticReport-Laboratory-265653656yf"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/Example-DiagnosticReport-Laboratory-6543g8au"/>
+      </reference>
+      <name value="Example-DiagnosticReport-Laboratory-6543g8au"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/Example-DiagnosticReport-Laboratory-782823899957f"/>
+      </reference>
+      <name value="Example-DiagnosticReport-Laboratory-782823899957f"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -969,6 +1079,106 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Media"/>
+      </extension>
+      <reference>
+        <reference value="Media/Example-Media-3253255523yf"/>
+      </reference>
+      <name value="Example-Media-3253255523yf"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Observation-3232352365gf"/>
+      </reference>
+      <name value="Example-Observation-3232352365gf"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Observation-643767367434f"/>
+      </reference>
+      <name value="Example-Observation-643767367434f"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Observation-7373847387f"/>
+      </reference>
+      <name value="Example-Observation-7373847387f"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Observation-Antibiogram-obx0"/>
+      </reference>
+      <name value="Example-Observation-Antibiogram-obx0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Observation-Antibiogram-obx1"/>
+      </reference>
+      <name value="Example-Observation-Antibiogram-obx1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Observation-Antibiogram-obx2"/>
+      </reference>
+      <name value="Example-Observation-Antibiogram-obx2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Observation-Antibiogram-obx3"/>
+      </reference>
+      <name value="Example-Observation-Antibiogram-obx3"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Observation-Antibiogram-obx4"/>
+      </reference>
+      <name value="Example-Observation-Antibiogram-obx4"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Observation-Antibiogram-obx5"/>
+      </reference>
+      <name value="Example-Observation-Antibiogram-obx5"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -1051,12 +1261,42 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/Example-Practitioner-78456er9f"/>
+      </reference>
+      <name value="Example-Practitioner-78456er9f"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
         <reference value="PractitionerRole/Example-PractitionerRole-987654321"/>
       </reference>
       <name value="Example-PractitionerRole-987654321"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/Example-Questionnaire-7878008qu"/>
+      </reference>
+      <name value="Example-Questionnaire-7878008qu"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Example-QuestionnaireResponse-7878008qu"/>
+      </reference>
+      <name value="Example-QuestionnaireResponse-7878008qu"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1081,12 +1321,82 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/Example-ServiceRequest-Laboratory-4637g6ad"/>
+      </reference>
+      <name value="Example-ServiceRequest-Laboratory-4637g6ad"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/Example-ServiceRequest-Laboratory-5688g6ay"/>
+      </reference>
+      <name value="Example-ServiceRequest-Laboratory-5688g6ay"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/Example-ServiceRequest-Laboratory-6745g6at"/>
+      </reference>
+      <name value="Example-ServiceRequest-Laboratory-6745g6at"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/Example-ServiceRequest-Laboratory-7856f89ad"/>
+      </reference>
+      <name value="Example-ServiceRequest-Laboratory-7856f89ad"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Slot"/>
       </extension>
       <reference>
         <reference value="Slot/Example-Slot-f261cf86"/>
       </reference>
       <name value="Example-Slot-f261cf86"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/Example-document-99294f378fec"/>
+      </reference>
+      <name value="Example-document-99294f378fec"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/Example-document-c1b9fc94f1af"/>
+      </reference>
+      <name value="Example-document-c1b9fc94f1af"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/d3c28245-6e76-4816-8bef-07bde3c45e7c"/>
+      </reference>
+      <name value="d3c28245-6e76-4816-8bef-07bde3c45e7c"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

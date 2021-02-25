@@ -3,7 +3,7 @@
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="Example-Practitioner-4290sd6n"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: National Person Identifier Chile: 45565700ap (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Maria Camila Perez Aristizabal (OFFICIAL)</p><p><b>telecom</b>: <a href="tel:+56(2)1111-1111">+56(2)1111-1111</a>, <a href="tel:+56(2)2222-2222">+56(2)2222-2222</a>, <a href="mailto:pamaria@example.com">pamaria@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1991-06-05</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Registered Nurse: TP134907 (OFFICIAL)</p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 309343008}">Enfermera</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Registered Nurse: TP134907 (OFFICIAL)</p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 309446002}">jefa de enfermeras</span></p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
   </text>
   <identifier>
     <use value="official"/>

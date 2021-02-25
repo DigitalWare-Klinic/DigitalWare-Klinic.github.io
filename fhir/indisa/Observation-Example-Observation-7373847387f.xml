@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Example-Observation-7373847387f"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="CH"/>
+      <display value="Chemistry"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="733830002"/>
+      <display value="hemoglobina glucosilada A1c"/>
+    </coding>
+    <coding>
+      <system value="http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa"/>
+      <code value="301041"/>
+      <display value="HEMOGLOBINA GLICADA A1C"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/Example-Encounter-963b1515"/>
+  </encounter>
+  <effectiveDateTime value="2021-02-25T09:45:00-05:00"/>
+  <valueQuantity>
+    <value value="5.6"/>
+    <unit value="%"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+      <display value="Normal"/>
+    </coding>
+  </interpretation>
+  <referenceRange>
+    <text value="4.8 - 5.7"/>
+  </referenceRange>
+</Observation>

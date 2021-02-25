@@ -1,0 +1,370 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/QuestionnaireResponse/Example-QuestionnaireResponse-7878008qu> a fhir:QuestionnaireResponse;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-QuestionnaireResponse-7878008qu"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+  ];
+  fhir:QuestionnaireResponse.identifier [
+     fhir:Identifier.use [ fhir:value "usual" ];
+     fhir:Identifier.system [ fhir:value "https://example.org/questionnaire-identifiers" ];
+     fhir:Identifier.value [ fhir:value "CNQR7980-001" ]
+  ];
+  fhir:QuestionnaireResponse.questionnaire [
+     fhir:value "Questionnarie/Example-Questionnaire-7878008qu";
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Questionnarie/Example-Questionnaire-7878008qu>
+  ];
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"];
+  fhir:QuestionnaireResponse.subject [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Person/Example-Person-647637373p>;
+     fhir:Reference.reference [ fhir:value "Person/Example-Person-647637373p" ]
+  ];
+  fhir:QuestionnaireResponse.authored [ fhir:value "2021-02-24T11:20:00-05:00"^^xsd:dateTime];
+  fhir:QuestionnaireResponse.author [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Practitioner/Example-Practitioner-78456er9f>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Example-Practitioner-78456er9f" ]
+  ];
+  fhir:QuestionnaireResponse.source [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Person/Example-Person-647637373p>;
+     fhir:Reference.reference [ fhir:value "Person/Example-Person-647637373p" ]
+  ];
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "A" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Datos Generales" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "A.1" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "No Plaquetas" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "A.2" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "No Plasma" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "A.3" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Grupo Sanguineo" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueCoding [
+           a sct:278150003;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+           fhir:Coding.code [ fhir:value "278150003" ];
+           fhir:Coding.display [ fhir:value "grupo sanguíneo B Rh(D) positivo" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "1" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Ficha del Donante" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "1.1" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Datos del Donante" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueReference [
+           fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Person/Example-Person-647637373p>;
+           fhir:Reference.reference [ fhir:value "Person/Example-Person-647637373p" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "1.2" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Datos del Receptor(Paciente)" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueReference [
+           fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d>;
+           fhir:Reference.reference [ fhir:value "Patient/Example-Patient-87356d0d" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "2" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Uso exclusivo Banco de Sangre" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "2.1" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Peso" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueQuantity [
+           fhir:Quantity.value [ fhir:value "55"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "Kg" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "2.2" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Pulso" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueQuantity [
+           fhir:Quantity.value [ fhir:value "75"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "bpm" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "2.3" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Presion Arterial" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueQuantity [
+           fhir:Quantity.value [ fhir:value "80"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "mmHg" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:QuestionnaireResponse.item.answer.valueQuantity [
+           fhir:Quantity.value [ fhir:value "120"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "mmHg" ]
+         ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "2.4" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Hematocrito(hto)" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Normal" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "2.5" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Hemoglobina(hb)" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Normal" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "2.6" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Aspecto General" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Normal" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "2.7" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Venas" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Normal" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "2.8" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Causa General de Rechazo" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Ninguna" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "2.10" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Revision Datos Completos" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Completos" ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "3" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Preguntas" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "3.1" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "¿Se siente ud. bien en este momento?" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "3.2" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "¿Ha ingerido alcohol en las ultimas 12 horas?" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "3.3" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "¿Si es mujer, esta ud. embarazada, ha tenido parto o abortos en los ultimios 6 meses?" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "3.4" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "¿Ha donado sangre alguna vez?" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "3.5" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "¿Ha sido rechazado alguna vez como donante de sangre?" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "4" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Consentimiento informado" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "5" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Declaracion" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "6" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Invitacion" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "7" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Duracion de la extracción" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "7.1" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Inicio" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueDateTime [ fhir:value "2021-02-24T14:20:00-05:00"^^xsd:dateTime ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "7.2" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Termino" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueDateTime [ fhir:value "2021-02-24T13:00:00-05:00"^^xsd:dateTime ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "7.3" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Duración" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueTime [ fhir:value "00:40:00"^^xsd:time ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "7.4" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Retiro" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Normal" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "7.5" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Brazo" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Normal" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "7.6" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Extractor" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Normal" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "7.7" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Reposo" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Normal" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "7.8" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Entrega Recomendación Fisica y Verbal" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Completa" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "7.8" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Autoexclusion" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Ninguna" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "7.9" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Observaciones - Extraccion Lenta" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "No se registra extraccion lenta" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "7.10" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Observaciones - Extraccion Dificl" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "No se registra extraccion dificil" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "7.11" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Otras Observaciones" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "null" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/QuestionnaireResponse/Example-QuestionnaireResponse-7878008qu.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

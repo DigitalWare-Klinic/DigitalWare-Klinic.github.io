@@ -3,12 +3,17 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
   <id value="Example-ServiceRequest-4948f6ad"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: GN3456 (OFFICIAL)</p><p><b>replaces</b>: <a href="ServiceRequest/Example-ServiceRequest-5437326r">ServiceRequest/Example-ServiceRequest-5437326r</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>category</b>: <span title="Codes: {http://snomed.info/sct 386053000}">procedimiento de evaluación</span></p><p><b>priority</b>: routine</p><p><b>code</b>: <span title="Codes: {http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa 34552344}, {http://snomed.info/sct 423827005}">Endoscopia nivel I</span></p><p><b>orderDetail</b>: <span title="Codes: {http://snomed.info/sct 6470007}">laparoamnioscopy</span></p><p><b>quantity</b>: 1</p><p><b>subject</b>: <a href="Patient-Example-Patient-87356d0d.html">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title="Codes: {http://hl7.org/fhir/ValueSet/marital-status M}">Married</span></a></p><p><b>encounter</b>: <a href="Encounter-Example-Encounter-963b1515.html">Generated Summary: id: 12334556 (OFFICIAL); status: finished; <span title="{http://terminology.hl7.org/ValueSet/v3-ActEncounterCode AMB}">ambulatory</span>; <span title="Codes: {http://hl7.org/fhir/ValueSet/service-type 349}">General Practitioner</span>; <span title="Codes: {http://terminology.hl7.org/ValueSet/v3-ActPriority R}">routine</span>; period: 21/01/2021, 7:00:00 a. m. --&gt; 21/01/2021, 7:30:00 a. m.; <span title="Codes: {http://hl7.org/fhir/ValueSet/encounter-reason 257006}">Acne rosacea</span></a></p><p><b>authoredOn</b>: 21/02/2021, 7:30:00 a. m.</p><p><b>requester</b>: <a href="Practitioner-Example-Practitioner-09709es9d.html">Generated Summary: National Person Identifier Chile: 8596788ap (OFFICIAL); active; Sebastian Camilo Daza Barrera (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, dbsebastian@example.com; gender: male; birthDate: 1989-03-10</a></p><p><b>reasonCode</b>: <span title="Codes: {http://snomed.info/sct 2989004}">Complication following molar AND/OR ectopic pregnancy</span></p><p><b>reasonReference</b>: <a href="Condition/Example-Condition-4869c">Condition/Example-Condition-4869c</a></p><p><b>insurance</b>: <a href="Coverage-Example-Coverage-fa7a571e.html">Generated Summary: status: active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/coverage-selfpay EHCPOL}, {http://digitalware.com.co/salud/fhir/CodeSystem/coverages-type-cl ISA}">extended healthcare</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}">Self</span></a></p><p><b>bodySite</b>: <span title="Codes: {http://snomed.info/sct 9258009}">Gravid uterus</span></p><p><b>note</b>: fasting procedure, procedure requires prior preparation, procedure requires anesthesia</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
   </text>
   <identifier>
     <use value="official"/>
     <system value="https://example.org/servicerequest-identifiers"/>
     <value value="GN3456"/>
+  </identifier>
+  <identifier>
+    <use value="secondary"/>
+    <system value="https://example.org/servicerequest-authorization-identifiers"/>
+    <value value="AUT8954"/>
   </identifier>
   <replaces>
     <reference value="ServiceRequest/Example-ServiceRequest-5437326r"/>
@@ -32,14 +37,14 @@
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="423827005"/>
-      <display value="endoscopy"/>
+      <display value="endoscopia"/>
     </coding>
   </code>
   <orderDetail>
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="6470007"/>
-      <display value="laparoamnioscopy"/>
+      <display value="laparoamnioscopia"/>
     </coding>
   </orderDetail>
   <quantityQuantity>
@@ -59,7 +64,7 @@
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="2989004"/>
-      <display value="Complication following molar AND/OR ectopic pregnancy"/>
+      <display value="Complicaci&#xF3;n despu&#xE9;s de un embarazo molar Y / o ect&#xF3;pico"/>
     </coding>
   </reasonCode>
   <reasonReference>
@@ -72,7 +77,7 @@
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="9258009"/>
-      <display value="Gravid uterus"/>
+      <display value="&#xDA;tero gr&#xE1;vido"/>
     </coding>
   </bodySite>
   <note>

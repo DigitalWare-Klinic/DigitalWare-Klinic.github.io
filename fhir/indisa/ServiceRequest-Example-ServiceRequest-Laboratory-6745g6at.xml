@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="Example-ServiceRequest-Laboratory-6745g6at"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://example.org/servicerequest-identifiers"/>
+    <value value="LB8976"/>
+  </identifier>
+  <replaces>
+    <reference value="ServiceRequest/Example-ServiceRequest-54376545r"/>
+  </replaces>
+  <requisition>
+    <value value="LB7834"/>
+  </requisition>
+  <status value="active"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="108252007"/>
+      <display value="procedimiento de laboratorio"/>
+    </coding>
+  </category>
+  <priority value="routine"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="733830002"/>
+      <display value="hemoglobina glucosilada A1c"/>
+    </coding>
+    <coding>
+      <system value="http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa"/>
+      <code value="301041"/>
+      <display value="HEMOGLOBINA GLICADA A1C"/>
+    </coding>
+  </code>
+  <quantityQuantity>
+    <value value="1"/>
+  </quantityQuantity>
+  <subject>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/Example-Encounter-963b1515"/>
+  </encounter>
+  <authoredOn value="2021-02-21T07:30:00-05:00"/>
+  <requester>
+    <reference value="Practitioner/Example-Practitioner-09709es9d"/>
+  </requester>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="4307007"/>
+      <display value="Diabetes mellitus pregestacional Y / O intolerancia a la glucosa, clase blanca F modificada"/>
+    </coding>
+  </reasonCode>
+  <reasonReference>
+    <reference value="Condition/Example-Condition-4567c"/>
+  </reasonReference>
+  <insurance>
+    <reference value="Coverage/Example-Coverage-fa7a571e"/>
+  </insurance>
+  <note>
+    <text value="Patient with full preparation."/>
+  </note>
+</ServiceRequest>

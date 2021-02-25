@@ -1,0 +1,90 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "Example-ServiceRequest-Laboratory-4637g6ad",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://example.org/servicerequest-identifiers",
+      "value": "LB5634"
+    }
+  ],
+  "replaces": [
+    {
+      "reference": "ServiceRequest/Example-ServiceRequest-5437578r"
+    }
+  ],
+  "requisition": {
+    "value": "LB7834"
+  },
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "108252007",
+          "display": "procedimiento de laboratorio"
+        }
+      ]
+    }
+  ],
+  "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "26604007",
+        "display": "hemograma completo"
+      },
+      {
+        "system": "http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa",
+        "code": "301045",
+        "display": "HEMOGRAMA"
+      }
+    ]
+  },
+  "quantityQuantity": {
+    "value": 1
+  },
+  "subject": {
+    "reference": "Patient/Example-Patient-87356d0d"
+  },
+  "encounter": {
+    "reference": "Encounter/Example-Encounter-963b1515"
+  },
+  "authoredOn": "2021-02-21T07:30:00-05:00",
+  "requester": {
+    "reference": "Practitioner/Example-Practitioner-09709es9d"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "2634004",
+          "display": "Disminución del volumen de eritrocitos en sangre."
+        }
+      ]
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/Example-Condition-4869c"
+    }
+  ],
+  "insurance": [
+    {
+      "reference": "Coverage/Example-Coverage-fa7a571e"
+    }
+  ],
+  "note": [
+    {
+      "text": "Patient with full preparation."
+    }
+  ]
+}

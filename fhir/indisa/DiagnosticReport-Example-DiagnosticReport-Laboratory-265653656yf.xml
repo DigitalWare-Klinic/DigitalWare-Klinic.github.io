@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="Example-DiagnosticReport-Laboratory-265653656yf"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://example.org/diagnostic-report-identifiers"/>
+    <value value="RLB2363636"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/Example-ServiceRequest-Laboratory-4637g6ad"/>
+  </basedOn>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="108252007"/>
+      <display value="procedimiento de laboratorio"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="26604007"/>
+      <display value="hemograma completo"/>
+    </coding>
+    <coding>
+      <system value="http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa"/>
+      <code value="301045"/>
+      <display value="HEMOGRAMA"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/Example-Encounter-963b1515"/>
+  </encounter>
+  <effectiveDateTime value="2021-02-25T09:45:00-05:00"/>
+  <performer>
+    <reference value="Practitioner/Example-Practitioner-78456er9f"/>
+  </performer>
+  <specimen>
+    <reference value="Specimen/Example-Specimen-Blood-56789856d"/>
+  </specimen>
+  <result>
+    <reference value="Observation/Example-Observation-643767367434f"/>
+  </result>
+  <conclusion value="Ullamco eiusmod sunt elit non commodo est dolor."/>
+</DiagnosticReport>

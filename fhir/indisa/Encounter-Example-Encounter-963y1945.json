@@ -3,7 +3,7 @@
   "id": "Example-Encounter-963y1945",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
   },
   "extension": [
     {

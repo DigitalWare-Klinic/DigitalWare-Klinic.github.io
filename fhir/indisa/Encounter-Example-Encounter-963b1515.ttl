@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "Example-Encounter-963b1515"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;

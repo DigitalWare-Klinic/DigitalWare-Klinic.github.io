@@ -3,7 +3,7 @@
   "id": "Example-Appointment-05c86b7b-4fad",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: 403</p><p><b>status</b>: cancelled</p><p><b>cancelationReason</b>: <span title=\"Codes: {https://www.digitalware.com.co/salud/fhir/identifiers/reasons-cancelaction fad33226-d4f5}\">Paciente</span></p><p><b>serviceCategory</b>: <span title=\"Codes: {http://snomed.info/sct 27}\">Specialist Medical</span></p><p><b>serviceType</b>: <span title=\"Codes: {http://snomed.info/sct 186}\">Obstetrics y Gynaecology</span>, <span title=\"Codes: {https://www.digitalware.com.co/salud/fhir/CodeSystem/appointment-types c113e46f-5f39}\">Cita Especialista</span>, <span title=\"Codes: {https://www.digitalware.com.co/salud/fhir/CodeSystem/local-procedure-codes 120d0fe9-9347}\">ANTIGENO POLIPEPTIDO DE TEJIDO O ANTIGENO DE PROLIFERACION CELULAR AUTOMATIZADO</span>, <span title=\"Codes: {https://www.digitalware.com.co/salud/fhir/CodeSystem/payors IDPayor025}\">Asegurador Buena Salud</span></p><p><b>specialty</b>: <span title=\"Codes: {http://snomed.info/sct 481}\">Gynaecology</span></p><p><b>appointmentType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0276 WALKIN}, {https://www.digitalware.com.co/salud/fhir/CodeSystem/appointment-types 47b66eb5-0947-455b-b069-54765c996f6f}\">A previously unscheduled walk-in visit</span></p><p><b>start</b>: 20/01/2021, 8:00:00 a. m.</p><p><b>end</b>: 20/01/2021, 8:30:00 a. m.</p><p><b>minutesDuration</b>: 30</p><p><b>created</b>: 5/01/2021, 10:00:00 a. m.</p><p><b>basedOn</b>: <span>GN-4567</span></p><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/participant-type LOC}\">location</span></p><p><b>actor</b>: <a href=\"Location-Example-LocationBuilding-7412389635sdf556.html\">Generated Summary: id: 1100112345-1 (OFFICIAL); status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 o}\">Occupied</span>; name: Indisa Clinica de la familia; alias: INDISA; description: Clinic and emergencies; mode: instance; <span title=\"Codes: {http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType HOSP}\">Hospital</span>; Phone: +56(2)1111-1111; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/location-physical-type bu}\">Building</span>; availabilityExceptions: Does not open on holidays.</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/participant-type LOC}\">location</span></p><p><b>actor</b>: <a href=\"Location-Example-LocationRoom-1245687952.html\">Generated Summary: status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 o}\">Occupied</span>; name: Habitación 202; alias: H202; description: Hospitalization room.; mode: instance; <span title=\"Codes: {http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType HU}\">Hospital unit</span></a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/participant-type CON}\">consultant</span></p><p><b>actor</b>: <a href=\"Location-Example-LocationArea-789789789789.html\">Generated Summary: status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 o}\">Ocupado</span>; name: Servicio hospitalario; alias: Hospitalización; description: Hospital medical care.; mode: kind; <span title=\"Codes: {http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType HU}\">Hospital unit</span>; Phone: +56 12355611</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/participant-type SBJ}\">subject</span></p><p><b>actor</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></p><p><b>status</b>: accepted</p></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
   },
   "extension": [
     {
@@ -48,7 +48,7 @@
         {
           "system": "http://snomed.info/sct",
           "code": "27",
-          "display": "Specialist Medical"
+          "display": "Medico especialista"
         }
       ]
     }
@@ -59,7 +59,7 @@
         {
           "system": "http://snomed.info/sct",
           "code": "186",
-          "display": "Obstetrics y Gynaecology"
+          "display": "Obstetricia y Ginecologia"
         }
       ]
     },
@@ -97,7 +97,7 @@
         {
           "system": "http://snomed.info/sct",
           "code": "481",
-          "display": "Gynaecology"
+          "display": "Ginecologia"
         }
       ]
     }

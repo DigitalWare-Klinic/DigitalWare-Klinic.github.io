@@ -1,0 +1,55 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-Observation-3232352365gf",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "BLB",
+          "display": "Blood Bank"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1240461000000109",
+        "display": "medición de anticuerpos anti-coronavirus 2 del síndrome respiratorio agudo severo"
+      },
+      {
+        "system": "http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa",
+        "code": "0306069",
+        "display": "ANTICUERPOS ANTI COVID-19. IGG-DONANTE PLASMA"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Example-Patient-87356d0d"
+  },
+  "encounter": {
+    "reference": "Encounter/Example-Encounter-963b1515"
+  },
+  "effectiveDateTime": "2021-02-25T09:45:00-05:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "260385009",
+        "display": "Negativo"
+      }
+    ]
+  }
+}

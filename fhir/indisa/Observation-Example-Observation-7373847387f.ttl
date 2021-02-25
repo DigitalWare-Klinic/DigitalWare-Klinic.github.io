@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Observation/Example-Observation-7373847387f> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Observation-7373847387f"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ];
+       fhir:Coding.display [ fhir:value "Laboratory" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "CH" ];
+       fhir:Coding.display [ fhir:value "Chemistry" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:733830002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "733830002" ];
+       fhir:Coding.display [ fhir:value "hemoglobina glucosilada A1c" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa" ];
+       fhir:Coding.code [ fhir:value "301041" ];
+       fhir:Coding.display [ fhir:value "HEMOGLOBINA GLICADA A1C" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d>;
+     fhir:Reference.reference [ fhir:value "Patient/Example-Patient-87356d0d" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Encounter/Example-Encounter-963b1515>;
+     fhir:Reference.reference [ fhir:value "Encounter/Example-Encounter-963b1515" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-02-25T09:45:00-05:00"^^xsd:dateTime];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "5.6"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "%" ]
+  ];
+  fhir:Observation.interpretation [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+       fhir:Coding.code [ fhir:value "N" ];
+       fhir:Coding.display [ fhir:value "Normal" ]
+     ]
+  ];
+  fhir:Observation.referenceRange [
+     fhir:index 0;
+     fhir:Observation.referenceRange.text [ fhir:value "4.8 - 5.7" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Observation/Example-Observation-7373847387f.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

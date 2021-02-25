@@ -1,0 +1,32 @@
+{
+  "resourceType": "MessageHeader",
+  "id": "d3c28245-6e76-4816-8bef-07bde3c45e7c",
+  "meta": {
+    "lastUpdated": "2021-02-09T14:23:17-05:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+  },
+  "eventCoding": {
+    "system": "http://digitalware.com.co/salud/fhir/CodeSystem/MessageEvent",
+    "code": "CREATE",
+    "display": "Resource creation notification"
+  },
+  "destination": [
+    {
+      "name": "ESB platform",
+      "endpoint": "http://127.0.0.1:8443/esb/end-point"
+    }
+  ],
+  "source": {
+    "software": "Klinic API FHIR",
+    "endpoint": "http://127.0.0.1:7000/klinic-api-fhir"
+  },
+  "focus": [
+    {
+      "reference": "ServiceRequest/dc6a94cc-1946-4326-89c3-d27888a90f7e",
+      "type": "ServiceRequest"
+    }
+  ]
+}

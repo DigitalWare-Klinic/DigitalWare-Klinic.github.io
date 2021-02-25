@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tramos-FONASA"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/tramos-FONASA defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">A<a name="tramos-FONASA-A"> </a></td><td>TRAMO A</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">B<a name="tramos-FONASA-B"> </a></td><td>TRAMO B</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">C<a name="tramos-FONASA-C"> </a></td><td>TRAMO C</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">D<a name="tramos-FONASA-D"> </a></td><td>TRAMO D</td><td>Please. Request a description of this concept from INDISA.</td></tr></table></div>
+  </text>
+  <url value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/tramos-FONASA"/>
+  <version value="1.0"/>
+  <name value="tramos-FONASA"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-02-11"/>
+  <publisher value="DigitalWare S.A. - Klinic-HIS"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.digitalware.com.co"/>
+    </telecom>
+  </contact>
+  <description value="This is a coding system that contains the the sections (tramos) of FONASA."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="A"/>
+    <display value="TRAMO A"/>
+    <definition value="Please. Request a description of this concept from INDISA."/>
+  </concept>
+  <concept>
+    <code value="B"/>
+    <display value="TRAMO B"/>
+    <definition value="Please. Request a description of this concept from INDISA."/>
+  </concept>
+  <concept>
+    <code value="C"/>
+    <display value="TRAMO C"/>
+    <definition value="Please. Request a description of this concept from INDISA."/>
+  </concept>
+  <concept>
+    <code value="D"/>
+    <display value="TRAMO D"/>
+    <definition value="Please. Request a description of this concept from INDISA."/>
+  </concept>
+</CodeSystem>

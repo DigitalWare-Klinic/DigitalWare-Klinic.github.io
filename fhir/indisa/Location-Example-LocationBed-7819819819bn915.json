@@ -3,7 +3,7 @@
   "id": "Example-LocationBed-7819819819bn915",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b style=\"color: maroon\">Exception generating Narrative: unknown extension http://hl7.org/fhir/StructureDefinition/Location-VirtualBed</b></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
   },
   "extension": [
     {

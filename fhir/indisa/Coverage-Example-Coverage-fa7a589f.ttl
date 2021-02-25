@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "Example-Coverage-fa7a589f"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Texts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/coverage-selfpay PUBLICPOL}, {http://digitalware.com.co/salud/fhir/CodeSystem/coverages-type-cl FON}\">public healthcare</span></p><p><b>policyHolder</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></p><p><b>subscriber</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></p><p><b>beneficiary</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria Jake Jofré (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://hl7.org/fhir/ValueSet/marital-status M}\">Married</span></a></p><p><b>relationship</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span></p><p><b>payor</b>: <a href=\"Organization-Example-Organization-Payor-2910416f.html\">Generated Summary: id: EPS0001; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type ins}\">Insurance Company</span>; name: Aseguradora Salud Completa</a></p><blockquote><p><b>class</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/coverage-class class}, {http://digitalware.com.co/salud/fhir/CodeSystem/tramos-FONASA B}\">Class</span></p><p><b>value</b>: B</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/coverage-class plan}, {http://example.com/planes-asegurador 00ff320e-8f5a-4f27-9862-e5083f2705f2}\">Plan</span></p><p><b>value</b>: 00ff320e-8f5a-4f27-9862-e5083f2705f2</p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
   ];
   fhir:Coverage.status [ fhir:value "active"];
   fhir:Coverage.type [
@@ -21,8 +21,8 @@
        fhir:Coding.display [ fhir:value "public healthcare" ]
      ], [
        fhir:index 1;
-       fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/coverages-type-cl" ];
-       fhir:Coding.code [ fhir:value "FON" ];
+       fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/coverage-type-cl" ];
+       fhir:Coding.code [ fhir:value "01" ];
        fhir:Coding.display [ fhir:value "FONASA" ]
      ]
   ];
@@ -61,7 +61,7 @@
          fhir:Coding.display [ fhir:value "Class" ]
        ], [
          fhir:index 1;
-         fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/tramos-FONASA" ];
+         fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/tramos-FONASA" ];
          fhir:Coding.code [ fhir:value "B" ];
          fhir:Coding.display [ fhir:value "TRAMO B" ]
        ]

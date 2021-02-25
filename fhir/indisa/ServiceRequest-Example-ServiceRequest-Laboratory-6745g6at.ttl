@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/ServiceRequest/Example-ServiceRequest-Laboratory-6745g6at> a fhir:ServiceRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-ServiceRequest-Laboratory-6745g6at"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+  ];
+  fhir:ServiceRequest.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://example.org/servicerequest-identifiers" ];
+     fhir:Identifier.value [ fhir:value "LB8976" ]
+  ];
+  fhir:ServiceRequest.replaces [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/ServiceRequest/Example-ServiceRequest-54376545r>;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/Example-ServiceRequest-54376545r" ]
+  ];
+  fhir:ServiceRequest.requisition [
+     fhir:Identifier.value [ fhir:value "LB7834" ]
+  ];
+  fhir:ServiceRequest.status [ fhir:value "active"];
+  fhir:ServiceRequest.intent [ fhir:value "order"];
+  fhir:ServiceRequest.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:108252007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "108252007" ];
+       fhir:Coding.display [ fhir:value "procedimiento de laboratorio" ]
+     ]
+  ];
+  fhir:ServiceRequest.priority [ fhir:value "routine"];
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:733830002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "733830002" ];
+       fhir:Coding.display [ fhir:value "hemoglobina glucosilada A1c" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa" ];
+       fhir:Coding.code [ fhir:value "301041" ];
+       fhir:Coding.display [ fhir:value "HEMOGLOBINA GLICADA A1C" ]
+     ]
+  ];
+  fhir:ServiceRequest.quantityQuantity [
+     fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ]
+  ];
+  fhir:ServiceRequest.subject [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d>;
+     fhir:Reference.reference [ fhir:value "Patient/Example-Patient-87356d0d" ]
+  ];
+  fhir:ServiceRequest.encounter [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Encounter/Example-Encounter-963b1515>;
+     fhir:Reference.reference [ fhir:value "Encounter/Example-Encounter-963b1515" ]
+  ];
+  fhir:ServiceRequest.authoredOn [ fhir:value "2021-02-21T07:30:00-05:00"^^xsd:dateTime];
+  fhir:ServiceRequest.requester [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Practitioner/Example-Practitioner-09709es9d>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Example-Practitioner-09709es9d" ]
+  ];
+  fhir:ServiceRequest.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:4307007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "4307007" ];
+       fhir:Coding.display [ fhir:value "Diabetes mellitus pregestacional Y / O intolerancia a la glucosa, clase blanca F modificada" ]
+     ]
+  ];
+  fhir:ServiceRequest.reasonReference [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Condition/Example-Condition-4567c>;
+     fhir:Reference.reference [ fhir:value "Condition/Example-Condition-4567c" ]
+  ];
+  fhir:ServiceRequest.insurance [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Coverage/Example-Coverage-fa7a571e>;
+     fhir:Reference.reference [ fhir:value "Coverage/Example-Coverage-fa7a571e" ]
+  ];
+  fhir:ServiceRequest.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Patient with full preparation." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/ServiceRequest/Example-ServiceRequest-Laboratory-6745g6at.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -93,20 +93,6 @@
       ]
     },
     {
-      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CoverageIdentificationType",
-      "title": "Coverage Identification Type",
-      "types": [
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean"
-      ]
-    },
-    {
       "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/CulturalGroup",
       "title": "Cultural group",
       "types": [
@@ -563,12 +549,6 @@
         "title": "OrganizationHealthcareProvider"
       }
     ],
-    "Practitioner": [
-      {
-        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/PractitionerKlinic",
-        "title": "PractitionerKlinic"
-      }
-    ],
     "Account": [
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileAccountKlinic",
@@ -579,6 +559,18 @@
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileAppointment",
         "title": "ProfileAppointment"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileCompositionKlinic",
+        "title": "Document Electronic"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileCoverageKlinic",
+        "title": "Coverage patient"
       }
     ],
     "Encounter": [
@@ -593,17 +585,31 @@
         "title": "HealthcareService"
       }
     ],
+    "MessageHeader": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileMessageHeaderKlinic",
+        "title": "Message header"
+      }
+    ],
     "Patient": [
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfilePatientKlinic",
         "title": "Patient"
       }
     ],
-    "Schedule": [
+    "Practitioner": [
       {
-        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileSchedule",
-        "title": "Schedule patient"
-      },
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfilePractitionerKlinic",
+        "title": "Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfilePractitionerRole",
+        "title": "Practitioner Role"
+      }
+    ],
+    "Schedule": [
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfileScheduleKlinic",
         "title": "Schedule patient"
@@ -621,10 +627,28 @@
         "title": "SlotKlinic"
       }
     ],
-    "Composition": [
+    "DiagnosticReport": [
       {
-        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/profileCompositionKlinic",
-        "title": "Document Electronic"
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/profileDiagnosticReportLabKlinic",
+        "title": "Diagnostic report laboratory"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/profileObservationLabKlinic",
+        "title": "Observation laboratory"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/questionnaireResponseSurveyKlinic",
+        "title": "Questionnaire response"
+      }
+    ],
+    "Questionnaire": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/questionnaireSurveyKlinic",
+        "title": "Questionnaire"
       }
     ]
   },
@@ -711,6 +735,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"

@@ -1,0 +1,66 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "coverage-type-cl",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/coverage-type-cl defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"coverage-type-cl-01\"> </a></td><td>FONASA</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"coverage-type-cl-02\"> </a></td><td>ISAPRE</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"coverage-type-cl-03\"> </a></td><td>CAPREDENA</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"coverage-type-cl-04\"> </a></td><td>DIPRECA</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"coverage-type-cl-05\"> </a></td><td>SISA</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">96<a name=\"coverage-type-cl-96\"> </a></td><td>NINGUNA</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"coverage-type-cl-99\"> </a></td><td>DESCONOCIDO</td><td>Please. Request a description of this concept from INDISA.</td></tr></table></div>"
+  },
+  "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/coverage-type-cl",
+  "version": "1.0",
+  "name": "coverage-type-cl",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-02-11",
+  "publisher": "DigitalWare S.A. - Klinic-HIS",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.digitalware.com.co"
+        }
+      ]
+    }
+  ],
+  "description": "This is a coding system that contains the types of health coverage applicable to the Chilean jurisdiction.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "01",
+      "display": "FONASA",
+      "definition": "Please. Request a description of this concept from INDISA."
+    },
+    {
+      "code": "02",
+      "display": "ISAPRE",
+      "definition": "Please. Request a description of this concept from INDISA."
+    },
+    {
+      "code": "03",
+      "display": "CAPREDENA",
+      "definition": "Please. Request a description of this concept from INDISA."
+    },
+    {
+      "code": "04",
+      "display": "DIPRECA",
+      "definition": "Please. Request a description of this concept from INDISA."
+    },
+    {
+      "code": "05",
+      "display": "SISA",
+      "definition": "Please. Request a description of this concept from INDISA."
+    },
+    {
+      "code": "96",
+      "display": "NINGUNA",
+      "definition": "Please. Request a description of this concept from INDISA."
+    },
+    {
+      "code": "99",
+      "display": "DESCONOCIDO",
+      "definition": "Please. Request a description of this concept from INDISA."
+    }
+  ]
+}
