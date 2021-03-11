@@ -11,11 +11,11 @@
   fhir:Resource.id [ fhir:value "Example-DiagnosticReport-Laboratory-6543g8au"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://snomed.info/sct 733830002}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 301041}\">hemoglobina glucosilada A1c</span> (<span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Maria Victoria null (OFFICIAL)</b>  1975-08-14 ( Medical Record Number: HC-6ef0a6d7 (USUAL))</td></tr><tr><td>When For</td><td>Feb 25, 2021 9:45:00 AM</td></tr><tr><td>Identifier:</td><td> id: RLB8945 (USUAL)</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td></tr><tr><td><a href=\"Observation-Example-Observation-7373847387f.html\"><span title=\"Codes: {http://snomed.info/sct 733830002}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 301041}\">hemoglobina glucosilada A1c</span></a></td><td>5.6 %</td><td>4.8 - 5.7</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td></tr></table><p>Ullamco eiusmod sunt elit non commodo est dolor.</p></div>"
   ];
   fhir:DiagnosticReport.identifier [
      fhir:index 0;
-     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.use [ fhir:value "usual" ];
      fhir:Identifier.system [ fhir:value "https://example.org/diagnostic-report-identifiers" ];
      fhir:Identifier.value [ fhir:value "RLB8945" ]
   ];
@@ -29,10 +29,9 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       a sct:108252007;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "108252007" ];
-       fhir:Coding.display [ fhir:value "procedimiento de laboratorio" ]
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ];
+       fhir:Coding.display [ fhir:value "Laboratory" ]
      ]
   ];
   fhir:DiagnosticReport.code [
@@ -44,7 +43,7 @@
        fhir:Coding.display [ fhir:value "hemoglobina glucosilada A1c" ]
      ], [
        fhir:index 1;
-       fhir:Coding.system [ fhir:value "http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa" ];
+       fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa" ];
        fhir:Coding.code [ fhir:value "301041" ];
        fhir:Coding.display [ fhir:value "HEMOGLOBINA GLICADA A1C" ]
      ]

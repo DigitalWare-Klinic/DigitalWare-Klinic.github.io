@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="Device-Example-Device-43g37a87"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
+  </text>
+  <status value="active"/>
+  <manufacturer value="Abbott RDx"/>
+  <manufactureDate value="2020-01-01"/>
+  <serialNumber value="AFN-AS100-427637"/>
+  <deviceName>
+    <name value="AFINION 2"/>
+    <type value="model-name"/>
+  </deviceName>
+  <modelNumber value="1116679"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="11987000"/>
+      <display value="analizador de qu&#xED;mica cl&#xED;nica, dispositivo"/>
+    </coding>
+  </type>
+  <owner>
+    <reference value="Organization/Example-Organization-213134sd15148f"/>
+  </owner>
+  <location>
+    <reference value="Location/Example-LocationRoom-1245687952"/>
+  </location>
+  <note>
+    <text value="HbA1c, panel de l&#xED;pidos, ACR y CRP"/>
+  </note>
+</Device>

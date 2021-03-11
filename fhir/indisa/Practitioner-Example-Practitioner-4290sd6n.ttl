@@ -11,7 +11,7 @@
   fhir:Resource.id [ fhir:value "Example-Practitioner-4290sd6n"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: National Person Identifier Chile: 45565700ap (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Maria Camila null (OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+56(2)1111-1111\">+56(2)1111-1111</a>, <a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:pamaria@example.com\">pamaria@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1991-06-05</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Registered Nurse: TP134907 (OFFICIAL)</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 106292003}\">enfermera profesional</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Registered Nurse: TP134907 (OFFICIAL)</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 309446002}\">jefa de enfermeras</span></p></blockquote></div>"
   ];
   fhir:Practitioner.identifier [
      fhir:index 0;
@@ -36,7 +36,6 @@
      fhir:index 0;
      fhir:HumanName.use [ fhir:value "official" ];
      fhir:HumanName.family [
-       fhir:value "Perez Aristizabal";
        fhir:Element.extension [
          fhir:index 0;
          fhir:Element.id [ fhir:value "fathers-family" ];
@@ -92,10 +91,10 @@
      fhir:Practitioner.qualification.code [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         a sct:309343008;
+         a sct:106292003;
          fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "309343008" ];
-         fhir:Coding.display [ fhir:value "Enfermera" ]
+         fhir:Coding.code [ fhir:value "106292003" ];
+         fhir:Coding.display [ fhir:value "enfermera profesional" ]
        ]
      ]
   ], [

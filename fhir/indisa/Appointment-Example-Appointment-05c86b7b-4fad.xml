@@ -3,15 +3,15 @@
 <Appointment xmlns="http://hl7.org/fhir">
   <id value="Example-Appointment-05c86b7b-4fad"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Fecha/Hora cancelacion cita</b>: Jan 19, 2021 10:00:00 AM</p><p><b>Sancion cancelacion cita</b>: <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CancelationSanction a2f430d7-e5c6}">35000</span></p><p><b>identifier</b>: id: 403</p><p><b>status</b>: cancelled</p><p><b>cancelationReason</b>: <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CancelationReason fad33226-d4f5}">Paciente</span></p><p><b>serviceCategory</b>: <span title="Codes: {http://snomed.info/sct 394658006}">especialidad clínica</span></p><p><b>serviceType</b>: <span title="Codes: {http://snomed.info/sct 394585009}">obstetricia y ginecología</span>, <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-AppointmentTypes c113e46f-5f39}">Cita Especialista</span>, <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-LocalProcedureCodes 120d0fe9-9347}">ANTIGENO POLIPEPTIDO DE TEJIDO O ANTIGENO DE PROLIFERACION CELULAR AUTOMATIZADO</span>, <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Payors IDPayor025}">Asegurador Buena Salud</span></p><p><b>specialty</b>: <span title="Codes: {http://snomed.info/sct 394586005}">ginecología</span></p><p><b>appointmentType</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0276 WALKIN}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-AppointmentTypes 47b66eb5-0947-455b-b069-54765c996f6f}">A previously unscheduled walk-in visit</span></p><p><b>start</b>: Jan 20, 2021 8:00:00 AM</p><p><b>end</b>: Jan 20, 2021 8:30:00 AM</p><p><b>minutesDuration</b>: 30</p><p><b>created</b>: Jan 5, 2021 10:00:00 AM</p><p><b>basedOn</b>: <span>GN-4567</span></p><blockquote><p><b>participant</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ParticipationType LOC}">location</span></p><p><b>actor</b>: <a href="Location-Example-LocationBuilding-7412389635sdf556.html">Generated Summary: id: 1100112345-1 (OFFICIAL); status: active; <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span>; name: Indisa Clinica de la familia; alias: INDISA; description: Clinic and emergencies; mode: instance; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}">Hospital</span>; Phone: +56(2)1111-1111; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bu}">Building</span>; availabilityExceptions: Does not open on holidays.</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ParticipationType LOC}">location</span></p><p><b>actor</b>: <a href="Location-Example-LocationRoom-1245687952.html">Generated Summary: status: active; <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span>; name: Habitación 202; alias: H202; description: Hospitalization room.; mode: instance; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}">Hospital unit</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type ro}">Room</span></a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ParticipationType CON}">consultant</span></p><p><b>actor</b>: <a href="Location-Example-LocationArea-789789789789.html">Generated Summary: status: active; <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span>; name: Servicio hospitalario; alias: Hospitalización; description: Hospital medical care.; mode: kind; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}">Hospital unit</span>; Phone: +56 12355611; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type wi}">Wing</span></a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ParticipationType SBJ}">subject</span></p><p><b>actor</b>: <a href="Patient-Example-Patient-87356d0d.html">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></a></p><p><b>status</b>: accepted</p></blockquote></div>
   </text>
-  <extension id="cancelationDateTime" url="https://www.digitalware.com.co/salud/fhir/StrutureDefinition/cancelation-datetime">
+  <extension id="CancelationDateTime" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-CancelationDateTime">
     <valueDateTime value="2021-01-19T10:00:00-05:00"/>
   </extension>
-  <extension id="cancelationSanction" url="https://www.digitalware.com.co/salud/fhir/StrutureDefinition/cancelation-sanction">
+  <extension id="CancelationSanction" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-CancelationSanction">
     <valueCodeableConcept>
       <coding>
-        <system value="https://www.digitalware.com.co/salud/fhir/identifiers/cancelation-sanction"/>
+        <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CancelationSanction"/>
         <code value="a2f430d7-e5c6"/>
         <display value="Cancelaci&#xF3;n inorportuna"/>
       </coding>
@@ -25,7 +25,7 @@
   <status value="cancelled"/>
   <cancelationReason>
     <coding>
-      <system value="https://www.digitalware.com.co/salud/fhir/identifiers/reasons-cancelaction"/>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CancelationReason"/>
       <code value="fad33226-d4f5"/>
       <display value="Paciente"/>
     </coding>
@@ -33,34 +33,34 @@
   <serviceCategory>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <code value="27"/>
-      <display value="Medico especialista"/>
+      <code value="394658006"/>
+      <display value="especialidad cl&#xED;nica"/>
     </coding>
   </serviceCategory>
   <serviceType>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <code value="186"/>
-      <display value="Obstetricia y Ginecologia"/>
+      <code value="394585009"/>
+      <display value="obstetricia y ginecolog&#xED;a"/>
     </coding>
   </serviceType>
   <serviceType>
     <coding>
-      <system value="https://www.digitalware.com.co/salud/fhir/CodeSystem/appointment-types"/>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-AppointmentTypes"/>
       <code value="c113e46f-5f39"/>
       <display value="Cita Especialista"/>
     </coding>
   </serviceType>
   <serviceType>
     <coding>
-      <system value="https://www.digitalware.com.co/salud/fhir/CodeSystem/local-procedure-codes"/>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-LocalProcedureCodes"/>
       <code value="120d0fe9-9347"/>
       <display value="ANTIGENO POLIPEPTIDO DE TEJIDO O ANTIGENO DE PROLIFERACION CELULAR AUTOMATIZADO"/>
     </coding>
   </serviceType>
   <serviceType>
     <coding>
-      <system value="https://www.digitalware.com.co/salud/fhir/CodeSystem/payors"/>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Payors"/>
       <code value="IDPayor025"/>
       <display value="Asegurador Buena Salud"/>
     </coding>
@@ -68,8 +68,8 @@
   <specialty>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <code value="481"/>
-      <display value="Ginecologia"/>
+      <code value="394586005"/>
+      <display value="ginecolog&#xED;a"/>
     </coding>
   </specialty>
   <appointmentType>
@@ -79,7 +79,7 @@
       <display value="A previously unscheduled walk-in visit"/>
     </coding>
     <coding>
-      <system value="https://www.digitalware.com.co/salud/fhir/CodeSystem/appointment-types"/>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-AppointmentTypes"/>
       <code value="47b66eb5-0947-455b-b069-54765c996f6f"/>
       <display value="Prioritaria"/>
     </coding>
@@ -94,7 +94,7 @@
   <participant>
     <type>
       <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/participant-type"/>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
         <code value="LOC"/>
         <display value="location"/>
       </coding>
@@ -107,7 +107,7 @@
   <participant>
     <type>
       <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/participant-type"/>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
         <code value="LOC"/>
         <display value="location"/>
       </coding>
@@ -120,7 +120,7 @@
   <participant>
     <type>
       <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/participant-type"/>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
         <code value="CON"/>
         <display value="consultant"/>
       </coding>
@@ -133,7 +133,7 @@
   <participant>
     <type>
       <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/participant-type"/>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
         <code value="SBJ"/>
         <display value="subject"/>
       </coding>

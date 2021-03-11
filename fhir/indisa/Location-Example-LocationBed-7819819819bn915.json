@@ -2,31 +2,35 @@
   "resourceType": "Location",
   "id": "Example-LocationBed-7819819819bn915",
   "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>VirtualBed</b>: true</p><p><b>Census</b>: true</p><p><b>ChargeBed</b>: true</p><p><b>BedWithOxygen</b>: true</p><p><b>status</b>: active</p><p><b>operationalStatus</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 O}\">Occupied</span></p><p><b>name</b>: Cama 2</p><p><b>alias</b>: C2</p><p><b>description</b>: Patient bed.</p><p><b>mode</b>: instance</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}\">Hospital unit</span></p><p><b>physicalType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bd}\">Bed</span></p><p><b>partOf</b>: <a href=\"Location-Example-LocationRoom-1245687952.html\">Generated Summary: status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 O}\">Occupied</span>; name: Habitación 202; alias: H202; description: Hospitalization room.; mode: instance; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}\">Hospital unit</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type ro}\">Room</span></a></p></div>"
   },
   "extension": [
     {
       "id": "VirtualBed",
-      "url": "http://hl7.org/fhir/StructureDefinition/Location-VirtualBed"
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-VirtualBed",
+      "valueBoolean": true
     },
     {
       "id": "Census",
-      "url": "http://hl7.org/fhir/StructureDefinition/Location-Census"
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-Census",
+      "valueBoolean": true
     },
     {
       "id": "ChargeBed",
-      "url": "http://hl7.org/fhir/StructureDefinition/Location-ChargeBed"
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ChargeBed",
+      "valueBoolean": true
     },
     {
       "id": "BedWithOxygen",
-      "url": "http://hl7.org/fhir/StructureDefinition/Location-BedWithOxygen"
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-BedWithOxygen",
+      "valueBoolean": true
     }
   ],
   "status": "active",
   "operationalStatus": {
     "system": "http://terminology.hl7.org/CodeSystem/v2-0116",
-    "code": "o",
+    "code": "O",
     "display": "Occupied"
   },
   "name": "Cama 2",
@@ -39,13 +43,22 @@
     {
       "coding": [
         {
-          "system": "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
           "code": "HU",
           "display": "Hospital unit"
         }
       ]
     }
   ],
+  "physicalType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+        "code": "bd",
+        "display": "Bed"
+      }
+    ]
+  },
   "partOf": {
     "reference": "Location/Example-LocationRoom-1245687952"
   }

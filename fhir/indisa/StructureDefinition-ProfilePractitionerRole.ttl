@@ -21,7 +21,7 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "individual" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfilePractitionerRole"];
+  fhir:StructureDefinition.url [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfilePractitionerRole"];
   fhir:StructureDefinition.version [ fhir:value "1.0"];
   fhir:StructureDefinition.name [ fhir:value "ProfilePractitionerRole"];
   fhir:StructureDefinition.title [ fhir:value "Practitioner Role"];
@@ -30,15 +30,51 @@
   fhir:StructureDefinition.publisher [ fhir:value "DigitalWare S.A. - Klinic-HIS"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Juan Manuel Contreras" ];
+     fhir:ContactDetail.name [ fhir:value "Juan Manuel Contreras Hernandez" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "juancj@digitalware.com.co" ];
+       fhir:ContactPoint.value [ fhir:value "juanch@digitalware.com.co" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Diana Rodriguez Suarez" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "dianaro@digitalware.com.co" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ContactDetail.name [ fhir:value "Daniel Felipe Castro Romero" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "danielc@digitalware.com.co" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:ContactDetail.name [ fhir:value "Eduardo Felipe Solis Hernandez" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "felipesh@digitalware.com.co" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:ContactDetail.name [ fhir:value "Mario Enrique Cortés M" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mario.cortes@hl7co.org" ];
        fhir:ContactPoint.use [ fhir:value "work" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Role of practitioner"];
+  fhir:StructureDefinition.description [ fhir:value "Role of practitioner."];
   fhir:StructureDefinition.copyright [ fhir:value "Digitalware 2021 CC."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [

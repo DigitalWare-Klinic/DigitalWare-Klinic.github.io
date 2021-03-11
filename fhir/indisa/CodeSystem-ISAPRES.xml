@@ -3,9 +3,9 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="ISAPRES"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/ISAPRES defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">ec20<a name="ISAPRES-ec20"> </a></td><td>Banmédica</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">c870<a name="ISAPRES-c870"> </a></td><td>Chuquicamata</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">b25c<a name="ISAPRES-b25c"> </a></td><td>Colmena Golden Cross</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">3e99<a name="ISAPRES-3e99"> </a></td><td>Consalud</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">db2d<a name="ISAPRES-db2d"> </a></td><td>Cruz Blanca</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">fcb3<a name="ISAPRES-fcb3"> </a></td><td>Cruz del Norte</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">43eb<a name="ISAPRES-43eb"> </a></td><td>Nueva Masvida</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">745d<a name="ISAPRES-745d"> </a></td><td>Fundación</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">05ea<a name="ISAPRES-05ea"> </a></td><td>Río Blanco</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">406b<a name="ISAPRES-406b"> </a></td><td>San Lorenzo</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">9a65<a name="ISAPRES-9a65"> </a></td><td>Vida Tres</td><td>Please. Request a description of this concept from INDISA.</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ISAPRES defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">ec20<a name="ISAPRES-ec20"> </a></td><td>Banmédica</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">c870<a name="ISAPRES-c870"> </a></td><td>Chuquicamata</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">b25c<a name="ISAPRES-b25c"> </a></td><td>Colmena Golden Cross</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">3e99<a name="ISAPRES-3e99"> </a></td><td>Consalud</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">db2d<a name="ISAPRES-db2d"> </a></td><td>Cruz Blanca</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">fcb3<a name="ISAPRES-fcb3"> </a></td><td>Cruz del Norte</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">43eb<a name="ISAPRES-43eb"> </a></td><td>Nueva Masvida</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">745d<a name="ISAPRES-745d"> </a></td><td>Fundación</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">05ea<a name="ISAPRES-05ea"> </a></td><td>Río Blanco</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">406b<a name="ISAPRES-406b"> </a></td><td>San Lorenzo</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style="white-space:nowrap">9a65<a name="ISAPRES-9a65"> </a></td><td>Vida Tres</td><td>Please. Request a description of this concept from INDISA.</td></tr></table></div>
   </text>
-  <url value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/ISAPRES"/>
+  <url value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ISAPRES"/>
   <version value="1.0"/>
   <name value="ISAPRES"/>
   <status value="active"/>
@@ -13,15 +13,48 @@
   <date value="2021-02-11"/>
   <publisher value="DigitalWare S.A. - Klinic-HIS"/>
   <contact>
+    <name value="Juan Manuel Contreras Hernandez"/>
     <telecom>
-      <system value="url"/>
-      <value value="https://www.digitalware.com.co"/>
+      <system value="email"/>
+      <value value="juanch@digitalware.com.co"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Diana Rodriguez Suarez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="dianaro@digitalware.com.co"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Daniel Felipe Castro Romero"/>
+    <telecom>
+      <system value="email"/>
+      <value value="danielc@digitalware.com.co"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eduardo Felipe Solis Hernandez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="felipesh@digitalware.com.co"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Mario Enrique Cort&#xE9;s M"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mario.cortes@hl7co.org"/>
+      <use value="work"/>
     </telecom>
   </contact>
   <description value="This is a coding system that contains the insurance organizations classified in ISAPRES.."/>
   <caseSensitive value="true"/>
   <content value="complete"/>
-  <count value="11"/>
   <concept>
     <code value="ec20"/>
     <display value="Banm&#xE9;dica"/>

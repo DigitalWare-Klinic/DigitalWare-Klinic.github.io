@@ -1,0 +1,76 @@
+{
+  "resourceType": "Medication",
+  "id": "Example-Medication-986756md",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: MD3456 (USUAL)</p><p><b>code</b>: <span title=\"Codes: {http://www.whocc.no/atc C09AA02}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesProviderMedication 01035034567}\">Enalapril</span></p><p><b>status</b>: active</p><p><b>manufacturer</b>: <a href=\"Organization/Example-OrganizationExterna-12345orgext\">Organization/Example-OrganizationExterna-12345orgext</a></p><p><b>form</b>: <span title=\"Codes: {http://snomed.info/sct 46992007}\">Píldora</span></p><p><b>amount</b>: 10 Pildoras/1 blister</p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 387165009}\">maleato de enalapril</span></td><td>true</td><td>5 mg/5 mg</td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "https://example.org/medication-identifiers",
+      "value": "MD3456"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.whocc.no/atc",
+        "code": "C09AA02",
+        "display": "Enalapril"
+      },
+      {
+        "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesProviderMedication",
+        "code": "01035034567",
+        "display": "Enalapril"
+      }
+    ]
+  },
+  "status": "active",
+  "manufacturer": {
+    "reference": "Organization/Example-OrganizationExterna-12345orgext"
+  },
+  "form": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "46992007",
+        "display": "Píldora"
+      }
+    ]
+  },
+  "amount": {
+    "numerator": {
+      "value": 10,
+      "unit": "Pildoras"
+    },
+    "denominator": {
+      "value": 1,
+      "unit": "blister"
+    }
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "387165009",
+            "display": "maleato de enalapril"
+          }
+        ]
+      },
+      "isActive": true,
+      "strength": {
+        "numerator": {
+          "value": 5,
+          "unit": "mg"
+        },
+        "denominator": {
+          "value": 5,
+          "unit": "mg"
+        }
+      }
+    }
+  ]
+}

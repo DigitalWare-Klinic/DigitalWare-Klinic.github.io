@@ -11,12 +11,12 @@
   fhir:Resource.id [ fhir:value "Example-HealthcareService-20ede331"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: Code45678 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>category</b>: <span title=\"Codes: {http://snomed.info/sct 394658006}\">especialidad clínica</span></p><p><b>type</b>: <span title=\"Codes: {http://snomed.info/sct 394585009}\">obstetricia y ginecología</span></p><p><b>specialty</b>: <span title=\"Codes: {http://snomed.info/sct 394586005}\">ginecologia</span></p><p><b>location</b>: <a href=\"Location-Example-LocationArea-789789789789.html\">Generated Summary: status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 O}\">Occupied</span>; name: Servicio hospitalario; alias: Hospitalización; description: Hospital medical care.; mode: kind; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}\">Hospital unit</span>; Phone: +56 12355611; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type wi}\">Wing</span></a></p><p><b>name</b>: Servicio Ginecologia</p><p><b>comment</b>: Gynecology and Obstetrics Service.</p><p><b>serviceProvisionCode</b>: <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ProgramCodes SURA}\">Prioridad para salud Suramericana</span>, <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ProgramCodes KERALTY}\">Prioridad para salud Keralty</span></p><p><b>program</b>: <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ProgramCodes P01}\">Programa de Gestantes Salud Suramericana</span></p><p><b>characteristic</b>: <span title=\"Codes: {https://MinChile/procedure-code CODEP0016}\">Parto</span>, <span title=\"Codes: {https://MinChile/procedure-code CODEP0134}\">Citologia</span></p><p><b>referralMethod</b>: <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ReferenCodes R057}\">Pacientes de Compensar no requieren orden de remision</span>, <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ReferenCodes R175}\">Pacientes de Famisionar requieren orden de remision</span>, <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ReferenCodes R578}\">Se requiere consulta previa con Medicina General</span></p><p><b>appointmentRequired</b>: true</p><h3>AvailableTimes</h3><table class=\"grid\"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AvailableStartTime</b></td><td><b>AvailableEndTime</b></td></tr><tr><td>*</td><td>mon</td><td>08:00:00</td><td>12:00:00</td></tr></table><p><b>availabilityExceptions</b>: Weekends are not served</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Element.id [ fhir:value "servicePartOf" ];
-     fhir:Extension.url [ fhir:value "https://www.digitalware.com.co/salud/fhir/extension/servicePartOf" ];
+     fhir:Extension.url [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-servicePartOf" ];
      fhir:Extension.valueReference [
        fhir:link <https://digitalware-klinic.github.io/fhir/indisa/HealthcareService/Example-HealthcareService-20ede331-1>;
        fhir:Reference.reference [ fhir:value "HealthcareService/Example-HealthcareService-20ede331-1" ]
@@ -26,29 +26,27 @@
      fhir:index 0;
      fhir:Identifier.use [ fhir:value "official" ];
      fhir:Identifier.system [ fhir:value "http://MinChile/CodeHab-Service" ];
-     fhir:Identifier.value [
-       fhir:Element.id [ fhir:value "Code45678" ]
-     ]
+     fhir:Identifier.value [ fhir:value "Code45678" ]
   ];
   fhir:HealthcareService.active [ fhir:value "true"^^xsd:boolean];
   fhir:HealthcareService.category [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       a sct:27;
+       a sct:394658006;
        fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "27" ];
-       fhir:Coding.display [ fhir:value "Medico especialista" ]
+       fhir:Coding.code [ fhir:value "394658006" ];
+       fhir:Coding.display [ fhir:value "especialidad clínica" ]
      ]
   ];
   fhir:HealthcareService.type [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       a sct:186;
+       a sct:394585009;
        fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "186" ];
-       fhir:Coding.display [ fhir:value "obstetricia y ginecologia" ]
+       fhir:Coding.code [ fhir:value "394585009" ];
+       fhir:Coding.display [ fhir:value "obstetricia y ginecología" ]
      ]
   ];
   fhir:HealthcareService.specialty [
@@ -72,7 +70,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://www.digitalware.com.co/salud/fhir/codesystem/provision-codes" ];
+       fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ProgramCodes" ];
        fhir:Coding.code [ fhir:value "SURA" ];
        fhir:Coding.display [ fhir:value "Prioridad para salud Suramericana" ]
      ]
@@ -80,7 +78,7 @@
      fhir:index 1;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://www.digitalware.com.co/salud/fhir/codesystem/provision-codes" ];
+       fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ProgramCodes" ];
        fhir:Coding.code [ fhir:value "KERALTY" ];
        fhir:Coding.display [ fhir:value "Prioridad para salud Keralty" ]
      ]
@@ -89,7 +87,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://www.digitalware.com.co/salud/fhir/codesystem/program-codes" ];
+       fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ProgramCodes" ];
        fhir:Coding.code [ fhir:value "P01" ];
        fhir:Coding.display [ fhir:value "Programa de Gestantes Salud Suramericana" ]
      ]
@@ -115,7 +113,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://www.digitalware.com.co/salud/fhir/codesystem/referen-codes" ];
+       fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ReferenCodes" ];
        fhir:Coding.code [ fhir:value "R057" ];
        fhir:Coding.display [ fhir:value "Pacientes de Compensar no requieren orden de remision" ]
      ]
@@ -123,7 +121,7 @@
      fhir:index 1;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://www.digitalware.com.co/salud/fhir/codesystem/referen-codes" ];
+       fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ReferenCodes" ];
        fhir:Coding.code [ fhir:value "R175" ];
        fhir:Coding.display [ fhir:value "Pacientes de Famisionar requieren orden de remision" ]
      ]
@@ -131,7 +129,7 @@
      fhir:index 2;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://www.digitalware.com.co/salud/fhir/codesystem/referen-codes" ];
+       fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ReferenCodes" ];
        fhir:Coding.code [ fhir:value "R578" ];
        fhir:Coding.display [ fhir:value "Se requiere consulta previa con Medicina General" ]
      ]

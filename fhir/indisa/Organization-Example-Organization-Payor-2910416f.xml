@@ -3,7 +3,7 @@
 <Organization xmlns="http://hl7.org/fhir">
   <id value="Example-Organization-Payor-2910416f"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: EPS0001</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type ins}">Insurance Company</span></p><p><b>name</b>: Aseguradora Salud Completa</p></div>
   </text>
   <identifier>
     <system value="http://minsal.cl/identificacion/previsoras-salud"/>

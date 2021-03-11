@@ -7,42 +7,42 @@
   },
   "extension": [
     {
-      "id": "accountAmount",
-      "url": "http://digitalware.com.co/salud/fhir/StructureDefinition/account-amount",
+      "id": "AccountAmountKlinic",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-AccountAmountKlinic",
       "valueMoney": {
-        "value": 1300000,
+        "value": 1300000.0,
         "currency": "CLP"
       }
     },
     {
-      "id": "medicalFees",
-      "url": "http://digitalware.com.co/salud/fhir/StructureDefinition/medical-fees",
+      "id": "MedicalFeesKlinic",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-MedicalFeesKlinic",
       "valueMoney": {
-        "value": 800000,
+        "value": 800000.0,
         "currency": "CLP"
       }
     },
     {
-      "id": "medicationAmount",
-      "url": "http://digitalware.com.co/salud/fhir/StructureDefinition/medication-amount",
+      "id": "MedicationAmount",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-MedicationAmount",
       "valueMoney": {
-        "value": 800000,
+        "value": 800000.0,
         "currency": "CLP"
       }
     },
     {
-      "id": "suppliesAmount",
-      "url": "http://digitalware.com.co/salud/fhir/StructureDefinition/supplies-amount",
+      "id": "SuppliesAmountKlinic",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-SuppliesAmountKlinic",
       "valueMoney": {
-        "value": 800000,
+        "value": 800000.0,
         "currency": "CLP"
       }
     },
     {
-      "id": "consultationsAmount",
-      "url": "http://digitalware.com.co/salud/fhir/StructureDefinition/consultations-amount",
+      "id": "ConsultationsAmountKlinic",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ConsultationsAmountKlinic",
       "valueMoney": {
-        "value": 800000,
+        "value": 800000.0,
         "currency": "CLP"
       }
     }
@@ -57,7 +57,7 @@
   "type": {
     "coding": [
       {
-        "system": "http://digitalware.com.co/salud/fhir/CodeSystem/account-type",
+        "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-AccountType",
         "code": "PART",
         "display": "Particular"
       }
@@ -76,10 +76,10 @@
     {
       "extension": [
         {
-          "id": "bonusAmount",
-          "url": "http://digitalware.com.co/salud/fhir/StructureDefinition/bonus-amount",
+          "id": "BonusAmountKlinic",
+          "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-BonusAmountKlinic",
           "valueMoney": {
-            "value": 750000,
+            "value": 750000.0,
             "currency": "CLP"
           }
         }
@@ -92,10 +92,10 @@
     {
       "extension": [
         {
-          "id": "copaymentAmount ",
-          "url": "http://digitalware.com.co/salud/fhir/StructureDefinition/copayment-amount",
+          "id": "CopaymentAmountKlinic ",
+          "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-CopaymentAmountKlinic",
           "valueMoney": {
-            "value": 550000,
+            "value": 550000.0,
             "currency": "CLP"
           }
         }

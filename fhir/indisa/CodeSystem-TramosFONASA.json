@@ -1,0 +1,93 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "TramosFONASA",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-TramosFONASA defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"TramosFONASA-A\"> </a></td><td>TRAMO A</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"TramosFONASA-B\"> </a></td><td>TRAMO B</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"TramosFONASA-C\"> </a></td><td>TRAMO C</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"TramosFONASA-D\"> </a></td><td>TRAMO D</td><td>Please. Request a description of this concept from INDISA.</td></tr></table></div>"
+  },
+  "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-TramosFONASA",
+  "version": "1.0",
+  "name": "TramosFONASA",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-02-11",
+  "publisher": "DigitalWare S.A. - Klinic-HIS",
+  "contact": [
+    {
+      "name": "Juan Manuel Contreras Hernandez",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "juanch@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Diana Rodriguez Suarez",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dianaro@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Daniel Felipe Castro Romero",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "danielc@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Eduardo Felipe Solis Hernandez",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "felipesh@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Mario Enrique Cortés M",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mario.cortes@hl7co.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "This is a coding system that contains the the sections (tramos) of FONASA.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "A",
+      "display": "TRAMO A",
+      "definition": "Please. Request a description of this concept from INDISA."
+    },
+    {
+      "code": "B",
+      "display": "TRAMO B",
+      "definition": "Please. Request a description of this concept from INDISA."
+    },
+    {
+      "code": "C",
+      "display": "TRAMO C",
+      "definition": "Please. Request a description of this concept from INDISA."
+    },
+    {
+      "code": "D",
+      "display": "TRAMO D",
+      "definition": "Please. Request a description of this concept from INDISA."
+    }
+  ]
+}

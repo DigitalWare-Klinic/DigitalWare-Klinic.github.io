@@ -9,33 +9,33 @@
         "display": "very important person"
       },
       {
-        "system": "https://hl7co.github.io/digitalware/klinic-api-fhir/CodeSystem/payors",
+        "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-payors",
         "code": "Payor",
         "display": "Pagador o asegurador"
       }
     ]
   },
   "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Gender patient</b>: <span title=\"Codes: {http://snomed.info/sct 703117000}\">Femenino</span></p><p><b>Birth Place</b>: Santiago de Chile Region Metropolitana Chile </p><blockquote><p><b>Nationality patient</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {https://www.iso.org/iso-3166-country-codes.html CL}\">Chile</span></p></blockquote><p><b>Ethnic group patient</b>: <span title=\"Codes: {http://deis.cl/fhir/PueblosIndigenasMinsalDecreto643 01}\">Mapuche</span></p><p><b>Population group patient</b>: <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-PopulationGroup 01}\">Indigenas</span></p><p><b>Discapacidad del paciente</b>: <span title=\"Codes: {http://snomed.info/sct 15929741000119101}\">disfunción de la mano derecha</span></p><p><b>Education level</b>: <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-EducationalLevelChile 02}\">Basica</span></p><p><b>Patient occupation</b>: <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-Ocupation 15}\">Ama de casa</span></p><p><b>Enterprise Patient</b>: Papeleria el Sol</p><p><b>Newborn</b>: false</p><p><b>Religion</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation 1041}\">Roman Catholic Church</span></p><p><b>Cultural group</b>: <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CulturalGroup Indio Americano}\">1002-5</span></p><p><b>identifier</b>: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME)</p><p><b>telecom</b>: <a href=\"tel:+56(2)1111-1111\">+56(2)1111-1111</a>, <a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:jjmaria@example.com\">jjmaria@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1975-08-14</p><p><b>deceased</b>: false</p><p><b>address</b>: Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</p><p><b>maritalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td></td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0131 C}, {http://snomed.info/sct 66839005}\">Emergency Contact</span></td><td>Jorge Jake</td><td><a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:jjorge@example.com\">jjorge@example.com</a></td><td>Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</td></tr></table><h3>Links</h3><table class=\"grid\"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href=\"Patient-Example-Patient-2a6d66d1.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></td><td>replaces</td></tr></table></div>"
   },
   "extension": [
     {
-      "id": "genderIdentity",
-      "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity",
+      "id": "GenderIdentity",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-GenderIdentity",
       "valueCodeableConcept": {
         "coding": [
           {
             "system": "http://snomed.info/sct",
             "code": "703117000",
-            "display": "Female"
+            "display": "Femenino"
           }
         ]
       }
     },
     {
-      "id": "birthPlace",
-      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "id": "BirthPlace",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-BirthPlace",
       "valueAddress": {
         "city": "Santiago de Chile",
         "state": "Region Metropolitana",
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": "nationality",
+      "id": "Nationality",
       "extension": [
         {
           "id": "code",
@@ -59,11 +59,11 @@
           }
         }
       ],
-      "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality"
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-Nationality"
     },
     {
-      "id": "patientEthnicity",
-      "url": "https://www.digitalware.com.co/salud/fhir/extension/patient-ethnicity",
+      "id": "PatientEthnicity",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-PatientEthnicity",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -75,12 +75,12 @@
       }
     },
     {
-      "id": "patientPopulationGroup",
-      "url": "https://www.digitalware.com.co/salud/fhir/extension/patient-population-group",
+      "id": "PatientPopulationGroup",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-PatientPopulationGroup",
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://www.digitalware.com.co/salud/fhir/ValueSet/population-group",
+            "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-PopulationGroup",
             "code": "01",
             "display": "Indigenas"
           }
@@ -88,25 +88,25 @@
       }
     },
     {
-      "id": "disability",
-      "url": "http://hl7.org/fhir/StructureDefinition/patient-disability",
+      "id": "Disability",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-Disability",
       "valueCodeableConcept": {
         "coding": [
           {
             "system": "http://snomed.info/sct",
-            "code": "120",
-            "display": "Fisical"
+            "code": "15929741000119101",
+            "display": "disfunción de la mano derecha"
           }
         ]
       }
     },
     {
-      "id": "educationalLevel",
-      "url": "https://www.digitalware.com.co/salud/fhir/extension/educational-level",
+      "id": "EducationalLevelChile",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-EducationalLevelChile",
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/educationalLevelChile",
+            "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-EducationalLevelChile",
             "code": "02",
             "display": "Basica"
           }
@@ -114,12 +114,12 @@
       }
     },
     {
-      "id": "ocupation",
-      "url": "https://www.digitalware.com.co/salud/fhir/extension/ocupation",
+      "id": "Ocupation",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-Ocupation",
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://www.digitalware.com.co/salud/fhir/extension/ocupation",
+            "system": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-Ocupation",
             "code": "15",
             "display": "Ama de casa"
           }
@@ -127,18 +127,18 @@
       }
     },
     {
-      "id": "employerOrganization",
-      "url": "https://www.digitalware.com.co/salud/fhir/extension/employer-organization",
+      "id": "EmployerOrganization",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-EmployerOrganization",
       "valueString": "Papeleria el Sol"
     },
     {
-      "id": "newBorn",
-      "url": "https://hl7co.github.io/digitalware/klinic-api-fhir/StructureDefinition/NewBorn",
+      "id": "NewBorn",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-NewBorn",
       "valueBoolean": false
     },
     {
-      "id": "religion",
-      "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+      "id": "Religion",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-Religion",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -150,12 +150,12 @@
       }
     },
     {
-      "id": "culturalGroup",
-      "url": "https://www.digitalware.com.co/salud/fhir/extension/patient-cultural-groups",
+      "id": "CulturalGroup",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-CulturalGroup",
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "http://deis.cl/fhir/PueblosIndigenasMinsalDecreto643",
+            "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CulturalGroup",
             "code": "Indio Americano",
             "display": "1002-5"
           }
@@ -201,7 +201,6 @@
   "name": [
     {
       "use": "official",
-      "family": "Jake Jofré",
       "_family": {
         "extension": [
           {
@@ -258,7 +257,7 @@
   "maritalStatus": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/ValueSet/marital-status",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
         "code": "M",
         "display": "Married"
       }
@@ -269,7 +268,7 @@
       "extension": [
         {
           "id": "person-id",
-          "url": "https://www.digitalware.com.co/salud/fhir/extension/person-id",
+          "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-person-id",
           "valueIdentifier": {
             "use": "official",
             "type": {

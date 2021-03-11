@@ -9,31 +9,31 @@
       <display value="very important person"/>
     </tag>
     <tag>
-      <system value="https://hl7co.github.io/digitalware/klinic-api-fhir/CodeSystem/payors"/>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-payors"/>
       <code value="Payor"/>
       <display value="Pagador o asegurador"/>
     </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Gender patient</b>: <span title="Codes: {http://snomed.info/sct 703117000}">Femenino</span></p><p><b>Birth Place</b>: Santiago de Chile Region Metropolitana Chile </p><blockquote><p><b>Nationality patient</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Urls</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title="Codes: {https://www.iso.org/iso-3166-country-codes.html CL}">Chile</span></p></blockquote><p><b>Ethnic group patient</b>: <span title="Codes: {http://deis.cl/fhir/PueblosIndigenasMinsalDecreto643 01}">Mapuche</span></p><p><b>Population group patient</b>: <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-PopulationGroup 01}">Indigenas</span></p><p><b>Discapacidad del paciente</b>: <span title="Codes: {http://snomed.info/sct 15929741000119101}">disfunción de la mano derecha</span></p><p><b>Education level</b>: <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-EducationalLevelChile 02}">Basica</span></p><p><b>Patient occupation</b>: <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Ocupation 15}">Ama de casa</span></p><p><b>Enterprise Patient</b>: Papeleria el Sol</p><p><b>Newborn</b>: false</p><p><b>Religion</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation 1041}">Roman Catholic Church</span></p><p><b>Cultural group</b>: <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CulturalGroup Indio Americano}">1002-5</span></p><p><b>identifier</b>: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME)</p><p><b>telecom</b>: <a href="tel:+56(2)1111-1111">+56(2)1111-1111</a>, <a href="tel:+56(2)2222-2222">+56(2)2222-2222</a>, <a href="mailto:jmaria@example.com">jmaria@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1975-08-14</p><p><b>deceased</b>: false</p><p><b>address</b>: Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</p><p><b>maritalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td></td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0131 C}, {http://snomed.info/sct 66839005}">Emergency Contact</span></td><td>Jorge Jake</td><td><a href="tel:+56(2)2222-2222">+56(2)2222-2222</a>, <a href="mailto:jjorge@example.com">jjorge@example.com</a></td><td>Eliodoro Yáñez NNN, depto XX, Providencia(HOME)</td></tr></table></div>
   </text>
-  <extension id="genderIdentity" url="http://hl7.org/fhir/StructureDefinition/patient-genderIdentity">
+  <extension id="GenderIdentity" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-GenderIdentity">
     <valueCodeableConcept>
       <coding>
         <system value="http://snomed.info/sct"/>
         <code value="703117000"/>
-        <display value="Female"/>
+        <display value="Femenino"/>
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension id="birthPlace" url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+  <extension id="BirthPlace" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-BirthPlace">
     <valueAddress>
       <city value="Santiago de Chile"/>
       <state value="Region Metropolitana"/>
       <country value="Chile"/>
     </valueAddress>
   </extension>
-  <extension id="nationality" url="http://hl7.org/fhir/StructureDefinition/patient-nationality">
+  <extension id="Nationality" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-Nationality">
     <extension id="code" url="code">
       <valueCodeableConcept>
         <coding>
@@ -44,7 +44,7 @@
       </valueCodeableConcept>
     </extension>
   </extension>
-  <extension id="patientEthnicity" url="https://www.digitalware.com.co/salud/fhir/extension/patient-ethnicity">
+  <extension id="PatientEthnicity" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-PatientEthnicity">
     <valueCodeableConcept>
       <coding>
         <system value="http://deis.cl/fhir/PueblosIndigenasMinsalDecreto643"/>
@@ -53,49 +53,49 @@
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension id="patientPopulationGroup" url="https://www.digitalware.com.co/salud/fhir/extension/patient-population-group">
+  <extension id="PatientPopulationGroup" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-PatientPopulationGroup">
     <valueCodeableConcept>
       <coding>
-        <system value="https://www.digitalware.com.co/salud/fhir/ValueSet/population-group"/>
+        <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-PopulationGroup"/>
         <code value="01"/>
         <display value="Indigenas"/>
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension id="disability" url="http://hl7.org/fhir/StructureDefinition/patient-disability">
+  <extension id="Disability" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-Disability">
     <valueCodeableConcept>
       <coding>
         <system value="http://snomed.info/sct"/>
-        <code value="120"/>
-        <display value="Fisical"/>
+        <code value="15929741000119101"/>
+        <display value="disfunci&#xF3;n de la mano derecha"/>
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension id="educationalLevel" url="https://www.digitalware.com.co/salud/fhir/extension/educational-level">
+  <extension id="EducationalLevelChile" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-EducationalLevelChile">
     <valueCodeableConcept>
       <coding>
-        <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/educationalLevelChile"/>
+        <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-EducationalLevelChile"/>
         <code value="02"/>
         <display value="Basica"/>
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension id="ocupation" url="https://www.digitalware.com.co/salud/fhir/extension/ocupation">
+  <extension id="Ocupation" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-Ocupation">
     <valueCodeableConcept>
       <coding>
-        <system value="https://www.digitalware.com.co/salud/fhir/extension/ocupation"/>
+        <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Ocupation"/>
         <code value="15"/>
         <display value="Ama de casa"/>
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension id="employerOrganization" url="https://www.digitalware.com.co/salud/fhir/extension/employer-organization">
+  <extension id="EmployerOrganization" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-EmployerOrganization">
     <valueString value="Papeleria el Sol"/>
   </extension>
-  <extension id="newBorn" url="https://hl7co.github.io/digitalware/klinic-api-fhir/StructureDefinition/NewBorn">
+  <extension id="NewBorn" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-NewBorn">
     <valueBoolean value="false"/>
   </extension>
-  <extension id="religion" url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+  <extension id="Religion" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-Religion">
     <valueCodeableConcept>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"/>
@@ -104,10 +104,10 @@
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension id="culturalGroup" url="https://www.digitalware.com.co/salud/fhir/extension/patient-cultural-groups">
+  <extension id="CulturalGroup" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-CulturalGroup">
     <valueCodeableConcept>
       <coding>
-        <system value="http://deis.cl/fhir/PueblosIndigenasMinsalDecreto643"/>
+        <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CulturalGroup"/>
         <code value="Indio Americano"/>
         <display value="1002-5"/>
       </coding>
@@ -144,13 +144,16 @@
   <active value="true"/>
   <name>
     <use value="official"/>
-    <family value="Jake">
+    <family>
       <extension id="fathers-family" url="http://hl7.org/fhir/StructureDefinition/humanname-fathers-family">
         <valueString value="Jake"/>
       </extension>
-      <extension id="mothers-family" url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"/>
+      <extension id="mothers-family" url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+        <valueString value="Jofr&#xE9;"/>
+      </extension>
     </family>
     <given value="Maria"/>
+    <given value="Victoria"/>
   </name>
   <name>
     <use value="nickname"/>
@@ -183,13 +186,13 @@
   </address>
   <maritalStatus>
     <coding>
-      <system value="http://hl7.org/fhir/ValueSet/marital-status"/>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
       <code value="M"/>
       <display value="Married"/>
     </coding>
   </maritalStatus>
   <contact>
-    <extension id="person-id" url="https://www.digitalware.com.co/salud/fhir/extension/person-id">
+    <extension id="person-id" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-person-id">
       <valueIdentifier>
         <use value="official"/>
         <type>
@@ -240,10 +243,4 @@
       <country value="Chile"/>
     </address>
   </contact>
-  <link>
-    <other>
-      <reference value="Patient/Example-Patient-87356d0d"/>
-    </other>
-    <type value="replaced-by"/>
-  </link>
 </Patient>

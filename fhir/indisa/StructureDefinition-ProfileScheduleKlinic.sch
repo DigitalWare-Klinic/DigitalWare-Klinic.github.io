@@ -15,6 +15,8 @@
       <sch:assert test="count(f:implicitRules) &lt;= 0">implicitRules: maximum cardinality of 'implicitRules' is 0</sch:assert>
       <sch:assert test="count(f:language) &lt;= 0">language: maximum cardinality of 'language' is 0</sch:assert>
       <sch:assert test="count(f:contained) &lt;= 0">contained: maximum cardinality of 'contained' is 0</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-AvailableTelemedicine']) &lt;= 1">extension with URL = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-AvailableTelemedicine': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-QuotaPatient']) &lt;= 1">extension with URL = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-QuotaPatient': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:active) &gt;= 1">active: minimum cardinality of 'active' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -455,8 +457,10 @@
   <sch:pattern>
     <sch:title>Schedule.planningHorizon.extension</sch:title>
     <sch:rule context="f:Schedule/f:planningHorizon/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

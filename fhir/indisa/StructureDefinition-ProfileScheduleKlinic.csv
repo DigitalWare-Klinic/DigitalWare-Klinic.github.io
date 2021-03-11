@@ -24,12 +24,12 @@ anonymous resourcescontained resources","",0,0,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Schedule.extension","availableTelemedicine","","",0,*,"","","","Extension {[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/AvailableTelemedicine]]} {[]}
-","Admite telemedicina:","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Schedule.extension","availableTelemedicine","","",0,1,"","","","Extension {[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-AvailableTelemedicine]]} {[]}
+","Admit telemedicine","Active agenda for telemedicine care.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Schedule.extension","quotaPatient","","",0,*,"","","","Extension {[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/QuotaPatient]]} {[]}
-","Cupo pacientes:","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Schedule.extension","quotaPatient","","",0,1,"","","","Extension {[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-QuotaPatient]]} {[]}
+","Quota Patient","Number of patients admitted in the agenda.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Schedule.modifierExtension","","extensions
@@ -183,7 +183,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Schedule.specialty.text","","","",0,0,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./originalText[mediaType/code=""text/plain""]/data"
-"Schedule.actor","","","",1,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/HealthcareService], CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
+"Schedule.actor","","","",1,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/HealthcareService], CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
 ","Resource(s) that availability information is being provided for","Slots that reference this schedule resource provide the availability details to these referenced resource(s).","The capacity to support multiple referenced resource types should be used in cases where the specific resources themselves cannot be scheduled without the other, and thus only make sense to the system exposing them as a group. Common examples of this are where the combination of a practitioner and a room (Location) are always required by a system.","","","","","","","","",,,,,"",,,,"Schedule.actor",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","ATTENDEE:MAILTO:john_public@host2.com This can be populated with a value from the referenced resource","FiveWs.subject[x]","FiveWs.subject"
 "Schedule.actor.id","","","",0,0,"","","","string {[]} {[]}
@@ -219,11 +219,13 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","DTSTART:20131201T003000Z DTEND:2014030101T003000Z","FiveWs.planned"
 "Schedule.planningHorizon.id","","","",0,0,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Schedule.planningHorizon.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+"Schedule.planningHorizon.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Schedule.planningHorizon.extension","hoursOfOperation","","",0,*,"","","","Extension {[CanonicalType[https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-HoursOfOperation]]} {[]}
+","HoursOfOperation","Hours of attention of the schedule.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Schedule.planningHorizon.start","","","",1,1,"","","Y","dateTime {[]} {[]}
 ","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Medication/Example-Medication-986756md> a fhir:Medication;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Medication-986756md"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: MD3456 (USUAL)</p><p><b>code</b>: <span title=\"Codes: {http://www.whocc.no/atc C09AA02}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesProviderMedication 01035034567}\">Enalapril</span></p><p><b>status</b>: active</p><p><b>manufacturer</b>: <a href=\"Organization/Example-OrganizationExterna-12345orgext\">Organization/Example-OrganizationExterna-12345orgext</a></p><p><b>form</b>: <span title=\"Codes: {http://snomed.info/sct 46992007}\">Píldora</span></p><p><b>amount</b>: 10 Pildoras/1 blister</p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 387165009}\">maleato de enalapril</span></td><td>true</td><td>5 mg/5 mg</td></tr></table></div>"
+  ];
+  fhir:Medication.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "usual" ];
+     fhir:Identifier.system [ fhir:value "https://example.org/medication-identifiers" ];
+     fhir:Identifier.value [ fhir:value "MD3456" ]
+  ];
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "C09AA02" ];
+       fhir:Coding.display [ fhir:value "Enalapril" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesProviderMedication" ];
+       fhir:Coding.code [ fhir:value "01035034567" ];
+       fhir:Coding.display [ fhir:value "Enalapril" ]
+     ]
+  ];
+  fhir:Medication.status [ fhir:value "active"];
+  fhir:Medication.manufacturer [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Organization/Example-OrganizationExterna-12345orgext>;
+     fhir:Reference.reference [ fhir:value "Organization/Example-OrganizationExterna-12345orgext" ]
+  ];
+  fhir:Medication.form [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:46992007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "46992007" ];
+       fhir:Coding.display [ fhir:value "Píldora" ]
+     ]
+  ];
+  fhir:Medication.amount [
+     fhir:Ratio.numerator [
+       fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "Pildoras" ]
+     ];
+     fhir:Ratio.denominator [
+       fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "blister" ]
+     ]
+  ];
+  fhir:Medication.ingredient [
+     fhir:index 0;
+     fhir:Medication.ingredient.itemCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:387165009;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "387165009" ];
+         fhir:Coding.display [ fhir:value "maleato de enalapril" ]
+       ]
+     ];
+     fhir:Medication.ingredient.isActive [ fhir:value "true"^^xsd:boolean ];
+     fhir:Medication.ingredient.strength [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ]
+       ];
+       fhir:Ratio.denominator [
+         fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Medication/Example-Medication-986756md.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

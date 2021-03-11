@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Condition/Example-Condition-Imaging-414243ci> a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Condition-Imaging-414243ci"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>severity</b>: <span title=\"Codes: {http://snomed.info/sct 255604002}\">Mild</span></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/sid/icd-10 S42.7}, {http://snomed.info/sct 48561006}\">Fractura de clavícula con otro(s) hueso(s) u hombro o brazo</span></p><p><b>subject</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>onset</b>: Feb 24, 2021 8:00:00 AM</p><p><b>recordedDate</b>: Feb 24, 2021 10:50:00 AM</p><p><b>recorder</b>: <a href=\"Practitioner-Example-Practitioner-4343433d.html\">Generated Summary: National Person Identifier Chile: 34343434ap (OFFICIAL); active; Julian Andres null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, rsjulian@example.com; gender: male; birthDate: 1989-03-10</a></p><p><b>note</b>: Patient in a conscious state and in severe pain.</p></div>"
+  ];
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
+       fhir:Coding.code [ fhir:value "active" ];
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ];
+  fhir:Condition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-category" ];
+       fhir:Coding.code [ fhir:value "encounter-diagnosis" ];
+       fhir:Coding.display [ fhir:value "Encounter Diagnosis" ]
+     ]
+  ];
+  fhir:Condition.severity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:255604002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "255604002" ];
+       fhir:Coding.display [ fhir:value "Mild" ]
+     ]
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10" ];
+       fhir:Coding.code [ fhir:value "S42.7" ];
+       fhir:Coding.display [ fhir:value "Fractura de clavícula con otro(s) hueso(s) u hombro o brazo" ]
+     ], [
+       fhir:index 1;
+       a sct:48561006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "48561006" ];
+       fhir:Coding.display [ fhir:value "fractura de extremo esternal de la clavícula, no expuesta (trastorno)" ]
+     ]
+  ];
+  fhir:Condition.subject [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d>;
+     fhir:Reference.reference [ fhir:value "Patient/Example-Patient-87356d0d" ]
+  ];
+  fhir:Condition.onsetDateTime [ fhir:value "2021-02-24T08:00:00-05:00"^^xsd:dateTime];
+  fhir:Condition.recordedDate [ fhir:value "2021-02-24T10:50:00-05:00"^^xsd:dateTime];
+  fhir:Condition.recorder [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Practitioner/Example-Practitioner-4343433d>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Example-Practitioner-4343433d" ]
+  ];
+  fhir:Condition.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Patient in a conscious state and in severe pain." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Condition/Example-Condition-Imaging-414243ci.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

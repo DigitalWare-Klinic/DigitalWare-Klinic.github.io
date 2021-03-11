@@ -3,7 +3,7 @@
   "id": "Example-Observation-3232352365gf",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://terminology.hl7.org/CodeSystem/v2-0074 BLB}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 1240461000000109}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 0306069}\">medición de anticuerpos anti-coronavirus 2 del síndrome respiratorio agudo severo</span></p><p><b>subject</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>encounter</b>: <a href=\"Encounter-Example-Encounter-963b1515.html\">Generated Summary: id: 12334556 (OFFICIAL); status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/service-type 349}\">General Practitioner</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority R}\">routine</span>; period: Jan 21, 2021 7:00:00 AM --&gt; Jan 21, 2021 7:30:00 AM; <span title=\"Codes: {http://snomed.info/sct 257006}\">Acne rosacea</span></a></p><p><b>effective</b>: Feb 25, 2021 9:45:00 AM</p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 260385009}\">Negativo</span></p></div>"
   },
   "status": "final",
   "category": [
@@ -30,7 +30,7 @@
         "display": "medición de anticuerpos anti-coronavirus 2 del síndrome respiratorio agudo severo"
       },
       {
-        "system": "http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa",
+        "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa",
         "code": "0306069",
         "display": "ANTICUERPOS ANTI COVID-19. IGG-DONANTE PLASMA"
       }

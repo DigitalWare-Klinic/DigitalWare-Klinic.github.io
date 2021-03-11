@@ -2,14 +2,15 @@
   "resourceType": "Encounter",
   "id": "Example-Encounter-963y1945",
   "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Rate modality</b>: <span title=\"{https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-RatesModalityINDISA cerrada}\">cerrada/preferent</span></p><p><b>identifier</b>: id: 56386090 (OFFICIAL)</p><p><b>status</b>: finished</p><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: Jan 21, 2021 7:00:00 AM --&gt; Jan 21, 2021 7:10:00 AM</p></blockquote><blockquote><p><b>statusHistory</b></p><p><b>status</b>: in-progress</p><p><b>period</b>: Jan 21, 2021 7:10:00 AM --&gt; Jan 23, 2021 10:45:00 AM</p></blockquote><blockquote><p><b>statusHistory</b></p><p><b>status</b>: finished</p><p><b>period</b>: Jan 23, 2021 10:45:00 AM --&gt; Jan 23, 2021 11:00:00 AM</p></blockquote><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span></p><p><b>serviceType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/service-type 410}\">Pregnancy</span></p><p><b>priority</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority EL}\">elective</span></p><p><b>subject</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>basedOn</b>: <a href=\"ServiceRequest/Example-ServiceRequest-GN4035\">ServiceRequest/Example-ServiceRequest-GN4035</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ParticipationType CON}\">Consultant</span></td></tr></table><p><b>appointment</b>: <a href=\"Appointment-Example-Appointment-05c86b7b-5drg.html\">Generated Summary: id: 403; status: fulfilled; <span title=\"Codes: {http://snomed.info/sct 394658006}\">especialidad clínica</span>; <span title=\"Codes: {http://snomed.info/sct 394585009}\">obstetricia y ginecología</span>, <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-AppointmentTypes c113e46f-5f39}\">Cita Especialista</span>, <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-LocalProcedureCodes 120d0fe9-9347}\">ANTIGENO POLIPEPTIDO DE TEJIDO O ANTIGENO DE PROLIFERACION CELULAR AUTOMATIZADO</span>, <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Payors IDPayor025}\">Asegurador Buena Salud</span>; <span title=\"Codes: {http://snomed.info/sct 394586005}\">ginecología</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0276 WALKIN}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-AppointmentTypes 47b66eb5-0947-455b-b069-54765c996f6f}\">A previously unscheduled walk-in visit</span>; start: Jan 21, 2021 7:00:00 AM; end: Jan 21, 2021 7:30:00 AM; 30; created: Jan 20, 2021 10:00:00 AM; requestedPeriod: 2021-04-01 --&gt; 2021-04-30</a></p><p><b>period</b>: Jan 21, 2021 7:00:00 AM --&gt; Jan 23, 2021 11:00:00 AM</p><p><b>reasonCode</b>: <span title=\"Codes: {http://snomed.info/sct 888003}\">Efecto fetal o neonatal de la pérdida de sangre materna</span></p><p><b>reasonReference</b>: <a href=\"Observation/Example-Observation-3956g\">Observation/Example-Observation-3956g</a></p><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href=\"Condition/Example-Condition-3490d\">Condition/Example-Condition-3490d</a></p><p><b>use</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/diagnosis-role AD}\">Admission diagnosis</span></p><p><b>rank</b>: 1</p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href=\"Condition/Example-Condition-5647f\">Condition/Example-Condition-5647f</a></p><p><b>use</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/diagnosis-role DD}\">Discharge diagnosis</span></p><p><b>rank</b>: 1</p></blockquote><p><b>account</b>: <a href=\"Account/Example-Account-6f678t45\">Account/Example-Account-6f678t45</a></p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>PreAdmissionIdentifier</b></td><td><b>Origin</b></td><td><b>AdmitSource</b></td><td><b>SpecialCourtesy</b></td><td><b>DischargeDisposition</b></td></tr><tr><td>*</td><td>id: 6037c96f1b3e</td><td><a href=\"Location-Example-LocationRoom-1245687952.html\">Generated Summary: status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 O}\">Occupied</span>; name: Habitación 202; alias: H202; description: Hospitalization room.; mode: instance; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}\">Hospital unit</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type ro}\">Room</span></a></td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/admit-source outp}\">From outpatient department</span></td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy VIP}\">very important person</span></td><td><span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-DischargeDisposition home}\">home</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td>*</td><td><a href=\"Location-Example-LocationBed-7819819819bn915.html\">Generated Summary: status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 O}\">Occupied</span>; name: Cama 2; alias: C2; description: Patient bed.; mode: instance; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}\">Hospital unit</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bd}\">Bed</span></a></td><td>completed</td><td>Jan 21, 2021 8:00:00 AM --&gt; Jan 23, 2021 11:00:00 AM</td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-Example-Organization-213134sd15148f.html\">Generated Summary: id: 1100133335-1 (OFFICIAL), id: 12789312-9 (OFFICIAL); active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: Indisa clinica de la familia; alias: INDISA; Phone: 3430000</a></p></div>"
   },
   "extension": [
     {
-      "id": "rateModality",
+      "id": "RateModality",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-RateModality",
       "valueCoding": {
-        "system": "http://digitalware.com.co/salud/fhir/CodeSystem/rates-modality-INDISA",
+        "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-RatesModalityINDISA",
         "code": "cerrada",
         "display": "cerrada/preferent"
       }
@@ -47,14 +48,14 @@
     }
   ],
   "class": {
-    "system": "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
     "code": "IMP",
     "display": "inpatient encounter"
   },
   "serviceType": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/ValueSet/service-type",
+        "system": "http://terminology.hl7.org/CodeSystem/service-type",
         "code": "410",
         "display": "Pregnancy"
       }
@@ -63,7 +64,7 @@
   "priority": {
     "coding": [
       {
-        "system": "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
         "code": "EL",
         "display": "elective"
       }
@@ -83,7 +84,7 @@
         {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
               "code": "CON",
               "display": "Consultant"
             }
@@ -105,7 +106,7 @@
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/ValueSet/encounter-reason",
+          "system": "http://snomed.info/sct",
           "code": "888003",
           "display": "Efecto fetal o neonatal de la pérdida de sangre materna"
         }
@@ -125,7 +126,7 @@
       "use": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/ValueSet/diagnosis-role",
+            "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
             "code": "AD",
             "display": "Admission diagnosis"
           }
@@ -140,7 +141,7 @@
       "use": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/ValueSet/diagnosis-role",
+            "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
             "code": "DD",
             "display": "Discharge diagnosis"
           }
@@ -184,7 +185,7 @@
     "dischargeDisposition": {
       "coding": [
         {
-          "system": "http://digitalware.com.co/salud/fhir/CodeSystem/discharge-disposition",
+          "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-DischargeDisposition",
           "code": "home",
           "display": "home"
         }

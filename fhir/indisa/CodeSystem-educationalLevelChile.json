@@ -1,16 +1,80 @@
 {
   "resourceType": "CodeSystem",
-  "id": "educationalLevelChile",
+  "id": "EducationalLevelChile",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/educationalLevelChile defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-EducationalLevelChile defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"EducationalLevelChile-01\"> </a></td><td>PREBASICA</td><td>Sala Cuna, Jadín Infantil Pre-kinder, Kinder</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"EducationalLevelChile-02\"> </a></td><td>BASICA</td><td>Primaria o Preparatoria</td></tr></table></div>"
   },
-  "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/educationalLevelChile",
+  "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-EducationalLevelChile",
   "version": "1.0",
-  "name": "educationalLevelChile",
+  "name": "EducationalLevelChile",
   "title": "Nivel Educativo Chile",
   "status": "active",
   "date": "2021-02-04",
   "publisher": "DigitalWare S.A. - Klinic-HIS",
-  "content": "complete"
+  "contact": [
+    {
+      "name": "Juan Manuel Contreras Hernandez",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "juanch@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Diana Rodriguez Suarez",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dianaro@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Daniel Felipe Castro Romero",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "danielc@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Eduardo Felipe Solis Hernandez",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "felipesh@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Mario Enrique Cortés M",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mario.cortes@hl7co.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "concept": [
+    {
+      "code": "01",
+      "display": "PREBASICA",
+      "definition": "Sala Cuna, Jadín Infantil Pre-kinder, Kinder"
+    },
+    {
+      "code": "02",
+      "display": "BASICA",
+      "definition": "Primaria o Preparatoria"
+    }
+  ]
 }

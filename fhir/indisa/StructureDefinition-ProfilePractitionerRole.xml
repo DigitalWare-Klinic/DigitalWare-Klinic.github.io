@@ -38,7 +38,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="individual"/>
   </extension>
-  <url value="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition/ProfilePractitionerRole"/>
+  <url value="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfilePractitionerRole"/>
   <version value="1.0"/>
   <name value="ProfilePractitionerRole"/>
   <title value="Practitioner Role"/>
@@ -46,14 +46,46 @@
   <date value="2021-02-10"/>
   <publisher value="DigitalWare S.A. - Klinic-HIS"/>
   <contact>
-    <name value="Juan Manuel Contreras"/>
+    <name value="Juan Manuel Contreras Hernandez"/>
     <telecom>
       <system value="email"/>
-      <value value="juancj@digitalware.com.co"/>
+      <value value="juanch@digitalware.com.co"/>
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Role of practitioner"/>
+  <contact>
+    <name value="Diana Rodriguez Suarez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="dianaro@digitalware.com.co"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Daniel Felipe Castro Romero"/>
+    <telecom>
+      <system value="email"/>
+      <value value="danielc@digitalware.com.co"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eduardo Felipe Solis Hernandez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="felipesh@digitalware.com.co"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Mario Enrique Cort&#xE9;s M"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mario.cortes@hl7co.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Role of practitioner."/>
   <copyright value="Digitalware 2021 CC."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

@@ -3,7 +3,7 @@
 <Organization xmlns="http://hl7.org/fhir">
   <id value="Example-Organization-213134sd15148f"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1100133335-1 (OFFICIAL), id: 12789312-9 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span></p><p><b>name</b>: Indisa clinica de la familia</p><p><b>alias</b>: INDISA</p><p><b>telecom</b>: ph: 3430000(WORK)</p><p><b>address</b>: Av. Sta. María 1810, Santiago, Providencia, Región Metropolitana, Chile(WORK)</p><p><b>partOf</b>: <a href="Organization/Example-Organization-213134sd15148f-1">Organization/Example-Organization-213134sd15148f-1</a></p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Jairo Rodriguez</td><td>ph: 312222222(WORK), <a href="mailto:contacto@indisa.com.cl">contacto@indisa.com.cl</a></td></tr></table></div>
   </text>
   <identifier>
     <use value="official"/>
@@ -18,7 +18,7 @@
   <active value="true"/>
   <type>
     <coding>
-      <system value="http://hl7.org/fhir/ValueSet/organization-type"/>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
       <code value="prov"/>
       <display value="Healthcare Provider"/>
     </coding>
@@ -39,7 +39,7 @@
     <country value="Chile"/>
   </address>
   <partOf>
-    <extension url="Organization/Example-Organization-213134sd15148f-1"/>
+    <reference value="Organization/Example-Organization-213134sd15148f-1"/>
   </partOf>
   <contact>
     <name>

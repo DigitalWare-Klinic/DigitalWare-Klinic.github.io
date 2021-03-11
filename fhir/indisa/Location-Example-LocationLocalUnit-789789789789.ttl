@@ -10,12 +10,12 @@
   fhir:Resource.id [ fhir:value "Example-LocationLocalUnit-789789789789"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>operationalStatus</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 O}\">Occupied</span></p><p><b>name</b>: Servicio hospitalario</p><p><b>alias</b>: Hospitalización</p><p><b>description</b>: Hospital medical care.</p><p><b>mode</b>: kind</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}\">Hospital unit</span></p><p><b>telecom</b>: <a href=\"tel:+5612355611\">+56 12355611</a></p><p><b>physicalType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type wi}\">Wing</span></p><p><b>partOf</b>: <a href=\"Location-Example-LocationBuilding-7412389635sdf556.html\">Generated Summary: id: 1100112345-1 (OFFICIAL); status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 O}\">Occupied</span>; name: Indisa Clinica de la familia; alias: INDISA; description: Clinic and emergencies; mode: instance; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span>; Phone: +56(2)1111-1111; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bu}\">Building</span>; availabilityExceptions: Does not open on holidays.</a></p><h3>HoursOfOperations</h3><table class=\"grid\"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td></tr><tr><td>*</td><td>mon, tue, wed, thu, fri, sat, sun</td><td>true</td></tr></table></div>"
   ];
   fhir:Location.status [ fhir:value "active"];
   fhir:Location.operationalStatus [
      fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0116" ];
-     fhir:Coding.code [ fhir:value "o" ];
+     fhir:Coding.code [ fhir:value "O" ];
      fhir:Coding.display [ fhir:value "Occupied" ]
   ];
   fhir:Location.name [ fhir:value "Servicio hospitalario"];
@@ -29,7 +29,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType" ];
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
        fhir:Coding.code [ fhir:value "HU" ];
        fhir:Coding.display [ fhir:value "Hospital unit" ]
      ]
@@ -39,6 +39,14 @@
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "+56 12355611" ];
      fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Location.physicalType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+       fhir:Coding.code [ fhir:value "wi" ];
+       fhir:Coding.display [ fhir:value "Wing" ]
+     ]
   ];
   fhir:Location.partOf [
      fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationBuilding-7412389635sdf556>;

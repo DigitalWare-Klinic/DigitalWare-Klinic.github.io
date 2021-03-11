@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/RatesModalityINDISA> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "RatesModalityINDISA"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-RatesModalityINDISA defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">OPEN<a name=\"RatesModalityINDISA-OPEN\"> </a></td><td>Abierta</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">FREE<a name=\"RatesModalityINDISA-FREE\"> </a></td><td>Libre elección</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">CLOSED<a name=\"RatesModalityINDISA-CLOSED\"> </a></td><td>Cerrada</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">PREFERRED<a name=\"RatesModalityINDISA-PREFERRED\"> </a></td><td>Preferente</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">GES-CAEC<a name=\"RatesModalityINDISA-GES-CAEC\"> </a></td><td>GES-CAEC</td><td>Please. Request a description of this concept from INDISA.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-RatesModalityINDISA"];
+  fhir:CodeSystem.version [ fhir:value "1.0"];
+  fhir:CodeSystem.name [ fhir:value "RatesModalityINDISA"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2021-02-11"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "DigitalWare S.A. - Klinic-HIS"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Juan Manuel Contreras Hernandez" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "juanch@digitalware.com.co" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Diana Rodriguez Suarez" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "dianaro@digitalware.com.co" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ContactDetail.name [ fhir:value "Daniel Felipe Castro Romero" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "danielc@digitalware.com.co" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:ContactDetail.name [ fhir:value "Eduardo Felipe Solis Hernandez" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "felipesh@digitalware.com.co" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:ContactDetail.name [ fhir:value "Mario Enrique Cortés M" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mario.cortes@hl7co.org" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "This is a coding system that contains the rate modality codes for the interoperability scenario of INDISA (Chile)."];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "OPEN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Abierta" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "FREE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Libre elección" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "CLOSED" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cerrada" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "PREFERRED" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Preferente" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "GES-CAEC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "GES-CAEC" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/RatesModalityINDISA.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

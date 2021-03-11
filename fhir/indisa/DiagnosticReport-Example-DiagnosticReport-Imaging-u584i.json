@@ -1,0 +1,80 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "Example-DiagnosticReport-Imaging-u584i",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://snomed.info/sct 11634002}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 0401062}\">radiografía diagnóstica, imágenes en decúbito supino y en bipedestación</span> (<span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}, {http://snomed.info/sct 363272006}\">Imaging</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Maria Victoria null (OFFICIAL)</b>  1975-08-14 ( Medical Record Number: HC-6ef0a6d7 (USUAL))</td></tr><tr><td>When For</td><td>Feb 25, 2021 9:45:00 AM</td></tr><tr><td>Identifier:</td><td> id: RXI4376347 (USUAL)</td></tr></table><p><b>Report Details</b></p><p>Estudio dentro de parametros normales.</p><p><b>Coded Conclusions :</b></p><ul><li><span title=\"Codes: {http://snomed.info/sct 48561006}\">fractura de extremo esternal de la clavícula, no expuesta (trastorno)</span></li></ul></div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "https://example.org/diagnostic-report-identifiers",
+      "value": "RXI4376347"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/Example-ServiceRequest-Imaging-87878hdim"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "imaging",
+          "display": "Imaging"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "363272006",
+          "display": "imágenes radiológicas, incidencias y posiciones especiales"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "11634002",
+        "display": "radiografía diagnóstica, imágenes en decúbito supino y en bipedestación"
+      },
+      {
+        "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa",
+        "code": "0401062",
+        "display": "Radiografía de Proyecciones especiales oblicuas u otras en hombro, brazo,\r\n            codo, rodilla, rótulas, sesamoideos, axial de ambas rótulas o similares"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Example-Patient-87356d0d"
+  },
+  "encounter": {
+    "reference": "Encounter/Example-Encounter-963b1515"
+  },
+  "effectiveDateTime": "2021-02-25T09:45:00-05:00",
+  "performer": [
+    {
+      "reference": "Practitioner/Example-Practitioner-78456er9f"
+    }
+  ],
+  "imagingStudy": [
+    {
+      "reference": "ImagingStudy/Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323"
+    }
+  ],
+  "conclusion": "Estudio dentro de parametros normales.",
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "48561006",
+          "display": "fractura de extremo esternal de la clavícula, no expuesta (trastorno)"
+        }
+      ]
+    }
+  ]
+}

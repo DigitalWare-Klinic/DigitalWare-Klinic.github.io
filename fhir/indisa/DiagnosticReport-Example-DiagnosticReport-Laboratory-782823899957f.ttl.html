@@ -40,13 +40,13 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"1.76"}
-    h3,h4,h5,h6{--heading-prefix:"1.76"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.95"}
+    h3,h4,h5,h6{--heading-prefix:"3.95"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
 
-
+        
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.</span><br/>1.0 - trial-use</p>
         </div>
@@ -69,7 +69,7 @@
             <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul class="nav navbar-nav">
-  <li><a name="687edfe5-8648-469a-8a73-399edacb72ef">​</a><a href="index.html">IG Home</a></li>
+  <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">
@@ -173,11 +173,11 @@
   <a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Example-DiagnosticReport-Laboratory-782823899957f"];
   <a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "generated" ];
-     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h1&gt;SEGMENTO NARRATIVO&lt;/h1&gt;&lt;/div&gt;"
+     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2&gt;&lt;span title=\"Codes: {http://snomed.info/sct 1240461000000109}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 0306069}\"&gt;medición de anticuerpos anti-coronavirus 2 del síndrome respiratorio agudo severo&lt;/span&gt; (&lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://snomed.info/sct 708194008}\"&gt;Laboratory&lt;/span&gt;) &lt;/h2&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;Subject&lt;/td&gt;&lt;td&gt;&lt;b&gt;Maria Victoria null (OFFICIAL)&lt;/b&gt;  1975-08-14 ( Medical Record Number: HC-6ef0a6d7 (USUAL))&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;When For&lt;/td&gt;&lt;td&gt;Feb 25, 2021 9:45:00 AM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Identifier:&lt;/td&gt;&lt;td&gt; id: RLB56566 (USUAL)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Report Details&lt;/b&gt;&lt;/p&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"Observation-Example-Observation-3232352365gf.html\"&gt;&lt;span title=\"Codes: {http://snomed.info/sct 1240461000000109}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 0306069}\"&gt;medición de anticuerpos anti-coronavirus 2 del síndrome respiratorio agudo severo&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\"Codes: {http://snomed.info/sct 260385009}\"&gt;Negativo&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;Ullamco eiusmod sunt elit non commodo est dolor.&lt;/p&gt;&lt;/div&gt;"
   ];
   <a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.identifier">fhir:DiagnosticReport.identifier</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "official" ];
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "usual" ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "https://example.org/diagnostic-report-identifiers" ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "RLB56566" ]
   ];
@@ -190,6 +190,10 @@
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "laboratory" ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Laboratory" ]     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
        a sct:708194008;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://snomed.info/sct" ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "708194008" ];
@@ -203,7 +207,7 @@
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "1240461000000109" ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "medición de anticuerpos anti-coronavirus 2 del síndrome respiratorio agudo severo" ]     ], [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa" ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa" ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "0306069" ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "ANTICUERPOS ANTI COVID-19. IGG-DONANTE PLASMA" ]     ]
   ];
@@ -261,8 +265,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="46dbacf5-4ed0-4e14-9ca7-61a4ef916302">​</a>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="null">DigitalWare S.A. - Klinic-HIS</a>.  Package fhir.digital-ware.klinic-api-fhir#1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 25, 2021 14:30-0500">2021-02-25</span>
+        <p><a name="90acd406-feff-4709-8192-23ff4ca6e2df">​</a>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="juanch@digitalware.com.co">DigitalWare S.A. - Klinic-HIS</a>.  Package fhir.digital-ware.klinic-api-fhir#1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 10, 2021 01:14-0500">2021-03-10</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

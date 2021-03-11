@@ -3,7 +3,7 @@
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="Example-DiagnosticReport-Antibiogram-3894"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://snomed.info/sct 39334004}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 306026}">antibiograma, concentración inhibitoria mínima (CIM)</span> (<span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://terminology.hl7.org/CodeSystem/v2-0074 MB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td><b>Maria Victoria null (OFFICIAL)</b>  1975-08-14 ( Medical Record Number: HC-6ef0a6d7 (USUAL))</td></tr><tr><td>When For</td><td>Feb 25, 2021 9:45:00 AM</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td></tr><tr><td><a href="Observation-Example-Observation-Antibiogram-obx0.html"><span title="Codes: {http://snomed.info/sct 3092008}">Staphylococcus aureus</span></a></td><td></td><td></td></tr><tr><td><a href="Observation-Example-Observation-Antibiogram-obx1.html"><span title="Codes: {http://snomed.info/sct 387170002}">ampicilina</span></a></td><td>&lt;=4.5</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation S}">Susceptible</span></td></tr><tr><td><a href="Observation-Example-Observation-Antibiogram-obx2.html"><span title="Codes: {http://snomed.info/sct 764146007}">penicilina</span></a></td><td>&lt;=5.5</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation S}">Susceptible</span></td></tr><tr><td><a href="Observation-Example-Observation-Antibiogram-obx3.html"><span title="Codes: {http://snomed.info/sct 372868007}">oxacilina</span></a></td><td>&gt;8.0</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation R}">Resistant</span></td></tr><tr><td><a href="Observation-Example-Observation-Antibiogram-obx4.html"><span title="Codes: {http://snomed.info/sct 372687004}">amoxicilina</span></a></td><td>&gt;7.0</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation R}">Resistant</span></td></tr><tr><td><a href="Observation-Example-Observation-Antibiogram-obx5.html"><span title="Codes: {http://snomed.info/sct 372809001}">tetraciclina</span></a></td><td>&gt;8.5</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation R}">Resistant</span></td></tr></table></div>
   </text>
   <basedOn>
     <reference value="ServiceRequest/Example-ServiceRequest-Laboratory-7856f89ad"/>
@@ -28,7 +28,7 @@
       <display value="antibiograma, concentraci&#xF3;n inhibitoria m&#xED;nima (CIM)"/>
     </coding>
     <coding>
-      <system value="http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa"/>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa"/>
       <code value="306026"/>
       <display value="ANTIBIOGRAMA"/>
     </coding>
@@ -41,7 +41,7 @@
     <reference value="Practitioner/Example-Practitioner-78456er9f"/>
   </performer>
   <result>
-    <reference value="Observation/Example-observation-antibiogram-obx0"/>
+    <reference value="Observation/Example-Observation-Antibiogram-obx0"/>
   </result>
   <result>
     <reference value="Observation/Example-Observation-Antibiogram-obx1"/>
@@ -53,10 +53,10 @@
     <reference value="Observation/Example-Observation-Antibiogram-obx3"/>
   </result>
   <result>
-    <reference value="Observation/example-observation-antibiogram-obx4"/>
+    <reference value="Observation/Example-Observation-Antibiogram-obx4"/>
   </result>
   <result>
-    <reference value="Observation/example-observation-antibiogram-obx5"/>
+    <reference value="Observation/Example-Observation-Antibiogram-obx5"/>
   </result>
   <presentedForm>
     <contentType value="application/pdf"/>

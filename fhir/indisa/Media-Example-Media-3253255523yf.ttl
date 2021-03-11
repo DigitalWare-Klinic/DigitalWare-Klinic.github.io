@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "Example-Media-3253255523yf"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/media-type image}\">Image</span></p><h3>Contents</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></div>"
   ];
   fhir:Media.status [ fhir:value "completed"];
   fhir:Media.type [

@@ -3,7 +3,7 @@
   "id": "Example-Practitioner-4290sd6n",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: National Person Identifier Chile: 45565700ap (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Maria Camila null (OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+56(2)1111-1111\">+56(2)1111-1111</a>, <a href=\"tel:+56(2)2222-2222\">+56(2)2222-2222</a>, <a href=\"mailto:pamaria@example.com\">pamaria@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1991-06-05</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Registered Nurse: TP134907 (OFFICIAL)</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 106292003}\">enfermera profesional</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Registered Nurse: TP134907 (OFFICIAL)</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 309446002}\">jefa de enfermeras</span></p></blockquote></div>"
   },
   "identifier": [
     {
@@ -29,7 +29,6 @@
   "name": [
     {
       "use": "official",
-      "family": "Perez Aristizabal",
       "_family": {
         "extension": [
           {
@@ -89,8 +88,8 @@
         "coding": [
           {
             "system": "http://snomed.info/sct",
-            "code": "309343008",
-            "display": "Enfermera"
+            "code": "106292003",
+            "display": "enfermera profesional"
           }
         ]
       }

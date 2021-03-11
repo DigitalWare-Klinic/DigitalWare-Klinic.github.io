@@ -3,7 +3,7 @@
   "id": "Example-Observation-643767367434f",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://terminology.hl7.org/CodeSystem/v2-0074 HM}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 26604007}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 301045}\">hemograma completo</span></p><p><b>subject</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>encounter</b>: <a href=\"Encounter-Example-Encounter-963b1515.html\">Generated Summary: id: 12334556 (OFFICIAL); status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/service-type 349}\">General Practitioner</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority R}\">routine</span>; period: Jan 21, 2021 7:00:00 AM --&gt; Jan 21, 2021 7:30:00 AM; <span title=\"Codes: {http://snomed.info/sct 257006}\">Acne rosacea</span></a></p><p><b>effective</b>: Feb 25, 2021 9:45:00 AM</p><p><b>derivedFrom</b>: <a href=\"Media-Example-Media-3253255523yf.html\">Generated Summary: status: completed; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/media-type image}\">Image</span></a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 6690-2}\">Leukocytes [#/volume] in Blood by Automated count</span></p><p><b>value</b>: 6.5 10*3/uL</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>4.0 - 10.0</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 789-8}\">Erythrocytes [#/volume] in Blood by Automated count</span></p><p><b>value</b>: 4.5 10*6/uL</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>3.5 - 5.5</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 718-7}\">Hemoglobin [Mass/volume] in Blood</span></p><p><b>value</b>: 10.7 g/dL</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>11.0 - 16.0</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 4544-3}\">Hematocrit [Volume Fraction] of Blood by Automated count</span></p><p><b>value</b>: 60 %</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>37 - 54</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 787-2}\">MCV [Entitic volume] by Automated count</span></p><p><b>value</b>: 85.5 fL</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>80 - 100</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 785-6}\">MCH [Entitic mass] by Automated count</span></p><p><b>value</b>: 30.4 pg</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>27 - 34</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 786-4}\">MCHC [Mass/volume] by Automated count</span></p><p><b>value</b>: 30.3 g/dL</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>32 - 36</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 777-3}\">Platelets [#/volume] in Blood by Automated count</span></p><p><b>value</b>: 110.5 10*3/uL</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>100 - 300</td></tr></table></blockquote></div>"
   },
   "status": "final",
   "category": [
@@ -17,7 +17,7 @@
         {
           "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
           "code": "HM",
-          "display": "Hemotology"
+          "display": "Hematology"
         }
       ]
     }
@@ -30,7 +30,7 @@
         "display": "hemograma completo"
       },
       {
-        "system": "http://digitalware.com.co/salud/fhir/CodeSystem/codes-fonasa",
+        "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa",
         "code": "301045",
         "display": "HEMOGRAMA"
       }
@@ -42,5 +42,260 @@
   "encounter": {
     "reference": "Encounter/Example-Encounter-963b1515"
   },
-  "effectiveDateTime": "2021-02-25T09:45:00-05:00"
+  "effectiveDateTime": "2021-02-25T09:45:00-05:00",
+  "derivedFrom": [
+    {
+      "reference": "Media/Example-Media-3253255523yf"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "6690-2",
+            "display": "Leukocytes [#/volume] in Blood by Automated count"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 6.5,
+        "unit": "10*3/uL"
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "code": "N",
+              "display": "Normal"
+            }
+          ]
+        }
+      ],
+      "referenceRange": [
+        {
+          "text": "4.0 - 10.0"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "789-8",
+            "display": "Erythrocytes [#/volume] in Blood by Automated count"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 4.5,
+        "unit": "10*6/uL"
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "code": "N",
+              "display": "Normal"
+            }
+          ]
+        }
+      ],
+      "referenceRange": [
+        {
+          "text": "3.5 - 5.5"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "718-7",
+            "display": "Hemoglobin [Mass/volume] in Blood"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 10.7,
+        "unit": "g/dL"
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "code": "L",
+              "display": "Low"
+            }
+          ]
+        }
+      ],
+      "referenceRange": [
+        {
+          "text": "11.0 - 16.0"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "4544-3",
+            "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 60,
+        "unit": "%"
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "code": "H",
+              "display": "High"
+            }
+          ]
+        }
+      ],
+      "referenceRange": [
+        {
+          "text": "37 - 54"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "787-2",
+            "display": "MCV [Entitic volume] by Automated count"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 85.5,
+        "unit": "fL"
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "code": "N",
+              "display": "Normal"
+            }
+          ]
+        }
+      ],
+      "referenceRange": [
+        {
+          "text": "80 - 100"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "785-6",
+            "display": "MCH [Entitic mass] by Automated count"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 30.4,
+        "unit": "pg"
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "code": "N",
+              "display": "Normal"
+            }
+          ]
+        }
+      ],
+      "referenceRange": [
+        {
+          "text": "27 - 34"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "786-4",
+            "display": "MCHC [Mass/volume] by Automated count"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 30.3,
+        "unit": "g/dL"
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "code": "L",
+              "display": "Low"
+            }
+          ]
+        }
+      ],
+      "referenceRange": [
+        {
+          "text": "32 - 36"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "777-3",
+            "display": "Platelets [#/volume] in Blood by Automated count"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 110.5,
+        "unit": "10*3/uL"
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "code": "N",
+              "display": "Normal"
+            }
+          ]
+        }
+      ],
+      "referenceRange": [
+        {
+          "text": "100 - 300"
+        }
+      ]
+    }
+  ]
 }

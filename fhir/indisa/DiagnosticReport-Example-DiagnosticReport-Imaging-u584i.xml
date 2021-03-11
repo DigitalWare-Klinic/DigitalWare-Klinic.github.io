@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="Example-DiagnosticReport-Imaging-u584i"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://snomed.info/sct 11634002}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 0401062}">radiografía diagnóstica, imágenes en decúbito supino y en bipedestación</span> (<span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}, {http://snomed.info/sct 363272006}">Imaging</span>) </h2><table class="grid"><tr><td>Subject</td><td><b>Maria Victoria null (OFFICIAL)</b>  1975-08-14 ( Medical Record Number: HC-6ef0a6d7 (USUAL))</td></tr><tr><td>When For</td><td>Feb 25, 2021 9:45:00 AM</td></tr><tr><td>Identifier:</td><td> id: RXI4376347 (USUAL)</td></tr></table><p><b>Report Details</b></p><p>Estudio dentro de parametros normales.</p><p><b>Coded Conclusions :</b></p><ul><li><span title="Codes: {http://snomed.info/sct 48561006}">fractura de extremo esternal de la clavícula, no expuesta (trastorno)</span></li></ul></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="https://example.org/diagnostic-report-identifiers"/>
+    <value value="RXI4376347"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/Example-ServiceRequest-Imaging-87878hdim"/>
+  </basedOn>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="imaging"/>
+      <display value="Imaging"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="363272006"/>
+      <display value="im&#xE1;genes radiol&#xF3;gicas, incidencias y posiciones especiales"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="11634002"/>
+      <display value="radiograf&#xED;a diagn&#xF3;stica, im&#xE1;genes en dec&#xFA;bito supino y en bipedestaci&#xF3;n"/>
+    </coding>
+    <coding>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa"/>
+      <code value="0401062"/>
+      <display value="Radiograf&#xED;a de Proyecciones especiales oblicuas u otras en hombro, brazo,&#xD;&#xA;            codo, rodilla, r&#xF3;tulas, sesamoideos, axial de ambas r&#xF3;tulas o similares"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/Example-Encounter-963b1515"/>
+  </encounter>
+  <effectiveDateTime value="2021-02-25T09:45:00-05:00"/>
+  <performer>
+    <reference value="Practitioner/Example-Practitioner-78456er9f"/>
+  </performer>
+  <imagingStudy>
+    <reference value="ImagingStudy/Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323"/>
+  </imagingStudy>
+  <conclusion value="Estudio dentro de parametros normales."/>
+  <conclusionCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="48561006"/>
+      <display value="fractura de extremo esternal de la clav&#xED;cula, no expuesta (trastorno)"/>
+    </coding>
+  </conclusionCode>
+</DiagnosticReport>

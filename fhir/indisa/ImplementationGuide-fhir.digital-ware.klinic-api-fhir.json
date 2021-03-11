@@ -10,8 +10,60 @@
   "name": "klinicapifhir",
   "title": "Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.",
   "status": "active",
-  "date": "2021-02-25T14:30:23-05:00",
+  "date": "2021-03-10T01:14:51-05:00",
   "publisher": "DigitalWare S.A. - Klinic-HIS",
+  "contact": [
+    {
+      "name": "Juan Manuel Contreras Hernandez",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "juanch@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Diana Rodriguez Suarez",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dianaro@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Daniel Felipe Castro Romero",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "danielc@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Eduardo Felipe Solis Hernandez",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "felipesh@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Mario Enrique Cortés M",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mario.cortes@hl7co.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
   "description": "FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A.",
   "packageId": "fhir.digital-ware.klinic-api-fhir",
   "license": "CC0-1.0",
@@ -277,88 +329,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/LocationAreaKlinic"
-        },
-        "name": "LocationAreaKlinic",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/LocationBedKlinic"
-        },
-        "name": "LocationBedKlinic",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/LocationBuildingKlinic"
-        },
-        "name": "LocationBuildingKlinic",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/LocationFunctionalUnitKlinic"
-        },
-        "name": "LocationFunctionalUnitKlinic",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/LocationRoomKlinic"
-        },
-        "name": "LocationRoomKlinic",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/OrganizationHealthcareProvider"
-        },
-        "name": "OrganizationHealthcareProvider",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/ProfileAccountKlinic"
         },
         "name": "Account",
-        "description": "Account patient",
+        "description": "Patient account, where all charges made at the outpatient or hospital level are found.",
         "exampleBoolean": false
       },
       {
@@ -369,9 +343,24 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/ProfileAppointment"
+          "reference": "StructureDefinition/ProfileAppointmentKlinic"
         },
-        "name": "ProfileAppointment",
+        "name": "Appointment",
+        "description": "Registered appointments of the patient for each general and specialized medical consultation and the performance of laboratory and imaging tests, among others.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileAppointmentResponseKlinic"
+        },
+        "name": "Appointment Response",
+        "description": "Response regarding the scheduling of the patient's appointment according to the availability of the agenda or regarding cancellations, reviews, among other activities on each appointment.",
         "exampleBoolean": false
       },
       {
@@ -385,7 +374,21 @@
           "reference": "StructureDefinition/ProfileCompositionKlinic"
         },
         "name": "Document Electronic",
-        "description": "Compisition Document Electronic",
+        "description": "Electronic composition document that allows the exchange of information between processes or between integration points and that has to do with the patient's medical information.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileConditionKlinic"
+        },
+        "name": "Condition",
+        "description": "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.",
         "exampleBoolean": false
       },
       {
@@ -399,7 +402,7 @@
           "reference": "StructureDefinition/ProfileCoverageKlinic"
         },
         "name": "Coverage patient",
-        "description": "patient's health coverage policy.",
+        "description": "Patient's health coverage policy.",
         "exampleBoolean": false
       },
       {
@@ -410,10 +413,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/profileDiagnosticReportLabKlinic"
+          "reference": "StructureDefinition/ProfileDeviceKlinic"
         },
-        "name": "Diagnostic report laboratory",
-        "description": "Diagnostic Report laboratory",
+        "name": "Device",
+        "description": "A type of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity.",
         "exampleBoolean": false
       },
       {
@@ -424,10 +427,24 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/ProfileEncounterKlinic"
+          "reference": "StructureDefinition/ProfileDiagnosticReportLabKlinic"
         },
-        "name": "Encounter",
-        "description": "Encounter of Patient.",
+        "name": "Diagnostic report for laboratory, imamging study and cardiovascular tests",
+        "description": "Clinical diagnostic reports of the patient (laboratory, imamging study and cardiovascular tests).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileEndpointKlinic"
+        },
+        "name": "Endpoint",
+        "description": "Contact points where the exchange, update and consultation of medical information of the patient is allowed.",
         "exampleBoolean": false
       },
       {
@@ -440,7 +457,162 @@
         "reference": {
           "reference": "StructureDefinition/ProfileHealthcareService"
         },
-        "name": "HealthcareService",
+        "name": "Healthcare Service",
+        "description": "health services that are provided to the patient, once they enter the provider's facilities.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileImagingStudyKlinic"
+        },
+        "name": "Imaging Study",
+        "description": "A set of images produced in single study at patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileImplantableDeviceKlinic"
+        },
+        "name": "Device",
+        "description": "FHIR resource profile for Active Implantable Medical Devices (AIMD), invasive medical devices, custom medical devices, and invasive or reusable surgical medical devices.\n\nMany of these devices are partially or completely absorbed.\n\nSuch as: pacemaker, extends, catheter, IUD, and surgical instruments.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileLocationAreaKlinic"
+        },
+        "name": "Location Area",
+        "description": "Physical location of each of the clinical and administrative areas within a building: Floor, Area, Wing, Waiting room, intensive care unit, among others.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileLocationBedKlinic"
+        },
+        "name": "Location Bed",
+        "description": "Physical location of each of the clinical areas within a building:  Bed.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileLocationBuildingKlinic"
+        },
+        "name": "Location Building",
+        "description": "Physical location of each of the clinical and administrative areas within a building:  Building, Wing of building, Tower, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileLocationFunctionalUnitKlinic"
+        },
+        "name": "Location Functional Unit",
+        "description": "Physical location of each of the clinical and administrative areas within a building:  Functional Unit.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileLocationRoomKlinic"
+        },
+        "name": "Location Room",
+        "description": "Physical location of each of the clinical and administrative areas within a building:  Room, Consulting room, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileMedicationAdministrationKlinic"
+        },
+        "name": "Medication Administration",
+        "description": "Describes the event of a patient consuming or otherwise being administered a medication.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileMedicationDispenseKlinic"
+        },
+        "name": "Medication dispense",
+        "description": "Indicates that a medication product is to be or has been dispensed for a named person/patient. This includes a description of the medication product (supply) provided and the instructions for administering the medication. The medication dispense is the result of a pharmacy system responding to a medication order.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileMedicationKlinic"
+        },
+        "name": "Medication",
+        "description": "Identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileMedicationRequestKlinic"
+        },
+        "name": "Medication Request",
+        "description": "An order or request for both supply of the medication and the instructions for administration of the medication to a patient.",
         "exampleBoolean": false
       },
       {
@@ -454,7 +626,7 @@
           "reference": "StructureDefinition/ProfileMessageHeaderKlinic"
         },
         "name": "Message header",
-        "description": "Message header",
+        "description": "Message header in the messaging exchange.",
         "exampleBoolean": false
       },
       {
@@ -465,10 +637,24 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/profileObservationLabKlinic"
+          "reference": "StructureDefinition/ProfileObservationLabKlinic"
         },
-        "name": "Observation laboratory",
-        "description": "Observation laboratory",
+        "name": "Observation",
+        "description": "Observation laboratory and imaging.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileOrganizationHealthcareProviderKlinic"
+        },
+        "name": "Organization Healthcare Provider",
+        "description": "Organization Healthcare Provider.",
         "exampleBoolean": false
       },
       {
@@ -482,7 +668,7 @@
           "reference": "StructureDefinition/ProfilePatientKlinic"
         },
         "name": "Patient",
-        "description": "Perfil HL7 FHIR para el recurso Patient refinado para el contexto Klinic API FHIR.",
+        "description": "Data of patient.",
         "exampleBoolean": false
       },
       {
@@ -496,7 +682,7 @@
           "reference": "StructureDefinition/ProfilePractitionerKlinic"
         },
         "name": "Practitioner",
-        "description": "Practitioner",
+        "description": "Practitioner of healht.",
         "exampleBoolean": false
       },
       {
@@ -510,7 +696,7 @@
           "reference": "StructureDefinition/ProfilePractitionerRole"
         },
         "name": "Practitioner Role",
-        "description": "Role of practitioner",
+        "description": "Role of practitioner.",
         "exampleBoolean": false
       },
       {
@@ -521,10 +707,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/ProfileScheduleKlinic"
+          "reference": "StructureDefinition/ProfileProcedureKlinic"
         },
-        "name": "Schedule patient",
-        "description": "Schedule patient",
+        "name": "Procedure",
+        "description": "Medical procedures in health.",
         "exampleBoolean": false
       },
       {
@@ -535,21 +721,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/ProfileServiceRequestKlinic"
-        },
-        "name": "Service Request",
-        "description": "Service request",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/questionnaireResponseSurveyKlinic"
+          "reference": "StructureDefinition/ProfileQuestionnaireResponseSurveyKlinic"
         },
         "name": "Questionnaire response",
         "description": "Questionnaire responses",
@@ -563,7 +735,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/questionnaireSurveyKlinic"
+          "reference": "StructureDefinition/ProfileQuestionnaireSurveyKlinic"
         },
         "name": "Questionnaire",
         "description": "Questionnaire of Survey",
@@ -577,9 +749,52 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/SlotKlinic"
+          "reference": "StructureDefinition/ProfileScheduleKlinic"
         },
-        "name": "SlotKlinic",
+        "name": "Schedule patient",
+        "description": "Schedule patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileServiceRequestKlinic"
+        },
+        "name": "Service Request",
+        "description": "Medical order for health services.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileSlotKlinic"
+        },
+        "name": "Slot",
+        "description": "Agenda spaces available for appointment assignments.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileSpecimenKlinic"
+        },
+        "name": "Specimen",
+        "description": "A sample to be used for analysis.",
         "exampleBoolean": false
       },
       {
@@ -590,9 +805,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/AccountAmount"
+          "reference": "StructureDefinition/AccountAmountKlinic"
         },
         "name": "Account Amount",
+        "description": "Amount of the account, which totals the services provided to the patient,",
         "exampleBoolean": false
       },
       {
@@ -605,7 +821,8 @@
         "reference": {
           "reference": "StructureDefinition/AvailableTelemedicine"
         },
-        "name": "Admite telemedicina:",
+        "name": "Admit telemedicine",
+        "description": "Active agenda for telemedicine care.",
         "exampleBoolean": false
       },
       {
@@ -632,8 +849,8 @@
         "reference": {
           "reference": "StructureDefinition/BirthPlace"
         },
-        "name": "Lugar de nacimiento",
-        "description": "Localizacon geografica de nacimiento del paciente.",
+        "name": "Birth Place",
+        "description": "Geographical location of birth of the patient.",
         "exampleBoolean": false
       },
       {
@@ -644,10 +861,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/BonusAmount"
+          "reference": "StructureDefinition/BonusAmountKlinic"
         },
         "name": "Bonus Amount",
-        "description": "Bonus amount",
+        "description": "Amount of the bonus that legalizes the payment of the patient's account, totally or partially.",
         "exampleBoolean": false
       },
       {
@@ -661,7 +878,7 @@
           "reference": "StructureDefinition/CancelationDateTime"
         },
         "name": "Fecha/Hora cancelacion cita",
-        "description": "Cancellation of the appointment.",
+        "description": "Cate and time of cancellation of the appointment.",
         "exampleBoolean": false
       },
       {
@@ -717,7 +934,7 @@
           "reference": "StructureDefinition/ClinicalDischargeType"
         },
         "name": "Clinical discharge type",
-        "description": "Clinical discharge type",
+        "description": "Types of clinical discharge of the patient, at the hospitalization and emergency level.",
         "exampleBoolean": false
       },
       {
@@ -728,10 +945,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/consultationsAmount"
+          "reference": "StructureDefinition/ConsultationsAmountKlinic"
         },
         "name": "Consultations Amount",
-        "description": "Consultations amount",
+        "description": "Amount of consultations or health benefits, made to the patient.",
         "exampleBoolean": false
       },
       {
@@ -742,10 +959,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/copaymentAmount"
+          "reference": "StructureDefinition/CopaymentAmountKlinic"
         },
         "name": "Copayment Amount",
-        "description": "Copayment amount",
+        "description": "Amount of the copayment to be paid by the patient or their person in charge, if a value is pending after paying off their account against the value of the bond from their insurer.",
         "exampleBoolean": false
       },
       {
@@ -759,6 +976,7 @@
           "reference": "StructureDefinition/CulturalGroup"
         },
         "name": "Cultural group",
+        "description": "Cultural group to which the patient belongs.",
         "exampleBoolean": false
       },
       {
@@ -772,7 +990,7 @@
           "reference": "StructureDefinition/Disability"
         },
         "name": "Discapacidad del paciente",
-        "description": "Discapacidad del paciente.",
+        "description": "Disability of the patient.",
         "exampleBoolean": false
       },
       {
@@ -783,10 +1001,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/EducationalLevel"
+          "reference": "StructureDefinition/EducationalLevelChile"
         },
-        "name": "Nivel educativo paciente",
-        "description": "Nivel de educacion del paciente",
+        "name": "Education level",
+        "description": "Patient education level.",
         "exampleBoolean": false
       },
       {
@@ -799,8 +1017,8 @@
         "reference": {
           "reference": "StructureDefinition/EmployerOrganization"
         },
-        "name": "Empresa paciente",
-        "description": "Empresa donde labora el paciente",
+        "name": "Enterprise Patient",
+        "description": "Company where the patient works.",
         "exampleBoolean": false
       },
       {
@@ -811,10 +1029,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/Fathersfamily"
+          "reference": "StructureDefinition/FathersFamily"
         },
-        "name": "Primer Apellido del profesional de salud",
-        "description": "Primer apellido del profesional de salud.",
+        "name": "Patient's first surname",
+        "description": "Patient's first surname.",
         "exampleBoolean": false
       },
       {
@@ -827,8 +1045,8 @@
         "reference": {
           "reference": "StructureDefinition/GenderIdentity"
         },
-        "name": "Identidad de genero",
-        "description": "Genero con el cual el paciente se identifica.",
+        "name": "Gender patient",
+        "description": "Gender with which the patient identifies.",
         "exampleBoolean": false
       },
       {
@@ -839,9 +1057,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/hoursOfOperation"
+          "reference": "StructureDefinition/HoursOfOperation"
         },
         "name": "HoursOfOperation",
+        "description": "Hours of attention of the schedule.",
         "exampleBoolean": false
       },
       {
@@ -854,8 +1073,8 @@
         "reference": {
           "reference": "StructureDefinition/IdExpeditionPlace"
         },
-        "name": "Lugar expedicion identificacion paciente",
-        "description": "Lugar expedicion identificacion paciente",
+        "name": "Place of issuance of patient identification",
+        "description": "Place of issuance of patient identification.",
         "exampleBoolean": false
       },
       {
@@ -869,7 +1088,7 @@
           "reference": "StructureDefinition/MedicalFeesKlinic"
         },
         "name": "Medical Fees",
-        "description": "Medical fees",
+        "description": "Medical fees that are charged to the patient's account, once the corresponding medical consultations have been made.",
         "exampleBoolean": false
       },
       {
@@ -880,10 +1099,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/medicationAmount"
+          "reference": "StructureDefinition/MedicationAmount"
         },
         "name": "Medication Amount",
-        "description": "Medication amount",
+        "description": "Amount of medication given to the patient and charged to his account.",
         "exampleBoolean": false
       },
       {
@@ -894,10 +1113,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/Mothersfamily"
+          "reference": "StructureDefinition/MothersFamily"
         },
-        "name": "Segundo apellido del profesional de salud",
-        "description": "Segundo apellido del profesional de salud.",
+        "name": "Second surname patient",
+        "description": "Second surname of the patient.",
         "exampleBoolean": false
       },
       {
@@ -924,8 +1143,8 @@
         "reference": {
           "reference": "StructureDefinition/Nationality"
         },
-        "name": "Nacionalidad del paciente",
-        "description": "Nacionalidad del paciente.",
+        "name": "Nationality patient",
+        "description": "Nationality of the patient.",
         "exampleBoolean": false
       },
       {
@@ -938,8 +1157,8 @@
         "reference": {
           "reference": "StructureDefinition/NewBorn"
         },
-        "name": "Recien Nacido",
-        "description": "Extension que permite registrar si el paciente es o no un recien nacido.",
+        "name": "Newborn",
+        "description": "Extension that allows registering whether or not the patient is a newborn.",
         "exampleBoolean": false
       },
       {
@@ -952,8 +1171,8 @@
         "reference": {
           "reference": "StructureDefinition/Ocupation"
         },
-        "name": "Ocupacion del paciente",
-        "description": "Ocupacion del paciente",
+        "name": "Patient occupation",
+        "description": "Patient occupation.",
         "exampleBoolean": false
       },
       {
@@ -966,8 +1185,8 @@
         "reference": {
           "reference": "StructureDefinition/OrganizationName"
         },
-        "name": "OrganizationName",
-        "description": "Empresa del paciente",
+        "name": "Patient company",
+        "description": "Patient company.",
         "exampleBoolean": false
       },
       {
@@ -980,8 +1199,22 @@
         "reference": {
           "reference": "StructureDefinition/OrganizationTelecom"
         },
-        "name": "Telefono empresa paciente",
-        "description": "Telefono contacto empresa del paciente",
+        "name": "Telephone company patient",
+        "description": "Telephone contact company of the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/PatientEthnicity"
+        },
+        "name": "Ethnic group patient",
+        "description": "Ethnic group of the patient.",
         "exampleBoolean": false
       },
       {
@@ -994,8 +1227,8 @@
         "reference": {
           "reference": "StructureDefinition/PatientPopulationGroup"
         },
-        "name": "Grupo pobacional paciente",
-        "description": "Grupo poblacional al que pertenece el paciente.",
+        "name": "Population group patient",
+        "description": "Population group to which the patient belongs.",
         "exampleBoolean": false
       },
       {
@@ -1006,10 +1239,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/Personid"
+          "reference": "StructureDefinition/PersonId"
         },
-        "name": "Identificacion del paciente",
-        "description": "Identificacion del paciente.",
+        "name": "Patient identification",
+        "description": "Patient identification.",
         "exampleBoolean": false
       },
       {
@@ -1022,7 +1255,8 @@
         "reference": {
           "reference": "StructureDefinition/QuotaPatient"
         },
-        "name": "Cupo pacientes:",
+        "name": "Quota Patient",
+        "description": "Number of patients admitted in the agenda.",
         "exampleBoolean": false
       },
       {
@@ -1036,7 +1270,7 @@
           "reference": "StructureDefinition/RateModality"
         },
         "name": "Rate modality",
-        "description": "Rate modality",
+        "description": "Rate mode on the services provided to the patient, according to their stay in the facilities where health services are provided.",
         "exampleBoolean": false
       },
       {
@@ -1049,7 +1283,8 @@
         "reference": {
           "reference": "StructureDefinition/RegionalLocationIdentifier"
         },
-        "name": "Identificador regional",
+        "name": "Regional location identifier",
+        "description": "Identification of the regional location of residence of the patient.",
         "exampleBoolean": false
       },
       {
@@ -1076,7 +1311,8 @@
         "reference": {
           "reference": "StructureDefinition/ServicePartOf"
         },
-        "name": "Subservicio",
+        "name": "Subservices",
+        "description": "Subservices on health services.",
         "exampleBoolean": false
       },
       {
@@ -1087,10 +1323,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/suppliesAmount"
+          "reference": "StructureDefinition/SuppliesAmountKlinic"
         },
         "name": "Supplies Amount",
-        "description": "Supplies amount",
+        "description": "Amount of supplies charged to the patient's account, according to the medical benefits performed.",
         "exampleBoolean": false
       },
       {
@@ -1104,7 +1340,34 @@
           "reference": "StructureDefinition/VirtualBed"
         },
         "name": "VirtualBed",
-        "description": "Indicator if a bed is virtual or not",
+        "description": "Indicator if a bed is virtual or not.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/CoveragesTypeCl"
+        },
+        "name": "CoveragesTypeCl",
+        "description": "This is a coding system that contains the types of health coverage applicable to the Chilean jurisdiction.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/EducationalLevelChile"
+        },
+        "name": "Nivel Educativo Chile",
         "exampleBoolean": false
       },
       {
@@ -1129,23 +1392,9 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/coverage-type-cl"
+          "reference": "CodeSystem/RatesModalityINDISA"
         },
-        "name": "coverage-type-cl",
-        "description": "This is a coding system that contains the types of health coverage applicable to the Chilean jurisdiction.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/rates-modality-INDISA"
-        },
-        "name": "rates-modality-INDISA",
+        "name": "RatesModalityINDISA",
         "description": "This is a coding system that contains the rate modality codes for the interoperability scenario of INDISA (Chile).",
         "exampleBoolean": false
       },
@@ -1157,9 +1406,9 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/tramos-FONASA"
+          "reference": "CodeSystem/TramosFONASA"
         },
-        "name": "tramos-FONASA",
+        "name": "TramosFONASA",
         "description": "This is a coding system that contains the the sections (tramos) of FONASA.",
         "exampleBoolean": false
       },
@@ -1167,13 +1416,26 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MessageHeader"
+            "valueString": "Bundle"
           }
         ],
         "reference": {
-          "reference": "MessageHeader/97848708-6ea4-4706-892d-bee737630488"
+          "reference": "Bundle/Bundle-Example-Bundle-Document-0ddcb465"
         },
-        "name": "97848708-6ea4-4706-892d-bee737630488",
+        "name": "Bundle-Example-Bundle-Document-0ddcb465",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
+          "reference": "Device/Device-Example-Device-43g37a87"
+        },
+        "name": "Device-Example-Device-43g37a87",
         "exampleBoolean": true
       },
       {
@@ -1220,6 +1482,45 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AppointmentResponse"
+          }
+        ],
+        "reference": {
+          "reference": "AppointmentResponse/Example-AppointmentResponse-05c86b7b"
+        },
+        "name": "Example-AppointmentResponse-05c86b7b",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Binary"
+          }
+        ],
+        "reference": {
+          "reference": "Binary/Example-Binary-111213bi"
+        },
+        "name": "Example-Binary-111213bi",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/Example-Condition-Imaging-414243ci"
+        },
+        "name": "Example-Condition-Imaging-414243ci",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Coverage"
           }
         ],
@@ -1246,6 +1547,32 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
+          "reference": "Device/Example-Device-757677dv"
+        },
+        "name": "Example-Device-757677dv",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
+          "reference": "Device/Example-Device-898989dv"
+        },
+        "name": "Example-Device-898989dv",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "DiagnosticReport"
           }
         ],
@@ -1253,6 +1580,19 @@
           "reference": "DiagnosticReport/Example-DiagnosticReport-Antibiogram-3894"
         },
         "name": "Example-DiagnosticReport-Antibiogram-3894",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/Example-DiagnosticReport-Imaging-u584i"
+        },
+        "name": "Example-DiagnosticReport-Imaging-u584i",
         "exampleBoolean": true
       },
       {
@@ -1298,6 +1638,45 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Example-Document-99294f378fec"
+        },
+        "name": "Example-Document-99294f378fec",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Example-Document-c1b9fc94f1af"
+        },
+        "name": "Example-Document-c1b9fc94f1af",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Example-Document-imagingreport-y787434ir"
+        },
+        "name": "Example-Document-imagingreport-y787434ir",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Encounter"
           }
         ],
@@ -1324,6 +1703,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Endpoint"
+          }
+        ],
+        "reference": {
+          "reference": "Endpoint/Example-EndPoint-PACServer-676767endp"
+        },
+        "name": "Example-EndPoint-PACServer-676767endp",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "HealthcareService"
           }
         ],
@@ -1337,14 +1729,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
+            "valueString": "ImagingStudy"
           }
         ],
         "reference": {
-          "reference": "Location/Example-Laboratory-51654689466d55"
+          "reference": "ImagingStudy/Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323"
         },
-        "name": "Example-Laboratory-51654689466d55",
-        "description": "Blood component laboratory.",
+        "name": "Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323",
+        "description": "Estudio en parametros normales",
         "exampleBoolean": true
       },
       {
@@ -1411,6 +1803,20 @@
           }
         ],
         "reference": {
+          "reference": "Location/Example-LocationLaboratory-51654689466d55"
+        },
+        "name": "Example-LocationLaboratory-51654689466d55",
+        "description": "Blood component laboratory.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          }
+        ],
+        "reference": {
           "reference": "Location/Example-LocationLocalUnit-789789789789"
         },
         "name": "Example-LocationLocalUnit-789789789789",
@@ -1442,6 +1848,110 @@
           "reference": "Media/Example-Media-3253255523yf"
         },
         "name": "Example-Media-3253255523yf",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Medication"
+          }
+        ],
+        "reference": {
+          "reference": "Medication/Example-Medication-12345mdiny"
+        },
+        "name": "Example-Medication-12345mdiny",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Medication"
+          }
+        ],
+        "reference": {
+          "reference": "Medication/Example-Medication-986756md"
+        },
+        "name": "Example-Medication-986756md",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationAdministration"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationAdministration/Example-MedicationAdministration-123456mdadm"
+        },
+        "name": "Example-MedicationAdministration-123456mdadm",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/Example-MedicationDispense-123456mdd"
+        },
+        "name": "Example-MedicationDispense-123456mdd",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/Example-MedicationRequest-123456mdr"
+        },
+        "name": "Example-MedicationRequest-123456mdr",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/Example-MedicationRequest-123456mdr1"
+        },
+        "name": "Example-MedicationRequest-123456mdr1",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MessageHeader"
+          }
+        ],
+        "reference": {
+          "reference": "MessageHeader/Example-MessageHeader-07bde3c45e7c"
+        },
+        "name": "Example-MessageHeader-07bde3c45e7c",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MessageHeader"
+          }
+        ],
+        "reference": {
+          "reference": "MessageHeader/Example-MessageHeader-737630488u"
+        },
+        "name": "Example-MessageHeader-737630488u",
         "exampleBoolean": true
       },
       {
@@ -1675,6 +2185,32 @@
           }
         ],
         "reference": {
+          "reference": "Practitioner/Example-Practitioner-4343433d"
+        },
+        "name": "Example-Practitioner-4343433d",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Example-Practitioner-746746379d"
+        },
+        "name": "Example-Practitioner-746746379d",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
           "reference": "Practitioner/Example-Practitioner-78456er9f"
         },
         "name": "Example-Practitioner-78456er9f",
@@ -1684,13 +2220,26 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "PractitionerRole"
+            "valueString": "Procedure"
           }
         ],
         "reference": {
-          "reference": "PractitionerRole/Example-PractitionerRole-987654321"
+          "reference": "Procedure/Example-ProcedureDevice-894536pd"
         },
-        "name": "Example-PractitionerRole-987654321",
+        "name": "Example-ProcedureDevice-894536pd",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/Example-ProcedureSurgical-878773ps"
+        },
+        "name": "Example-ProcedureSurgical-878773ps",
         "exampleBoolean": true
       },
       {
@@ -1703,7 +2252,7 @@
         "reference": {
           "reference": "Questionnaire/Example-Questionnaire-7878008qu"
         },
-        "name": "Example-Questionnaire-7878008qu",
+        "name": "Example-Questionnaire-7878008qu-of-Questionnaire",
         "exampleBoolean": true
       },
       {
@@ -1714,9 +2263,9 @@
           }
         ],
         "reference": {
-          "reference": "QuestionnaireResponse/Example-QuestionnaireResponse-7878008qu"
+          "reference": "QuestionnaireResponse/Example-Questionnaire-7878008qu"
         },
-        "name": "Example-QuestionnaireResponse-7878008qu",
+        "name": "Example-Questionnaire-7878008qu-of-QuestionnaireResponse",
         "exampleBoolean": true
       },
       {
@@ -1743,6 +2292,19 @@
           "reference": "ServiceRequest/Example-ServiceRequest-4948f6ad"
         },
         "name": "Example-ServiceRequest-4948f6ad",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/Example-ServiceRequest-Imaging-87878hdim"
+        },
+        "name": "Example-ServiceRequest-Imaging-87878hdim",
         "exampleBoolean": true
       },
       {
@@ -1814,59 +2376,32 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
+            "valueString": "Specimen"
           }
         ],
         "reference": {
-          "reference": "Composition/Example-document-99294f378fec"
+          "reference": "Specimen/Example-Specimen-Blood-56789856d"
         },
-        "name": "Example-document-99294f378fec",
+        "name": "Example-Specimen-Blood-56789856d",
         "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
-          }
-        ],
-        "reference": {
-          "reference": "Composition/Example-document-c1b9fc94f1af"
-        },
-        "name": "Example-document-c1b9fc94f1af",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MessageHeader"
-          }
-        ],
-        "reference": {
-          "reference": "MessageHeader/d3c28245-6e76-4816-8bef-07bde3c45e7c"
-        },
-        "name": "d3c28245-6e76-4816-8bef-07bde3c45e7c",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/educationalLevelChile"
-        },
-        "name": "educationalLevelChile",
-        "exampleBoolean": false
       }
     ],
     "page": {
       "nameUrl": "toc.html",
       "title": "Table of Contents",
-      "generation": "html"
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "messaging.html",
+          "title": "Messaging",
+          "generation": "markdown"
+        }
+      ]
     },
     "parameter": [
       {

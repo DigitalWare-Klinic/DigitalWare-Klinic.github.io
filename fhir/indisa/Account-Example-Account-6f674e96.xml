@@ -5,33 +5,33 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
   </text>
-  <extension id="accountAmount" url="http://digitalware.com.co/salud/fhir/StructureDefinition/account-amount">
+  <extension id="AccountAmountKlinic" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-AccountAmountKlinic">
     <valueMoney>
-      <value value="1300000"/>
+      <value value="1300000.0"/>
       <currency value="CLP"/>
     </valueMoney>
   </extension>
-  <extension id="medicalFees" url="http://digitalware.com.co/salud/fhir/StructureDefinition/medical-fees">
+  <extension id="MedicalFeesKlinic" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-MedicalFeesKlinic">
     <valueMoney>
-      <value value="800000"/>
+      <value value="800000.0"/>
       <currency value="CLP"/>
     </valueMoney>
   </extension>
-  <extension id="medicationAmount" url="http://digitalware.com.co/salud/fhir/StructureDefinition/medication-amount">
+  <extension id="MedicationAmount" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-MedicationAmount">
     <valueMoney>
-      <value value="800000"/>
+      <value value="800000.0"/>
       <currency value="CLP"/>
     </valueMoney>
   </extension>
-  <extension id="suppliesAmount" url="http://digitalware.com.co/salud/fhir/StructureDefinition/supplies-amount">
+  <extension id="SuppliesAmountKlinic" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-SuppliesAmountKlinic">
     <valueMoney>
-      <value value="800000"/>
+      <value value="800000.0"/>
       <currency value="CLP"/>
     </valueMoney>
   </extension>
-  <extension id="consultationsAmount" url="http://digitalware.com.co/salud/fhir/StructureDefinition/consultations-amount">
+  <extension id="ConsultationsAmountKlinic" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ConsultationsAmountKlinic">
     <valueMoney>
-      <value value="800000"/>
+      <value value="800000.0"/>
       <currency value="CLP"/>
     </valueMoney>
   </extension>
@@ -42,7 +42,7 @@
   <status value="active"/>
   <type>
     <coding>
-      <system value="http://digitalware.com.co/salud/fhir/CodeSystem/account-type"/>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-AccountType"/>
       <code value="PART"/>
       <display value="Particular"/>
     </coding>
@@ -55,9 +55,9 @@
     <end value="2021-01-21T07:50:00-05:00"/>
   </servicePeriod>
   <coverage>
-    <extension id="bonusAmount" url="http://digitalware.com.co/salud/fhir/StructureDefinition/bonus-amount">
+    <extension id="BonusAmountKlinic" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-BonusAmountKlinic">
       <valueMoney>
-        <value value="750000"/>
+        <value value="750000.0"/>
         <currency value="CLP"/>
       </valueMoney>
     </extension>
@@ -67,9 +67,9 @@
     <priority value="1"/>
   </coverage>
   <coverage>
-    <extension id="copaymentAmount " url="http://digitalware.com.co/salud/fhir/StructureDefinition/copayment-amount">
+    <extension id="CopaymentAmountKlinic " url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-CopaymentAmountKlinic">
       <valueMoney>
-        <value value="550000"/>
+        <value value="550000.0"/>
         <currency value="CLP"/>
       </valueMoney>
     </extension>
