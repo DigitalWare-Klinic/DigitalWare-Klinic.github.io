@@ -1,0 +1,134 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/ISAPRES> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ISAPRES"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ISAPRES defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ec20<a name=\"ISAPRES-ec20\"> </a></td><td>Banmédica</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">c870<a name=\"ISAPRES-c870\"> </a></td><td>Chuquicamata</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">b25c<a name=\"ISAPRES-b25c\"> </a></td><td>Colmena Golden Cross</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">3e99<a name=\"ISAPRES-3e99\"> </a></td><td>Consalud</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">db2d<a name=\"ISAPRES-db2d\"> </a></td><td>Cruz Blanca</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">fcb3<a name=\"ISAPRES-fcb3\"> </a></td><td>Cruz del Norte</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">43eb<a name=\"ISAPRES-43eb\"> </a></td><td>Nueva Masvida</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">745d<a name=\"ISAPRES-745d\"> </a></td><td>Fundación</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">05ea<a name=\"ISAPRES-05ea\"> </a></td><td>Río Blanco</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">406b<a name=\"ISAPRES-406b\"> </a></td><td>San Lorenzo</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">9a65<a name=\"ISAPRES-9a65\"> </a></td><td>Vida Tres</td><td>Please. Request a description of this concept from INDISA.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ISAPRES"];
+  fhir:CodeSystem.version [ fhir:value "1.0"];
+  fhir:CodeSystem.name [ fhir:value "ISAPRES"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2021-02-11"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "DigitalWare S.A. - Klinic-HIS"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Juan Manuel Contreras Hernandez" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "juanch@digitalware.com.co" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Diana Rodriguez Suarez" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "dianaro@digitalware.com.co" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ContactDetail.name [ fhir:value "Daniel Felipe Castro Romero" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "danielc@digitalware.com.co" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:ContactDetail.name [ fhir:value "Eduardo Felipe Solis Hernandez" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "felipesh@digitalware.com.co" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:ContactDetail.name [ fhir:value "Mario Enrique Cortés M" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mario.cortes@hl7co.org" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "This is a coding system that contains the insurance organizations classified in ISAPRES.."];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "ec20" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Banmédica" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "c870" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chuquicamata" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "b25c" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Colmena Golden Cross" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "3e99" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Consalud" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "db2d" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cruz Blanca" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "fcb3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cruz del Norte" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "43eb" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nueva Masvida" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "745d" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fundación" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "05ea" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Río Blanco" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "406b" ];
+     fhir:CodeSystem.concept.display [ fhir:value "San Lorenzo" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "9a65" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vida Tres" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Please. Request a description of this concept from INDISA." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/CodeSystem/ISAPRES.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

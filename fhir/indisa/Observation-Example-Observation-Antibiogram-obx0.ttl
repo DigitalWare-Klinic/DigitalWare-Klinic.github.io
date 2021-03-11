@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Observation/Example-Observation-Antibiogram-obx0> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Observation-Antibiogram-obx0"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://terminology.hl7.org/CodeSystem/v2-0074 MB}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 3092008}\">Staphylococcus aureus</span></p><p><b>subject</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>effective</b>: Feb 25, 2021 9:45:00 AM</p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 359867004}\">antibiograma, método de disco</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-Example-Observation-Antibiogram-obx1.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://terminology.hl7.org/CodeSystem/v2-0074 MB}\">Laboratory</span>; <span title=\"Codes: {http://snomed.info/sct 387170002}\">ampicilina</span>; effective: Feb 25, 2021 9:45:00 AM; &lt;=4.5; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation S}\">Susceptible</span></a></li><li><a href=\"Observation-Example-Observation-Antibiogram-obx2.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://terminology.hl7.org/CodeSystem/v2-0074 MB}\">Laboratory</span>; <span title=\"Codes: {http://snomed.info/sct 764146007}\">penicilina</span>; effective: Feb 25, 2021 9:45:00 AM; &lt;=5.5; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation S}\">Susceptible</span></a></li><li><a href=\"Observation-Example-Observation-Antibiogram-obx3.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://terminology.hl7.org/CodeSystem/v2-0074 MB}\">Laboratory</span>; <span title=\"Codes: {http://snomed.info/sct 372868007}\">oxacilina</span>; effective: Feb 25, 2021 9:45:00 AM; &gt;8.0; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation R}\">Resistant</span></a></li><li><a href=\"Observation-Example-Observation-Antibiogram-obx4.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://terminology.hl7.org/CodeSystem/v2-0074 MB}\">Laboratory</span>; <span title=\"Codes: {http://snomed.info/sct 372687004}\">amoxicilina</span>; effective: Feb 25, 2021 9:45:00 AM; &gt;7.0; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation R}\">Resistant</span></a></li><li><a href=\"Observation-Example-Observation-Antibiogram-obx5.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://terminology.hl7.org/CodeSystem/v2-0074 MB}\">Laboratory</span>; <span title=\"Codes: {http://snomed.info/sct 372809001}\">tetraciclina</span>; effective: Feb 25, 2021 9:45:00 AM; &gt;8.5; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation R}\">Resistant</span></a></li></ul></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ];
+       fhir:Coding.display [ fhir:value "Laboratory" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "MB" ];
+       fhir:Coding.display [ fhir:value "microbiology" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:3092008;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "3092008" ];
+       fhir:Coding.display [ fhir:value "Staphylococcus aureus" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d>;
+     fhir:Reference.reference [ fhir:value "Patient/Example-Patient-87356d0d" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-02-25T09:45:00-05:00"^^xsd:dateTime];
+  fhir:Observation.method [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:359867004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "359867004" ];
+       fhir:Coding.display [ fhir:value "antibiograma, método de disco" ]
+     ]
+  ];
+  fhir:Observation.hasMember [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Observation/Example-Observation-Antibiogram-obx1>;
+     fhir:Reference.reference [ fhir:value "Observation/Example-Observation-Antibiogram-obx1" ]
+  ], [
+     fhir:index 1;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Observation/Example-Observation-Antibiogram-obx2>;
+     fhir:Reference.reference [ fhir:value "Observation/Example-Observation-Antibiogram-obx2" ]
+  ], [
+     fhir:index 2;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Observation/Example-Observation-Antibiogram-obx3>;
+     fhir:Reference.reference [ fhir:value "Observation/Example-Observation-Antibiogram-obx3" ]
+  ], [
+     fhir:index 3;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Observation/Example-Observation-Antibiogram-obx4>;
+     fhir:Reference.reference [ fhir:value "Observation/Example-Observation-Antibiogram-obx4" ]
+  ], [
+     fhir:index 4;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Observation/Example-Observation-Antibiogram-obx5>;
+     fhir:Reference.reference [ fhir:value "Observation/Example-Observation-Antibiogram-obx5" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Observation/Example-Observation-Antibiogram-obx0.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

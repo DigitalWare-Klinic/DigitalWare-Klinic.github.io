@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="Example-Encounter-963b1515"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Rate modality</b>: <span title="{https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-RatesModalityINDISA cerrada}">cerrada/preferente</span></p><p><b>identifier</b>: id: 12334556 (OFFICIAL)</p><p><b>status</b>: finished</p><blockquote><p><b>statusHistory</b></p><p><b>status</b>: arrived</p><p><b>period</b>: Jan 21, 2021 7:00:00 AM --&gt; Jan 21, 2021 7:10:00 AM</p></blockquote><blockquote><p><b>statusHistory</b></p><p><b>status</b>: in-progress</p><p><b>period</b>: Jan 21, 2021 7:10:00 AM --&gt; Jan 21, 2021 7:40:00 AM</p></blockquote><blockquote><p><b>statusHistory</b></p><p><b>status</b>: finished</p><p><b>period</b>: Jan 21, 2021 7:41:00 AM --&gt; Jan 21, 2021 7:41:00 AM</p></blockquote><p><b>class</b>: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span></p><p><b>serviceType</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/service-type 349}">General Practitioner</span></p><p><b>priority</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority R}">routine</span></p><p><b>subject</b>: <a href="Patient-Example-Patient-87356d0d.html">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></a></p><p><b>basedOn</b>: <a href="ServiceRequest/Example-ServiceRequest-GN4035">ServiceRequest/Example-ServiceRequest-GN4035</a></p><h3>Participants</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ParticipationType CON}">Consultant</span></td></tr></table><p><b>appointment</b>: <a href="Appointment-Example-Appointment-05c86b7b-5drg.html">Generated Summary: id: 403; status: fulfilled; <span title="Codes: {http://snomed.info/sct 394658006}">especialidad clínica</span>; <span title="Codes: {http://snomed.info/sct 394585009}">obstetricia y ginecología</span>, <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-AppointmentTypes c113e46f-5f39}">Cita Especialista</span>, <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-LocalProcedureCodes 120d0fe9-9347}">ANTIGENO POLIPEPTIDO DE TEJIDO O ANTIGENO DE PROLIFERACION CELULAR AUTOMATIZADO</span>, <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Payors IDPayor025}">Asegurador Buena Salud</span>; <span title="Codes: {http://snomed.info/sct 394586005}">ginecología</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0276 WALKIN}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-AppointmentTypes 47b66eb5-0947-455b-b069-54765c996f6f}">A previously unscheduled walk-in visit</span>; start: Jan 21, 2021 7:00:00 AM; end: Jan 21, 2021 7:30:00 AM; 30; created: Jan 20, 2021 10:00:00 AM; requestedPeriod: 2021-04-01 --&gt; 2021-04-30</a></p><p><b>period</b>: Jan 21, 2021 7:00:00 AM --&gt; Jan 21, 2021 7:30:00 AM</p><p><b>reasonCode</b>: <span title="Codes: {http://snomed.info/sct 257006}">Acne rosacea</span></p><p><b>reasonReference</b>: <a href="Observation/Example-Observation-3546o">Observation/Example-Observation-3546o</a></p><h3>Diagnoses</h3><table class="grid"><tr><td>-</td><td><b>Condition</b></td></tr><tr><td>*</td><td><a href="Condition/Example-Condition-4869c">Condition/Example-Condition-4869c</a></td></tr></table><p><b>account</b>: <a href="Account-Example-Account-6f674e96.html">SEGMENTO NARRATIVOGenerated Summary: id: 7bdf5072-607d-4284-b048-81334857e4ae; status: active; <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-AccountType PART}">Particular</span>; servicePeriod: Jan 21, 2021 7:15:00 AM --&gt; Jan 21, 2021 7:50:00 AM; description: Cuenta referente a las atenciones del paciente en el ambito ambulatorio.</a></p><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href="Location-Example-LocationRoom-1245687952.html">Generated Summary: status: active; <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span>; name: Habitación 202; alias: H202; description: Hospitalization room.; mode: instance; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}">Hospital unit</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type ro}">Room</span></a></td></tr></table><p><b>serviceProvider</b>: <a href="Organization-Example-Organization-213134sd15148f.html">Generated Summary: id: 1100133335-1 (OFFICIAL), id: 12789312-9 (OFFICIAL); active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: Indisa clinica de la familia; alias: INDISA; Phone: 3430000</a></p></div>
+  </text>
+  <extension id="RateModality" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-RateModality">
+    <valueCoding>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-RatesModalityINDISA"/>
+      <code value="cerrada"/>
+      <display value="cerrada/preferente"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <system value="https://example.org/encounter-identifiers"/>
+    <value value="12334556"/>
+  </identifier>
+  <status value="finished"/>
+  <statusHistory>
+    <status value="arrived"/>
+    <period>
+      <start value="2021-01-21T07:00:00-05:00"/>
+      <end value="2021-01-21T07:10:00-05:00"/>
+    </period>
+  </statusHistory>
+  <statusHistory>
+    <status value="in-progress"/>
+    <period>
+      <start value="2021-01-21T07:10:00-05:00"/>
+      <end value="2021-01-21T07:40:00-05:00"/>
+    </period>
+  </statusHistory>
+  <statusHistory>
+    <status value="finished"/>
+    <period>
+      <start value="2021-01-21T07:41:00-05:00"/>
+      <end value="2021-01-21T07:41:00-05:00"/>
+    </period>
+  </statusHistory>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+    <display value="ambulatory"/>
+  </class>
+  <serviceType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+      <code value="349"/>
+      <display value="General Practitioner"/>
+    </coding>
+  </serviceType>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActPriority"/>
+      <code value="R"/>
+      <display value="routine"/>
+    </coding>
+  </priority>
+  <subject>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </subject>
+  <basedOn>
+    <reference value="ServiceRequest/Example-ServiceRequest-GN4035"/>
+  </basedOn>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="CON"/>
+        <display value="Consultant"/>
+      </coding>
+    </type>
+  </participant>
+  <appointment>
+    <reference value="Appointment/Example-Appointment-05c86b7b-5drg"/>
+  </appointment>
+  <period>
+    <start value="2021-01-21T07:00:00-05:00"/>
+    <end value="2021-01-21T07:30:00-05:00"/>
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="257006"/>
+      <display value="Acne rosacea"/>
+    </coding>
+  </reasonCode>
+  <reasonReference>
+    <reference value="Observation/Example-Observation-3546o"/>
+  </reasonReference>
+  <diagnosis>
+    <condition>
+      <reference value="Condition/Example-Condition-4869c"/>
+    </condition>
+  </diagnosis>
+  <account>
+    <reference value="Account/Example-Account-6f674e96"/>
+  </account>
+  <location>
+    <location>
+      <reference value="Location/Example-LocationRoom-1245687952"/>
+    </location>
+  </location>
+  <serviceProvider>
+    <reference value="Organization/Example-Organization-213134sd15148f"/>
+  </serviceProvider>
+</Encounter>

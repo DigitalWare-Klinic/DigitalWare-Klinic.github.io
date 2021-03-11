@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Schedule xmlns="http://hl7.org/fhir">
+  <id value="Example-Schedule-d83f2b28"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Quota Patient</b>: 1</p><p><b>Admit telemedicine</b>: false</p><p><b>identifier</b>: id: 403</p><p><b>active</b>: true</p><p><b>serviceCategory</b>: <span title="Codes: ">Pediatrica</span></p><p><b>serviceType</b>: <span title="Codes: {http://snomed.info/sct 185316007}">encuentro indirecto</span>, <span title="Codes: {http://snomed.info/sct 308467007}">atendido en establecimiento</span></p><p><b>specialty</b>: <span title="Codes: {http://snomed.info/sct 394586005}">Ginecologia</span></p><p><b>actor</b>: </p><ul><li><a href="Location/Example-LocationBuilding-7412389635sdf556d">Location/Example-LocationBuilding-7412389635sdf556d</a></li><li><a href="Location-Example-LocationRoom-1245687952.html">Generated Summary: status: active; <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span>; name: Habitación 202; alias: H202; description: Hospitalization room.; mode: instance; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}">Hospital unit</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type ro}">Room</span></a></li><li><a href="Location-Example-LocationArea-789789789789.html">Generated Summary: status: active; <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span>; name: Servicio hospitalario; alias: Hospitalización; description: Hospital medical care.; mode: kind; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}">Hospital unit</span>; Phone: +56 12355611; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type wi}">Wing</span></a></li></ul><p><b>planningHorizon</b>: 2021-01-01 --&gt; 2021-01-31</p><p><b>comment</b>: FONASA, ISAPRE, CAPREDENA, DIPRECA, SISA</p></div>
+  </text>
+  <extension id="QuotaPatient" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-QuotaPatient">
+    <valueInteger value="1"/>
+  </extension>
+  <extension id="AvailableTelemedicine" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-AvailableTelemedicine">
+    <valueBoolean value="false"/>
+  </extension>
+  <extension id="SlotsTime" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-SlotsTime">
+    <valueInteger value="30"/>
+  </extension>
+  <identifier>
+    <system value="https://www.digitalware.com.co/salud/fhir/identifiers/agenda-identifiers"/>
+    <value value="403"/>
+  </identifier>
+  <active value="true"/>
+  <serviceCategory>
+    <text value="Pediatrica"/>
+  </serviceCategory>
+  <serviceType>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="185316007"/>
+      <display value="encuentro indirecto"/>
+    </coding>
+  </serviceType>
+  <serviceType>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="308467007"/>
+      <display value="atendido en establecimiento"/>
+    </coding>
+  </serviceType>
+  <specialty>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="394586005"/>
+      <display value="Ginecologia"/>
+    </coding>
+  </specialty>
+  <actor>
+    <reference value="Location/Example-LocationBuilding-7412389635sdf556d"/>
+  </actor>
+  <actor>
+    <reference value="Location/Example-LocationRoom-1245687952"/>
+  </actor>
+  <actor>
+    <reference value="Location/Example-LocationArea-789789789789"/>
+  </actor>
+  <planningHorizon>
+    <extension id="HoursOfOperation-1" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-HoursOfOperation">
+      <extension id="day-1" url="day">
+        <valueCode value="mon"/>
+      </extension>
+      <extension id="startTime-1" url="startTime">
+        <valueTime value="08:00:00"/>
+      </extension>
+      <extension id="endTime-1" url="endTime">
+        <valueTime value="12:00:00"/>
+      </extension>
+    </extension>
+    <extension id="HoursOfOperation-2" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-HoursOfOperation">
+      <extension id="day-2" url="day">
+        <valueCode value="tue"/>
+      </extension>
+      <extension id="startTime-2" url="startTime">
+        <valueTime value="14:00:00"/>
+      </extension>
+      <extension id="endTime-2" url="endTime">
+        <valueTime value="16:00:00"/>
+      </extension>
+    </extension>
+    <start value="2021-01-01"/>
+    <end value="2021-01-31"/>
+  </planningHorizon>
+  <comment value="FONASA, ISAPRE, CAPREDENA, DIPRECA, SISA"/>
+</Schedule>

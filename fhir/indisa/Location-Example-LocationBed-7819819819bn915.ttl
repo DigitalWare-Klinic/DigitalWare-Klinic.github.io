@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationBed-7819819819bn915> a fhir:Location;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-LocationBed-7819819819bn915"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>VirtualBed</b>: true</p><p><b>Census</b>: true</p><p><b>ChargeBed</b>: true</p><p><b>BedWithOxygen</b>: true</p><p><b>status</b>: active</p><p><b>operationalStatus</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 O}\">Occupied</span></p><p><b>name</b>: Cama 2</p><p><b>alias</b>: C2</p><p><b>description</b>: Patient bed.</p><p><b>mode</b>: instance</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}\">Hospital unit</span></p><p><b>physicalType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bd}\">Bed</span></p><p><b>partOf</b>: <a href=\"Location-Example-LocationRoom-1245687952.html\">Generated Summary: status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 O}\">Occupied</span>; name: Habitación 202; alias: H202; description: Hospitalization room.; mode: instance; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}\">Hospital unit</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type ro}\">Room</span></a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "VirtualBed" ];
+     fhir:Extension.url [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-VirtualBed" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "Census" ];
+     fhir:Extension.url [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-Census" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 2;
+     fhir:Element.id [ fhir:value "ChargeBed" ];
+     fhir:Extension.url [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ChargeBed" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 3;
+     fhir:Element.id [ fhir:value "BedWithOxygen" ];
+     fhir:Extension.url [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-BedWithOxygen" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ];
+  fhir:Location.status [ fhir:value "active"];
+  fhir:Location.operationalStatus [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0116" ];
+     fhir:Coding.code [ fhir:value "O" ];
+     fhir:Coding.display [ fhir:value "Occupied" ]
+  ];
+  fhir:Location.name [ fhir:value "Cama 2"];
+  fhir:Location.alias [
+     fhir:value "C2";
+     fhir:index 0
+  ];
+  fhir:Location.description [ fhir:value "Patient bed."];
+  fhir:Location.mode [ fhir:value "instance"];
+  fhir:Location.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
+       fhir:Coding.code [ fhir:value "HU" ];
+       fhir:Coding.display [ fhir:value "Hospital unit" ]
+     ]
+  ];
+  fhir:Location.physicalType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+       fhir:Coding.code [ fhir:value "bd" ];
+       fhir:Coding.display [ fhir:value "Bed" ]
+     ]
+  ];
+  fhir:Location.partOf [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationRoom-1245687952>;
+     fhir:Reference.reference [ fhir:value "Location/Example-LocationRoom-1245687952" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationBed-7819819819bn915.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

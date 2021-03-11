@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="Example-LocationLocalUnit-789789789789"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>operationalStatus</b>: <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span></p><p><b>name</b>: Servicio hospitalario</p><p><b>alias</b>: Hospitalización</p><p><b>description</b>: Hospital medical care.</p><p><b>mode</b>: kind</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}">Hospital unit</span></p><p><b>telecom</b>: <a href="tel:+5612355611">+56 12355611</a></p><p><b>physicalType</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type wi}">Wing</span></p><p><b>partOf</b>: <a href="Location-Example-LocationBuilding-7412389635sdf556.html">Generated Summary: id: 1100112345-1 (OFFICIAL); status: active; <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span>; name: Indisa Clinica de la familia; alias: INDISA; description: Clinic and emergencies; mode: instance; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}">Hospital</span>; Phone: +56(2)1111-1111; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bu}">Building</span>; availabilityExceptions: Does not open on holidays.</a></p><h3>HoursOfOperations</h3><table class="grid"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td></tr><tr><td>*</td><td>mon, tue, wed, thu, fri, sat, sun</td><td>true</td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <operationalStatus>
+    <system value="http://terminology.hl7.org/CodeSystem/v2-0116"/>
+    <code value="O"/>
+    <display value="Occupied"/>
+  </operationalStatus>
+  <name value="Servicio hospitalario"/>
+  <alias value="Hospitalizaci&#xF3;n"/>
+  <description value="Hospital medical care."/>
+  <mode value="kind"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HU"/>
+      <display value="Hospital unit"/>
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone"/>
+    <value value="+56 12355611"/>
+    <use value="work"/>
+  </telecom>
+  <physicalType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+      <code value="wi"/>
+      <display value="Wing"/>
+    </coding>
+  </physicalType>
+  <partOf>
+    <reference value="Location/Example-LocationBuilding-7412389635sdf556"/>
+  </partOf>
+  <hoursOfOperation>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <daysOfWeek value="fri"/>
+    <daysOfWeek value="sat"/>
+    <daysOfWeek value="sun"/>
+    <allDay value="true"/>
+  </hoursOfOperation>
+</Location>

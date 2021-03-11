@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Account xmlns="http://hl7.org/fhir">
+  <id value="Example-Account-6f674e96"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
+  </text>
+  <extension id="AccountAmountKlinic" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-AccountAmountKlinic">
+    <valueMoney>
+      <value value="1300000.0"/>
+      <currency value="CLP"/>
+    </valueMoney>
+  </extension>
+  <extension id="MedicalFeesKlinic" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-MedicalFeesKlinic">
+    <valueMoney>
+      <value value="800000.0"/>
+      <currency value="CLP"/>
+    </valueMoney>
+  </extension>
+  <extension id="MedicationAmount" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-MedicationAmount">
+    <valueMoney>
+      <value value="800000.0"/>
+      <currency value="CLP"/>
+    </valueMoney>
+  </extension>
+  <extension id="SuppliesAmountKlinic" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-SuppliesAmountKlinic">
+    <valueMoney>
+      <value value="800000.0"/>
+      <currency value="CLP"/>
+    </valueMoney>
+  </extension>
+  <extension id="ConsultationsAmountKlinic" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ConsultationsAmountKlinic">
+    <valueMoney>
+      <value value="800000.0"/>
+      <currency value="CLP"/>
+    </valueMoney>
+  </extension>
+  <identifier>
+    <system value="http://indisa.cl/account-identifier"/>
+    <value value="7bdf5072-607d-4284-b048-81334857e4ae"/>
+  </identifier>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-AccountType"/>
+      <code value="PART"/>
+      <display value="Particular"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </subject>
+  <servicePeriod>
+    <start value="2021-01-21T07:15:00-05:00"/>
+    <end value="2021-01-21T07:50:00-05:00"/>
+  </servicePeriod>
+  <coverage>
+    <extension id="BonusAmountKlinic" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-BonusAmountKlinic">
+      <valueMoney>
+        <value value="750000.0"/>
+        <currency value="CLP"/>
+      </valueMoney>
+    </extension>
+    <coverage>
+      <reference value="Coverage/Example-Coverage-fa7a571e"/>
+    </coverage>
+    <priority value="1"/>
+  </coverage>
+  <coverage>
+    <extension id="CopaymentAmountKlinic " url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-CopaymentAmountKlinic">
+      <valueMoney>
+        <value value="550000.0"/>
+        <currency value="CLP"/>
+      </valueMoney>
+    </extension>
+    <coverage>
+      <reference value="Coverage/Example-Coverage-fa7a571e"/>
+    </coverage>
+  </coverage>
+  <owner>
+    <reference value="Organization/Example-Organization-213134sd15148f"/>
+  </owner>
+  <description value="Cuenta referente a las atenciones del paciente en el ambito ambulatorio."/>
+  <guarantor>
+    <party>
+      <reference value="RelatedPerson/Example-RelatedPerson-2374"/>
+    </party>
+    <onHold value="true"/>
+    <period>
+      <start value="2021-01-21T07:50:00-05:00"/>
+      <end value="2021-01-21T08:00:00-05:00"/>
+    </period>
+  </guarantor>
+  <partOf>
+    <reference value="Account/Example-Account-62fadf1d"/>
+  </partOf>
+</Account>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MessageHeader xmlns="http://hl7.org/fhir">
+  <id value="Example-MessageHeader-737630488u"/>
+  <meta>
+    <lastUpdated value="2021-02-09T14:50:00-05:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>event</b>: <span title="{https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-MessageEvent UPDATE}">Resource update notification</span></p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ESB platform</td><td><a href="http://127.0.0.1:8443/esb/end-point">http://127.0.0.1:8443/esb/end-point</a></td></tr></table><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Klinic API FHIR</td><td><a href="http://127.0.0.1:7000/klinic-api-fhir">http://127.0.0.1:7000/klinic-api-fhir</a></td></tr></table><p><b>focus</b>: <a href="http://127.0.0.1:7000/klinic-api-fhir/Encounter/Example-Encounter-963b1515">http://127.0.0.1:7000/klinic-api-fhir/Encounter/Example-Encounter-963b1515</a></p></div>
+  </text>
+  <eventCoding>
+    <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-MessageEvent"/>
+    <code value="UPDATE"/>
+    <display value="Resource update notification"/>
+  </eventCoding>
+  <destination>
+    <name value="ESB platform"/>
+    <endpoint value="http://127.0.0.1:8443/esb/end-point"/>
+  </destination>
+  <source>
+    <software value="Klinic API FHIR"/>
+    <endpoint value="http://127.0.0.1:7000/klinic-api-fhir"/>
+  </source>
+  <focus>
+    <reference value="http://127.0.0.1:7000/klinic-api-fhir/Encounter/Example-Encounter-963b1515"/>
+    <type value="Encounter"/>
+  </focus>
+</MessageHeader>

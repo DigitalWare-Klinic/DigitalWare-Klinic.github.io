@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="Example-Practitioner-09709es9d"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: National Person Identifier Chile: 8596788ap (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Sebastian Camilo null (OFFICIAL)</p><p><b>telecom</b>: <a href="tel:+56(2)1111-1111">+56(2)1111-1111</a>, <a href="tel:+56(2)2222-2222">+56(2)2222-2222</a>, <a href="mailto:dbsebastian@example.com">dbsebastian@example.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1989-03-10</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Medical license number: TP859678 (OFFICIAL)</p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 309343006}">Médico</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: Medical license number: TP859678 (OFFICIAL)</p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 83685006}">Ginecólogo</span></p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="NNCHL"/>
+        <display value="National Person Identifier Chile"/>
+      </coding>
+      <coding>
+        <system value="http://registrocivil.cl/RUN"/>
+        <code value="RUN"/>
+        <display value="Registro Unico de Nacimiento"/>
+      </coding>
+    </type>
+    <value value="8596788ap"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family>
+      <extension id="fathers-family" url="http://hl7.org/fhir/StructureDefinition/humanname-fathers-family">
+        <valueString value="Daza"/>
+      </extension>
+      <extension id="mothers-family" url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+        <valueString value="Barrera"/>
+      </extension>
+    </family>
+    <given value="Sebastian"/>
+    <given value="Camilo"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+56(2)1111-1111"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="+56(2)2222-2222"/>
+    <use value="mobile"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="dbsebastian@example.com"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1989-03-10"/>
+  <qualification>
+    <identifier>
+      <use value="official"/>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+          <code value="MD"/>
+          <display value="Medical license number"/>
+        </coding>
+      </type>
+      <value value="TP859678"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="309343006"/>
+        <display value="M&#xE9;dico"/>
+      </coding>
+    </code>
+  </qualification>
+  <qualification>
+    <identifier>
+      <use value="official"/>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+          <code value="MD"/>
+          <display value="Medical license number"/>
+        </coding>
+      </type>
+      <value value="TP859678"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="83685006"/>
+        <display value="Ginec&#xF3;logo"/>
+      </coding>
+    </code>
+  </qualification>
+</Practitioner>

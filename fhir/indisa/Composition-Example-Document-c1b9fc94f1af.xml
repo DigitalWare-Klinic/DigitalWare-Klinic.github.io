@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="Example-Document-c1b9fc94f1af"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: e11d873a</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 11506-3}">Progress note</span></p><p><b>category</b>: <span title="Codes: {http://loinc.org 11536-0}">Nurse Notes</span></p><p><b>encounter</b>: <a href="Encounter-Example-Encounter-963y1945.html">Generated Summary: id: 56386090 (OFFICIAL); status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}">inpatient encounter</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/service-type 410}">Pregnancy</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority EL}">elective</span>; period: Jan 21, 2021 7:00:00 AM --&gt; Jan 23, 2021 11:00:00 AM; <span title="Codes: {http://snomed.info/sct 888003}">Efecto fetal o neonatal de la pérdida de sangre materna</span></a></p><p><b>date</b>: Feb 23, 2021 10:00:23 AM</p><p><b>author</b>: <a href="Practitioner-Example-Practitioner-4290sd6n.html">Generated Summary: National Person Identifier Chile: 45565700ap (OFFICIAL); active; Maria Camila null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, pamaria@example.com; gender: female; birthDate: 1991-06-05</a></p><p><b>title</b>: Nota de evolución de enfermería</p><p><b>confidentiality</b>: N</p><h3>Attesters</h3><table class="grid"><tr><td>-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td>*</td><td>professional</td><td><a href="Practitioner-Example-Practitioner-4290sd6n.html">Generated Summary: National Person Identifier Chile: 45565700ap (OFFICIAL); active; Maria Camila null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, pamaria@example.com; gender: female; birthDate: 1991-06-05</a></td></tr></table><p><b>custodian</b>: <a href="Organization-Example-Organization-213134sd15148f.html">Generated Summary: id: 1100133335-1 (OFFICIAL), id: 12789312-9 (OFFICIAL); active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: Indisa clinica de la familia; alias: INDISA; Phone: 3430000</a></p></div>
+  </text>
+  <identifier>
+    <system value="http://www.digitalware.com.co/salud/fhir/identifier/documents"/>
+    <value value="e11d873a"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11506-3"/>
+      <display value="Progress note"/>
+    </coding>
+  </type>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11536-0"/>
+      <display value="Nurse Notes"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/Example-Encounter-963y1945"/>
+  </encounter>
+  <date value="2021-02-23T10:00:23-05:00"/>
+  <author>
+    <reference value="Practitioner/Example-Practitioner-4290sd6n"/>
+  </author>
+  <title value="Nota de evoluci&#xF3;n de enfermer&#xED;a"/>
+  <confidentiality value="N"/>
+  <attester>
+    <mode value="professional"/>
+    <party>
+      <reference value="Practitioner/Example-Practitioner-4290sd6n"/>
+    </party>
+  </attester>
+  <custodian>
+    <reference value="Organization/Example-Organization-213134sd15148f"/>
+  </custodian>
+  <section>
+    <title value="Nota"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="51848-0"/>
+        <display value="Evaluation note"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/Example-Observation-3956g"/>
+    </entry>
+  </section>
+</Composition>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="Example-OperatingRoom-ads51ds5d145212ds"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>operationalStatus</b>: <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 C}">Closed</span></p><p><b>name</b>: Quirofáno</p><p><b>alias</b>: Quirofáno 1</p><p><b>description</b>: Minor procedure operating room.</p><p><b>mode</b>: instance</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}">Hospital</span></p><p><b>physicalType</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type ro}">Room</span></p><p><b>partOf</b>: <a href="Location-Example-LocationArea-789789789789.html">Generated Summary: status: active; <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span>; name: Servicio hospitalario; alias: Hospitalización; description: Hospital medical care.; mode: kind; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}">Hospital unit</span>; Phone: +56 12355611; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type wi}">Wing</span></a></p><h3>HoursOfOperations</h3><table class="grid"><tr><td>-</td><td><b>DaysOfWeek</b></td><td><b>AllDay</b></td></tr><tr><td>*</td><td>mon, tue, wed, thu, fri, sat, sun</td><td>true</td></tr></table><p><b>availabilityExceptions</b>: No se atiende los fines de semana.</p></div>
+  </text>
+  <status value="active"/>
+  <operationalStatus>
+    <system value="http://terminology.hl7.org/CodeSystem/v2-0116"/>
+    <code value="C"/>
+    <display value="Closed"/>
+  </operationalStatus>
+  <name value="Quirof&#xE1;no"/>
+  <alias value="Quirof&#xE1;no 1"/>
+  <description value="Minor procedure operating room."/>
+  <mode value="instance"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HOSP"/>
+      <display value="Hospital"/>
+    </coding>
+  </type>
+  <physicalType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+      <code value="ro"/>
+      <display value="Room"/>
+    </coding>
+  </physicalType>
+  <partOf>
+    <reference value="Location/Example-LocationArea-789789789789"/>
+  </partOf>
+  <hoursOfOperation>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <daysOfWeek value="fri"/>
+    <daysOfWeek value="sat"/>
+    <daysOfWeek value="sun"/>
+    <allDay value="true"/>
+  </hoursOfOperation>
+  <availabilityExceptions value="No se atiende los fines de semana."/>
+</Location>

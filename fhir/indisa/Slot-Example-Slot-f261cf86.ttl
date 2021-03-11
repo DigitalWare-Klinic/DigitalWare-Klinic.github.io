@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Slot/Example-Slot-f261cf86> a fhir:Slot;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Slot-f261cf86"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>serviceCategory</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/service-category 35}\">Hospital</span></p><p><b>serviceType</b>: <span title=\"Codes: {http://snomed.info/sct 308467007}\">atendido en establecimiento</span></p><p><b>specialty</b>: <span title=\"Codes: {http://snomed.info/sct 394586005}\">Gynecology</span></p><p><b>appointmentType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0276 ROUTINE}\">Routine appointment</span></p><p><b>schedule</b>: <a href=\"Schedule-Example-Schedule-d83f2b28.html\">Generated Summary: id: 403; active; <span title=\"Codes: \">Pediatrica</span>; <span title=\"Codes: {http://snomed.info/sct 185316007}\">encuentro indirecto</span>, <span title=\"Codes: {http://snomed.info/sct 308467007}\">atendido en establecimiento</span>; <span title=\"Codes: {http://snomed.info/sct 394586005}\">Ginecologia</span>; planningHorizon: 2021-01-01 --&gt; 2021-01-31; comment: FONASA, ISAPRE, CAPREDENA, DIPRECA, SISA</a></p><p><b>status</b>: free</p><p><b>start</b>: Jan 20, 2021 8:00:00 AM</p><p><b>end</b>: Jan 20, 2021 8:30:00 AM</p><p><b>overbooked</b>: false</p><p><b>comment</b>: Not served on weekends</p></div>"
+  ];
+  fhir:Slot.serviceCategory [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/service-category" ];
+       fhir:Coding.code [ fhir:value "35" ];
+       fhir:Coding.display [ fhir:value "Hospital" ]
+     ]
+  ];
+  fhir:Slot.serviceType [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:308467007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "308467007" ];
+       fhir:Coding.display [ fhir:value "atendido en establecimiento" ]
+     ]
+  ];
+  fhir:Slot.specialty [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:394586005;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "394586005" ];
+       fhir:Coding.display [ fhir:value "Gynecology" ]
+     ]
+  ];
+  fhir:Slot.appointmentType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0276" ];
+       fhir:Coding.code [ fhir:value "ROUTINE" ];
+       fhir:Coding.display [ fhir:value "Routine appointment" ]
+     ]
+  ];
+  fhir:Slot.schedule [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Schedule/Example-Schedule-d83f2b28>;
+     fhir:Reference.reference [ fhir:value "Schedule/Example-Schedule-d83f2b28" ]
+  ];
+  fhir:Slot.status [ fhir:value "free"];
+  fhir:Slot.start [ fhir:value "2021-01-20T08:00:00-05:00"^^xsd:dateTime];
+  fhir:Slot.end [ fhir:value "2021-01-20T08:30:00-05:00"^^xsd:dateTime];
+  fhir:Slot.overbooked [ fhir:value "false"^^xsd:boolean];
+  fhir:Slot.comment [ fhir:value "Not served on weekends"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Slot/Example-Slot-f261cf86.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

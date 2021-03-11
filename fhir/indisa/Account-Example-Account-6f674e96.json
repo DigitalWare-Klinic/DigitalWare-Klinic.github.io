@@ -1,0 +1,127 @@
+{
+  "resourceType": "Account",
+  "id": "Example-Account-6f674e96",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
+  },
+  "extension": [
+    {
+      "id": "AccountAmountKlinic",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-AccountAmountKlinic",
+      "valueMoney": {
+        "value": 1300000.0,
+        "currency": "CLP"
+      }
+    },
+    {
+      "id": "MedicalFeesKlinic",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-MedicalFeesKlinic",
+      "valueMoney": {
+        "value": 800000.0,
+        "currency": "CLP"
+      }
+    },
+    {
+      "id": "MedicationAmount",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-MedicationAmount",
+      "valueMoney": {
+        "value": 800000.0,
+        "currency": "CLP"
+      }
+    },
+    {
+      "id": "SuppliesAmountKlinic",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-SuppliesAmountKlinic",
+      "valueMoney": {
+        "value": 800000.0,
+        "currency": "CLP"
+      }
+    },
+    {
+      "id": "ConsultationsAmountKlinic",
+      "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ConsultationsAmountKlinic",
+      "valueMoney": {
+        "value": 800000.0,
+        "currency": "CLP"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://indisa.cl/account-identifier",
+      "value": "7bdf5072-607d-4284-b048-81334857e4ae"
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-AccountType",
+        "code": "PART",
+        "display": "Particular"
+      }
+    ]
+  },
+  "subject": [
+    {
+      "reference": "Patient/Example-Patient-87356d0d"
+    }
+  ],
+  "servicePeriod": {
+    "start": "2021-01-21T07:15:00-05:00",
+    "end": "2021-01-21T07:50:00-05:00"
+  },
+  "coverage": [
+    {
+      "extension": [
+        {
+          "id": "BonusAmountKlinic",
+          "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-BonusAmountKlinic",
+          "valueMoney": {
+            "value": 750000.0,
+            "currency": "CLP"
+          }
+        }
+      ],
+      "coverage": {
+        "reference": "Coverage/Example-Coverage-fa7a571e"
+      },
+      "priority": 1
+    },
+    {
+      "extension": [
+        {
+          "id": "CopaymentAmountKlinic ",
+          "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-CopaymentAmountKlinic",
+          "valueMoney": {
+            "value": 550000.0,
+            "currency": "CLP"
+          }
+        }
+      ],
+      "coverage": {
+        "reference": "Coverage/Example-Coverage-fa7a571e"
+      }
+    }
+  ],
+  "owner": {
+    "reference": "Organization/Example-Organization-213134sd15148f"
+  },
+  "description": "Cuenta referente a las atenciones del paciente en el ambito ambulatorio.",
+  "guarantor": [
+    {
+      "party": {
+        "reference": "RelatedPerson/Example-RelatedPerson-2374"
+      },
+      "onHold": true,
+      "period": {
+        "start": "2021-01-21T07:50:00-05:00",
+        "end": "2021-01-21T08:00:00-05:00"
+      }
+    }
+  ],
+  "partOf": {
+    "reference": "Account/Example-Account-62fadf1d"
+  }
+}

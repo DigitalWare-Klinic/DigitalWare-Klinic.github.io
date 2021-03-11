@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="Example-LocationBed-7819819819bn915"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>VirtualBed</b>: true</p><p><b>Census</b>: true</p><p><b>ChargeBed</b>: true</p><p><b>BedWithOxygen</b>: true</p><p><b>status</b>: active</p><p><b>operationalStatus</b>: <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span></p><p><b>name</b>: Cama 2</p><p><b>alias</b>: C2</p><p><b>description</b>: Patient bed.</p><p><b>mode</b>: instance</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}">Hospital unit</span></p><p><b>physicalType</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bd}">Bed</span></p><p><b>partOf</b>: <a href="Location-Example-LocationRoom-1245687952.html">Generated Summary: status: active; <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span>; name: Habitación 202; alias: H202; description: Hospitalization room.; mode: instance; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}">Hospital unit</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type ro}">Room</span></a></p></div>
+  </text>
+  <extension id="VirtualBed" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-VirtualBed">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension id="Census" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-Census">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension id="ChargeBed" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ChargeBed">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension id="BedWithOxygen" url="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-BedWithOxygen">
+    <valueBoolean value="true"/>
+  </extension>
+  <status value="active"/>
+  <operationalStatus>
+    <system value="http://terminology.hl7.org/CodeSystem/v2-0116"/>
+    <code value="O"/>
+    <display value="Occupied"/>
+  </operationalStatus>
+  <name value="Cama 2"/>
+  <alias value="C2"/>
+  <description value="Patient bed."/>
+  <mode value="instance"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HU"/>
+      <display value="Hospital unit"/>
+    </coding>
+  </type>
+  <physicalType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+      <code value="bd"/>
+      <display value="Bed"/>
+    </coding>
+  </physicalType>
+  <partOf>
+    <reference value="Location/Example-LocationRoom-1245687952"/>
+  </partOf>
+</Location>

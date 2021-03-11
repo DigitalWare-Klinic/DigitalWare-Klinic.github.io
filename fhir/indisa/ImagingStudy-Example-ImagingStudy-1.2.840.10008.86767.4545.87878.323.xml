@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImagingStudy xmlns="http://hl7.org/fhir">
+  <id value="Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: RIS656565 (USUAL)</p><p><b>status</b>: available</p><p><b>modality</b>: <span title="{http://dicom.nema.org/resources/ontology/DCM RG}">Radiographic imaging</span></p><p><b>subject</b>: <a href="Patient-Example-Patient-87356d0d.html">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></a></p><p><b>encounter</b>: <a href="Encounter-Example-Encounter-963b1515.html">Generated Summary: id: 12334556 (OFFICIAL); status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/service-type 349}">General Practitioner</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority R}">routine</span>; period: Jan 21, 2021 7:00:00 AM --&gt; Jan 21, 2021 7:30:00 AM; <span title="Codes: {http://snomed.info/sct 257006}">Acne rosacea</span></a></p><p><b>basedOn</b>: <a href="ServiceRequest-Example-ServiceRequest-Imaging-87878hdim.html">Generated Summary: id: IM989775 (OFFICIAL), id: AUTI45454 (SECONDARY); status: active; intent: order; <span title="Codes: {http://snomed.info/sct 363679005}, {http://snomed.info/sct 363272006}">Imagen</span>; priority: routine; <span title="Codes: {http://snomed.info/sct 11634002}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 0401062}">radiografía diagnóstica, imágenes en decúbito supino y en bipedestación</span>; 1; occurrence: Feb 25, 2021 9:30:00 AM --&gt; Feb 25, 2021 10:00:00 AM; authoredOn: Feb 21, 2021 7:30:00 AM; <span title="Codes: {http://snomed.info/sct 58150001}">fractura de clavícula (trastorno)</span>; <span title="Codes: {http://snomed.info/sct 720616002}">estructura ósea de clavícula derecha (estructura corporal)</span>; fasting procedure, procedure requires prior preparation</a></p><p><b>referrer</b>: <a href="Practitioner-Example-Practitioner-4343433d.html">Generated Summary: National Person Identifier Chile: 34343434ap (OFFICIAL); active; Julian Andres null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, rsjulian@example.com; gender: male; birthDate: 1989-03-10</a></p><p><b>interpreter</b>: <a href="Practitioner-Example-Practitioner-746746379d.html">Generated Summary: National Person Identifier Chile: 2323900ap (OFFICIAL); active; Nicolle Andrea null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, grnicolle@example.com; gender: female; birthDate: 1989-03-10</a></p><p><b>endpoint</b>: <a href="Endpoint-Example-EndPoint-PACServer-676767endp.html">Generated Summary: id: PACS001 (USUAL); status: active; <span title="{http://terminology.hl7.org/CodeSystem/endpoint-connection-type dicom-stow-rs}">DICOM STOW-RS</span>; name: Servidor PACS No. 001; <span title="Codes: {http://dicom.nema.org/resources/ontology/DCM 121181}">DICOM Object Catalog</span>; payloadMimeType: application/dicom; address: http://127.1.1.0:104</a></p><p><b>numberOfSeries</b>: 35238</p><p><b>numberOfInstances</b>: 1</p><p><b>location</b>: <a href="Location-Example-LocationArea-789789789789.html">Generated Summary: status: active; <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span>; name: Servicio hospitalario; alias: Hospitalización; description: Hospital medical care.; mode: kind; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}">Hospital unit</span>; Phone: +56 12355611; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type wi}">Wing</span></a></p><p><b>reasonCode</b>: <span title="Codes: {http://snomed.info/sct 58150001}">fractura de clavícula (trastorno)</span></p><p><b>description</b>: Estudio en parametros normales</p><blockquote><p><b>series</b></p><p><b>uid</b>: 1.2.840.10008.86767.4545.87878.323</p><p><b>number</b>: 35238</p><p><b>modality</b>: <span title="{http://dicom.nema.org/resources/ontology/DCM CR}">Computed Radiography</span></p><p><b>numberOfInstances</b>: 1</p><p><b>bodySite</b>: <span title="{http://snomed.info/sct 720616002}">estructura ósea de clavícula derecha (estructura corporal)</span></p><p><b>laterality</b>: <span title="{http://snomed.info/sct 419465000}">Unilateral right</span></p><h3>Instances</h3><table class="grid"><tr><td>-</td><td><b>Uid</b></td><td><b>SopClass</b></td><td><b>Number</b></td></tr><tr><td>*</td><td>1.2.840.10008.86767.4545.87878.323.35238</td><td><span title="{urn:ietf:rfc:3986 urn:oid:1.2.840.10008.5.1.4.1.1.1}">Computed Radiography Image Storage</span></td><td>1</td></tr></table></blockquote></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="https://example.org/imaging-study-identifiers"/>
+    <value value="RIS656565"/>
+  </identifier>
+  <status value="available"/>
+  <modality>
+    <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+    <code value="RG"/>
+    <display value="Radiographic imaging"/>
+  </modality>
+  <subject>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/Example-Encounter-963b1515"/>
+  </encounter>
+  <basedOn>
+    <reference value="ServiceRequest/Example-ServiceRequest-Imaging-87878hdim"/>
+  </basedOn>
+  <referrer>
+    <reference value="Practitioner/Example-Practitioner-4343433d"/>
+  </referrer>
+  <interpreter>
+    <reference value="Practitioner/Example-Practitioner-746746379d"/>
+  </interpreter>
+  <endpoint>
+    <reference value="Endpoint/Example-EndPoint-PACServer-676767endp"/>
+  </endpoint>
+  <numberOfSeries value="35238"/>
+  <numberOfInstances value="1"/>
+  <location>
+    <reference value="Location/Example-LocationArea-789789789789"/>
+  </location>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="58150001"/>
+      <display value="fractura de clav&#xED;cula (trastorno)"/>
+    </coding>
+  </reasonCode>
+  <description value="Estudio en parametros normales"/>
+  <series>
+    <uid value="1.2.840.10008.86767.4545.87878.323"/>
+    <number value="35238"/>
+    <modality>
+      <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+      <code value="CR"/>
+      <display value="Computed Radiography"/>
+    </modality>
+    <numberOfInstances value="1"/>
+    <bodySite>
+      <system value="http://snomed.info/sct"/>
+      <code value="720616002"/>
+      <display value="estructura &#xF3;sea de clav&#xED;cula derecha (estructura corporal)"/>
+    </bodySite>
+    <laterality>
+      <system value="http://snomed.info/sct"/>
+      <code value="419465000"/>
+      <display value="Unilateral right"/>
+    </laterality>
+    <instance>
+      <uid value="1.2.840.10008.86767.4545.87878.323.35238"/>
+      <sopClass>
+        <system value="urn:ietf:rfc:3986"/>
+        <code value="urn:oid:1.2.840.10008.5.1.4.1.1.1"/>
+        <display value="Computed Radiography Image Storage"/>
+      </sopClass>
+      <number value="1"/>
+    </instance>
+  </series>
+</ImagingStudy>

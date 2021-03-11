@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Composition/Example-Document-imagingreport-y787434ir> a fhir:Composition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Document-imagingreport-y787434ir"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: r909022ir</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 18748-4}\">Diagnostic imaging study</span></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 47045-0}\">Study report Document</span></p><p><b>encounter</b>: <a href=\"Encounter-Example-Encounter-963y1945.html\">Generated Summary: id: 56386090 (OFFICIAL); status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/service-type 410}\">Pregnancy</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority EL}\">elective</span>; period: Jan 21, 2021 7:00:00 AM --&gt; Jan 23, 2021 11:00:00 AM; <span title=\"Codes: {http://snomed.info/sct 888003}\">Efecto fetal o neonatal de la pérdida de sangre materna</span></a></p><p><b>date</b>: Feb 23, 2021 10:00:23 AM</p><p><b>author</b>: <a href=\"Practitioner-Example-Practitioner-746746379d.html\">Generated Summary: National Person Identifier Chile: 2323900ap (OFFICIAL); active; Nicolle Andrea null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, grnicolle@example.com; gender: female; birthDate: 1989-03-10</a></p><p><b>title</b>: Reporte Diagnostico de Imagenología</p><p><b>confidentiality</b>: N</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td>*</td><td>professional</td><td><a href=\"Practitioner-Example-Practitioner-746746379d.html\">Generated Summary: National Person Identifier Chile: 2323900ap (OFFICIAL); active; Nicolle Andrea null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, grnicolle@example.com; gender: female; birthDate: 1989-03-10</a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-Example-Organization-213134sd15148f.html\">Generated Summary: id: 1100133335-1 (OFFICIAL), id: 12789312-9 (OFFICIAL); active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: Indisa clinica de la familia; alias: INDISA; Phone: 3430000</a></p></div>"
+  ];
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "http://www.digitalware.com.co/salud/fhir/identifier/documents" ];
+     fhir:Identifier.value [ fhir:value "r909022ir" ]
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:18748-4;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "18748-4" ];
+       fhir:Coding.display [ fhir:value "Diagnostic imaging study" ]
+     ]
+  ];
+  fhir:Composition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:47045-0;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "47045-0" ];
+       fhir:Coding.display [ fhir:value "Study report Document" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d>;
+     fhir:Reference.reference [ fhir:value "Patient/Example-Patient-87356d0d" ]
+  ];
+  fhir:Composition.encounter [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Encounter/Example-Encounter-963y1945>;
+     fhir:Reference.reference [ fhir:value "Encounter/Example-Encounter-963y1945" ]
+  ];
+  fhir:Composition.date [ fhir:value "2021-02-23T10:00:23-05:00"^^xsd:dateTime];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Practitioner/Example-Practitioner-746746379d>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Example-Practitioner-746746379d" ]
+  ];
+  fhir:Composition.title [ fhir:value "Reporte Diagnostico de Imagenología"];
+  fhir:Composition.confidentiality [ fhir:value "N"];
+  fhir:Composition.attester [
+     fhir:index 0;
+     fhir:Composition.attester.mode [ fhir:value "professional" ];
+     fhir:Composition.attester.party [
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Practitioner/Example-Practitioner-746746379d>;
+       fhir:Reference.reference [ fhir:value "Practitioner/Example-Practitioner-746746379d" ]
+     ]
+  ];
+  fhir:Composition.custodian [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Organization/Example-Organization-213134sd15148f>;
+     fhir:Reference.reference [ fhir:value "Organization/Example-Organization-213134sd15148f" ]
+  ];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "Resultados de Imagenes" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:30954-2;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "30954-2" ];
+         fhir:Coding.display [ fhir:value "Relevant diagnostic tests" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/DiagnosticReport/Example-DiagnosticReport-Imaging-u584i>;
+       fhir:Reference.reference [ fhir:value "DiagnosticReport/Example-DiagnosticReport-Imaging-u584i" ]
+     ], [
+       fhir:index 1;
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/ImagingStudy/Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323>;
+       fhir:Reference.reference [ fhir:value "ImagingStudy/Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Composition/Example-Document-imagingreport-y787434ir.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

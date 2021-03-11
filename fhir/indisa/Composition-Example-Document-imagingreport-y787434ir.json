@@ -1,0 +1,80 @@
+{
+  "resourceType": "Composition",
+  "id": "Example-Document-imagingreport-y787434ir",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: r909022ir</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 18748-4}\">Diagnostic imaging study</span></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 47045-0}\">Study report Document</span></p><p><b>encounter</b>: <a href=\"Encounter-Example-Encounter-963y1945.html\">Generated Summary: id: 56386090 (OFFICIAL); status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/service-type 410}\">Pregnancy</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority EL}\">elective</span>; period: Jan 21, 2021 7:00:00 AM --&gt; Jan 23, 2021 11:00:00 AM; <span title=\"Codes: {http://snomed.info/sct 888003}\">Efecto fetal o neonatal de la pérdida de sangre materna</span></a></p><p><b>date</b>: Feb 23, 2021 10:00:23 AM</p><p><b>author</b>: <a href=\"Practitioner-Example-Practitioner-746746379d.html\">Generated Summary: National Person Identifier Chile: 2323900ap (OFFICIAL); active; Nicolle Andrea null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, grnicolle@example.com; gender: female; birthDate: 1989-03-10</a></p><p><b>title</b>: Reporte Diagnostico de Imagenología</p><p><b>confidentiality</b>: N</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td>*</td><td>professional</td><td><a href=\"Practitioner-Example-Practitioner-746746379d.html\">Generated Summary: National Person Identifier Chile: 2323900ap (OFFICIAL); active; Nicolle Andrea null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, grnicolle@example.com; gender: female; birthDate: 1989-03-10</a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-Example-Organization-213134sd15148f.html\">Generated Summary: id: 1100133335-1 (OFFICIAL), id: 12789312-9 (OFFICIAL); active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: Indisa clinica de la familia; alias: INDISA; Phone: 3430000</a></p></div>"
+  },
+  "identifier": {
+    "system": "http://www.digitalware.com.co/salud/fhir/identifier/documents",
+    "value": "r909022ir"
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "18748-4",
+        "display": "Diagnostic imaging study"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "47045-0",
+          "display": "Study report Document"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Example-Patient-87356d0d"
+  },
+  "encounter": {
+    "reference": "Encounter/Example-Encounter-963y1945"
+  },
+  "date": "2021-02-23T10:00:23-05:00",
+  "author": [
+    {
+      "reference": "Practitioner/Example-Practitioner-746746379d"
+    }
+  ],
+  "title": "Reporte Diagnostico de Imagenología",
+  "confidentiality": "N",
+  "attester": [
+    {
+      "mode": "professional",
+      "party": {
+        "reference": "Practitioner/Example-Practitioner-746746379d"
+      }
+    }
+  ],
+  "custodian": {
+    "reference": "Organization/Example-Organization-213134sd15148f"
+  },
+  "section": [
+    {
+      "title": "Resultados de Imagenes",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Relevant diagnostic tests"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "DiagnosticReport/Example-DiagnosticReport-Imaging-u584i"
+        },
+        {
+          "reference": "ImagingStudy/Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323"
+        }
+      ]
+    }
+  ]
+}

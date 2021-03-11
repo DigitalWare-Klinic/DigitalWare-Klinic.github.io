@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="Example-DiagnosticReport-Laboratory-265653656yf"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://snomed.info/sct 26604007}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 301045}">hemograma completo</span> (<span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td><b>Maria Victoria null (OFFICIAL)</b>  1975-08-14 ( Medical Record Number: HC-6ef0a6d7 (USUAL))</td></tr><tr><td>When For</td><td>Feb 25, 2021 9:45:00 AM</td></tr><tr><td>Identifier:</td><td> id: RLB2363636 (USUAL)</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href="Observation-Example-Observation-643767367434f.html"><span title="Codes: {http://snomed.info/sct 26604007}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 301045}">hemograma completo</span></a></td><td></td></tr></table><p>Ullamco eiusmod sunt elit non commodo est dolor.</p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="https://example.org/diagnostic-report-identifiers"/>
+    <value value="RLB2363636"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/Example-ServiceRequest-Laboratory-4637g6ad"/>
+  </basedOn>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="26604007"/>
+      <display value="hemograma completo"/>
+    </coding>
+    <coding>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa"/>
+      <code value="301045"/>
+      <display value="HEMOGRAMA"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/Example-Encounter-963b1515"/>
+  </encounter>
+  <effectiveDateTime value="2021-02-25T09:45:00-05:00"/>
+  <performer>
+    <reference value="Practitioner/Example-Practitioner-78456er9f"/>
+  </performer>
+  <specimen>
+    <reference value="Specimen/Example-Specimen-Blood-56789856d"/>
+  </specimen>
+  <result>
+    <reference value="Observation/Example-Observation-643767367434f"/>
+  </result>
+  <conclusion value="Ullamco eiusmod sunt elit non commodo est dolor."/>
+</DiagnosticReport>

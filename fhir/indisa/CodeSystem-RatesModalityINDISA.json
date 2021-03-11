@@ -1,0 +1,98 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "RatesModalityINDISA",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-RatesModalityINDISA defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">OPEN<a name=\"RatesModalityINDISA-OPEN\"> </a></td><td>Abierta</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">FREE<a name=\"RatesModalityINDISA-FREE\"> </a></td><td>Libre elección</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">CLOSED<a name=\"RatesModalityINDISA-CLOSED\"> </a></td><td>Cerrada</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">PREFERRED<a name=\"RatesModalityINDISA-PREFERRED\"> </a></td><td>Preferente</td><td>Please. Request a description of this concept from INDISA.</td></tr><tr><td style=\"white-space:nowrap\">GES-CAEC<a name=\"RatesModalityINDISA-GES-CAEC\"> </a></td><td>GES-CAEC</td><td>Please. Request a description of this concept from INDISA.</td></tr></table></div>"
+  },
+  "url": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-RatesModalityINDISA",
+  "version": "1.0",
+  "name": "RatesModalityINDISA",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-02-11",
+  "publisher": "DigitalWare S.A. - Klinic-HIS",
+  "contact": [
+    {
+      "name": "Juan Manuel Contreras Hernandez",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "juanch@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Diana Rodriguez Suarez",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dianaro@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Daniel Felipe Castro Romero",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "danielc@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Eduardo Felipe Solis Hernandez",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "felipesh@digitalware.com.co",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Mario Enrique Cortés M",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mario.cortes@hl7co.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "This is a coding system that contains the rate modality codes for the interoperability scenario of INDISA (Chile).",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "OPEN",
+      "display": "Abierta",
+      "definition": "Please. Request a description of this concept from INDISA."
+    },
+    {
+      "code": "FREE",
+      "display": "Libre elección",
+      "definition": "Please. Request a description of this concept from INDISA."
+    },
+    {
+      "code": "CLOSED",
+      "display": "Cerrada",
+      "definition": "Please. Request a description of this concept from INDISA."
+    },
+    {
+      "code": "PREFERRED",
+      "display": "Preferente",
+      "definition": "Please. Request a description of this concept from INDISA."
+    },
+    {
+      "code": "GES-CAEC",
+      "display": "GES-CAEC",
+      "definition": "Please. Request a description of this concept from INDISA."
+    }
+  ]
+}

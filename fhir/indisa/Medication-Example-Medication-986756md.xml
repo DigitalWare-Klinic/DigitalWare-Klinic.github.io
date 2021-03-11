@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="Example-Medication-986756md"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: MD3456 (USUAL)</p><p><b>code</b>: <span title="Codes: {http://www.whocc.no/atc C09AA02}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesProviderMedication 01035034567}">Enalapril</span></p><p><b>status</b>: active</p><p><b>manufacturer</b>: <a href="Organization/Example-OrganizationExterna-12345orgext">Organization/Example-OrganizationExterna-12345orgext</a></p><p><b>form</b>: <span title="Codes: {http://snomed.info/sct 46992007}">Píldora</span></p><p><b>amount</b>: 10 Pildoras/1 blister</p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td><span title="Codes: {http://snomed.info/sct 387165009}">maleato de enalapril</span></td><td>true</td><td>5 mg/5 mg</td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="https://example.org/medication-identifiers"/>
+    <value value="MD3456"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://www.whocc.no/atc"/>
+      <code value="C09AA02"/>
+      <display value="Enalapril"/>
+    </coding>
+    <coding>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesProviderMedication"/>
+      <code value="01035034567"/>
+      <display value="Enalapril"/>
+    </coding>
+  </code>
+  <status value="active"/>
+  <manufacturer>
+    <reference value="Organization/Example-OrganizationExterna-12345orgext"/>
+  </manufacturer>
+  <form>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="46992007"/>
+      <display value="P&#xED;ldora"/>
+    </coding>
+  </form>
+  <amount>
+    <numerator>
+      <value value="10"/>
+      <unit value="Pildoras"/>
+    </numerator>
+    <denominator>
+      <value value="1"/>
+      <unit value="blister"/>
+    </denominator>
+  </amount>
+  <ingredient>
+    <itemCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="387165009"/>
+        <display value="maleato de enalapril"/>
+      </coding>
+    </itemCodeableConcept>
+    <isActive value="true"/>
+    <strength>
+      <numerator>
+        <value value="5"/>
+        <unit value="mg"/>
+      </numerator>
+      <denominator>
+        <value value="5"/>
+        <unit value="mg"/>
+      </denominator>
+    </strength>
+  </ingredient>
+</Medication>

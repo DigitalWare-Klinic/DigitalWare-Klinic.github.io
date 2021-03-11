@@ -1,0 +1,127 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Procedure/Example-ProcedureDevice-894536pd> a fhir:Procedure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-ProcedureDevice-894536pd"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 110304050 (USUAL)</p><p><b>basedOn</b>: <a href=\"ServiceRequest/Example-ServiceRequest-5437578r\">ServiceRequest/Example-ServiceRequest-5437578r</a></p><p><b>status</b>: completed</p><p><b>category</b>: <span title=\"Codes: {http://snomed.info/sct 371883000}\">procedimiento en paciente ambulatorio</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 176837007}, {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 2001015}\">procedimiento con dispositivo anticonceptivo intrauterino</span></p><p><b>subject</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>encounter</b>: <a href=\"Encounter-Example-Encounter-963b1515.html\">Generated Summary: id: 12334556 (OFFICIAL); status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/service-type 349}\">General Practitioner</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority R}\">routine</span>; period: Jan 21, 2021 7:00:00 AM --&gt; Jan 21, 2021 7:30:00 AM; <span title=\"Codes: {http://snomed.info/sct 257006}\">Acne rosacea</span></a></p><p><b>performed</b>: Feb 21, 2021 7:30:00 AM</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-Example-Practitioner-09709es9d.html\">Generated Summary: National Person Identifier Chile: 8596788ap (OFFICIAL); active; Sebastian Camilo null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, dbsebastian@example.com; gender: male; birthDate: 1989-03-10</a></td></tr></table><p><b>location</b>: <a href=\"Location-Example-LocationBuilding-7412389635sdf556.html\">Generated Summary: id: 1100112345-1 (OFFICIAL); status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 O}\">Occupied</span>; name: Indisa Clinica de la familia; alias: INDISA; description: Clinic and emergencies; mode: instance; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span>; Phone: +56(2)1111-1111; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bu}\">Building</span>; availabilityExceptions: Does not open on holidays.</a></p><p><b>reasonCode</b>: <span title=\"Codes: {http://snomed.info/sct 169488004}\">falla de dispositivo intrauterino - embarazo</span></p><p><b>reasonReference</b>: <a href=\"Condition/Example-Condition-4869c\">Condition/Example-Condition-4869c</a></p><p><b>outcome</b>: <span title=\"Codes: {http://snomed.info/sct 385669000}\">Successful</span></p><p><b>report</b>: <a href=\"Composition-Example-Document-c1b9fc94f1af.html\">Generated Summary: id: e11d873a; status: final; <span title=\"Codes: {http://loinc.org 11506-3}\">Progress note</span>; <span title=\"Codes: {http://loinc.org 11536-0}\">Nurse Notes</span>; date: Feb 23, 2021 10:00:23 AM; title: Nota de evolución de enfermería; confidentiality: N</a></p><p><b>note</b>: Patient without complication at output of procedure.</p><h3>FocalDevices</h3><table class=\"grid\"><tr><td>-</td><td><b>Action</b></td><td><b>Manipulated</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 129424004}\">ajuste - acción</span></td><td><a href=\"Device-Example-Device-898989dv.html\">Generated Summary: status: active; manufacturer: Melbea; manufactureDate: 2020-11-20; expirationDate: 2020-05-19; lotNumber: 5444223455; serialNumber: 23322333-56; modelNumber: fiatsa; <span title=\"Codes: {http://snomed.info/sct 268460000}\">dispositivo anticonceptivo intrauterino</span>; Device in perfect condition</a></td></tr></table></div>"
+  ];
+  fhir:Procedure.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "usual" ];
+     fhir:Identifier.system [ fhir:value "https://example.org/procedure-identifiers" ];
+     fhir:Identifier.value [ fhir:value "110304050" ]
+  ];
+  fhir:Procedure.basedOn [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/ServiceRequest/Example-ServiceRequest-5437578r>;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/Example-ServiceRequest-5437578r" ]
+  ];
+  fhir:Procedure.status [ fhir:value "completed"];
+  fhir:Procedure.category [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:371883000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "371883000" ];
+       fhir:Coding.display [ fhir:value "procedimiento en paciente ambulatorio" ]
+     ]
+  ];
+  fhir:Procedure.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:176837007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "176837007" ];
+       fhir:Coding.display [ fhir:value "procedimiento con dispositivo anticonceptivo intrauterino" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa" ];
+       fhir:Coding.code [ fhir:value "2001015" ];
+       fhir:Coding.display [ fhir:value "COLOCACIÓN O EXTRACCIÓN DE DISPOSITIVO INTRAUTERINO" ]
+     ]
+  ];
+  fhir:Procedure.subject [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d>;
+     fhir:Reference.reference [ fhir:value "Patient/Example-Patient-87356d0d" ]
+  ];
+  fhir:Procedure.encounter [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Encounter/Example-Encounter-963b1515>;
+     fhir:Reference.reference [ fhir:value "Encounter/Example-Encounter-963b1515" ]
+  ];
+  fhir:Procedure.performedDateTime [ fhir:value "2021-02-21T07:30:00-05:00"^^xsd:dateTime];
+  fhir:Procedure.performer [
+     fhir:index 0;
+     fhir:Procedure.performer.actor [
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Practitioner/Example-Practitioner-09709es9d>;
+       fhir:Reference.reference [ fhir:value "Practitioner/Example-Practitioner-09709es9d" ]
+     ]
+  ];
+  fhir:Procedure.location [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationBuilding-7412389635sdf556>;
+     fhir:Reference.reference [ fhir:value "Location/Example-LocationBuilding-7412389635sdf556" ]
+  ];
+  fhir:Procedure.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:169488004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "169488004" ];
+       fhir:Coding.display [ fhir:value "falla de dispositivo intrauterino - embarazo" ]
+     ]
+  ];
+  fhir:Procedure.reasonReference [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Condition/Example-Condition-4869c>;
+     fhir:Reference.reference [ fhir:value "Condition/Example-Condition-4869c" ]
+  ];
+  fhir:Procedure.outcome [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:385669000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "385669000" ];
+       fhir:Coding.display [ fhir:value "Successful" ]
+     ]
+  ];
+  fhir:Procedure.report [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Composition/Example-Document-c1b9fc94f1af>;
+     fhir:Reference.reference [ fhir:value "Composition/Example-Document-c1b9fc94f1af" ]
+  ];
+  fhir:Procedure.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Patient without complication at output of procedure." ]
+  ];
+  fhir:Procedure.focalDevice [
+     fhir:index 0;
+     fhir:Procedure.focalDevice.action [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:129424004;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "129424004" ];
+         fhir:Coding.display [ fhir:value "ajuste - acción" ]
+       ]
+     ];
+     fhir:Procedure.focalDevice.manipulated [
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Device/Example-Device-898989dv>;
+       fhir:Reference.reference [ fhir:value "Device/Example-Device-898989dv" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Procedure/Example-ProcedureDevice-894536pd.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
