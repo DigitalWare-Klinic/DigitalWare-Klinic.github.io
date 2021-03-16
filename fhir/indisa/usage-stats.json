@@ -587,6 +587,12 @@
         "title": "Diagnostic report for laboratory, imamging study and cardiovascular tests"
       }
     ],
+    "Encounter": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileEncounterKlinic",
+        "title": "Encounter Klinic"
+      }
+    ],
     "Endpoint": [
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileEndpointKlinic",

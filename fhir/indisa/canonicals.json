@@ -328,6 +328,13 @@
     "name": "ProfileDiagnosticReportLabKlinic"
   },
   {
+    "id": "ProfileEncounterKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileEncounterKlinic",
+    "version": "1.0",
+    "name": "ProfileEncounterKlinic"
+  },
+  {
     "id": "ProfileEndpointKlinic",
     "type": "StructureDefinition",
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileEndpointKlinic",

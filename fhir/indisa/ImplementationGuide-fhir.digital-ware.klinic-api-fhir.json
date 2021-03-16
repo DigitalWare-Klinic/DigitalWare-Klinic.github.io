@@ -10,7 +10,7 @@
   "name": "klinicapifhir",
   "title": "Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.",
   "status": "active",
-  "date": "2021-03-10T01:14:51-05:00",
+  "date": "2021-03-16T11:25:34-05:00",
   "publisher": "DigitalWare S.A. - Klinic-HIS",
   "contact": [
     {
@@ -431,6 +431,20 @@
         },
         "name": "Diagnostic report for laboratory, imamging study and cardiovascular tests",
         "description": "Clinical diagnostic reports of the patient (laboratory, imamging study and cardiovascular tests).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileEncounterKlinic"
+        },
+        "name": "Encounter Klinic",
+        "description": "Clinical and administrative encounter of the patient (ambulatory or inpatient), during the provision of health services.",
         "exampleBoolean": false
       },
       {
