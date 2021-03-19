@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Device/Example-Device-VitalSignsMonitor-B125GE> a fhir:Device;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Device-VitalSignsMonitor-B125GE"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>manufacturer</b>: GE Healthcare</p><p><b>manufactureDate</b>: 2020-01-01</p><p><b>serialNumber</b>: GE-VS-B125-324987</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>B125</td><td>model-name</td></tr></table><p><b>modelNumber</b>: B125</p><p><b>type</b>: <span title=\"Codes: {http://snomed.info/sct 5159002}\">sistema de monitoreo fisiológico</span></p><p><b>owner</b>: <a href=\"Organization-Example-Organization-213134sd15148f.html\">Generated Summary: id: 1100133335-1 (OFFICIAL), id: 12789312-9 (OFFICIAL); active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: Indisa clinica de la familia; alias: INDISA; Phone: 3430000</a></p><p><b>location</b>: <a href=\"Location-Example-LocationRoom-1245687952.html\">Generated Summary: status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 O}\">Occupied</span>; name: Habitación 202; alias: H202; description: Hospitalization room.; mode: instance; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}\">Hospital unit</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type ro}\">Room</span></a></p><p><b>note</b>: sO2, Tensión Arterial, Temperatura, Frecuencia Cardiaca, Frecuencia Respiratoria</p></div>"
+  ];
+  fhir:Device.status [ fhir:value "active"];
+  fhir:Device.manufacturer [ fhir:value "GE Healthcare"];
+  fhir:Device.manufactureDate [ fhir:value "2020-01-01"^^xsd:date];
+  fhir:Device.serialNumber [ fhir:value "GE-VS-B125-324987"];
+  fhir:Device.deviceName [
+     fhir:index 0;
+     fhir:Device.deviceName.name [ fhir:value "B125" ];
+     fhir:Device.deviceName.type [ fhir:value "model-name" ]
+  ];
+  fhir:Device.modelNumber [ fhir:value "B125"];
+  fhir:Device.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:5159002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "5159002" ];
+       fhir:Coding.display [ fhir:value "sistema de monitoreo fisiológico" ]
+     ]
+  ];
+  fhir:Device.owner [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Organization/Example-Organization-213134sd15148f>;
+     fhir:Reference.reference [ fhir:value "Organization/Example-Organization-213134sd15148f" ]
+  ];
+  fhir:Device.location [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationRoom-1245687952>;
+     fhir:Reference.reference [ fhir:value "Location/Example-LocationRoom-1245687952" ]
+  ];
+  fhir:Device.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "sO2, Tensión Arterial, Temperatura, Frecuencia Cardiaca, Frecuencia Respiratoria" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Device/Example-Device-VitalSignsMonitor-B125GE.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

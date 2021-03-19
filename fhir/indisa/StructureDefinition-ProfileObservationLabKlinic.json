@@ -74,7 +74,7 @@
       ]
     }
   ],
-  "description": "Observation laboratory and imaging.",
+  "description": "Simple measurements and statements made about a patient. (Vital signs, laboratory results, imaging results, clinical findings, measurements made with medical devices, etc).",
   "copyright": "Digitalware 2021 CC.",
   "fhirVersion": "4.0.1",
   "mapping": [

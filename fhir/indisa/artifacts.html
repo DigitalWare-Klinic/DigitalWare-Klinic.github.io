@@ -1,27 +1,28 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>FHIR.DIGITAL-WARE.KLINIC-API-FHIR\Artifacts Summary - FHIR v4.0.1</title>
+<html xml:lang="en"
+   xmlns="http://www.w3.org/1999/xhtml" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>FHIR.DIGITAL-WARE.KLINIC-API-FHIR\Artifacts Summary - FHIR v4.0.1</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="author" content="http://hl7.org/fhir"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+      <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+      <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+      <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <link rel="stylesheet" href="assets/css/project.css"/>
+      <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+      <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+      <link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+      <script src="fhir-table-scripts.js" type="text/javascript"></script>
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -30,1437 +31,1520 @@
     <![endif] -->
 
       <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
-    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
-  </head>
-  <body onload="document.body.style.opacity='1'">
+      <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+      <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+      <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+      <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+      <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+   </head>
+   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+      <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3"}
-    h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
-          <!-- Placeholder for child template header declarations -->
+      <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4.0"}</style>
+      <div id="segment-header" class="segment">         <!-- segment-header -->
+         <div class="container">            <!-- container -->
+            <!-- Placeholder for child template header declarations -->
 
-        
-        <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.</span><br/>1.0 - trial-use</p>
-        </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
-      <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+            <div id="ig-status">
+               <p>
+                  <span style="font-size:12pt;font-weight:bold">Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.</span>
+                  <br/>
+1.0 - trial-use</p>
+            </div>
+         </div>         <!-- /container -->
+      </div>      <!-- /segment-header -->
 
-        <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
-          <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
-              <span class="icon-bar"> </span>
-              <span class="icon-bar"> </span>
-              <span class="icon-bar"> </span>
-            </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
-            <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul class="nav navbar-nav">
-  <li><a href="index.html">IG Home</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
-      </li>
-        <!-- <li>
+      <div id="segment-navbar" class="segment">         <!-- segment-navbar -->
+         <div id="stripe"></div>
+         <div class="container">            <!-- container -->
+            <!-- HEADER CONTENT -->
+
+            <nav class="navbar navbar-inverse">
+               <!-- status-bar -->
+               <div class="container">
+                  <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                  </button>
+                  <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+                  <div class="nav-collapse collapse navbar-inverse-collapse">
+                     <ul class="nav navbar-nav">
+                        <li>
+                           <a href="index.html">IG Home</a>
+                        </li>
+                        <li>
+                           <a href="toc.html">Table of Contents</a>
+                        </li>
+                        <li>
+                           <a href="artifacts.html">Artifact Index</a>
+                        </li>
+                        <li class="dropdown">
+                           <a data-toggle="dropdown" href="#" class="dropdown-toggle">Scenarios<b class="caret">
+                              </b>
+                           </a>
+                           <ul class="dropdown-menu">
+                              <li>
+                                 <a href="messaging.html">Push notification</a>
+                              </li>
+                              <li>
+                                 <a href="devices.html">Medical devices</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="dropdown">
+                           <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+                              </b>
+                           </a>
+                           <ul class="dropdown-menu">
+                              <li>
+                                 <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/>
+                                 </a>
+                              </li>
+                              <!-- <li>
         <a href="downloads.html">Downloads</a>
       </li> -->
-    </ul>
-  </li>
-</ul>      
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>                  <!-- /.nav-collapse -->
+               </div>               <!-- /.container -->
+            </nav>            <!-- /.navbar -->
+            <!-- /HEADER CONTENT -->
+         </div>         <!-- /container -->
+      </div>      <!-- /segment-navbar -->
       <!-- status-bar -->
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
-        <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
-        </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      <div id="segment-breadcrumb" class="segment">         <!-- segment-breadcrumb -->
+         <div class="container">            <!-- container -->
+            <ul class="breadcrumb">
+               <li>
+                  <a href="toc.html">
+                     <b>Table of Contents</b>
+                  </a>
+               </li>
+               <li>
+                  <b>Artifacts Summary</b>
+               </li>
+            </ul>
+         </div>         <!-- /container -->
+      </div>      <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
-        <div class="row">
-          <div class="inner-wrapper">
+      <div id="segment-content">         <!-- segment-content -->
+         <div class="container">            <!-- container -->
+            <div class="row">
+               <div class="inner-wrapper">
 
-<style type="text/css">
+                  <style type="text/css">
 h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
 h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
 h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
 h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
-</style>
-<div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A. - Local Development build (v1.0). See the <a href="https://digitalware-klinic.github.io/fhir/indisa/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>Artifacts Summary</h2>
-  
-    <!-- DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten --><div class="markdown-toc">
-   <p>Contents:</p>
-   <ul>
-      <li>
-         <a href="#1">Structures: Resource Profiles</a>
-      </li>
-      <li>
-         <a href="#2">Structures: Extension Definitions</a>
-      </li>
-      <li>
-         <a href="#3">Terminology: Code Systems</a>
-      </li>
-      <li>
-         <a href="#4">Example: Example Instances</a>
-      </li>
-   </ul>
-</div>
-<div>
-   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
-   <a name="1"> </a>
-   <h3>Structures: Resource Profiles </h3>
-   <p>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileAccountKlinic.html" title="StructureDefinition/ProfileAccountKlinic">Account</a>
-               </td>
-               <td>
-<p>Patient account, where all charges made at the outpatient or hospital level are found.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileAppointmentKlinic.html" title="StructureDefinition/ProfileAppointmentKlinic">Appointment</a>
-               </td>
-               <td>
-<p>Registered appointments of the patient for each general and specialized medical consultation and the performance of laboratory and imaging tests, among others.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileAppointmentResponseKlinic.html" title="StructureDefinition/ProfileAppointmentResponseKlinic">Appointment Response</a>
-               </td>
-               <td>
-<p>Response regarding the scheduling of the patient’s appointment according to the availability of the agenda or regarding cancellations, reviews, among other activities on each appointment.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileCompositionKlinic.html" title="StructureDefinition/ProfileCompositionKlinic">Document Electronic</a>
-               </td>
-               <td>
-<p>Electronic composition document that allows the exchange of information between processes or between integration points and that has to do with the patient’s medical information.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileConditionKlinic.html" title="StructureDefinition/ProfileConditionKlinic">Condition</a>
-               </td>
-               <td>
-<p>A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileCoverageKlinic.html" title="StructureDefinition/ProfileCoverageKlinic">Coverage patient</a>
-               </td>
-               <td>
-<p>Patient’s health coverage policy.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileDeviceKlinic.html" title="StructureDefinition/ProfileDeviceKlinic">Device</a>
-               </td>
-               <td>
-<p>A type of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileDiagnosticReportLabKlinic.html" title="StructureDefinition/ProfileDiagnosticReportLabKlinic">Diagnostic report for laboratory, imamging study and cardiovascular tests</a>
-               </td>
-               <td>
-<p>Clinical diagnostic reports of the patient (laboratory, imamging study and cardiovascular tests).</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileEncounterKlinic.html" title="StructureDefinition/ProfileEncounterKlinic">Encounter Klinic</a>
-               </td>
-               <td>
-<p>Clinical and administrative encounter of the patient (ambulatory or inpatient), during the provision of health services.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileEndpointKlinic.html" title="StructureDefinition/ProfileEndpointKlinic">Endpoint</a>
-               </td>
-               <td>
-<p>Contact points where the exchange, update and consultation of medical information of the patient is allowed.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileHealthcareService.html" title="StructureDefinition/ProfileHealthcareService">Healthcare Service</a>
-               </td>
-               <td>
-<p>health services that are provided to the patient, once they enter the provider’s facilities.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileImagingStudyKlinic.html" title="StructureDefinition/ProfileImagingStudyKlinic">Imaging Study</a>
-               </td>
-               <td>
-<p>A set of images produced in single study at patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileImplantableDeviceKlinic.html" title="StructureDefinition/ProfileImplantableDeviceKlinic">Device</a>
-               </td>
-               <td>
-<p>FHIR resource profile for Active Implantable Medical Devices (AIMD), invasive medical devices, custom medical devices, and invasive or reusable surgical medical devices.</p>
+                  </style>
+                  <div class="col-12">
+                     <!-- ReleaseHeader -->
+                     <p id="publish-box">Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A. - Local Development build (v1.0). See the <a href="https://digitalware-klinic.github.io/fhir/indisa/history.html">Directory of published versions</a>
+                     </p>                     <!-- EndReleaseHeader -->
+                     <h2>Artifacts Summary</h2>
 
-<p>Many of these devices are partially or completely absorbed.</p>
+                     <!-- DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten -->
+                     <div class="markdown-toc">
+                        <p>Contents:</p>
+                        <ul>
+                           <li>
+                              <a href="#1">Structures: Resource Profiles</a>
+                           </li>
+                           <li>
+                              <a href="#2">Structures: Extension Definitions</a>
+                           </li>
+                           <li>
+                              <a href="#3">Terminology: Code Systems</a>
+                           </li>
+                           <li>
+                              <a href="#4">Example: Example Instances</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div>
+                        <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+                        <a name="1"></a>
+                        <h3>Structures: Resource Profiles </h3>
+                        <p>
+                           <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+                        </p>
+                        <p>
+                           <table class="grid">
+                              <col style="width:20%"/>
+                              <tbody>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileAccountKlinic.html" title="StructureDefinition/ProfileAccountKlinic">Account</a>
+                                    </td>
+                                    <td>
+                                       <p>Patient account, where all charges made at the outpatient or hospital level are found.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileAppointmentKlinic.html" title="StructureDefinition/ProfileAppointmentKlinic">Appointment</a>
+                                    </td>
+                                    <td>
+                                       <p>Registered appointments of the patient for each general and specialized medical consultation and the performance of laboratory and imaging tests, among others.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileAppointmentResponseKlinic.html" title="StructureDefinition/ProfileAppointmentResponseKlinic">Appointment Response</a>
+                                    </td>
+                                    <td>
+                                       <p>Response regarding the scheduling of the patient’s appointment according to the availability of the agenda or regarding cancellations, reviews, among other activities on each appointment.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileCompositionKlinic.html" title="StructureDefinition/ProfileCompositionKlinic">Document Electronic</a>
+                                    </td>
+                                    <td>
+                                       <p>Electronic composition document that allows the exchange of information between processes or between integration points and that has to do with the patient’s medical information.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileConditionKlinic.html" title="StructureDefinition/ProfileConditionKlinic">Condition</a>
+                                    </td>
+                                    <td>
+                                       <p>A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileCoverageKlinic.html" title="StructureDefinition/ProfileCoverageKlinic">Coverage patient</a>
+                                    </td>
+                                    <td>
+                                       <p>Patient’s health coverage policy.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileDeviceKlinic.html" title="StructureDefinition/ProfileDeviceKlinic">Device</a>
+                                    </td>
+                                    <td>
+                                       <p>A type of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileDiagnosticReportLabKlinic.html" title="StructureDefinition/ProfileDiagnosticReportLabKlinic">Diagnostic report for laboratory, imamging study and cardiovascular tests</a>
+                                    </td>
+                                    <td>
+                                       <p>Clinical diagnostic reports of the patient (laboratory, imamging study and cardiovascular tests).</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileEncounterKlinic.html" title="StructureDefinition/ProfileEncounterKlinic">Encounter Klinic</a>
+                                    </td>
+                                    <td>
+                                       <p>Clinical and administrative encounter of the patient (ambulatory or inpatient), during the provision of health services.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileEndpointKlinic.html" title="StructureDefinition/ProfileEndpointKlinic">Endpoint</a>
+                                    </td>
+                                    <td>
+                                       <p>Contact points where the exchange, update and consultation of medical information of the patient is allowed.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileHealthcareService.html" title="StructureDefinition/ProfileHealthcareService">Healthcare Service</a>
+                                    </td>
+                                    <td>
+                                       <p>health services that are provided to the patient, once they enter the provider’s facilities.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileImagingStudyKlinic.html" title="StructureDefinition/ProfileImagingStudyKlinic">Imaging Study</a>
+                                    </td>
+                                    <td>
+                                       <p>A set of images produced in single study at patient.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileImplantableDeviceKlinic.html" title="StructureDefinition/ProfileImplantableDeviceKlinic">Device</a>
+                                    </td>
+                                    <td>
+                                       <p>FHIR resource profile for Active Implantable Medical Devices (AIMD), invasive medical devices, custom medical devices, and invasive or reusable surgical medical devices.</p>
 
-<p>Such as: pacemaker, extends, catheter, IUD, and surgical instruments.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileLocationAreaKlinic.html" title="StructureDefinition/ProfileLocationAreaKlinic">Location Area</a>
-               </td>
-               <td>
-<p>Physical location of each of the clinical and administrative areas within a building: Floor, Area, Wing, Waiting room, intensive care unit, among others.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileLocationBedKlinic.html" title="StructureDefinition/ProfileLocationBedKlinic">Location Bed</a>
-               </td>
-               <td>
-<p>Physical location of each of the clinical areas within a building:  Bed.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileLocationBuildingKlinic.html" title="StructureDefinition/ProfileLocationBuildingKlinic">Location Building</a>
-               </td>
-               <td>
-<p>Physical location of each of the clinical and administrative areas within a building:  Building, Wing of building, Tower, etc.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileLocationFunctionalUnitKlinic.html" title="StructureDefinition/ProfileLocationFunctionalUnitKlinic">Location Functional Unit</a>
-               </td>
-               <td>
-<p>Physical location of each of the clinical and administrative areas within a building:  Functional Unit.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileLocationRoomKlinic.html" title="StructureDefinition/ProfileLocationRoomKlinic">Location Room</a>
-               </td>
-               <td>
-<p>Physical location of each of the clinical and administrative areas within a building:  Room, Consulting room, etc.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileMedicationAdministrationKlinic.html" title="StructureDefinition/ProfileMedicationAdministrationKlinic">Medication Administration</a>
-               </td>
-               <td>
-<p>Describes the event of a patient consuming or otherwise being administered a medication.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileMedicationDispenseKlinic.html" title="StructureDefinition/ProfileMedicationDispenseKlinic">Medication dispense</a>
-               </td>
-               <td>
-<p>Indicates that a medication product is to be or has been dispensed for a named person/patient. This includes a description of the medication product (supply) provided and the instructions for administering the medication. The medication dispense is the result of a pharmacy system responding to a medication order.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileMedicationKlinic.html" title="StructureDefinition/ProfileMedicationKlinic">Medication</a>
-               </td>
-               <td>
-<p>Identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileMedicationRequestKlinic.html" title="StructureDefinition/ProfileMedicationRequestKlinic">Medication Request</a>
-               </td>
-               <td>
-<p>An order or request for both supply of the medication and the instructions for administration of the medication to a patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileMessageHeaderKlinic.html" title="StructureDefinition/ProfileMessageHeaderKlinic">Message header</a>
-               </td>
-               <td>
-<p>Message header in the messaging exchange.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileObservationLabKlinic.html" title="StructureDefinition/ProfileObservationLabKlinic">Observation</a>
-               </td>
-               <td>
-<p>Observation laboratory and imaging.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileOrganizationHealthcareProviderKlinic.html" title="StructureDefinition/ProfileOrganizationHealthcareProviderKlinic">Organization Healthcare Provider</a>
-               </td>
-               <td>
-<p>Organization Healthcare Provider.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfilePatientKlinic.html" title="StructureDefinition/ProfilePatientKlinic">Patient</a>
-               </td>
-               <td>
-<p>Data of patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfilePractitionerKlinic.html" title="StructureDefinition/ProfilePractitionerKlinic">Practitioner</a>
-               </td>
-               <td>
-<p>Practitioner of healht.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfilePractitionerRole.html" title="StructureDefinition/ProfilePractitionerRole">Practitioner Role</a>
-               </td>
-               <td>
-<p>Role of practitioner.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileProcedureKlinic.html" title="StructureDefinition/ProfileProcedureKlinic">Procedure</a>
-               </td>
-               <td>
-<p>Medical procedures in health.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileQuestionnaireResponseSurveyKlinic.html" title="StructureDefinition/ProfileQuestionnaireResponseSurveyKlinic">Questionnaire response</a>
-               </td>
-               <td>
-<p>Questionnaire responses.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileQuestionnaireSurveyKlinic.html" title="StructureDefinition/ProfileQuestionnaireSurveyKlinic">Questionnaire</a>
-               </td>
-               <td>
-<p>Questionnaire of Survey.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileScheduleKlinic.html" title="StructureDefinition/ProfileScheduleKlinic">Schedule patient</a>
-               </td>
-               <td>
-<p>Schedule patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileServiceRequestKlinic.html" title="StructureDefinition/ProfileServiceRequestKlinic">Service Request</a>
-               </td>
-               <td>
-<p>Medical order for health services.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileSlotKlinic.html" title="StructureDefinition/ProfileSlotKlinic">Slot</a>
-               </td>
-               <td>
-<p>Agenda spaces available for appointment assignments.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ProfileSpecimenKlinic.html" title="StructureDefinition/ProfileSpecimenKlinic">Specimen</a>
-               </td>
-               <td>
-<p>A sample to be used for analysis.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="2"> </a>
-   <h3>Structures: Extension Definitions </h3>
-   <p>
-    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-AccountAmountKlinic.html" title="StructureDefinition/AccountAmountKlinic">Account Amount</a>
-               </td>
-               <td>
-<p>Amount of the account, which totals the services provided to the patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-AvailableTelemedicine.html" title="StructureDefinition/AvailableTelemedicine">Admit telemedicine</a>
-               </td>
-               <td>
-<p>Active agenda for telemedicine care.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-BedWithOxygen.html" title="StructureDefinition/BedWithOxygen">BedWithOxygen</a>
-               </td>
-               <td>
-<p>Indicator if a bed has oxygen or not.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-BirthPlace.html" title="StructureDefinition/BirthPlace">Birth Place</a>
-               </td>
-               <td>
-<p>Geographical location of birth of the patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-BonusAmountKlinic.html" title="StructureDefinition/BonusAmountKlinic">Bonus Amount</a>
-               </td>
-               <td>
-<p>Amount of the bonus that legalizes the payment of the patient’s account, totally or partially.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-CancelationDateTime.html" title="StructureDefinition/CancelationDateTime">Fecha/Hora cancelacion cita</a>
-               </td>
-               <td>
-<p>Cate and time of cancellation of the appointment.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-CancelationSanction.html" title="StructureDefinition/CancelationSanction">Sancion cancelacion cita</a>
-               </td>
-               <td>
-<p>Penalty for cancellation of appointment.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-Census.html" title="StructureDefinition/Census">Census</a>
-               </td>
-               <td>
-<p>Census bed indicator.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ChargeBed.html" title="StructureDefinition/ChargeBed">ChargeBed</a>
-               </td>
-               <td>
-<p>Indicator if a bed was charged or not.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ClinicalDischargeType.html" title="StructureDefinition/ClinicalDischargeType">Clinical discharge type</a>
-               </td>
-               <td>
-<p>Types of clinical discharge of the patient, at the hospitalization and emergency level.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ConsultationsAmountKlinic.html" title="StructureDefinition/ConsultationsAmountKlinic">Consultations Amount</a>
-               </td>
-               <td>
-<p>Amount of consultations or health benefits, made to the patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-CopaymentAmountKlinic.html" title="StructureDefinition/CopaymentAmountKlinic">Copayment Amount</a>
-               </td>
-               <td>
-<p>Amount of the copayment to be paid by the patient or their person in charge, if a value is pending after paying off their account against the value of the bond from their insurer.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-CulturalGroup.html" title="StructureDefinition/CulturalGroup">Cultural group</a>
-               </td>
-               <td>
-<p>Cultural group to which the patient belongs.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-Disability.html" title="StructureDefinition/Disability">Discapacidad del paciente</a>
-               </td>
-               <td>
-<p>Disability of the patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-EducationalLevelChile.html" title="StructureDefinition/EducationalLevelChile">Education level</a>
-               </td>
-               <td>
-<p>Patient education level.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-EmployerOrganization.html" title="StructureDefinition/EmployerOrganization">Enterprise Patient</a>
-               </td>
-               <td>
-<p>Company where the patient works.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-FathersFamily.html" title="StructureDefinition/FathersFamily">Patient's first surname</a>
-               </td>
-               <td>
-<p>Patient’s first surname.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-GenderIdentity.html" title="StructureDefinition/GenderIdentity">Gender patient</a>
-               </td>
-               <td>
-<p>Gender with which the patient identifies.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-HoursOfOperation.html" title="StructureDefinition/HoursOfOperation">HoursOfOperation</a>
-               </td>
-               <td>
-<p>Hours of attention of the schedule.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-IdExpeditionPlace.html" title="StructureDefinition/IdExpeditionPlace">Place of issuance of patient identification</a>
-               </td>
-               <td>
-<p>Place of issuance of patient identification.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-MedicalFeesKlinic.html" title="StructureDefinition/MedicalFeesKlinic">Medical Fees</a>
-               </td>
-               <td>
-<p>Medical fees that are charged to the patient’s account, once the corresponding medical consultations have been made.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-MedicationAmount.html" title="StructureDefinition/MedicationAmount">Medication Amount</a>
-               </td>
-               <td>
-<p>Amount of medication given to the patient and charged to his account.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-MothersFamily.html" title="StructureDefinition/MothersFamily">Second surname patient</a>
-               </td>
-               <td>
-<p>Second surname of the patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-MultipleOccupation.html" title="StructureDefinition/MultipleOccupation">MultipleOccupation</a>
-               </td>
-               <td>
-<p>Describes whether a location admits multiple patients or professionals.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-Nationality.html" title="StructureDefinition/Nationality">Nationality patient</a>
-               </td>
-               <td>
-<p>Nationality of the patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-NewBorn.html" title="StructureDefinition/NewBorn">Newborn</a>
-               </td>
-               <td>
-<p>Extension that allows registering whether or not the patient is a newborn.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-Ocupation.html" title="StructureDefinition/Ocupation">Patient occupation</a>
-               </td>
-               <td>
-<p>Patient occupation.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-OrganizationName.html" title="StructureDefinition/OrganizationName">Patient company</a>
-               </td>
-               <td>
-<p>Patient company.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-OrganizationTelecom.html" title="StructureDefinition/OrganizationTelecom">Telephone company patient</a>
-               </td>
-               <td>
-<p>Telephone contact company of the patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PatientEthnicity.html" title="StructureDefinition/PatientEthnicity">Ethnic group patient</a>
-               </td>
-               <td>
-<p>Ethnic group of the patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PatientPopulationGroup.html" title="StructureDefinition/PatientPopulationGroup">Population group patient</a>
-               </td>
-               <td>
-<p>Population group to which the patient belongs.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PersonId.html" title="StructureDefinition/PersonId">Patient identification</a>
-               </td>
-               <td>
-<p>Patient identification.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-QuotaPatient.html" title="StructureDefinition/QuotaPatient">Quota Patient</a>
-               </td>
-               <td>
-<p>Number of patients admitted in the agenda.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-RateModality.html" title="StructureDefinition/RateModality">Rate modality</a>
-               </td>
-               <td>
-<p>Rate mode on the services provided to the patient, according to their stay in the facilities where health services are provided.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-RegionalLocationIdentifier.html" title="StructureDefinition/RegionalLocationIdentifier">Regional location identifier</a>
-               </td>
-               <td>
-<p>Identification of the regional location of residence of the patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-Religion.html" title="StructureDefinition/Religion">Religion</a>
-               </td>
-               <td>
-<p>Religion patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ServicePartOf.html" title="StructureDefinition/ServicePartOf">Subservices</a>
-               </td>
-               <td>
-<p>Subservices on health services.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-SuppliesAmountKlinic.html" title="StructureDefinition/SuppliesAmountKlinic">Supplies Amount</a>
-               </td>
-               <td>
-<p>Amount of supplies charged to the patient’s account, according to the medical benefits performed.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-VirtualBed.html" title="StructureDefinition/VirtualBed">VirtualBed</a>
-               </td>
-               <td>
-<p>Indicator if a bed is virtual or not.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="3"> </a>
-   <h3>Terminology: Code Systems </h3>
-   <p>
-    <p>These define new code systems used by systems conforming to this implementation guide</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-CoveragesTypeCl.html" title="CodeSystem/CoveragesTypeCl">CoveragesTypeCl</a>
-               </td>
-               <td>
-<p>This is a coding system that contains the types of health coverage applicable to the Chilean jurisdiction.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-EducationalLevelChile.html" title="CodeSystem/EducationalLevelChile">Nivel Educativo Chile</a>
-               </td>
-               <td>
-                  This is a coding system that contains the differents educational level applicable to the Chilean jurisdiction.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-ISAPRES.html" title="CodeSystem/ISAPRES">ISAPRES</a>
-               </td>
-               <td>
-<p>This is a coding system that contains the insurance organizations classified in ISAPRES..</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-RatesModalityINDISA.html" title="CodeSystem/RatesModalityINDISA">RatesModalityINDISA</a>
-               </td>
-               <td>
-<p>This is a coding system that contains the rate modality codes for the interoperability scenario of INDISA (Chile).</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-TramosFONASA.html" title="CodeSystem/TramosFONASA">TramosFONASA</a>
-               </td>
-               <td>
-<p>This is a coding system that contains the the sections (tramos) of FONASA.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="4"> </a>
-   <h3>Example: Example Instances </h3>
-   <p>
-    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
-</p>
-   <p>
-      <table class="grid">
-         <colgroup><col style="width:20%">
-         </colgroup><tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-Bundle-Example-Bundle-Document-0ddcb465.html" title="Bundle/Bundle-Example-Bundle-Document-0ddcb465">Bundle-Example-Bundle-Document-0ddcb465</a>
-               </td>
-               <td>
+                                       <p>Many of these devices are partially or completely absorbed.</p>
+
+                                       <p>Such as: pacemaker, extends, catheter, IUD, and surgical instruments.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileLocationAreaKlinic.html" title="StructureDefinition/ProfileLocationAreaKlinic">Location Area</a>
+                                    </td>
+                                    <td>
+                                       <p>Physical location of each of the clinical and administrative areas within a building: Floor, Area, Wing, Waiting room, intensive care unit, among others.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileLocationBedKlinic.html" title="StructureDefinition/ProfileLocationBedKlinic">Location Bed</a>
+                                    </td>
+                                    <td>
+                                       <p>Physical location of each of the clinical areas within a building:  Bed.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileLocationBuildingKlinic.html" title="StructureDefinition/ProfileLocationBuildingKlinic">Location Building</a>
+                                    </td>
+                                    <td>
+                                       <p>Physical location of each of the clinical and administrative areas within a building:  Building, Wing of building, Tower, etc.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileLocationFunctionalUnitKlinic.html" title="StructureDefinition/ProfileLocationFunctionalUnitKlinic">Location Functional Unit</a>
+                                    </td>
+                                    <td>
+                                       <p>Physical location of each of the clinical and administrative areas within a building:  Functional Unit.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileLocationRoomKlinic.html" title="StructureDefinition/ProfileLocationRoomKlinic">Location Room</a>
+                                    </td>
+                                    <td>
+                                       <p>Physical location of each of the clinical and administrative areas within a building:  Room, Consulting room, etc.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileMedicationAdministrationKlinic.html" title="StructureDefinition/ProfileMedicationAdministrationKlinic">Medication Administration</a>
+                                    </td>
+                                    <td>
+                                       <p>Describes the event of a patient consuming or otherwise being administered a medication.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileMedicationDispenseKlinic.html" title="StructureDefinition/ProfileMedicationDispenseKlinic">Medication dispense</a>
+                                    </td>
+                                    <td>
+                                       <p>Indicates that a medication product is to be or has been dispensed for a named person/patient. This includes a description of the medication product (supply) provided and the instructions for administering the medication. The medication dispense is the result of a pharmacy system responding to a medication order.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileMedicationKlinic.html" title="StructureDefinition/ProfileMedicationKlinic">Medication</a>
+                                    </td>
+                                    <td>
+                                       <p>Identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileMedicationRequestKlinic.html" title="StructureDefinition/ProfileMedicationRequestKlinic">Medication Request</a>
+                                    </td>
+                                    <td>
+                                       <p>An order or request for both supply of the medication and the instructions for administration of the medication to a patient.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileMessageHeaderKlinic.html" title="StructureDefinition/ProfileMessageHeaderKlinic">Message header</a>
+                                    </td>
+                                    <td>
+                                       <p>Message header in the messaging exchange.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileObservationLabKlinic.html" title="StructureDefinition/ProfileObservationLabKlinic">Observation</a>
+                                    </td>
+                                    <td>
+                                       <p>Simple measurements and statements made about a patient. (Vital signs, laboratory results, imaging results, clinical findings, measurements made with medical devices, etc).</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileOrganizationHealthcareProviderKlinic.html" title="StructureDefinition/ProfileOrganizationHealthcareProviderKlinic">Organization Healthcare Provider</a>
+                                    </td>
+                                    <td>
+                                       <p>Organization Healthcare Provider.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfilePatientKlinic.html" title="StructureDefinition/ProfilePatientKlinic">Patient</a>
+                                    </td>
+                                    <td>
+                                       <p>Data of patient.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfilePractitionerKlinic.html" title="StructureDefinition/ProfilePractitionerKlinic">Practitioner</a>
+                                    </td>
+                                    <td>
+                                       <p>Practitioner of healht.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfilePractitionerRole.html" title="StructureDefinition/ProfilePractitionerRole">Practitioner Role</a>
+                                    </td>
+                                    <td>
+                                       <p>Role of practitioner.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileProcedureKlinic.html" title="StructureDefinition/ProfileProcedureKlinic">Procedure</a>
+                                    </td>
+                                    <td>
+                                       <p>Medical procedures in health.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileQuestionnaireResponseSurveyKlinic.html" title="StructureDefinition/ProfileQuestionnaireResponseSurveyKlinic">Questionnaire response</a>
+                                    </td>
+                                    <td>
+                                       <p>Questionnaire responses</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileQuestionnaireSurveyKlinic.html" title="StructureDefinition/ProfileQuestionnaireSurveyKlinic">Questionnaire</a>
+                                    </td>
+                                    <td>
+                                       <p>Questionnaire of Survey</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileScheduleKlinic.html" title="StructureDefinition/ProfileScheduleKlinic">Schedule patient</a>
+                                    </td>
+                                    <td>
+                                       <p>Schedule patient.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileServiceRequestKlinic.html" title="StructureDefinition/ProfileServiceRequestKlinic">Service Request</a>
+                                    </td>
+                                    <td>
+                                       <p>Medical order for health services.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileSlotKlinic.html" title="StructureDefinition/ProfileSlotKlinic">Slot</a>
+                                    </td>
+                                    <td>
+                                       <p>Agenda spaces available for appointment assignments.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ProfileSpecimenKlinic.html" title="StructureDefinition/ProfileSpecimenKlinic">Specimen</a>
+                                    </td>
+                                    <td>
+                                       <p>A sample to be used for analysis.</p>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </p>
+                        <a name="2"></a>
+                        <h3>Structures: Extension Definitions </h3>
+                        <p>
+                           <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+                        </p>
+                        <p>
+                           <table class="grid">
+                              <col style="width:20%"/>
+                              <tbody>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-AccountAmountKlinic.html" title="StructureDefinition/AccountAmountKlinic">Account Amount</a>
+                                    </td>
+                                    <td>
+                                       <p>Amount of the account, which totals the services provided to the patient,</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-AvailableTelemedicine.html" title="StructureDefinition/AvailableTelemedicine">Admit telemedicine</a>
+                                    </td>
+                                    <td>
+                                       <p>Active agenda for telemedicine care.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-BedWithOxygen.html" title="StructureDefinition/BedWithOxygen">BedWithOxygen</a>
+                                    </td>
+                                    <td>
+                                       <p>Indicator if a bed has oxygen or not</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-BirthPlace.html" title="StructureDefinition/BirthPlace">Birth Place</a>
+                                    </td>
+                                    <td>
+                                       <p>Geographical location of birth of the patient.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-BonusAmountKlinic.html" title="StructureDefinition/BonusAmountKlinic">Bonus Amount</a>
+                                    </td>
+                                    <td>
+                                       <p>Amount of the bonus that legalizes the payment of the patient’s account, totally or partially.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-CancelationDateTime.html" title="StructureDefinition/CancelationDateTime">Fecha/Hora cancelacion cita</a>
+                                    </td>
+                                    <td>
+                                       <p>Cate and time of cancellation of the appointment.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-CancelationSanction.html" title="StructureDefinition/CancelationSanction">Sancion cancelacion cita</a>
+                                    </td>
+                                    <td>
+                                       <p>Penalty for cancellation of appointment.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-Census.html" title="StructureDefinition/Census">Census</a>
+                                    </td>
+                                    <td>
+                                       <p>Census bed indicator</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ChargeBed.html" title="StructureDefinition/ChargeBed">ChargeBed</a>
+                                    </td>
+                                    <td>
+                                       <p>Indicator if a bed was charged or not</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ClinicalDischargeType.html" title="StructureDefinition/ClinicalDischargeType">Clinical discharge type</a>
+                                    </td>
+                                    <td>
+                                       <p>Types of clinical discharge of the patient, at the hospitalization and emergency level.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ConsultationsAmountKlinic.html" title="StructureDefinition/ConsultationsAmountKlinic">Consultations Amount</a>
+                                    </td>
+                                    <td>
+                                       <p>Amount of consultations or health benefits, made to the patient.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-CopaymentAmountKlinic.html" title="StructureDefinition/CopaymentAmountKlinic">Copayment Amount</a>
+                                    </td>
+                                    <td>
+                                       <p>Amount of the copayment to be paid by the patient or their person in charge, if a value is pending after paying off their account against the value of the bond from their insurer.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-CulturalGroup.html" title="StructureDefinition/CulturalGroup">Cultural group</a>
+                                    </td>
+                                    <td>
+                                       <p>Cultural group to which the patient belongs.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-Disability.html" title="StructureDefinition/Disability">Discapacidad del paciente</a>
+                                    </td>
+                                    <td>
+                                       <p>Disability of the patient.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-EducationalLevelChile.html" title="StructureDefinition/EducationalLevelChile">Education level</a>
+                                    </td>
+                                    <td>
+                                       <p>Patient education level.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-EmployerOrganization.html" title="StructureDefinition/EmployerOrganization">Enterprise Patient</a>
+                                    </td>
+                                    <td>
+                                       <p>Company where the patient works.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-FathersFamily.html" title="StructureDefinition/FathersFamily">Patient's first surname</a>
+                                    </td>
+                                    <td>
+                                       <p>Patient’s first surname.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-GenderIdentity.html" title="StructureDefinition/GenderIdentity">Gender patient</a>
+                                    </td>
+                                    <td>
+                                       <p>Gender with which the patient identifies.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-HoursOfOperation.html" title="StructureDefinition/HoursOfOperation">HoursOfOperation</a>
+                                    </td>
+                                    <td>
+                                       <p>Hours of attention of the schedule.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-IdExpeditionPlace.html" title="StructureDefinition/IdExpeditionPlace">Place of issuance of patient identification</a>
+                                    </td>
+                                    <td>
+                                       <p>Place of issuance of patient identification.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-MedicalFeesKlinic.html" title="StructureDefinition/MedicalFeesKlinic">Medical Fees</a>
+                                    </td>
+                                    <td>
+                                       <p>Medical fees that are charged to the patient’s account, once the corresponding medical consultations have been made.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-MedicationAmount.html" title="StructureDefinition/MedicationAmount">Medication Amount</a>
+                                    </td>
+                                    <td>
+                                       <p>Amount of medication given to the patient and charged to his account.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-MothersFamily.html" title="StructureDefinition/MothersFamily">Second surname patient</a>
+                                    </td>
+                                    <td>
+                                       <p>Second surname of the patient.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-MultipleOccupation.html" title="StructureDefinition/MultipleOccupation">MultipleOccupation</a>
+                                    </td>
+                                    <td>
+                                       <p>Describes whether a location admits multiple patients or professionals</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-Nationality.html" title="StructureDefinition/Nationality">Nationality patient</a>
+                                    </td>
+                                    <td>
+                                       <p>Nationality of the patient.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-NewBorn.html" title="StructureDefinition/NewBorn">Newborn</a>
+                                    </td>
+                                    <td>
+                                       <p>Extension that allows registering whether or not the patient is a newborn.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-Ocupation.html" title="StructureDefinition/Ocupation">Patient occupation</a>
+                                    </td>
+                                    <td>
+                                       <p>Patient occupation.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-OrganizationName.html" title="StructureDefinition/OrganizationName">Patient company</a>
+                                    </td>
+                                    <td>
+                                       <p>Patient company.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-OrganizationTelecom.html" title="StructureDefinition/OrganizationTelecom">Telephone company patient</a>
+                                    </td>
+                                    <td>
+                                       <p>Telephone contact company of the patient.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-PatientEthnicity.html" title="StructureDefinition/PatientEthnicity">Ethnic group patient</a>
+                                    </td>
+                                    <td>
+                                       <p>Ethnic group of the patient.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-PatientPopulationGroup.html" title="StructureDefinition/PatientPopulationGroup">Population group patient</a>
+                                    </td>
+                                    <td>
+                                       <p>Population group to which the patient belongs.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-PersonId.html" title="StructureDefinition/PersonId">Patient identification</a>
+                                    </td>
+                                    <td>
+                                       <p>Patient identification.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-QuotaPatient.html" title="StructureDefinition/QuotaPatient">Quota Patient</a>
+                                    </td>
+                                    <td>
+                                       <p>Number of patients admitted in the agenda.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-RateModality.html" title="StructureDefinition/RateModality">Rate modality</a>
+                                    </td>
+                                    <td>
+                                       <p>Rate mode on the services provided to the patient, according to their stay in the facilities where health services are provided.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-RegionalLocationIdentifier.html" title="StructureDefinition/RegionalLocationIdentifier">Regional location identifier</a>
+                                    </td>
+                                    <td>
+                                       <p>Identification of the regional location of residence of the patient.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-Religion.html" title="StructureDefinition/Religion">Religion</a>
+                                    </td>
+                                    <td>
+                                       <p>Religion patient.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-ServicePartOf.html" title="StructureDefinition/ServicePartOf">Subservices</a>
+                                    </td>
+                                    <td>
+                                       <p>Subservices on health services.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-SuppliesAmountKlinic.html" title="StructureDefinition/SuppliesAmountKlinic">Supplies Amount</a>
+                                    </td>
+                                    <td>
+                                       <p>Amount of supplies charged to the patient’s account, according to the medical benefits performed.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="StructureDefinition-VirtualBed.html" title="StructureDefinition/VirtualBed">VirtualBed</a>
+                                    </td>
+                                    <td>
+                                       <p>Indicator if a bed is virtual or not.</p>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </p>
+                        <a name="3"></a>
+                        <h3>Terminology: Code Systems </h3>
+                        <p>
+                           <p>These define new code systems used by systems conforming to this implementation guide</p>
+                        </p>
+                        <p>
+                           <table class="grid">
+                              <col style="width:20%"/>
+                              <tbody>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="CodeSystem-CoveragesTypeCl.html" title="CodeSystem/CoveragesTypeCl">CoveragesTypeCl</a>
+                                    </td>
+                                    <td>
+                                       <p>This is a coding system that contains the types of health coverage applicable to the Chilean jurisdiction.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="CodeSystem-EducationalLevelChile.html" title="CodeSystem/EducationalLevelChile">Nivel Educativo Chile</a>
+                                    </td>
+                                    <td>
+                                       This is a coding system that contains the differents educational level applicable to the Chilean jurisdiction.
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="CodeSystem-ISAPRES.html" title="CodeSystem/ISAPRES">ISAPRES</a>
+                                    </td>
+                                    <td>
+                                       <p>This is a coding system that contains the insurance organizations classified in ISAPRES..</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="CodeSystem-RatesModalityINDISA.html" title="CodeSystem/RatesModalityINDISA">RatesModalityINDISA</a>
+                                    </td>
+                                    <td>
+                                       <p>This is a coding system that contains the rate modality codes for the interoperability scenario of INDISA (Chile).</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="column-width:30%">
+                                       <a href="CodeSystem-TramosFONASA.html" title="CodeSystem/TramosFONASA">TramosFONASA</a>
+                                    </td>
+                                    <td>
+                                       <p>This is a coding system that contains the the sections (tramos) of FONASA.</p>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </p>
+                        <a name="4"></a>
+                        <h3>Example: Example Instances </h3>
+                        <p>
+                           <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+                        </p>
+                        <p>
+                           <table class="grid">
+                              <colgroup>
+                                 <col style="width:20%">
+                                 </colgroup>
+                                 <tbody>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Bundle-Bundle-Example-Bundle-Document-0ddcb465.html" title="Bundle/Bundle-Example-Bundle-Document-0ddcb465">Bundle-Example-Bundle-Document-0ddcb465</a>
+                                       </td>
+                                       <td>
    Package that reports the result of an examination regarding diagnostic imaging of a patient.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Device-Device-Example-Device-43g37a87.html" title="Device/Device-Example-Device-43g37a87">Device-Example-Device-43g37a87</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Device-Device-Example-Device-43g37a87.html" title="Device/Device-Example-Device-43g37a87">Device-Example-Device-43g37a87</a>
+                                       </td>
+                                       <td>
    Electronic biomedical equipment.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Account-Example-Account-6f674e96.html" title="Account/Example-Account-6f674e96">Example-Account-6f674e96</a>
-               </td>
-               <td>
-<p>Account referring to patient care in the outpatient setting.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Appointment-Example-Appointment-05c86b7b-4fad.html" title="Appointment/Example-Appointment-05c86b7b-4fad">Example-Appointment-05c86b7b-4fad</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Account-Example-Account-6f674e96.html" title="Account/Example-Account-6f674e96">Example-Account-6f674e96</a>
+                                       </td>
+                                       <td>
+                                          <p>Account referring to patient care in the outpatient setting.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Appointment-Example-Appointment-05c86b7b-4fad.html" title="Appointment/Example-Appointment-05c86b7b-4fad">Example-Appointment-05c86b7b-4fad</a>
+                                       </td>
+                                       <td>
                   Medical appointment with a specialist doctor in canceled state in an outpatient setting.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Appointment-Example-Appointment-05c86b7b-5drg.html" title="Appointment/Example-Appointment-05c86b7b-5drg">Example-Appointment-05c86b7b-5drg</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Appointment-Example-Appointment-05c86b7b-5drg.html" title="Appointment/Example-Appointment-05c86b7b-5drg">Example-Appointment-05c86b7b-5drg</a>
+                                       </td>
+                                       <td>
                   Medical appointment with a specialist doctor in fullfilled state for outpatient setting.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="AppointmentResponse-Example-AppointmentResponse-05c86b7b.html" title="AppointmentResponse/Example-AppointmentResponse-05c86b7b">Example-AppointmentResponse-05c86b7b</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="AppointmentResponse-Example-AppointmentResponse-05c86b7b.html" title="AppointmentResponse/Example-AppointmentResponse-05c86b7b">Example-AppointmentResponse-05c86b7b</a>
+                                       </td>
+                                       <td>
                   Response that informs the reason why a medical appointment was canceled.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Binary-Example-Binary-111213bi.html" title="Binary/Example-Binary-111213bi">Example-Binary-111213bi</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Binary-Example-Binary-111213bi.html" title="Binary/Example-Binary-111213bi">Example-Binary-111213bi</a>
+                                       </td>
+                                       <td>
                   Binary reference of a document attached to the laboratory result.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Condition-Example-Condition-Imaging-414243ci.html" title="Condition/Example-Condition-Imaging-414243ci">Example-Condition-Imaging-414243ci</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Condition-Example-Condition-Imaging-414243ci.html" title="Condition/Example-Condition-Imaging-414243ci">Example-Condition-Imaging-414243ci</a>
+                                       </td>
+                                       <td>
                   Diagnostic condition of a patient who supports the performance of a diagnostic imaging exam.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Coverage-Example-Coverage-fa7a571e.html" title="Coverage/Example-Coverage-fa7a571e">Example-Coverage-fa7a571e</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Coverage-Example-Coverage-fa7a571e.html" title="Coverage/Example-Coverage-fa7a571e">Example-Coverage-fa7a571e</a>
+                                       </td>
+                                       <td>
                   Coverage for a patient from an ISAPRE-type insurer.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Coverage-Example-Coverage-fa7a589f.html" title="Coverage/Example-Coverage-fa7a589f">Example-Coverage-fa7a589f</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Coverage-Example-Coverage-fa7a589f.html" title="Coverage/Example-Coverage-fa7a589f">Example-Coverage-fa7a589f</a>
+                                       </td>
+                                       <td>
                   Coverage for a patient from an FONASA insurer.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Device-Example-Device-757677dv.html" title="Device/Example-Device-757677dv">Example-Device-757677dv</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Device-Example-Device-757677dv.html" title="Device/Example-Device-757677dv">Example-Device-757677dv</a>
+                                       </td>
+                                       <td>
                   Implantable electronic biomedical device.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Device-Example-Device-898989dv.html" title="Device/Example-Device-898989dv">Example-Device-898989dv</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Device-Example-Device-898989dv.html" title="Device/Example-Device-898989dv">Example-Device-898989dv</a>
+                                       </td>
+                                       <td>
                   Non-electronic implantable device.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="DiagnosticReport-Example-DiagnosticReport-Antibiogram-3894.html" title="DiagnosticReport/Example-DiagnosticReport-Antibiogram-3894">Example-DiagnosticReport-Antibiogram-3894</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                           <a href="Device-Example-Device-ArterialPressureMonitor-VC150.html" title="Device/Example-Device-ArterialPressureMonitor-VC150">Example-Device-ArterialPressureMonitor-VC150</a>
+                                       </td>
+                                       <td>
+                                           <p>Example of a biomedical blood pressure monitoring device.</p>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td style="column-width:30%">
+                                           <a href="Device-Example-Device-PulseOximetryMonitor-sO2.html" title="Device/Example-Device-PulseOximetryMonitor-sO2">Example-Device-PulseOximetryMonitor-sO2</a>
+                                       </td>
+                                       <td>
+                                           <p>Example of a biomedical pulse oximetry device.</p>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td style="column-width:30%">
+                                           <a href="Device-Example-Device-VitalSignsMonitor-B125GE.html" title="Device/Example-Device-VitalSignsMonitor-B125GE">Example-Device-VitalSignsMonitor-B125GE</a>
+                                       </td>
+                                       <td>
+                                           <p>Example of a biomedical vital signs monitoring device.</p>
+                                       </td>
+                                   </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="DiagnosticReport-Example-DiagnosticReport-Antibiogram-3894.html" title="DiagnosticReport/Example-DiagnosticReport-Antibiogram-3894">Example-DiagnosticReport-Antibiogram-3894</a>
+                                       </td>
+                                       <td>
                   Diagnostic report of a clinical laboratory test (Antibiogram), which includes a report of resistance to different antibiotics.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="DiagnosticReport-Example-DiagnosticReport-Imaging-u584i.html" title="DiagnosticReport/Example-DiagnosticReport-Imaging-u584i">Example-DiagnosticReport-Imaging-u584i</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="DiagnosticReport-Example-DiagnosticReport-Imaging-u584i.html" title="DiagnosticReport/Example-DiagnosticReport-Imaging-u584i">Example-DiagnosticReport-Imaging-u584i</a>
+                                       </td>
+                                       <td>
                   Diagnostic report of a diagnostic imaging exam.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="DiagnosticReport-Example-DiagnosticReport-Laboratory-265653656yf.html" title="DiagnosticReport/Example-DiagnosticReport-Laboratory-265653656yf">Example-DiagnosticReport-Laboratory-265653656yf</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="DiagnosticReport-Example-DiagnosticReport-Laboratory-265653656yf.html" title="DiagnosticReport/Example-DiagnosticReport-Laboratory-265653656yf">Example-DiagnosticReport-Laboratory-265653656yf</a>
+                                       </td>
+                                       <td>
                   Diagnostic report of a clinical laboratory test (Hemogram) that refers to a specimen.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="DiagnosticReport-Example-DiagnosticReport-Laboratory-6543g8au.html" title="DiagnosticReport/Example-DiagnosticReport-Laboratory-6543g8au">Example-DiagnosticReport-Laboratory-6543g8au</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="DiagnosticReport-Example-DiagnosticReport-Laboratory-6543g8au.html" title="DiagnosticReport/Example-DiagnosticReport-Laboratory-6543g8au">Example-DiagnosticReport-Laboratory-6543g8au</a>
+                                       </td>
+                                       <td>
                   Diagnostic report of a clinical laboratory test (glycated hemoglobin) that refers to the interpretation of the test as a document attached to the result.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="DiagnosticReport-Example-DiagnosticReport-Laboratory-782823899957f.html" title="DiagnosticReport/Example-DiagnosticReport-Laboratory-782823899957f">Example-DiagnosticReport-Laboratory-782823899957f</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="DiagnosticReport-Example-DiagnosticReport-Laboratory-782823899957f.html" title="DiagnosticReport/Example-DiagnosticReport-Laboratory-782823899957f">Example-DiagnosticReport-Laboratory-782823899957f</a>
+                                       </td>
+                                       <td>
                   Diagnostic report of a clinical laboratory test (Antibody measurement) for blood bank.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-Example-Document-99294f378fec.html" title="Composition/Example-Document-99294f378fec">Example-Document-99294f378fec</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Composition-Example-Document-99294f378fec.html" title="Composition/Example-Document-99294f378fec">Example-Document-99294f378fec</a>
+                                       </td>
+                                       <td>
                   Embedded electronic document.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-Example-Document-c1b9fc94f1af.html" title="Composition/Example-Document-c1b9fc94f1af">Example-Document-c1b9fc94f1af</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Composition-Example-Document-c1b9fc94f1af.html" title="Composition/Example-Document-c1b9fc94f1af">Example-Document-c1b9fc94f1af</a>
+                                       </td>
+                                       <td>
                   Electronic document referring to nursing evolution notes.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-Example-Document-imagingreport-y787434ir.html" title="Composition/Example-Document-imagingreport-y787434ir">Example-Document-imagingreport-y787434ir</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Composition-Example-Document-imagingreport-y787434ir.html" title="Composition/Example-Document-imagingreport-y787434ir">Example-Document-imagingreport-y787434ir</a>
+                                       </td>
+                                       <td>
                   Electronic document referring to the diagnostic imaging report - image report.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Encounter-Example-Encounter-963b1515.html" title="Encounter/Example-Encounter-963b1515">Example-Encounter-963b1515</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Encounter-Example-Encounter-963b1515.html" title="Encounter/Example-Encounter-963b1515">Example-Encounter-963b1515</a>
+                                       </td>
+                                       <td>
                   Encounter Health in an outpatient setting.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Encounter-Example-Encounter-963y1945.html" title="Encounter/Example-Encounter-963y1945">Example-Encounter-963y1945</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Encounter-Example-Encounter-963y1945.html" title="Encounter/Example-Encounter-963y1945">Example-Encounter-963y1945</a>
+                                       </td>
+                                       <td>
                   Encounter health in an inpatient setting.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Endpoint-Example-EndPoint-PACServer-676767endp.html" title="Endpoint/Example-EndPoint-PACServer-676767endp">Example-EndPoint-PACServer-676767endp</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Endpoint-Example-EndPoint-PACServer-676767endp.html" title="Endpoint/Example-EndPoint-PACServer-676767endp">Example-EndPoint-PACServer-676767endp</a>
+                                       </td>
+                                       <td>
                   DICOM STOW-RS type connection to a patient's clavicle fracture X-ray imaging device.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="HealthcareService-Example-HealthcareService-20ede331.html" title="HealthcareService/Example-HealthcareService-20ede331">Example-HealthcareService-20ede331</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="HealthcareService-Example-HealthcareService-20ede331.html" title="HealthcareService/Example-HealthcareService-20ede331">Example-HealthcareService-20ede331</a>
+                                       </td>
+                                       <td>
                   Gynecology and obstetrics service in an outpatient setting.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ImagingStudy-Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323.html" title="ImagingStudy/Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323">Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323</a>
-               </td>
-               <td>
-<p>Image and study of a patient's clavicle fracture X-ray.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Location-Example-LocationArea-789789789789.html" title="Location/Example-LocationArea-789789789789">Example-LocationArea-789789789789</a>
-               </td>
-               <td>
-<p>Physical area within a medical institution that provides health services.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Location-Example-LocationBed-7819819819bn915.html" title="Location/Example-LocationBed-7819819819bn915">Example-LocationBed-7819819819bn915</a>
-               </td>
-               <td>
-<p>Physical location of beds within an area in an institution providing health services.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Location-Example-LocationBuilding-7412389635sdf556.html" title="Location/Example-LocationBuilding-7412389635sdf556">Example-LocationBuilding-7412389635sdf556</a>
-               </td>
-               <td>
-<p>Physical location of the different addresses in which the health service provider is divided and identified.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Location-Example-LocationFuncionalUnit-16558949sf878498.html" title="Location/Example-LocationFuncionalUnit-16558949sf878498">Example-LocationFuncionalUnit-16558949sf878498</a>
-               </td>
-               <td>
-<p>Physical location of the functional units into which an area is divided in an institution that provides health services; example: emergency pharmacy.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Location-Example-LocationLaboratory-51654689466d55.html" title="Location/Example-LocationLaboratory-51654689466d55">Example-LocationLaboratory-51654689466d55</a>
-               </td>
-               <td>
-<p>Physical location of the different laboratories included in a health service provider institution; example: Blood component laboratory.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Location-Example-LocationLocalUnit-789789789789.html" title="Location/Example-LocationLocalUnit-789789789789">Example-LocationLocalUnit-789789789789</a>
-               </td>
-               <td>
-<p>Physical location of the different operating rooms or surgery and observation rooms, included in an institution that provides health services.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Location-Example-LocationRoom-1245687952.html" title="Location/Example-LocationRoom-1245687952">Example-LocationRoom-1245687952</a>
-               </td>
-               <td>
-<p>Physical location of the different offices and rooms, included in an institution that provides health services.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Media-Example-Media-3253255523yf.html" title="Media/Example-Media-3253255523yf">Example-Media-3253255523yf</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="ImagingStudy-Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323.html" title="ImagingStudy/Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323">Example-ImagingStudy-1.2.840.10008.86767.4545.87878.323</a>
+                                       </td>
+                                       <td>
+                                          <p>Image and study of a patient's clavicle fracture X-ray.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Location-Example-LocationArea-789789789789.html" title="Location/Example-LocationArea-789789789789">Example-LocationArea-789789789789</a>
+                                       </td>
+                                       <td>
+                                          <p>Physical area within a medical institution that provides health services.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Location-Example-LocationBed-7819819819bn915.html" title="Location/Example-LocationBed-7819819819bn915">Example-LocationBed-7819819819bn915</a>
+                                       </td>
+                                       <td>
+                                          <p>Physical location of beds within an area in an institution providing health services.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Location-Example-LocationBuilding-7412389635sdf556.html" title="Location/Example-LocationBuilding-7412389635sdf556">Example-LocationBuilding-7412389635sdf556</a>
+                                       </td>
+                                       <td>
+                                          <p>Physical location of the different addresses in which the health service provider is divided and identified.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Location-Example-LocationFuncionalUnit-16558949sf878498.html" title="Location/Example-LocationFuncionalUnit-16558949sf878498">Example-LocationFuncionalUnit-16558949sf878498</a>
+                                       </td>
+                                       <td>
+                                          <p>Physical location of the functional units into which an area is divided in an institution that provides health services; example: emergency pharmacy.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Location-Example-LocationLaboratory-51654689466d55.html" title="Location/Example-LocationLaboratory-51654689466d55">Example-LocationLaboratory-51654689466d55</a>
+                                       </td>
+                                       <td>
+                                          <p>Physical location of the different laboratories included in a health service provider institution; example: Blood component laboratory.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Location-Example-LocationLocalUnit-789789789789.html" title="Location/Example-LocationLocalUnit-789789789789">Example-LocationLocalUnit-789789789789</a>
+                                       </td>
+                                       <td>
+                                          <p>Physical location of the different operating rooms or surgery and observation rooms, included in an institution that provides health services.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Location-Example-LocationRoom-1245687952.html" title="Location/Example-LocationRoom-1245687952">Example-LocationRoom-1245687952</a>
+                                       </td>
+                                       <td>
+                                          <p>Physical location of the different offices and rooms, included in an institution that provides health services.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Media-Example-Media-3253255523yf.html" title="Media/Example-Media-3253255523yf">Example-Media-3253255523yf</a>
+                                       </td>
+                                       <td>
                   Reference to X-ray image file.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Medication-Example-Medication-12345mdiny.html" title="Medication/Example-Medication-12345mdiny">Example-Medication-12345mdiny</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Medication-Example-Medication-12345mdiny.html" title="Medication/Example-Medication-12345mdiny">Example-Medication-12345mdiny</a>
+                                       </td>
+                                       <td>
                   Medicament for administration for inpatient setting.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Medication-Example-Medication-986756md.html" title="Medication/Example-Medication-986756md">Example-Medication-986756md</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Medication-Example-Medication-986756md.html" title="Medication/Example-Medication-986756md">Example-Medication-986756md</a>
+                                       </td>
+                                       <td>
                   Medicament for administration for outpatient setting.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MedicationAdministration-Example-MedicationAdministration-123456mdadm.html" title="MedicationAdministration/Example-MedicationAdministration-123456mdadm">Example-MedicationAdministration-123456mdadm</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="MedicationAdministration-Example-MedicationAdministration-123456mdadm.html" title="MedicationAdministration/Example-MedicationAdministration-123456mdadm">Example-MedicationAdministration-123456mdadm</a>
+                                       </td>
+                                       <td>
                   Administration to a patient of a medicament in a inpatient setting.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MedicationDispense-Example-MedicationDispense-123456mdd.html" title="MedicationDispense/Example-MedicationDispense-123456mdd">Example-MedicationDispense-123456mdd</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="MedicationDispense-Example-MedicationDispense-123456mdd.html" title="MedicationDispense/Example-MedicationDispense-123456mdd">Example-MedicationDispense-123456mdd</a>
+                                       </td>
+                                       <td>
                   Dispensing a medicament to a patient in an outpatient setting.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MedicationRequest-Example-MedicationRequest-123456mdr.html" title="MedicationRequest/Example-MedicationRequest-123456mdr">Example-MedicationRequest-123456mdr</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="MedicationRequest-Example-MedicationRequest-123456mdr.html" title="MedicationRequest/Example-MedicationRequest-123456mdr">Example-MedicationRequest-123456mdr</a>
+                                       </td>
+                                       <td>
                   Medication order for an outpatient setting.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MedicationRequest-Example-MedicationRequest-123456mdr1.html" title="MedicationRequest/Example-MedicationRequest-123456mdr1">Example-MedicationRequest-123456mdr1</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="MedicationRequest-Example-MedicationRequest-123456mdr1.html" title="MedicationRequest/Example-MedicationRequest-123456mdr1">Example-MedicationRequest-123456mdr1</a>
+                                       </td>
+                                       <td>
                   Medication order for an inpatient setting.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MessageHeader-Example-MessageHeader-07bde3c45e7c.html" title="MessageHeader/Example-MessageHeader-07bde3c45e7c">Example-MessageHeader-07bde3c45e7c</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="MessageHeader-Example-MessageHeader-07bde3c45e7c.html" title="MessageHeader/Example-MessageHeader-07bde3c45e7c">Example-MessageHeader-07bde3c45e7c</a>
+                                       </td>
+                                       <td>
                   Message that reports the notification of the creation of a resource.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MessageHeader-Example-MessageHeader-737630488u.html" title="MessageHeader/Example-MessageHeader-737630488u">Example-MessageHeader-737630488u</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="MessageHeader-Example-MessageHeader-737630488u.html" title="MessageHeader/Example-MessageHeader-737630488u">Example-MessageHeader-737630488u</a>
+                                       </td>
+                                       <td>
                   Message that reports the notification of the updating of a resource.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Example-Observation-3232352365gf.html" title="Observation/Example-Observation-3232352365gf">Example-Observation-3232352365gf</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Observation-Example-Observation-3232352365gf.html" title="Observation/Example-Observation-3232352365gf">Example-Observation-3232352365gf</a>
+                                       </td>
+                                       <td>
                   Interpretation of the result of a clinical laboratory test (antibody measurement).
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Example-Observation-643767367434f.html" title="Observation/Example-Observation-643767367434f">Example-Observation-643767367434f</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Observation-Example-Observation-643767367434f.html" title="Observation/Example-Observation-643767367434f">Example-Observation-643767367434f</a>
+                                       </td>
+                                       <td>
                   Interpretation of the result of a clinical laboratory examination (Hemogram).
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Example-Observation-7373847387f.html" title="Observation/Example-Observation-7373847387f">Example-Observation-7373847387f</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Observation-Example-Observation-7373847387f.html" title="Observation/Example-Observation-7373847387f">Example-Observation-7373847387f</a>
+                                       </td>
+                                       <td>
                   Interpretation of the result of a clinical laboratory test (glycated hemoglobin).
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Example-Observation-Antibiogram-obx0.html" title="Observation/Example-Observation-Antibiogram-obx0">Example-Observation-Antibiogram-obx0</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Observation-Example-Observation-Antibiogram-obx0.html" title="Observation/Example-Observation-Antibiogram-obx0">Example-Observation-Antibiogram-obx0</a>
+                                       </td>
+                                       <td>
                   Interpretation of the result of a clinical laboratory test (Antibiogram), with resistance referring to a type of antibiotic.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Example-Observation-Antibiogram-obx1.html" title="Observation/Example-Observation-Antibiogram-obx1">Example-Observation-Antibiogram-obx1</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Observation-Example-Observation-Antibiogram-obx1.html" title="Observation/Example-Observation-Antibiogram-obx1">Example-Observation-Antibiogram-obx1</a>
+                                       </td>
+                                       <td>
                   Interpretation of the result of a clinical laboratory test (Antibiogram), with resistance referring to a type of antibiotic.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Example-Observation-Antibiogram-obx2.html" title="Observation/Example-Observation-Antibiogram-obx2">Example-Observation-Antibiogram-obx2</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Observation-Example-Observation-Antibiogram-obx2.html" title="Observation/Example-Observation-Antibiogram-obx2">Example-Observation-Antibiogram-obx2</a>
+                                       </td>
+                                       <td>
                   Interpretation of the result of a clinical laboratory test (Antibiogram), with resistance referring to a type of antibiotic.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Example-Observation-Antibiogram-obx3.html" title="Observation/Example-Observation-Antibiogram-obx3">Example-Observation-Antibiogram-obx3</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Observation-Example-Observation-Antibiogram-obx3.html" title="Observation/Example-Observation-Antibiogram-obx3">Example-Observation-Antibiogram-obx3</a>
+                                       </td>
+                                       <td>
                   Interpretation of the result of a clinical laboratory test (Antibiogram), with resistance referring to a type of antibiotic.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Example-Observation-Antibiogram-obx4.html" title="Observation/Example-Observation-Antibiogram-obx4">Example-Observation-Antibiogram-obx4</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Observation-Example-Observation-Antibiogram-obx4.html" title="Observation/Example-Observation-Antibiogram-obx4">Example-Observation-Antibiogram-obx4</a>
+                                       </td>
+                                       <td>
                   Interpretation of the result of a clinical laboratory test (Antibiogram), with resistance referring to a type of antibiotic.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Example-Observation-Antibiogram-obx5.html" title="Observation/Example-Observation-Antibiogram-obx5">Example-Observation-Antibiogram-obx5</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Observation-Example-Observation-Antibiogram-obx5.html" title="Observation/Example-Observation-Antibiogram-obx5">Example-Observation-Antibiogram-obx5</a>
+                                       </td>
+                                       <td>
                   Interpretation of the result of a clinical laboratory test (Antibiogram), with resistance referring to a type of antibiotic.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Location-Example-OperatingRoom-ads51ds5d145212ds.html" title="Location/Example-OperatingRoom-ads51ds5d145212ds">Example-OperatingRoom-ads51ds5d145212ds</a>
-               </td>
-               <td>
-<p>Physical location of an operating room for lower risk procedures.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-Example-Organization-213134sd15148f.html" title="Organization/Example-Organization-213134sd15148f">Example-Organization-213134sd15148f</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                           <a href="Observation-Example-Observation-ArterialPressure-TA234880.html" title="Observation/Example-Observation-ArterialPressure-TA234880">Example-Observation-ArterialPressure-TA234880</a>
+                                       </td>
+                                       <td>
+                                           <p>Example of blood pressure measurement result.</p>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td style="column-width:30%">
+                                           <a href="Observation-Example-Observation-VitalSigns-vs3407.html" title="Observation/Example-Observation-VitalSigns-vs3407">Example-Observation-VitalSigns-vs3407</a>
+                                       </td>
+                                       <td>
+                                           <p>Example of vital signs measurement results.</p>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td style="column-width:30%">
+                                           <a href="Observation-Example-Observation-satO2-34798.html" title="Observation/Example-Observation-satO2-34798">Example-Observation-satO2-34798</a>
+                                       </td>
+                                       <td>
+                                           <p>Oxygen saturation sO2 measurement result example.</p>
+                                       </td>
+                                   </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Location-Example-OperatingRoom-ads51ds5d145212ds.html" title="Location/Example-OperatingRoom-ads51ds5d145212ds">Example-OperatingRoom-ads51ds5d145212ds</a>
+                                       </td>
+                                       <td>
+                                          <p>Physical location of an operating room for lower risk procedures.</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Organization-Example-Organization-213134sd15148f.html" title="Organization/Example-Organization-213134sd15148f">Example-Organization-213134sd15148f</a>
+                                       </td>
+                                       <td>
                   Identification of an entity that provides health services.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-Example-Organization-Payor-2910416f.html" title="Organization/Example-Organization-Payor-2910416f">Example-Organization-Payor-2910416f</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Organization-Example-Organization-Payor-2910416f.html" title="Organization/Example-Organization-Payor-2910416f">Example-Organization-Payor-2910416f</a>
+                                       </td>
+                                       <td>
                   Identification of an insurer or payer of health services.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-Example-Patient-2a6d66d1.html" title="Patient/Example-Patient-2a6d66d1">Example-Patient-2a6d66d1</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Patient-Example-Patient-2a6d66d1.html" title="Patient/Example-Patient-2a6d66d1">Example-Patient-2a6d66d1</a>
+                                       </td>
+                                       <td>
                   Information from a female patient.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-Example-Patient-87356d0d.html" title="Patient/Example-Patient-87356d0d">Example-Patient-87356d0d</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Patient-Example-Patient-87356d0d.html" title="Patient/Example-Patient-87356d0d">Example-Patient-87356d0d</a>
+                                       </td>
+                                       <td>
                   Information from an adjusted female patient.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Location-Example-Pharmacy-51654689466d55.html" title="Location/Example-Pharmacy-51654689466d55">Example-Pharmacy-51654689466d55</a>
-               </td>
-               <td>
-<p>Physical location of the different pharmacies included in a health service provider institution</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Practitioner-Example-Practitioner-09709es9d.html" title="Practitioner/Example-Practitioner-09709es9d">Example-Practitioner-09709es9d</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Location-Example-Pharmacy-51654689466d55.html" title="Location/Example-Pharmacy-51654689466d55">Example-Pharmacy-51654689466d55</a>
+                                       </td>
+                                       <td>
+                                          <p>Physical location of the different pharmacies included in a health service provider institution</p>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Practitioner-Example-Practitioner-09709es9d.html" title="Practitioner/Example-Practitioner-09709es9d">Example-Practitioner-09709es9d</a>
+                                       </td>
+                                       <td>
                   Specialist in gynecology and obstetrics.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Practitioner-Example-Practitioner-4290sd6n.html" title="Practitioner/Example-Practitioner-4290sd6n">Example-Practitioner-4290sd6n</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Practitioner-Example-Practitioner-4290sd6n.html" title="Practitioner/Example-Practitioner-4290sd6n">Example-Practitioner-4290sd6n</a>
+                                       </td>
+                                       <td>
                   Identification of healthcare personnel: Head of nurses.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Practitioner-Example-Practitioner-4343433d.html" title="Practitioner/Example-Practitioner-4343433d">Example-Practitioner-4343433d</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Practitioner-Example-Practitioner-4343433d.html" title="Practitioner/Example-Practitioner-4343433d">Example-Practitioner-4343433d</a>
+                                       </td>
+                                       <td>
                   General practitioner.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Practitioner-Example-Practitioner-746746379d.html" title="Practitioner/Example-Practitioner-746746379d">Example-Practitioner-746746379d</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Practitioner-Example-Practitioner-746746379d.html" title="Practitioner/Example-Practitioner-746746379d">Example-Practitioner-746746379d</a>
+                                       </td>
+                                       <td>
                   Healthcare personnel: Radiologist.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Practitioner-Example-Practitioner-78456er9f.html" title="Practitioner/Example-Practitioner-78456er9f">Example-Practitioner-78456er9f</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Practitioner-Example-Practitioner-78456er9f.html" title="Practitioner/Example-Practitioner-78456er9f">Example-Practitioner-78456er9f</a>
+                                       </td>
+                                       <td>
                   Healthcare personnel: Bacteriologist.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Procedure-Example-ProcedureDevice-894536pd.html" title="Procedure/Example-ProcedureDevice-894536pd">Example-ProcedureDevice-894536pd</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Procedure-Example-ProcedureDevice-894536pd.html" title="Procedure/Example-ProcedureDevice-894536pd">Example-ProcedureDevice-894536pd</a>
+                                       </td>
+                                       <td>
                   Outpatient procedure with use of implantable device.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Procedure-Example-ProcedureSurgical-878773ps.html" title="Procedure/Example-ProcedureSurgical-878773ps">Example-ProcedureSurgical-878773ps</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Procedure-Example-ProcedureSurgical-878773ps.html" title="Procedure/Example-ProcedureSurgical-878773ps">Example-ProcedureSurgical-878773ps</a>
+                                       </td>
+                                       <td>
                   Procedure in a inpatient with the use of an electronic implantable device.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Questionnaire-Example-Questionnaire-7878008qu.html" title="Questionnaire/Example-Questionnaire-7878008qu">Example-Questionnaire-7878008qu-of-Questionnaire</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Questionnaire-Example-Questionnaire-7878008qu.html" title="Questionnaire/Example-Questionnaire-7878008qu">Example-Questionnaire-7878008qu-of-Questionnaire</a>
+                                       </td>
+                                       <td>
                   Patient survey questionnaire for blood donation in a blood bank.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-Example-Questionnaire-7878008qu.html" title="QuestionnaireResponse/Example-Questionnaire-7878008qu">Example-Questionnaire-7878008qu-of-QuestionnaireResponse</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="QuestionnaireResponse-Example-Questionnaire-7878008qu.html" title="QuestionnaireResponse/Example-Questionnaire-7878008qu">Example-Questionnaire-7878008qu-of-QuestionnaireResponse</a>
+                                       </td>
+                                       <td>
                   Answers to a patient survey questionnaire for blood donation in a blood bank.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Schedule-Example-Schedule-d83f2b28.html" title="Schedule/Example-Schedule-d83f2b28">Example-Schedule-d83f2b28</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Schedule-Example-Schedule-d83f2b28.html" title="Schedule/Example-Schedule-d83f2b28">Example-Schedule-d83f2b28</a>
+                                       </td>
+                                       <td>
                   Medical appointment schedule for healthcare personnel.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ServiceRequest-Example-ServiceRequest-4948f6ad.html" title="ServiceRequest/Example-ServiceRequest-4948f6ad">Example-ServiceRequest-4948f6ad</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="ServiceRequest-Example-ServiceRequest-4948f6ad.html" title="ServiceRequest/Example-ServiceRequest-4948f6ad">Example-ServiceRequest-4948f6ad</a>
+                                       </td>
+                                       <td>
 Service request for a service outpatient setting.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ServiceRequest-Example-ServiceRequest-Imaging-87878hdim.html" title="ServiceRequest/Example-ServiceRequest-Imaging-87878hdim">Example-ServiceRequest-Imaging-87878hdim</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="ServiceRequest-Example-ServiceRequest-Imaging-87878hdim.html" title="ServiceRequest/Example-ServiceRequest-Imaging-87878hdim">Example-ServiceRequest-Imaging-87878hdim</a>
+                                       </td>
+                                       <td>
 Service request for a examn of imaging diagnostic.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ServiceRequest-Example-ServiceRequest-Laboratory-4637g6ad.html" title="ServiceRequest/Example-ServiceRequest-Laboratory-4637g6ad">Example-ServiceRequest-Laboratory-4637g6ad</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="ServiceRequest-Example-ServiceRequest-Laboratory-4637g6ad.html" title="ServiceRequest/Example-ServiceRequest-Laboratory-4637g6ad">Example-ServiceRequest-Laboratory-4637g6ad</a>
+                                       </td>
+                                       <td>
                   Service request for a examn of laboratory clinic (Hemogram).
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ServiceRequest-Example-ServiceRequest-Laboratory-5688g6ay.html" title="ServiceRequest/Example-ServiceRequest-Laboratory-5688g6ay">Example-ServiceRequest-Laboratory-5688g6ay</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="ServiceRequest-Example-ServiceRequest-Laboratory-5688g6ay.html" title="ServiceRequest/Example-ServiceRequest-Laboratory-5688g6ay">Example-ServiceRequest-Laboratory-5688g6ay</a>
+                                       </td>
+                                       <td>
                   Service request for a examn of laboratory clinic (antibody measurement).
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ServiceRequest-Example-ServiceRequest-Laboratory-6745g6at.html" title="ServiceRequest/Example-ServiceRequest-Laboratory-6745g6at">Example-ServiceRequest-Laboratory-6745g6at</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="ServiceRequest-Example-ServiceRequest-Laboratory-6745g6at.html" title="ServiceRequest/Example-ServiceRequest-Laboratory-6745g6at">Example-ServiceRequest-Laboratory-6745g6at</a>
+                                       </td>
+                                       <td>
                   Service request for a examn of laboratory clinic (glycated hemoglobin).
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ServiceRequest-Example-ServiceRequest-Laboratory-7856f89ad.html" title="ServiceRequest/Example-ServiceRequest-Laboratory-7856f89ad">Example-ServiceRequest-Laboratory-7856f89ad</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="ServiceRequest-Example-ServiceRequest-Laboratory-7856f89ad.html" title="ServiceRequest/Example-ServiceRequest-Laboratory-7856f89ad">Example-ServiceRequest-Laboratory-7856f89ad</a>
+                                       </td>
+                                       <td>
                   Service request for a examn of laboratory clinic (Antibiogram).
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Slot-Example-Slot-f261cf86.html" title="Slot/Example-Slot-f261cf86">Example-Slot-f261cf86</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Slot-Example-Slot-f261cf86.html" title="Slot/Example-Slot-f261cf86">Example-Slot-f261cf86</a>
+                                       </td>
+                                       <td>
                   Time slot in a medical schedule of a healthcare professional.
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Specimen-Example-Specimen-Blood-56789856d.html" title="Specimen/Example-Specimen-Blood-56789856d">Example-Specimen-Blood-56789856d</a>
-               </td>
-               <td>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td style="column-width:30%">
+                                          <a href="Specimen-Example-Specimen-Blood-56789856d.html" title="Specimen/Example-Specimen-Blood-56789856d">Example-Specimen-Blood-56789856d</a>
+                                       </td>
+                                       <td>
                   Blood sample for laboratory examination.
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-</div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </p>
+                        </div>
 
-</div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+                     </div>
+                  </div>                  <!-- /inner-wrapper -->
+               </div>               <!-- /row -->
+            </div>            <!-- /container -->
+         </div>         <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+         <script src="assets/js/jquery.js" type="text/javascript"></script>         <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+         <script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
 
-  <script type="text/javascript">
+         <script type="text/javascript">
     $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
+      if(window.location.hash != "") { $('a[href="' + window.location.hash + '"]').click()
       }
     });
-  </script>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
-      <div class="inner-wrapper">
-        <p><a name="40544c1d-1cd1-4d9d-bd1a-cdfd2791ed1a">​</a>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="juanch@digitalware.com.co">DigitalWare S.A. - Klinic-HIS</a>.  Package fhir.digital-ware.klinic-api-fhir#1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 16, 2021 11:25-0500">2021-03-16</span>
-          <br/>
-          <span style="color: #FFFF77">
+         </script>
+         <div igtool="footer" id="segment-footer" class="segment">            <!-- segment-footer -->
+            <div class="container">               <!-- container -->
+               <div class="inner-wrapper">
+                  <p>
+                     <a name="e169d681-9e65-40d9-ac89-765035144020">​</a>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="juanch@digitalware.com.co">DigitalWare S.A. - Klinic-HIS</a>.  Package fhir.digital-ware.klinic-api-fhir#1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 18, 2021 16:57-0500">2021-03-18</span>
+                     <br/>
+                     <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
-          </span>
-        </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
-  
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
-  
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+                        <a style="color: #81BEF7" href="qa.html">QA Report</a>
+                     </span>
+                  </p>
+               </div>               <!-- /inner-wrapper -->
+            </div>            <!-- /container -->
+         </div>         <!-- /segment-footer -->
+
+         <div id="segment-post-footer" class="segment hidden">            <!-- segment-post-footer -->
+            <div class="container">               <!-- container -->
+            </div>            <!-- /container -->
+         </div>         <!-- /segment-post-footer -->
+
+         <!-- JS and analytics only. -->
+         <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script>anchors.options.visible = 'hover'
+         <!-- Placed at the end of the document so the pages load faster -->
+         <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+         <script src="assets/js/respond.min.js" type="text/javascript"></script>
+         <script src="assets/js/anchor.min.js" type="text/javascript"></script>
+         <script>anchors.options.visible = 'hover'
 anchors.add()</script>
-  
-    <!-- Analytics Below
+
+         <!-- Analytics Below
   ================================================== -->
-  </body>
-</html>
+      </body>
+   </html>

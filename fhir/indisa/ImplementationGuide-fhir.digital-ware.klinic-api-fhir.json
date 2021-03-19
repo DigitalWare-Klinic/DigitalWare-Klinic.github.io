@@ -10,7 +10,7 @@
   "name": "klinicapifhir",
   "title": "Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.",
   "status": "active",
-  "date": "2021-03-16T11:25:34-05:00",
+  "date": "2021-03-18T16:57:11-05:00",
   "publisher": "DigitalWare S.A. - Klinic-HIS",
   "contact": [
     {
@@ -654,7 +654,7 @@
           "reference": "StructureDefinition/ProfileObservationLabKlinic"
         },
         "name": "Observation",
-        "description": "Observation laboratory and imaging.",
+        "description": "Simple measurements and statements made about a patient. (Vital signs, laboratory results, imaging results, clinical findings, measurements made with medical devices, etc).",
         "exampleBoolean": false
       },
       {
@@ -1443,19 +1443,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Device"
-          }
-        ],
-        "reference": {
-          "reference": "Device/Device-Example-Device-43g37a87"
-        },
-        "name": "Device-Example-Device-43g37a87",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Account"
           }
         ],
@@ -1565,6 +1552,19 @@
           }
         ],
         "reference": {
+          "reference": "Device/Example-Device-43g37a87"
+        },
+        "name": "Example-Device-43g37a87",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
           "reference": "Device/Example-Device-757677dv"
         },
         "name": "Example-Device-757677dv",
@@ -1581,6 +1581,45 @@
           "reference": "Device/Example-Device-898989dv"
         },
         "name": "Example-Device-898989dv",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
+          "reference": "Device/Example-Device-ArterialPressureMonitor-VC150"
+        },
+        "name": "Example-Device-ArterialPressureMonitor-VC150",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
+          "reference": "Device/Example-Device-PulseOximetryMonitor-sO2"
+        },
+        "name": "Example-Device-PulseOximetryMonitor-sO2",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
+          "reference": "Device/Example-Device-VitalSignsMonitor-B125GE"
+        },
+        "name": "Example-Device-VitalSignsMonitor-B125GE",
         "exampleBoolean": true
       },
       {
@@ -2089,6 +2128,45 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Example-Observation-ArterialPressure-TA234880"
+        },
+        "name": "Example-Observation-ArterialPressure-TA234880",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Example-Observation-VitalSigns-vs3407"
+        },
+        "name": "Example-Observation-VitalSigns-vs3407",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Example-Observation-satO2-34798"
+        },
+        "name": "Example-Observation-satO2-34798",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Location"
           }
         ],
@@ -2413,6 +2491,11 @@
         {
           "nameUrl": "messaging.html",
           "title": "Messaging",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "devices.html",
+          "title": "Devices",
           "generation": "markdown"
         }
       ]

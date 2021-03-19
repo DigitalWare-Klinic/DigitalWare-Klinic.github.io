@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="Example-Device-PulseOximetryMonitor-sO2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>manufacturer</b>: Home Life</p><p><b>manufactureDate</b>: 2020-01-01</p><p><b>serialNumber</b>: HL-OXP-439798</p><h3>DeviceNames</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>OXP-Premium</td><td>model-name</td></tr></table><p><b>modelNumber</b>: 2019EBC-0020464</p><p><b>type</b>: <span title="Codes: {http://snomed.info/sct 462761006}">módulo de sistema de monitorización de pacientes, oximetría de pulso</span></p><p><b>owner</b>: <a href="Organization-Example-Organization-213134sd15148f.html">Generated Summary: id: 1100133335-1 (OFFICIAL), id: 12789312-9 (OFFICIAL); active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: Indisa clinica de la familia; alias: INDISA; Phone: 3430000</a></p><p><b>location</b>: <a href="Location-Example-LocationRoom-1245687952.html">Generated Summary: status: active; <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span>; name: Habitación 202; alias: H202; description: Hospitalization room.; mode: instance; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}">Hospital unit</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type ro}">Room</span></a></p><p><b>note</b>: sO2</p></div>
+  </text>
+  <status value="active"/>
+  <manufacturer value="Home Life"/>
+  <manufactureDate value="2020-01-01"/>
+  <serialNumber value="HL-OXP-439798"/>
+  <deviceName>
+    <name value="OXP-Premium"/>
+    <type value="model-name"/>
+  </deviceName>
+  <modelNumber value="2019EBC-0020464"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="462761006"/>
+      <display value="m&#xF3;dulo de sistema de monitorizaci&#xF3;n de pacientes, oximetr&#xED;a de pulso"/>
+    </coding>
+  </type>
+  <owner>
+    <reference value="Organization/Example-Organization-213134sd15148f"/>
+  </owner>
+  <location>
+    <reference value="Location/Example-LocationRoom-1245687952"/>
+  </location>
+  <note>
+    <text value="sO2"/>
+  </note>
+</Device>

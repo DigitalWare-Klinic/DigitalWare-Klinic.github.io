@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Example-Observation-VitalSigns-vs3407"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 61746007}">registrar los signos vitales del paciente</span></p><p><b>subject</b>: <a href="Patient-Example-Patient-87356d0d.html">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></a></p><p><b>encounter</b>: <a href="Encounter-Example-Encounter-963y1945.html">Generated Summary: id: 56386090 (OFFICIAL); status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}">inpatient encounter</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/service-type 410}">Pregnancy</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority EL}">elective</span>; period: Jan 21, 2021 7:00:00 AM --&gt; Jan 23, 2021 11:00:00 AM; <span title="Codes: {http://snomed.info/sct 888003}">Efecto fetal o neonatal de la pérdida de sangre materna</span></a></p><p><b>effective</b>: Jan 22, 2021 2:28:00 PM</p><p><b>performer</b>: <a href="Practitioner-Example-Practitioner-4290sd6n.html">Generated Summary: National Person Identifier Chile: 45565700ap (OFFICIAL); active; Maria Camila null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, pamaria@example.com; gender: female; birthDate: 1991-06-05</a></p><p><b>device</b>: <a href="Device-Example-Device-VitalSignsMonitor-B125GE.html">Generated Summary: status: active; manufacturer: GE Healthcare; manufactureDate: 2020-01-01; serialNumber: GE-VS-B125-324987; modelNumber: B125; <span title="Codes: {http://snomed.info/sct 5159002}">sistema de monitoreo fisiológico</span>; sO2, Tensión Arterial, Temperatura, Frecuencia Cardiaca, Frecuencia Respiratoria</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 103228002}">saturación de hemoglobina con oxígeno</span></p><p><b>value</b>: 97 %</p><p><b>interpretation</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>94 - 97</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 271650006}">presión diastólica</span></p><p><b>value</b>: 80 mmHg</p><p><b>interpretation</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>60- 80</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 271649006}">presión sistólica</span></p><p><b>value</b>: 120 mmHg</p><p><b>interpretation</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>90 - 120</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 86290005}">frecuencia respiratoria</span></p><p><b>value</b>: 15 respiraciones/minuto</p><p><b>interpretation</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>12 - 18</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 364075005}">frecuencia cardíaca</span></p><p><b>value</b>: 75 latidos/minuto</p><p><b>interpretation</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>60 - 100</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 386725007}">temperatura corporal</span></p><p><b>value</b>: 37.0 Cel</p><p><b>interpretation</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>36.5°C - 37.3°C</td></tr></table></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="61746007"/>
+      <display value="registrar los signos vitales del paciente"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/Example-Encounter-963y1945"/>
+  </encounter>
+  <effectiveDateTime value="2021-01-22T14:28:00-05:00"/>
+  <performer>
+    <reference value="Practitioner/Example-Practitioner-4290sd6n"/>
+  </performer>
+  <device>
+    <reference value="Device/Example-Device-VitalSignsMonitor-B125GE"/>
+  </device>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="103228002"/>
+        <display value="saturaci&#xF3;n de hemoglobina con ox&#xED;geno"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="97"/>
+      <unit value="%"/>
+    </valueQuantity>
+    <interpretation>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+        <code value="N"/>
+        <display value="Normal"/>
+      </coding>
+    </interpretation>
+    <referenceRange>
+      <text value="94 - 97"/>
+    </referenceRange>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="271650006"/>
+        <display value="presi&#xF3;n diast&#xF3;lica"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="80"/>
+      <unit value="mmHg"/>
+    </valueQuantity>
+    <interpretation>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+        <code value="N"/>
+        <display value="Normal"/>
+      </coding>
+    </interpretation>
+    <referenceRange>
+      <text value="60- 80"/>
+    </referenceRange>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="271649006"/>
+        <display value="presi&#xF3;n sist&#xF3;lica"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="120"/>
+      <unit value="mmHg"/>
+    </valueQuantity>
+    <interpretation>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+        <code value="N"/>
+        <display value="Normal"/>
+      </coding>
+    </interpretation>
+    <referenceRange>
+      <text value="90 - 120"/>
+    </referenceRange>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="86290005"/>
+        <display value="frecuencia respiratoria"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="15"/>
+      <unit value="respiraciones/minuto"/>
+    </valueQuantity>
+    <interpretation>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+        <code value="N"/>
+        <display value="Normal"/>
+      </coding>
+    </interpretation>
+    <referenceRange>
+      <text value="12 - 18"/>
+    </referenceRange>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="364075005"/>
+        <display value="frecuencia card&#xED;aca"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="75"/>
+      <unit value="latidos/minuto"/>
+    </valueQuantity>
+    <interpretation>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+        <code value="N"/>
+        <display value="Normal"/>
+      </coding>
+    </interpretation>
+    <referenceRange>
+      <text value="60 - 100"/>
+    </referenceRange>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386725007"/>
+        <display value="temperatura corporal"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="37.0"/>
+      <unit value="Cel"/>
+    </valueQuantity>
+    <interpretation>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+        <code value="N"/>
+        <display value="Normal"/>
+      </coding>
+    </interpretation>
+    <referenceRange>
+      <text value="36.5&#xB0;C - 37.3&#xB0;C"/>
+    </referenceRange>
+  </component>
+</Observation>

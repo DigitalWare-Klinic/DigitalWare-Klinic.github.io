@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Device xmlns="http://hl7.org/fhir">
-  <id value="Device-Example-Device-43g37a87"/>
+  <id value="Example-Device-43g37a87"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h1>SEGMENTO NARRATIVO</h1></div>
   </text>

@@ -207,7 +207,7 @@ Loinc coding used for laboratory tests.">system</a><a name="Observation.componen
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Observation laboratory and imaging."/>
+  <description value="Simple measurements and statements made about a patient. (Vital signs, laboratory results, imaging results, clinical findings, measurements made with medical devices, etc)."/>
   <copyright value="Digitalware 2021 CC."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

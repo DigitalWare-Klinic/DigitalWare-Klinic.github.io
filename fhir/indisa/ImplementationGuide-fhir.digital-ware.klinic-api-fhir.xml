@@ -11,7 +11,7 @@
   <name value="klinicapifhir"/>
   <title value="Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A."/>
   <status value="active"/>
-  <date value="2021-03-16T11:25:34-05:00"/>
+  <date value="2021-03-18T16:57:11-05:00"/>
   <publisher value="DigitalWare S.A. - Klinic-HIS"/>
   <contact>
     <name value="Juan Manuel Contreras Hernandez"/>
@@ -471,7 +471,7 @@
         <reference value="StructureDefinition/ProfileObservationLabKlinic"/>
       </reference>
       <name value="Observation"/>
-      <description value="Observation laboratory and imaging."/>
+      <description value="Simple measurements and statements made about a patient. (Vital signs, laboratory results, imaging results, clinical findings, measurements made with medical devices, etc)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1090,16 +1090,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Device"/>
-      </extension>
-      <reference>
-        <reference value="Device/Device-Example-Device-43g37a87"/>
-      </reference>
-      <name value="Device-Example-Device-43g37a87"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Account"/>
       </extension>
       <reference>
@@ -1184,6 +1174,16 @@
         <valueString value="Device"/>
       </extension>
       <reference>
+        <reference value="Device/Example-Device-43g37a87"/>
+      </reference>
+      <name value="Example-Device-43g37a87"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
         <reference value="Device/Example-Device-757677dv"/>
       </reference>
       <name value="Example-Device-757677dv"/>
@@ -1197,6 +1197,36 @@
         <reference value="Device/Example-Device-898989dv"/>
       </reference>
       <name value="Example-Device-898989dv"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/Example-Device-ArterialPressureMonitor-VC150"/>
+      </reference>
+      <name value="Example-Device-ArterialPressureMonitor-VC150"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/Example-Device-PulseOximetryMonitor-sO2"/>
+      </reference>
+      <name value="Example-Device-PulseOximetryMonitor-sO2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/Example-Device-VitalSignsMonitor-B125GE"/>
+      </reference>
+      <name value="Example-Device-VitalSignsMonitor-B125GE"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1589,6 +1619,36 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Observation-ArterialPressure-TA234880"/>
+      </reference>
+      <name value="Example-Observation-ArterialPressure-TA234880"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Observation-VitalSigns-vs3407"/>
+      </reference>
+      <name value="Example-Observation-VitalSigns-vs3407"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Observation-satO2-34798"/>
+      </reference>
+      <name value="Example-Observation-satO2-34798"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -1841,6 +1901,11 @@
       <page>
         <nameUrl value="messaging.html"/>
         <title value="Messaging"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="devices.html"/>
+        <title value="Devices"/>
         <generation value="markdown"/>
       </page>
     </page>

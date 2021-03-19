@@ -1,0 +1,229 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Observation/Example-Observation-VitalSigns-vs3407> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Observation-VitalSigns-vs3407"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 61746007}\">registrar los signos vitales del paciente</span></p><p><b>subject</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>encounter</b>: <a href=\"Encounter-Example-Encounter-963y1945.html\">Generated Summary: id: 56386090 (OFFICIAL); status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/service-type 410}\">Pregnancy</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority EL}\">elective</span>; period: Jan 21, 2021 7:00:00 AM --&gt; Jan 23, 2021 11:00:00 AM; <span title=\"Codes: {http://snomed.info/sct 888003}\">Efecto fetal o neonatal de la pérdida de sangre materna</span></a></p><p><b>effective</b>: Jan 22, 2021 2:28:00 PM</p><p><b>performer</b>: <a href=\"Practitioner-Example-Practitioner-4290sd6n.html\">Generated Summary: National Person Identifier Chile: 45565700ap (OFFICIAL); active; Maria Camila null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, pamaria@example.com; gender: female; birthDate: 1991-06-05</a></p><p><b>device</b>: <a href=\"Device-Example-Device-VitalSignsMonitor-B125GE.html\">Generated Summary: status: active; manufacturer: GE Healthcare; manufactureDate: 2020-01-01; serialNumber: GE-VS-B125-324987; modelNumber: B125; <span title=\"Codes: {http://snomed.info/sct 5159002}\">sistema de monitoreo fisiológico</span>; sO2, Tensión Arterial, Temperatura, Frecuencia Cardiaca, Frecuencia Respiratoria</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 103228002}\">saturación de hemoglobina con oxígeno</span></p><p><b>value</b>: 97 %</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>94 - 97</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 271650006}\">presión diastólica</span></p><p><b>value</b>: 80 mmHg</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>60- 80</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 271649006}\">presión sistólica</span></p><p><b>value</b>: 120 mmHg</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>90 - 120</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 86290005}\">frecuencia respiratoria</span></p><p><b>value</b>: 15 respiraciones/minuto</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>12 - 18</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 364075005}\">frecuencia cardíaca</span></p><p><b>value</b>: 75 latidos/minuto</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>60 - 100</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 386725007}\">temperatura corporal</span></p><p><b>value</b>: 37.0 Cel</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>36.5°C - 37.3°C</td></tr></table></blockquote></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ];
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:61746007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "61746007" ];
+       fhir:Coding.display [ fhir:value "registrar los signos vitales del paciente" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d>;
+     fhir:Reference.reference [ fhir:value "Patient/Example-Patient-87356d0d" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Encounter/Example-Encounter-963y1945>;
+     fhir:Reference.reference [ fhir:value "Encounter/Example-Encounter-963y1945" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-01-22T14:28:00-05:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Practitioner/Example-Practitioner-4290sd6n>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Example-Practitioner-4290sd6n" ]
+  ];
+  fhir:Observation.device [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Device/Example-Device-VitalSignsMonitor-B125GE>;
+     fhir:Reference.reference [ fhir:value "Device/Example-Device-VitalSignsMonitor-B125GE" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:103228002;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "103228002" ];
+         fhir:Coding.display [ fhir:value "saturación de hemoglobina con oxígeno" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "97"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "%" ]
+     ];
+     fhir:Observation.component.interpretation [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+         fhir:Coding.code [ fhir:value "N" ];
+         fhir:Coding.display [ fhir:value "Normal" ]
+       ]
+     ];
+     fhir:Observation.component.referenceRange [
+       fhir:index 0;
+       fhir:Observation.referenceRange.text [ fhir:value "94 - 97" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:271650006;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "271650006" ];
+         fhir:Coding.display [ fhir:value "presión diastólica" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "80"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mmHg" ]
+     ];
+     fhir:Observation.component.interpretation [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+         fhir:Coding.code [ fhir:value "N" ];
+         fhir:Coding.display [ fhir:value "Normal" ]
+       ]
+     ];
+     fhir:Observation.component.referenceRange [
+       fhir:index 0;
+       fhir:Observation.referenceRange.text [ fhir:value "60- 80" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:271649006;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "271649006" ];
+         fhir:Coding.display [ fhir:value "presión sistólica" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "120"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mmHg" ]
+     ];
+     fhir:Observation.component.interpretation [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+         fhir:Coding.code [ fhir:value "N" ];
+         fhir:Coding.display [ fhir:value "Normal" ]
+       ]
+     ];
+     fhir:Observation.component.referenceRange [
+       fhir:index 0;
+       fhir:Observation.referenceRange.text [ fhir:value "90 - 120" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:86290005;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "86290005" ];
+         fhir:Coding.display [ fhir:value "frecuencia respiratoria" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "15"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "respiraciones/minuto" ]
+     ];
+     fhir:Observation.component.interpretation [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+         fhir:Coding.code [ fhir:value "N" ];
+         fhir:Coding.display [ fhir:value "Normal" ]
+       ]
+     ];
+     fhir:Observation.component.referenceRange [
+       fhir:index 0;
+       fhir:Observation.referenceRange.text [ fhir:value "12 - 18" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:364075005;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "364075005" ];
+         fhir:Coding.display [ fhir:value "frecuencia cardíaca" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "75"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "latidos/minuto" ]
+     ];
+     fhir:Observation.component.interpretation [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+         fhir:Coding.code [ fhir:value "N" ];
+         fhir:Coding.display [ fhir:value "Normal" ]
+       ]
+     ];
+     fhir:Observation.component.referenceRange [
+       fhir:index 0;
+       fhir:Observation.referenceRange.text [ fhir:value "60 - 100" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:386725007;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "386725007" ];
+         fhir:Coding.display [ fhir:value "temperatura corporal" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "37.0"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "Cel" ]
+     ];
+     fhir:Observation.component.interpretation [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+         fhir:Coding.code [ fhir:value "N" ];
+         fhir:Coding.display [ fhir:value "Normal" ]
+       ]
+     ];
+     fhir:Observation.component.referenceRange [
+       fhir:index 0;
+       fhir:Observation.referenceRange.text [ fhir:value "36.5°C - 37.3°C" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Observation/Example-Observation-VitalSigns-vs3407.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

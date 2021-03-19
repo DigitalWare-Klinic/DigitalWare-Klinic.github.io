@@ -6,9 +6,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://digitalware-klinic.github.io/fhir/indisa/Device/Device-Example-Device-43g37a87> a fhir:Device;
+<https://digitalware-klinic.github.io/fhir/indisa/Device/Example-Device-43g37a87> a fhir:Device;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "Device-Example-Device-43g37a87"];
+  fhir:Resource.id [ fhir:value "Example-Device-43g37a87"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>SEGMENTO NARRATIVO</h1></div>"
@@ -47,7 +47,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://digitalware-klinic.github.io/fhir/indisa/Device/Device-Example-Device-43g37a87.ttl> a owl:Ontology;
+<https://digitalware-klinic.github.io/fhir/indisa/Device/Example-Device-43g37a87.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
