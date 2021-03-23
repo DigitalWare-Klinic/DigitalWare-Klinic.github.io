@@ -286,13 +286,6 @@
     "name": "ProfileAppointmentKlinic"
   },
   {
-    "id": "ProfileAppointmentResponseKlinic",
-    "type": "StructureDefinition",
-    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileAppointmentResponseKlinic",
-    "version": "1.0",
-    "name": "ProfileAppointmentResponseKlinic"
-  },
-  {
     "id": "ProfileCompositionKlinic",
     "type": "StructureDefinition",
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileCompositionKlinic",
@@ -515,6 +508,27 @@
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileSpecimenKlinic",
     "version": "1.0",
     "name": "ProfileSpecimenKlinic"
+  },
+  {
+    "id": "ProfileSubscriptionKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileSubscriptionKlinic",
+    "version": "1.0",
+    "name": "ProfileSubscriptionKlinic"
+  },
+  {
+    "id": "ProfileSupplyDeliveryKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileSupplyDeliveryKlinic",
+    "version": "1.0",
+    "name": "ProfileSupplyDeliveryKlinic"
+  },
+  {
+    "id": "ProfileSupplyRequestKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileSupplyRequestKlinic",
+    "version": "1.0",
+    "name": "ProfileSupplyRequestKlinic"
   },
   {
     "id": "QuotaPatient",

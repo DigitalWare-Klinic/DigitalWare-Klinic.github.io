@@ -1,0 +1,15 @@
+{
+  "resourceType": "Subscription",
+  "id": "Example-Subscription-14689subs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>reason</b>: Subscripcion para integrarse con los sistemas externos y propios de INDISA.</p><p><b>criteria</b>: Encounter:Update:grd:Example-Encounter-963b1515</p><h3>Channels</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>message</td><td><a href=\"http://127.0.0.1:8443/esb/end-point\">http://127.0.0.1:8443/esb/end-point</a></td></tr></table></div>"
+  },
+  "status": "active",
+  "reason": "Subscripcion para integrarse con los sistemas externos y propios de INDISA.",
+  "criteria": "Encounter:Update:grd:Example-Encounter-963b1515",
+  "channel": {
+    "type": "message",
+    "endpoint": "http://127.0.0.1:8443/esb/end-point"
+  }
+}

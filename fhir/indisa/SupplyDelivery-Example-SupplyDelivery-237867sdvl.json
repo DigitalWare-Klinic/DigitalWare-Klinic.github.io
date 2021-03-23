@@ -1,0 +1,56 @@
+{
+  "resourceType": "SupplyDelivery",
+  "id": "Example-SupplyDelivery-237867sdvl",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: SPDLV25781 (USUAL)</p><p><b>status</b>: completed</p><p><b>patient</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/supply-item-type medication}\">Medication</span></p><h3>SuppliedItems</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 403001}, {http://snomed.info/sct 7140000}\">medio de contraste radiográfico</span></td></tr></table><p><b>occurrence</b>: 21/02/2021, 7:30:00 a. m.</p><p><b>supplier</b>: <a href=\"Practitioner-Example-Practitioner-09709es9d.html\">Generated Summary: National Person Identifier Chile: 8596788ap (OFFICIAL); active; Sebastian Camilo null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, dbsebastian@example.com; gender: male; birthDate: 1989-03-10</a></p><p><b>destination</b>: <a href=\"Location-Example-LocationFuncionalUnit-16558949sf878498.html\">Generated Summary: status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 U}\">Unoccupied</span>; name: Laboratorio/farmacia; alias: Laboratior 1/farmacia 1; description: blood component laboratory / emergency pharmacy; mode: instance; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HU}\">Hospital unit</span>; Phone: +561234567889; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type wa}\">Ward</span>; availabilityExceptions: Does not open on holidays</a></p><p><b>receiver</b>: <a href=\"Practitioner-Example-Practitioner-4290sd6n.html\">Generated Summary: National Person Identifier Chile: 45565700ap (OFFICIAL); active; Maria Camila null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, pamaria@example.com; gender: female; birthDate: 1991-06-05</a></p></div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "https://example.org/supplydelivery-identifiers",
+      "value": "SPDLV25781"
+    }
+  ],
+  "status": "completed",
+  "patient": {
+    "reference": "Patient/Example-Patient-87356d0d"
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/supply-item-type",
+        "code": "medication",
+        "display": "Medication"
+      }
+    ]
+  },
+  "suppliedItem": {
+    "itemCodeableConcept": {
+      "coding": [
+        {
+          "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa",
+          "code": "403001",
+          "display": "medio de contraste radiográfico"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "7140000",
+          "display": "medio de contraste radiográfico"
+        }
+      ]
+    }
+  },
+  "occurrenceDateTime": "2021-02-21T07:30:00-05:00",
+  "supplier": {
+    "reference": "Practitioner/Example-Practitioner-09709es9d"
+  },
+  "destination": {
+    "reference": "Location/Example-LocationFuncionalUnit-16558949sf878498"
+  },
+  "receiver": [
+    {
+      "reference": "Practitioner/Example-Practitioner-4290sd6n"
+    }
+  ]
+}

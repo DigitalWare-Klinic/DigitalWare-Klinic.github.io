@@ -10,60 +10,8 @@
   "name": "klinicapifhir",
   "title": "Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.",
   "status": "active",
-  "date": "2021-03-18T16:57:11-05:00",
+  "date": "2021-03-23T09:16:51-05:00",
   "publisher": "DigitalWare S.A. - Klinic-HIS",
-  "contact": [
-    {
-      "name": "Juan Manuel Contreras Hernandez",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "juanch@digitalware.com.co",
-          "use": "work"
-        }
-      ]
-    },
-    {
-      "name": "Diana Rodriguez Suarez",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "dianaro@digitalware.com.co",
-          "use": "work"
-        }
-      ]
-    },
-    {
-      "name": "Daniel Felipe Castro Romero",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "danielc@digitalware.com.co",
-          "use": "work"
-        }
-      ]
-    },
-    {
-      "name": "Eduardo Felipe Solis Hernandez",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "felipesh@digitalware.com.co",
-          "use": "work"
-        }
-      ]
-    },
-    {
-      "name": "Mario Enrique Cortés M",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "mario.cortes@hl7co.org",
-          "use": "work"
-        }
-      ]
-    }
-  ],
   "description": "FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A.",
   "packageId": "fhir.digital-ware.klinic-api-fhir",
   "license": "CC0-1.0",
@@ -347,20 +295,6 @@
         },
         "name": "Appointment",
         "description": "Registered appointments of the patient for each general and specialized medical consultation and the performance of laboratory and imaging tests, among others.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/ProfileAppointmentResponseKlinic"
-        },
-        "name": "Appointment Response",
-        "description": "Response regarding the scheduling of the patient's appointment according to the availability of the agenda or regarding cancellations, reviews, among other activities on each appointment.",
         "exampleBoolean": false
       },
       {
@@ -809,6 +743,47 @@
         },
         "name": "Specimen",
         "description": "A sample to be used for analysis.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileSubscriptionKlinic"
+        },
+        "name": "Subscription",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileSupplyDeliveryKlinic"
+        },
+        "name": "Supply delivery",
+        "description": "Record of delivery of what is supplied.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileSupplyRequestKlinic"
+        },
+        "name": "Supply request",
+        "description": "A record of a request for a medication, substance or device used in the healthcare setting.",
         "exampleBoolean": false
       },
       {
@@ -1477,19 +1452,6 @@
           "reference": "Appointment/Example-Appointment-05c86b7b-5drg"
         },
         "name": "Example-Appointment-05c86b7b-5drg",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "AppointmentResponse"
-          }
-        ],
-        "reference": {
-          "reference": "AppointmentResponse/Example-AppointmentResponse-05c86b7b"
-        },
-        "name": "Example-AppointmentResponse-05c86b7b",
         "exampleBoolean": true
       },
       {
@@ -2476,6 +2438,45 @@
         },
         "name": "Example-Specimen-Blood-56789856d",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Subscription"
+          }
+        ],
+        "reference": {
+          "reference": "Subscription/Example-Subscription-14689subs"
+        },
+        "name": "Example-Subscription-14689subs",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SupplyDelivery"
+          }
+        ],
+        "reference": {
+          "reference": "SupplyDelivery/Example-SupplyDelivery-237867sdvl"
+        },
+        "name": "Example-SupplyDelivery-237867sdvl",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SupplyRequest"
+          }
+        ],
+        "reference": {
+          "reference": "SupplyRequest/Example-SupplyRequest-354689srq"
+        },
+        "name": "Example-SupplyRequest-354689srq",
+        "exampleBoolean": true
       }
     ],
     "page": {
@@ -2489,13 +2490,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "messaging.html",
-          "title": "Messaging",
+          "nameUrl": "devices.html",
+          "title": "Devices",
           "generation": "markdown"
         },
         {
-          "nameUrl": "devices.html",
-          "title": "Devices",
+          "nameUrl": "push-notification-pattern.html",
+          "title": "Push Notification Pattern",
           "generation": "markdown"
         }
       ]

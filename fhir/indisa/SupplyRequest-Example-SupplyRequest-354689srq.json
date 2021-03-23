@@ -1,0 +1,75 @@
+{
+  "resourceType": "SupplyRequest",
+  "id": "Example-SupplyRequest-354689srq",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: SPRQST4657 (USUAL), id: AUTSPRQST46571 (SECONDARY)</p><p><b>status</b>: active</p><p><b>category</b>: <span title=\"Codes: {http://snomed.info/sct 60654006}\">examen radiológico del abdomen</span></p><p><b>priority</b>: routine</p><p><b>item</b>: <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 403001}, {http://snomed.info/sct 7140000}\">medio de contraste radiográfico</span></p><p><b>quantity</b>: 1</p><p><b>occurrence</b>: 21/02/2021, 7:30:00 a. m.</p><p><b>authoredOn</b>: 21/02/2021, 7:30:00 a. m.</p><p><b>requester</b>: <a href=\"Practitioner-Example-Practitioner-09709es9d.html\">Generated Summary: National Person Identifier Chile: 8596788ap (OFFICIAL); active; Sebastian Camilo null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, dbsebastian@example.com; gender: male; birthDate: 1989-03-10</a></p><p><b>reasonCode</b>: <span title=\"Codes: {http://snomed.info/sct 2989004}\">Complicación después de un embarazo molar Y / o ectópico</span></p><p><b>reasonReference</b>: <a href=\"Condition/Example-Condition-4869c\">Condition/Example-Condition-4869c</a></p><p><b>deliverFrom</b>: <a href=\"Location-Example-Pharmacy-51654689466d55.html\">Generated Summary: status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 U}\">Unoccupied</span>; name: Farmacia; alias: Farmacia 1; description: Emergency pharmacy.; mode: instance; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span>; Phone: 78978994952; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type wa}\">Ward</span></a></p><p><b>deliverTo</b>: <a href=\"Patient-Example-Patient-2a6d66d1.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p></div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "https://example.org/supplyrequest-identifiers",
+      "value": "SPRQST4657"
+    },
+    {
+      "use": "secondary",
+      "system": "https://example.org/supplyrequest-authorization-identifiers",
+      "value": "AUTSPRQST46571"
+    }
+  ],
+  "status": "active",
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "60654006",
+        "display": "examen radiológico del abdomen"
+      }
+    ]
+  },
+  "priority": "routine",
+  "itemCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa",
+        "code": "403001",
+        "display": "medio de contraste radiográfico"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "7140000",
+        "display": "medio de contraste radiográfico"
+      }
+    ]
+  },
+  "quantity": {
+    "value": 1
+  },
+  "occurrenceDateTime": "2021-02-21T07:30:00-05:00",
+  "authoredOn": "2021-02-21T07:30:00-05:00",
+  "requester": {
+    "reference": "Practitioner/Example-Practitioner-09709es9d"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "2989004",
+          "display": "Complicación después de un embarazo molar Y / o ectópico"
+        }
+      ]
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/Example-Condition-4869c"
+    }
+  ],
+  "deliverFrom": {
+    "reference": "Location/Example-Pharmacy-51654689466d55"
+  },
+  "deliverTo": {
+    "reference": "Patient/Example-Patient-2a6d66d1"
+  }
+}

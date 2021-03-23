@@ -17,42 +17,10 @@
   <date value="2021-01-25"/>
   <publisher value="DigitalWare S.A. - Klinic-HIS"/>
   <contact>
-    <name value="Juan Manuel Contreras Hernandez"/>
+    <name value="Juan Manuel Conteras"/>
     <telecom>
       <system value="email"/>
       <value value="juanch@digitalware.com.co"/>
-      <use value="work"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Diana Rodriguez Suarez"/>
-    <telecom>
-      <system value="email"/>
-      <value value="dianaro@digitalware.com.co"/>
-      <use value="work"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Daniel Felipe Castro Romero"/>
-    <telecom>
-      <system value="email"/>
-      <value value="danielc@digitalware.com.co"/>
-      <use value="work"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Eduardo Felipe Solis Hernandez"/>
-    <telecom>
-      <system value="email"/>
-      <value value="felipesh@digitalware.com.co"/>
-      <use value="work"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Mario Enrique Cort&#xE9;s M"/>
-    <telecom>
-      <system value="email"/>
-      <value value="mario.cortes@hl7co.org"/>
       <use value="work"/>
     </telecom>
   </contact>

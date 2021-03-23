@@ -551,12 +551,6 @@
         "title": "Appointment"
       }
     ],
-    "AppointmentResponse": [
-      {
-        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileAppointmentResponseKlinic",
-        "title": "Appointment Response"
-      }
-    ],
     "Composition": [
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileCompositionKlinic",
@@ -733,6 +727,24 @@
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileSpecimenKlinic",
         "title": "Specimen"
+      }
+    ],
+    "Subscription": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileSubscriptionKlinic",
+        "title": "Subscription"
+      }
+    ],
+    "SupplyDelivery": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileSupplyDeliveryKlinic",
+        "title": "Supply delivery"
+      }
+    ],
+    "SupplyRequest": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileSupplyRequestKlinic",
+        "title": "Supply request"
       }
     ]
   },

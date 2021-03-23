@@ -11,48 +11,8 @@
   <name value="klinicapifhir"/>
   <title value="Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A."/>
   <status value="active"/>
-  <date value="2021-03-18T16:57:11-05:00"/>
+  <date value="2021-03-23T09:16:51-05:00"/>
   <publisher value="DigitalWare S.A. - Klinic-HIS"/>
-  <contact>
-    <name value="Juan Manuel Contreras Hernandez"/>
-    <telecom>
-      <system value="email"/>
-      <value value="juanch@digitalware.com.co"/>
-      <use value="work"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Diana Rodriguez Suarez"/>
-    <telecom>
-      <system value="email"/>
-      <value value="dianaro@digitalware.com.co"/>
-      <use value="work"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Daniel Felipe Castro Romero"/>
-    <telecom>
-      <system value="email"/>
-      <value value="danielc@digitalware.com.co"/>
-      <use value="work"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Eduardo Felipe Solis Hernandez"/>
-    <telecom>
-      <system value="email"/>
-      <value value="felipesh@digitalware.com.co"/>
-      <use value="work"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Mario Enrique Cort&#xE9;s M"/>
-    <telecom>
-      <system value="email"/>
-      <value value="mario.cortes@hl7co.org"/>
-      <use value="work"/>
-    </telecom>
-  </contact>
   <description value="FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A."/>
   <packageId value="fhir.digital-ware.klinic-api-fhir"/>
   <license value="CC0-1.0"/>
@@ -230,17 +190,6 @@
       </reference>
       <name value="Appointment"/>
       <description value="Registered appointments of the patient for each general and specialized medical consultation and the performance of laboratory and imaging tests, among others."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ProfileAppointmentResponseKlinic"/>
-      </reference>
-      <name value="Appointment Response"/>
-      <description value="Response regarding the scheduling of the patient&#39;s appointment according to the availability of the agenda or regarding cancellations, reviews, among other activities on each appointment."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -593,6 +542,38 @@
       </reference>
       <name value="Specimen"/>
       <description value="A sample to be used for analysis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProfileSubscriptionKlinic"/>
+      </reference>
+      <name value="Subscription"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProfileSupplyDeliveryKlinic"/>
+      </reference>
+      <name value="Supply delivery"/>
+      <description value="Record of delivery of what is supplied."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProfileSupplyRequestKlinic"/>
+      </reference>
+      <name value="Supply request"/>
+      <description value="A record of a request for a medication, substance or device used in the healthcare setting."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1117,16 +1098,6 @@
         <reference value="Appointment/Example-Appointment-05c86b7b-5drg"/>
       </reference>
       <name value="Example-Appointment-05c86b7b-5drg"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="AppointmentResponse"/>
-      </extension>
-      <reference>
-        <reference value="AppointmentResponse/Example-AppointmentResponse-05c86b7b"/>
-      </reference>
-      <name value="Example-AppointmentResponse-05c86b7b"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1889,6 +1860,36 @@
       <name value="Example-Specimen-Blood-56789856d"/>
       <exampleBoolean value="true"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Subscription"/>
+      </extension>
+      <reference>
+        <reference value="Subscription/Example-Subscription-14689subs"/>
+      </reference>
+      <name value="Example-Subscription-14689subs"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SupplyDelivery"/>
+      </extension>
+      <reference>
+        <reference value="SupplyDelivery/Example-SupplyDelivery-237867sdvl"/>
+      </reference>
+      <name value="Example-SupplyDelivery-237867sdvl"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SupplyRequest"/>
+      </extension>
+      <reference>
+        <reference value="SupplyRequest/Example-SupplyRequest-354689srq"/>
+      </reference>
+      <name value="Example-SupplyRequest-354689srq"/>
+      <exampleBoolean value="true"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -1899,13 +1900,13 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="messaging.html"/>
-        <title value="Messaging"/>
+        <nameUrl value="devices.html"/>
+        <title value="Devices"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="devices.html"/>
-        <title value="Devices"/>
+        <nameUrl value="push-notification-pattern.html"/>
+        <title value="Push Notification Pattern"/>
         <generation value="markdown"/>
       </page>
     </page>

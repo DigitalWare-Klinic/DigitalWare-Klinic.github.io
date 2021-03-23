@@ -14,52 +14,10 @@
   "publisher": "DigitalWare S.A. - Klinic-HIS",
   "contact": [
     {
-      "name": "Juan Manuel Contreras Hernandez",
       "telecom": [
         {
-          "system": "email",
-          "value": "juanch@digitalware.com.co",
-          "use": "work"
-        }
-      ]
-    },
-    {
-      "name": "Diana Rodriguez Suarez",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "dianaro@digitalware.com.co",
-          "use": "work"
-        }
-      ]
-    },
-    {
-      "name": "Daniel Felipe Castro Romero",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "danielc@digitalware.com.co",
-          "use": "work"
-        }
-      ]
-    },
-    {
-      "name": "Eduardo Felipe Solis Hernandez",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "felipesh@digitalware.com.co",
-          "use": "work"
-        }
-      ]
-    },
-    {
-      "name": "Mario Enrique Cortés M",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "mario.cortes@hl7co.org",
-          "use": "work"
+          "system": "url",
+          "value": "https://www.digitalware.com.co"
         }
       ]
     }

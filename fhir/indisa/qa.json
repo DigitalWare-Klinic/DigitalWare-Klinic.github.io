@@ -1,0 +1,12 @@
+{
+  "url": "https://digitalware-klinic.github.io/fhir/indisa/ImplementationGuide/fhir.digital-ware.klinic-api-fhir",
+  "name": "klinicapifhir",
+  "package-id": "fhir.digital-ware.klinic-api-fhir",
+  "ig-ver": "1.0",
+  "date": "Tue, 23 Mar, 2021 09:16:51 -0500",
+  "errs": 291,
+  "warnings": 143,
+  "hints": 121,
+  "version": "4.0.1",
+  "tool": "4.5.0 (3)"
+}

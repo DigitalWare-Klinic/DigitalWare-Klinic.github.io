@@ -21,48 +21,10 @@
   fhir:CodeSystem.publisher [ fhir:value "DigitalWare S.A. - Klinic-HIS"];
   fhir:CodeSystem.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Juan Manuel Contreras Hernandez" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "juanch@digitalware.com.co" ];
-       fhir:ContactPoint.use [ fhir:value "work" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Diana Rodriguez Suarez" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "dianaro@digitalware.com.co" ];
-       fhir:ContactPoint.use [ fhir:value "work" ]
-     ]
-  ], [
-     fhir:index 2;
-     fhir:ContactDetail.name [ fhir:value "Daniel Felipe Castro Romero" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "danielc@digitalware.com.co" ];
-       fhir:ContactPoint.use [ fhir:value "work" ]
-     ]
-  ], [
-     fhir:index 3;
-     fhir:ContactDetail.name [ fhir:value "Eduardo Felipe Solis Hernandez" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "felipesh@digitalware.com.co" ];
-       fhir:ContactPoint.use [ fhir:value "work" ]
-     ]
-  ], [
-     fhir:index 4;
-     fhir:ContactDetail.name [ fhir:value "Mario Enrique Cortés M" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "mario.cortes@hl7co.org" ];
-       fhir:ContactPoint.use [ fhir:value "work" ]
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.digitalware.com.co" ]
      ]
   ];
   fhir:CodeSystem.description [ fhir:value "This is a coding system that contains the rate modality codes for the interoperability scenario of INDISA (Chile)."];

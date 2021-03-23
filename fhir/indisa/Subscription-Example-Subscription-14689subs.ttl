@@ -1,0 +1,29 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Subscription/Example-Subscription-14689subs> a fhir:Subscription;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Subscription-14689subs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>reason</b>: Subscripcion para integrarse con los sistemas externos y propios de INDISA.</p><p><b>criteria</b>: Encounter:Update:grd:Example-Encounter-963b1515</p><h3>Channels</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>message</td><td><a href=\"http://127.0.0.1:8443/esb/end-point\">http://127.0.0.1:8443/esb/end-point</a></td></tr></table></div>"
+  ];
+  fhir:Subscription.status [ fhir:value "active"];
+  fhir:Subscription.reason [ fhir:value "Subscripcion para integrarse con los sistemas externos y propios de INDISA."];
+  fhir:Subscription.criteria [ fhir:value "Encounter:Update:grd:Example-Encounter-963b1515"];
+  fhir:Subscription.channel [
+     fhir:Subscription.channel.type [ fhir:value "message" ];
+     fhir:Subscription.channel.endpoint [ fhir:value "http://127.0.0.1:8443/esb/end-point" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Subscription/Example-Subscription-14689subs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

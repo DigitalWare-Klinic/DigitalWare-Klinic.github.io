@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SupplyRequest xmlns="http://hl7.org/fhir">
+  <id value="Example-SupplyRequest-354689srq"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: SPRQST4657 (USUAL), id: AUTSPRQST46571 (SECONDARY)</p><p><b>status</b>: active</p><p><b>category</b>: <span title="Codes: {http://snomed.info/sct 60654006}">examen radiológico del abdomen</span></p><p><b>priority</b>: routine</p><p><b>item</b>: <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa 403001}, {http://snomed.info/sct 7140000}">medio de contraste radiográfico</span></p><p><b>quantity</b>: 1</p><p><b>occurrence</b>: 21/02/2021, 7:30:00 a. m.</p><p><b>authoredOn</b>: 21/02/2021, 7:30:00 a. m.</p><p><b>requester</b>: <a href="Practitioner-Example-Practitioner-09709es9d.html">Generated Summary: National Person Identifier Chile: 8596788ap (OFFICIAL); active; Sebastian Camilo null (OFFICIAL); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, dbsebastian@example.com; gender: male; birthDate: 1989-03-10</a></p><p><b>reasonCode</b>: <span title="Codes: {http://snomed.info/sct 2989004}">Complicación después de un embarazo molar Y / o ectópico</span></p><p><b>reasonReference</b>: <a href="Condition/Example-Condition-4869c">Condition/Example-Condition-4869c</a></p><p><b>deliverFrom</b>: <a href="Location-Example-Pharmacy-51654689466d55.html">Generated Summary: status: active; <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 U}">Unoccupied</span>; name: Farmacia; alias: Farmacia 1; description: Emergency pharmacy.; mode: instance; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}">Hospital</span>; Phone: 78978994952; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type wa}">Ward</span></a></p><p><b>deliverTo</b>: <a href="Patient-Example-Patient-2a6d66d1.html">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jmaria@example.com; gender: female; birthDate: 1975-08-14; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></a></p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="https://example.org/supplyrequest-identifiers"/>
+    <value value="SPRQST4657"/>
+  </identifier>
+  <identifier>
+    <use value="secondary"/>
+    <system value="https://example.org/supplyrequest-authorization-identifiers"/>
+    <value value="AUTSPRQST46571"/>
+  </identifier>
+  <status value="active"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="60654006"/>
+      <display value="examen radiol&#xF3;gico del abdomen"/>
+    </coding>
+  </category>
+  <priority value="routine"/>
+  <itemCodeableConcept>
+    <coding>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-CodesFonasa"/>
+      <code value="403001"/>
+      <display value="medio de contraste radiogr&#xE1;fico"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="7140000"/>
+      <display value="medio de contraste radiogr&#xE1;fico"/>
+    </coding>
+  </itemCodeableConcept>
+  <quantity>
+    <value value="1"/>
+  </quantity>
+  <occurrenceDateTime value="2021-02-21T07:30:00-05:00"/>
+  <authoredOn value="2021-02-21T07:30:00-05:00"/>
+  <requester>
+    <reference value="Practitioner/Example-Practitioner-09709es9d"/>
+  </requester>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="2989004"/>
+      <display value="Complicaci&#xF3;n despu&#xE9;s de un embarazo molar Y / o ect&#xF3;pico"/>
+    </coding>
+  </reasonCode>
+  <reasonReference>
+    <reference value="Condition/Example-Condition-4869c"/>
+  </reasonReference>
+  <deliverFrom>
+    <reference value="Location/Example-Pharmacy-51654689466d55"/>
+  </deliverFrom>
+  <deliverTo>
+    <reference value="Patient/Example-Patient-2a6d66d1"/>
+  </deliverTo>
+</SupplyRequest>
