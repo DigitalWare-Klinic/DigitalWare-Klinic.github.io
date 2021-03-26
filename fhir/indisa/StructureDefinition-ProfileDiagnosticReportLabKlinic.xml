@@ -115,7 +115,7 @@ References to each of the results (Observations) that are part of the Diagnostic
   <url value="https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileDiagnosticReportLabKlinic"/>
   <version value="1.0"/>
   <name value="ProfileDiagnosticReportLabKlinic"/>
-  <title value="Diagnostic report for laboratory, imamging study and cardiovascular tests"/>
+  <title value="Diagnostic report for laboratory"/>
   <status value="active"/>
   <date value="2021-02-22"/>
   <publisher value="DigitalWare S.A. - Klinic-HIS"/>
@@ -159,7 +159,7 @@ References to each of the results (Observations) that are part of the Diagnostic
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Clinical diagnostic reports of the patient (laboratory, imamging study and cardiovascular tests)."/>
+  <description value="Clinical diagnostic reports of the patient (laboratory)."/>
   <copyright value="Digitalware 2021 CC."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

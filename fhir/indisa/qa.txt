@@ -1,11 +1,11 @@
 ﻿klinicapifhir : Validation Results
 =========================================
 
-err = 291, warn = 143, info = 121
+err = 293, warn = 143, info = 121
 IG Publisher Version: 1.1.63 Out of date - current version is 1.1.64
-Generated Tue Mar 23 09:22:01 COT 2021. FHIR version 4.0.1 for fhir.digital-ware.klinic-api-fhir#1.0 (canonical = https://digitalware-klinic.github.io/fhir/indisa)
+Generated Thu Mar 25 18:46:36 COT 2021. FHIR version 4.0.1 for fhir.digital-ware.klinic-api-fhir#1.0 (canonical = https://digitalware-klinic.github.io/fhir/indisa)
 
- Build Errors : 1055 / 73 / 0
+ Build Errors : 1064 / 72 / 0
  /home/diana/Descargas/ig-publisher-project-json/input/ImplementationGuide-fhir.digital-ware.klinic-api-fhir : 0 / 1 / 1
  /home/diana/Descargas/ig-publisher-project-json/input/examples/Account-Example-Account-6f674e96 : 7 / 1 / 9
  /home/diana/Descargas/ig-publisher-project-json/input/examples/Appointment-Example-Appointment-05c86b7b-4fad : 0 / 0 / 7
@@ -135,6 +135,7 @@ Generated Tue Mar 23 09:22:01 COT 2021. FHIR version 4.0.1 for fhir.digital-ware
  /home/diana/Descargas/ig-publisher-project-json/input/profiles/StructureDefinition-ProfileCoverageKlinic : 2 / 1 / 1
  /home/diana/Descargas/ig-publisher-project-json/input/profiles/StructureDefinition-ProfileDeviceKlinic : 2 / 1 / 1
  /home/diana/Descargas/ig-publisher-project-json/input/profiles/StructureDefinition-ProfileDiagnosticReportLabKlinic : 2 / 1 / 1
+ /home/diana/Descargas/ig-publisher-project-json/input/profiles/StructureDefinition-ProfileDiagnosticReportLmaKlinic : 2 / 1 / 1
  /home/diana/Descargas/ig-publisher-project-json/input/profiles/StructureDefinition-ProfileEncounterKlinic : 2 / 1 / 1
  /home/diana/Descargas/ig-publisher-project-json/input/profiles/StructureDefinition-ProfileEndpointKlinic : 1 / 1 / 1
  /home/diana/Descargas/ig-publisher-project-json/input/profiles/StructureDefinition-ProfileHealthcareService : 4 / 1 / 1
@@ -173,7 +174,6 @@ Generated Tue Mar 23 09:22:01 COT 2021. FHIR version 4.0.1 for fhir.digital-ware
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[22].value: Supressed messages file not found
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ProfileSubscriptionKlinic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/EducationalLevelChile.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Bundle-Example-Bundle-Document-0ddcb465.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Appointment/Example-Appointment-05c86b7b-4fad.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -983,7 +983,16 @@ ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinitio
 ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLabKlinic.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLabKlinic.profile.json.html#/html/body/div/div/div/p/a at Line 6738, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLabKlinic.profile.ttl.html#/html/body/div/div/div/p/a at Line 5776, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLabKlinic.profile.xml.html#/html/body/div/div/div/p/a at Line 6010, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLabKlinic.profile.xml.html#/html/body/div/div/div/p/a at Line 6008, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLmaKlinic-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 1140, column 35: The link 'observation.html' for "Observations" cannot be resolved
+ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLmaKlinic-definitions.html#/html/body/div/div/div/p/a at Line 1591, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLmaKlinic-examples.html#/html/body/div/div/div/p/a at Line 250, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLmaKlinic-mappings.html#/html/body/div/div/div/p/a at Line 377, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLmaKlinic.html#/html/body/div/div/div/p/a at Line 1152, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLmaKlinic.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLmaKlinic.profile.json.html#/html/body/div/div/div/p/a at Line 7026, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLmaKlinic.profile.ttl.html#/html/body/div/div/div/p/a at Line 6017, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileDiagnosticReportLmaKlinic.profile.xml.html#/html/body/div/div/div/p/a at Line 6264, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileEncounterKlinic-definitions.html#/html/body/div/div/div/p/a at Line 3011, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileEncounterKlinic-examples.html#/html/body/div/div/div/p/a at Line 250, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/ig-publisher-project-json/output/StructureDefinition-ProfileEncounterKlinic-mappings.html#/html/body/div/div/div/p/a at Line 533, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
@@ -1293,7 +1302,7 @@ ERROR: /home/diana/Descargas/ig-publisher-project-json/output/SupplyRequest-Exam
 ERROR: /home/diana/Descargas/ig-publisher-project-json/output/SupplyRequest-Example-SupplyRequest-354689srq.json.html#/html/body/div/div/div/p/a at Line 280, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/ig-publisher-project-json/output/SupplyRequest-Example-SupplyRequest-354689srq.ttl.html#/html/body/div/div/div/p/a at Line 288, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/ig-publisher-project-json/output/SupplyRequest-Example-SupplyRequest-354689srq.xml.html#/html/body/div/div/div/p/a at Line 269, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
-ERROR: /home/diana/Descargas/ig-publisher-project-json/output/artifacts.html#/html/body/div/div/div/p/a at Line 1696, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
+ERROR: /home/diana/Descargas/ig-publisher-project-json/output/artifacts.html#/html/body/div/div/div/p/a at Line 1705, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/ig-publisher-project-json/output/devices.html#/html/body/div/div/div/div/div/p/a at Line 186, column 51: The link './messaging.html' for "notified by using a MessageHeader resource" cannot be resolved
 ERROR: /home/diana/Descargas/ig-publisher-project-json/output/devices.html#/html/body/div/div/div/p/a at Line 274, column 29: The link '' for "DigitalWare S.A. - Klinic-HIS" cannot be resolved
 ERROR: /home/diana/Descargas/ig-publisher-project-json/output/index.html#/html/body/div/div/div/div/div/p/a at Line 233, column 5: The link './messaging.html' for "On the next page" cannot be resolved
@@ -1926,6 +1935,11 @@ ERROR: StructureDefinition.url: Resource id/url mismatch: ProfileDiagnosticRepor
 INFORMATION: StructureDefinition/ProfileDiagnosticReportLabKlinic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/ProfileDiagnosticReportLabKlinic: StructureDefinition: sdf-21: 'Default values can only be specified on specializations' failed
 WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileDiagnosticReportLabKlinic'): The Implementation Guide contains no examples for this profile
+== /home/diana/Descargas/ig-publisher-project-json/input/profiles/StructureDefinition-ProfileDiagnosticReportLmaKlinic.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: ProfileDiagnosticReportLmaKlinic/https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileDiagnosticReportLmaKlinic
+INFORMATION: StructureDefinition/ProfileDiagnosticReportLmaKlinic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+ERROR: StructureDefinition/ProfileDiagnosticReportLmaKlinic: StructureDefinition: sdf-21: 'Default values can only be specified on specializations' failed
+WARNING: StructureDefinition.where(url = 'https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileDiagnosticReportLmaKlinic'): The Implementation Guide contains no examples for this profile
 == /home/diana/Descargas/ig-publisher-project-json/input/profiles/StructureDefinition-ProfileEncounterKlinic.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: ProfileEncounterKlinic/https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileEncounterKlinic
 INFORMATION: StructureDefinition/ProfileEncounterKlinic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition

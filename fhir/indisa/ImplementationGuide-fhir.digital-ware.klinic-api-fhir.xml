@@ -11,7 +11,7 @@
   <name value="klinicapifhir"/>
   <title value="Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A."/>
   <status value="active"/>
-  <date value="2021-03-23T09:16:51-05:00"/>
+  <date value="2021-03-25T18:40:28-05:00"/>
   <publisher value="DigitalWare S.A. - Klinic-HIS"/>
   <description value="FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A."/>
   <packageId value="fhir.digital-ware.klinic-api-fhir"/>
@@ -243,8 +243,19 @@
       <reference>
         <reference value="StructureDefinition/ProfileDiagnosticReportLabKlinic"/>
       </reference>
-      <name value="Diagnostic report for laboratory, imamging study and cardiovascular tests"/>
-      <description value="Clinical diagnostic reports of the patient (laboratory, imamging study and cardiovascular tests)."/>
+      <name value="Diagnostic report for laboratory"/>
+      <description value="Clinical diagnostic reports of the patient (laboratory)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProfileDiagnosticReportLmaKlinic"/>
+      </reference>
+      <name value="Diagnostic report for imaging study"/>
+      <description value="Clinical diagnostic reports of the patient (imaging study and cardiovascular tests)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -552,6 +563,7 @@
         <reference value="StructureDefinition/ProfileSubscriptionKlinic"/>
       </reference>
       <name value="Subscription"/>
+      <description value="The subscription resource is used to define a push-based subscription from a server to another system. Once a subscription is registered with the server, the server checks every resource that is created or updated, and if the resource matches the given criteria, it sends a message on the defined &quot;channel&quot; so that another system can take an appropriate action."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1901,7 +1913,7 @@
       </page>
       <page>
         <nameUrl value="devices.html"/>
-        <title value="Devices"/>
+        <title value="Medical devices"/>
         <generation value="markdown"/>
       </page>
       <page>

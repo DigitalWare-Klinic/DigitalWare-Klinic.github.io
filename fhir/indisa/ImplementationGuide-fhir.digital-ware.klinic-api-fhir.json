@@ -10,7 +10,7 @@
   "name": "klinicapifhir",
   "title": "Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.",
   "status": "active",
-  "date": "2021-03-23T09:16:51-05:00",
+  "date": "2021-03-25T18:40:28-05:00",
   "publisher": "DigitalWare S.A. - Klinic-HIS",
   "description": "FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A.",
   "packageId": "fhir.digital-ware.klinic-api-fhir",
@@ -363,8 +363,22 @@
         "reference": {
           "reference": "StructureDefinition/ProfileDiagnosticReportLabKlinic"
         },
-        "name": "Diagnostic report for laboratory, imamging study and cardiovascular tests",
-        "description": "Clinical diagnostic reports of the patient (laboratory, imamging study and cardiovascular tests).",
+        "name": "Diagnostic report for laboratory",
+        "description": "Clinical diagnostic reports of the patient (laboratory).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileDiagnosticReportLmaKlinic"
+        },
+        "name": "Diagnostic report for imaging study",
+        "description": "Clinical diagnostic reports of the patient (imaging study and cardiovascular tests).",
         "exampleBoolean": false
       },
       {
@@ -756,6 +770,7 @@
           "reference": "StructureDefinition/ProfileSubscriptionKlinic"
         },
         "name": "Subscription",
+        "description": "The subscription resource is used to define a push-based subscription from a server to another system. Once a subscription is registered with the server, the server checks every resource that is created or updated, and if the resource matches the given criteria, it sends a message on the defined \"channel\" so that another system can take an appropriate action.",
         "exampleBoolean": false
       },
       {
@@ -2491,7 +2506,7 @@
         },
         {
           "nameUrl": "devices.html",
-          "title": "Devices",
+          "title": "Medical devices",
           "generation": "markdown"
         },
         {

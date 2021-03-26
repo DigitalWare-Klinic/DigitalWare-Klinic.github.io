@@ -24,7 +24,7 @@
   fhir:StructureDefinition.url [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileDiagnosticReportLabKlinic"];
   fhir:StructureDefinition.version [ fhir:value "1.0"];
   fhir:StructureDefinition.name [ fhir:value "ProfileDiagnosticReportLabKlinic"];
-  fhir:StructureDefinition.title [ fhir:value "Diagnostic report for laboratory, imamging study and cardiovascular tests"];
+  fhir:StructureDefinition.title [ fhir:value "Diagnostic report for laboratory"];
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.date [ fhir:value "2021-02-22"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "DigitalWare S.A. - Klinic-HIS"];
@@ -74,7 +74,7 @@
        fhir:ContactPoint.use [ fhir:value "work" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Clinical diagnostic reports of the patient (laboratory, imamging study and cardiovascular tests)."];
+  fhir:StructureDefinition.description [ fhir:value "Clinical diagnostic reports of the patient (laboratory)."];
   fhir:StructureDefinition.copyright [ fhir:value "Digitalware 2021 CC."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [

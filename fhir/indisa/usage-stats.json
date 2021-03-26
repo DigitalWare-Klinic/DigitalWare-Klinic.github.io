@@ -578,7 +578,11 @@
     "DiagnosticReport": [
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileDiagnosticReportLabKlinic",
-        "title": "Diagnostic report for laboratory, imamging study and cardiovascular tests"
+        "title": "Diagnostic report for laboratory"
+      },
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileDiagnosticReportLmaKlinic",
+        "title": "Diagnostic report for imaging study"
       }
     ],
     "Encounter": [

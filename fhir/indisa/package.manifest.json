@@ -1,6 +1,6 @@
 {
   "version": "1.0",
   "fhirVersion": "[4.0.1]",
-  "date": "20210323091613",
+  "date": "20210325183958",
   "name": "fhir.digital-ware.klinic-api-fhir"
 }
