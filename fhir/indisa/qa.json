@@ -3,10 +3,10 @@
   "name": "klinicapifhir",
   "package-id": "fhir.digital-ware.klinic-api-fhir",
   "ig-ver": "1.0",
-  "date": "Thu, 25 Mar, 2021 18:40:28 -0500",
-  "errs": 293,
-  "warnings": 143,
-  "hints": 121,
+  "date": "Wed, 21 Apr, 2021 08:58:42 -0500",
+  "errs": 298,
+  "warnings": 145,
+  "hints": 126,
   "version": "4.0.1",
   "tool": "4.5.0 (3)"
 }

@@ -551,6 +551,12 @@
         "title": "Appointment"
       }
     ],
+    "Claim": [
+      {
+        "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileClaimKlinic",
+        "title": "Claim"
+      }
+    ],
     "Composition": [
       {
         "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileCompositionKlinic",

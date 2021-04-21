@@ -11,7 +11,7 @@
   <name value="klinicapifhir"/>
   <title value="Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A."/>
   <status value="active"/>
-  <date value="2021-03-25T18:40:28-05:00"/>
+  <date value="2021-04-21T08:58:42-05:00"/>
   <publisher value="DigitalWare S.A. - Klinic-HIS"/>
   <description value="FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A."/>
   <packageId value="fhir.digital-ware.klinic-api-fhir"/>
@@ -190,6 +190,17 @@
       </reference>
       <name value="Appointment"/>
       <description value="Registered appointments of the patient for each general and specialized medical consultation and the performance of laboratory and imaging tests, among others."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProfileClaimKlinic"/>
+      </reference>
+      <name value="Claim"/>
+      <description value="A provider issued list of professional services and products which have been provided, or are to be provided, to a patient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1120,6 +1131,16 @@
         <reference value="Binary/Example-Binary-111213bi"/>
       </reference>
       <name value="Example-Binary-111213bi"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Claim"/>
+      </extension>
+      <reference>
+        <reference value="Claim/Example-Claim-8090ca"/>
+      </reference>
+      <name value="Example-Claim-8090ca"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

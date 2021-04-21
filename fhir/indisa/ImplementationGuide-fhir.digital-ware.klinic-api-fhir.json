@@ -10,7 +10,7 @@
   "name": "klinicapifhir",
   "title": "Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A.",
   "status": "active",
-  "date": "2021-03-25T18:40:28-05:00",
+  "date": "2021-04-21T08:58:42-05:00",
   "publisher": "DigitalWare S.A. - Klinic-HIS",
   "description": "FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A.",
   "packageId": "fhir.digital-ware.klinic-api-fhir",
@@ -295,6 +295,20 @@
         },
         "name": "Appointment",
         "description": "Registered appointments of the patient for each general and specialized medical consultation and the performance of laboratory and imaging tests, among others.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ProfileClaimKlinic"
+        },
+        "name": "Claim",
+        "description": "A provider issued list of professional services and products which have been provided, or are to be provided, to a patient.",
         "exampleBoolean": false
       },
       {
@@ -1480,6 +1494,19 @@
           "reference": "Binary/Example-Binary-111213bi"
         },
         "name": "Example-Binary-111213bi",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Claim"
+          }
+        ],
+        "reference": {
+          "reference": "Claim/Example-Claim-8090ca"
+        },
+        "name": "Example-Claim-8090ca",
         "exampleBoolean": true
       },
       {

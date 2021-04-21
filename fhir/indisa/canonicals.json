@@ -286,6 +286,13 @@
     "name": "ProfileAppointmentKlinic"
   },
   {
+    "id": "ProfileClaimKlinic",
+    "type": "StructureDefinition",
+    "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileClaimKlinic",
+    "version": "1.0",
+    "name": "ProfileClaimKlinic"
+  },
+  {
     "id": "ProfileCompositionKlinic",
     "type": "StructureDefinition",
     "url": "https://digitalware-klinic.github.io/fhir/indisa/StructureDefinition-ProfileCompositionKlinic",

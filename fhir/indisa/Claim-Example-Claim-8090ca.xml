@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Claim xmlns="http://hl7.org/fhir">
+  <id value="Example-Claim-8090ca"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 34871203847 (USUAL)</p><p><b>status</b>: active</p><p><b>type</b>: <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ClaimTypes HOSP}">Hospitalización</span></p><p><b>subType</b>: <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ClaimSubtypes INT}">Cuidados intermedios</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient-Example-Patient-87356d0d.html">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></a></p><p><b>created</b>: 22/02/2021, 7:00:00 a. m.</p><p><b>provider</b>: <a href="Organization-Example-Organization-213134sd15148f.html">Generated Summary: id: 1100133335-1 (OFFICIAL), id: 12789312-9 (OFFICIAL); active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: Indisa clinica de la familia; alias: INDISA; Phone: 3430000</a></p><p><b>priority</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}">Normal</span></p><p><b>facility</b>: <a href="Location-Example-LocationBuilding-7412389635sdf556.html">Generated Summary: id: 1100112345-1 (OFFICIAL); status: active; <span title="{http://terminology.hl7.org/CodeSystem/v2-0116 O}">Occupied</span>; name: Indisa Clinica de la familia; alias: INDISA; description: Clinic and emergencies; mode: instance; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}">Hospital</span>; Phone: +56(2)1111-1111; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bu}">Building</span>; availabilityExceptions: Does not open on holidays.</a></p><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}">Information</span></p><p><b>value</b>: 1.2628 3.0</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}">Information</span></p><p><b>value</b>: 1.4524 3.0</p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 1</p><p><b>diagnosis</b>: <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Diagnosis N64}">Otros trastornos de la mama</span></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype admitting}">Admitting Diagnosis</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 2</p><p><b>diagnosis</b>: <span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Diagnosis N60}">Displasia mamaria benigna</span></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype discharge}">Discharge Diagnosis</span></p></blockquote><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Coverage</b></td></tr><tr><td>*</td><td><a href="Converage/Example-Coverage-fa7a571e">Converage/Example-Coverage-fa7a571e</a></td></tr></table><h3>Items</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>ProductOrService</b></td><td><b>Quantity</b></td><td><b>Encounter</b></td></tr><tr><td>*</td><td>1</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/ex-benefitcategory 1}">Medical Care</span></td><td><span title="Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Services 1020}">Revision por Medicina Interna</span></td><td>1</td><td><a href="Encounter-Example-Encounter-963y1945.html">Generated Summary: id: 56386090 (OFFICIAL); status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}">inpatient encounter</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/service-type 410}">Pregnancy</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority EL}">elective</span>; period: 21/01/2021, 7:00:00 a. m. --&gt; 23/01/2021, 11:00:00 a. m.; <span title="Codes: {http://snomed.info/sct 888003}">Efecto fetal o neonatal de la pérdida de sangre materna</span></a></td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://example.com/recobros/identifier"/>
+    <value value="34871203847"/>
+  </identifier>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ClaimTypes"/>
+      <code value="HOSP"/>
+      <display value="Hospitalizaci&#xF3;n"/>
+    </coding>
+  </type>
+  <subType>
+    <coding>
+      <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ClaimSubtypes"/>
+      <code value="INT"/>
+      <display value="Cuidados intermedios"/>
+    </coding>
+  </subType>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/Example-Patient-87356d0d"/>
+  </patient>
+  <created value="2021-02-22T07:00:00-05:00"/>
+  <provider>
+    <reference value="Organization/Example-Organization-213134sd15148f"/>
+  </provider>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+      <code value="normal"/>
+      <display value="Normal"/>
+    </coding>
+  </priority>
+  <facility>
+    <reference value="Location/Example-LocationBuilding-7412389635sdf556"/>
+  </facility>
+  <supportingInfo>
+    <sequence value="1"/>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"/>
+        <code value="info"/>
+        <display value="Information"/>
+      </coding>
+    </category>
+    <valueQuantity>
+      <value value="1.2628"/>
+      <unit value="3.0"/>
+    </valueQuantity>
+  </supportingInfo>
+  <supportingInfo>
+    <sequence value="2"/>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"/>
+        <code value="info"/>
+        <display value="Information"/>
+      </coding>
+    </category>
+    <valueQuantity>
+      <value value="1.4524"/>
+      <unit value="3.0"/>
+    </valueQuantity>
+  </supportingInfo>
+  <diagnosis>
+    <sequence value="1"/>
+    <diagnosisCodeableConcept>
+      <coding>
+        <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Diagnosis"/>
+        <code value="N64"/>
+        <display value="Otros trastornos de la mama"/>
+      </coding>
+    </diagnosisCodeableConcept>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype"/>
+        <code value="admitting"/>
+        <display value="Admitting Diagnosis"/>
+      </coding>
+    </type>
+  </diagnosis>
+  <diagnosis>
+    <sequence value="2"/>
+    <diagnosisCodeableConcept>
+      <coding>
+        <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Diagnosis"/>
+        <code value="N60"/>
+        <display value="Displasia mamaria benigna"/>
+      </coding>
+    </diagnosisCodeableConcept>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype"/>
+        <code value="discharge"/>
+        <display value="Discharge Diagnosis"/>
+      </coding>
+    </type>
+  </diagnosis>
+  <insurance>
+    <coverage>
+      <reference value="Converage/Example-Coverage-fa7a571e"/>
+    </coverage>
+  </insurance>
+  <item>
+    <sequence value="1"/>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-benefitcategory"/>
+        <code value="1"/>
+        <display value="Medical Care"/>
+      </coding>
+    </category>
+    <productOrService>
+      <coding>
+        <system value="https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Services"/>
+        <code value="1020"/>
+        <display value="Revision por Medicina Interna"/>
+      </coding>
+    </productOrService>
+    <quantity>
+      <value value="1"/>
+    </quantity>
+    <encounter>
+      <reference value="Encounter/Example-Encounter-963y1945"/>
+    </encounter>
+  </item>
+</Claim>

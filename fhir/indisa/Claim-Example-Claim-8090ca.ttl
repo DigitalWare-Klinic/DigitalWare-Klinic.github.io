@@ -1,0 +1,174 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Claim/Example-Claim-8090ca> a fhir:Claim;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Claim-8090ca"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 34871203847 (USUAL)</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ClaimTypes HOSP}\">Hospitalización</span></p><p><b>subType</b>: <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ClaimSubtypes INT}\">Cuidados intermedios</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-Example-Patient-87356d0d.html\">Generated Summary: National Person Identifier Chile: 347827348 (OFFICIAL), Medical Record Number: HC-6ef0a6d7 (USUAL); active; Maria Victoria null (OFFICIAL), Maria Jake(NICKNAME); Phone: +56(2)1111-1111, Phone: +56(2)2222-2222, jjmaria@example.com; gender: female; birthDate: 1975-08-14; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>created</b>: 22/02/2021, 7:00:00 a. m.</p><p><b>provider</b>: <a href=\"Organization-Example-Organization-213134sd15148f.html\">Generated Summary: id: 1100133335-1 (OFFICIAL), id: 12789312-9 (OFFICIAL); active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: Indisa clinica de la familia; alias: INDISA; Phone: 3430000</a></p><p><b>priority</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span></p><p><b>facility</b>: <a href=\"Location-Example-LocationBuilding-7412389635sdf556.html\">Generated Summary: id: 1100112345-1 (OFFICIAL); status: active; <span title=\"{http://terminology.hl7.org/CodeSystem/v2-0116 O}\">Occupied</span>; name: Indisa Clinica de la familia; alias: INDISA; description: Clinic and emergencies; mode: instance; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span>; Phone: +56(2)1111-1111; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bu}\">Building</span>; availabilityExceptions: Does not open on holidays.</a></p><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">Information</span></p><p><b>value</b>: 1.2628 3.0</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">Information</span></p><p><b>value</b>: 1.4524 3.0</p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 1</p><p><b>diagnosis</b>: <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Diagnosis N64}\">Otros trastornos de la mama</span></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype admitting}\">Admitting Diagnosis</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 2</p><p><b>diagnosis</b>: <span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Diagnosis N60}\">Displasia mamaria benigna</span></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype discharge}\">Discharge Diagnosis</span></p></blockquote><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Coverage</b></td></tr><tr><td>*</td><td><a href=\"Converage/Example-Coverage-fa7a571e\">Converage/Example-Coverage-fa7a571e</a></td></tr></table><h3>Items</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>ProductOrService</b></td><td><b>Quantity</b></td><td><b>Encounter</b></td></tr><tr><td>*</td><td>1</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/ex-benefitcategory 1}\">Medical Care</span></td><td><span title=\"Codes: {https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Services 1020}\">Revision por Medicina Interna</span></td><td>1</td><td><a href=\"Encounter-Example-Encounter-963y1945.html\">Generated Summary: id: 56386090 (OFFICIAL); status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/service-type 410}\">Pregnancy</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority EL}\">elective</span>; period: 21/01/2021, 7:00:00 a. m. --&gt; 23/01/2021, 11:00:00 a. m.; <span title=\"Codes: {http://snomed.info/sct 888003}\">Efecto fetal o neonatal de la pérdida de sangre materna</span></a></td></tr></table></div>"
+  ];
+  fhir:Claim.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "usual" ];
+     fhir:Identifier.system [ fhir:value "http://example.com/recobros/identifier" ];
+     fhir:Identifier.value [ fhir:value "34871203847" ]
+  ];
+  fhir:Claim.status [ fhir:value "active"];
+  fhir:Claim.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ClaimTypes" ];
+       fhir:Coding.code [ fhir:value "HOSP" ];
+       fhir:Coding.display [ fhir:value "Hospitalización" ]
+     ]
+  ];
+  fhir:Claim.subType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-ClaimSubtypes" ];
+       fhir:Coding.code [ fhir:value "INT" ];
+       fhir:Coding.display [ fhir:value "Cuidados intermedios" ]
+     ]
+  ];
+  fhir:Claim.use [ fhir:value "claim"];
+  fhir:Claim.patient [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Patient/Example-Patient-87356d0d>;
+     fhir:Reference.reference [ fhir:value "Patient/Example-Patient-87356d0d" ]
+  ];
+  fhir:Claim.created [ fhir:value "2021-02-22T07:00:00-05:00"^^xsd:dateTime];
+  fhir:Claim.provider [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Organization/Example-Organization-213134sd15148f>;
+     fhir:Reference.reference [ fhir:value "Organization/Example-Organization-213134sd15148f" ]
+  ];
+  fhir:Claim.priority [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/processpriority" ];
+       fhir:Coding.code [ fhir:value "normal" ];
+       fhir:Coding.display [ fhir:value "Normal" ]
+     ]
+  ];
+  fhir:Claim.facility [
+     fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Location/Example-LocationBuilding-7412389635sdf556>;
+     fhir:Reference.reference [ fhir:value "Location/Example-LocationBuilding-7412389635sdf556" ]
+  ];
+  fhir:Claim.supportingInfo [
+     fhir:index 0;
+     fhir:Claim.supportingInfo.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:Claim.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claiminformationcategory" ];
+         fhir:Coding.code [ fhir:value "info" ];
+         fhir:Coding.display [ fhir:value "Information" ]
+       ]
+     ];
+     fhir:Claim.supportingInfo.valueQuantity [
+       fhir:Quantity.value [ fhir:value "1.2628"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "3.0" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Claim.supportingInfo.sequence [ fhir:value "2"^^xsd:positiveInteger ];
+     fhir:Claim.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claiminformationcategory" ];
+         fhir:Coding.code [ fhir:value "info" ];
+         fhir:Coding.display [ fhir:value "Information" ]
+       ]
+     ];
+     fhir:Claim.supportingInfo.valueQuantity [
+       fhir:Quantity.value [ fhir:value "1.4524"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "3.0" ]
+     ]
+  ];
+  fhir:Claim.diagnosis [
+     fhir:index 0;
+     fhir:Claim.diagnosis.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:Claim.diagnosis.diagnosisCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Diagnosis" ];
+         fhir:Coding.code [ fhir:value "N64" ];
+         fhir:Coding.display [ fhir:value "Otros trastornos de la mama" ]
+       ]
+     ];
+     fhir:Claim.diagnosis.type [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/ex-diagnosistype" ];
+         fhir:Coding.code [ fhir:value "admitting" ];
+         fhir:Coding.display [ fhir:value "Admitting Diagnosis" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Claim.diagnosis.sequence [ fhir:value "2"^^xsd:positiveInteger ];
+     fhir:Claim.diagnosis.diagnosisCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Diagnosis" ];
+         fhir:Coding.code [ fhir:value "N60" ];
+         fhir:Coding.display [ fhir:value "Displasia mamaria benigna" ]
+       ]
+     ];
+     fhir:Claim.diagnosis.type [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/ex-diagnosistype" ];
+         fhir:Coding.code [ fhir:value "discharge" ];
+         fhir:Coding.display [ fhir:value "Discharge Diagnosis" ]
+       ]
+     ]
+  ];
+  fhir:Claim.insurance [
+     fhir:index 0;
+     fhir:Claim.insurance.coverage [
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Converage/Example-Coverage-fa7a571e>;
+       fhir:Reference.reference [ fhir:value "Converage/Example-Coverage-fa7a571e" ]
+     ]
+  ];
+  fhir:Claim.item [
+     fhir:index 0;
+     fhir:Claim.item.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:Claim.item.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/ex-benefitcategory" ];
+         fhir:Coding.code [ fhir:value "1" ];
+         fhir:Coding.display [ fhir:value "Medical Care" ]
+       ]
+     ];
+     fhir:Claim.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://digitalware-klinic.github.io/fhir/indisa/CodeSystem-Services" ];
+         fhir:Coding.code [ fhir:value "1020" ];
+         fhir:Coding.display [ fhir:value "Revision por Medicina Interna" ]
+       ]
+     ];
+     fhir:Claim.item.quantity [
+       fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ]
+     ];
+     fhir:Claim.item.encounter [
+       fhir:index 0;
+       fhir:link <https://digitalware-klinic.github.io/fhir/indisa/Encounter/Example-Encounter-963y1945>;
+       fhir:Reference.reference [ fhir:value "Encounter/Example-Encounter-963y1945" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digitalware-klinic.github.io/fhir/indisa/Claim/Example-Claim-8090ca.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
