@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "klinicapifhir"];
   fhir:ImplementationGuide.title [ fhir:value "Klinic API FHIR Implementation Guide: IG Release 1 - Digital Ware S.A."];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-04-21T08:58:42-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-04-23T19:06:54-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "DigitalWare S.A. - Klinic-HIS"];
   fhir:ImplementationGuide.description [ fhir:value "FHIR implementation guide for Klinic API FHIR (Klinic-HIS) interoperability scenarios, edited by DigitalWare S.A."];
   fhir:ImplementationGuide.packageId [ fhir:value "fhir.digital-ware.klinic-api-fhir"];

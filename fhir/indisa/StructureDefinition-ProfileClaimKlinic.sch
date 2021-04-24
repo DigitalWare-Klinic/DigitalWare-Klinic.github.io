@@ -1486,16 +1486,12 @@
     <sch:title>f:Claim/f:item</sch:title>
     <sch:rule context="f:Claim/f:item">
       <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
-      <sch:assert test="count(f:careTeamSequence) &lt;= 0">careTeamSequence: maximum cardinality of 'careTeamSequence' is 0</sch:assert>
-      <sch:assert test="count(f:informationSequence) &lt;= 0">informationSequence: maximum cardinality of 'informationSequence' is 0</sch:assert>
       <sch:assert test="count(f:modifier) &lt;= 0">modifier: maximum cardinality of 'modifier' is 0</sch:assert>
       <sch:assert test="count(f:programCode) &lt;= 0">programCode: maximum cardinality of 'programCode' is 0</sch:assert>
-      <sch:assert test="count(f:factor) &lt;= 0">factor: maximum cardinality of 'factor' is 0</sch:assert>
-      <sch:assert test="count(f:net) &lt;= 0">net: maximum cardinality of 'net' is 0</sch:assert>
       <sch:assert test="count(f:udi) &lt;= 0">udi: maximum cardinality of 'udi' is 0</sch:assert>
       <sch:assert test="count(f:bodySite) &lt;= 0">bodySite: maximum cardinality of 'bodySite' is 0</sch:assert>
       <sch:assert test="count(f:subSite) &lt;= 0">subSite: maximum cardinality of 'subSite' is 0</sch:assert>
-      <sch:assert test="count(f:detail) &lt;= 0">detail: maximum cardinality of 'detail' is 0</sch:assert>
+      <sch:assert test="count(f:detail) &lt;= 1">detail: maximum cardinality of 'detail' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -1880,7 +1876,7 @@
     <sch:rule context="f:Claim/f:item/f:unitPrice">
       <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
-      <sch:assert test="count(f:currency) &lt;= 0">currency: maximum cardinality of 'currency' is 0</sch:assert>
+      <sch:assert test="count(f:currency) &lt;= 1">currency: maximum cardinality of 'currency' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -1915,8 +1911,35 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Claim/f:item/f:net</sch:title>
+    <sch:rule context="f:Claim/f:item/f:net">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
+      <sch:assert test="count(f:currency) &lt;= 1">currency: maximum cardinality of 'currency' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Claim.item.net</sch:title>
     <sch:rule context="f:Claim/f:item/f:net">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.net.extension</sch:title>
+    <sch:rule context="f:Claim/f:item/f:net/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.net.value</sch:title>
+    <sch:rule context="f:Claim/f:item/f:net/f:value">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.net.currency</sch:title>
+    <sch:rule context="f:Claim/f:item/f:net/f:currency">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -1987,6 +2010,16 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Claim/f:item/f:detail</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:modifier) &lt;= 0">modifier: maximum cardinality of 'modifier' is 0</sch:assert>
+      <sch:assert test="count(f:programCode) &lt;= 0">programCode: maximum cardinality of 'programCode' is 0</sch:assert>
+      <sch:assert test="count(f:udi) &lt;= 0">udi: maximum cardinality of 'udi' is 0</sch:assert>
+      <sch:assert test="count(f:subDetail) &lt;= 0">subDetail: maximum cardinality of 'subDetail' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Claim.item.detail</sch:title>
     <sch:rule context="f:Claim/f:item/f:detail">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -2013,9 +2046,93 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Claim/f:item/f:detail/f:revenue</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:revenue">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 0">text: maximum cardinality of 'text' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Claim.item.detail.revenue</sch:title>
     <sch:rule context="f:Claim/f:item/f:detail/f:revenue">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.revenue.extension</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:revenue/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Claim/f:item/f:detail/f:revenue/f:coding</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:revenue/f:coding">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:version) &lt;= 0">version: maximum cardinality of 'version' is 0</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:display) &gt;= 1">display: minimum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:userSelected) &lt;= 0">userSelected: maximum cardinality of 'userSelected' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.revenue.coding</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:revenue/f:coding">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.revenue.coding.extension</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:revenue/f:coding/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.revenue.coding.system</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:revenue/f:coding/f:system">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.revenue.coding.version</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:revenue/f:coding/f:version">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.revenue.coding.code</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:revenue/f:coding/f:code">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.revenue.coding.display</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:revenue/f:coding/f:display">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.revenue.coding.userSelected</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:revenue/f:coding/f:userSelected">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.revenue.text</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:revenue/f:text">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Claim/f:item/f:detail/f:category</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:category">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 0">text: maximum cardinality of 'text' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -2025,8 +2142,155 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>Claim.item.detail.category.extension</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:category/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Claim/f:item/f:detail/f:category/f:coding</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:category/f:coding">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:version) &lt;= 0">version: maximum cardinality of 'version' is 0</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:display) &gt;= 1">display: minimum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:userSelected) &lt;= 0">userSelected: maximum cardinality of 'userSelected' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.category.coding</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:category/f:coding">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.category.coding.extension</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:category/f:coding/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.category.coding.system</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:category/f:coding/f:system">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.category.coding.version</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:category/f:coding/f:version">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.category.coding.code</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:category/f:coding/f:code">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.category.coding.display</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:category/f:coding/f:display">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.category.coding.userSelected</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:category/f:coding/f:userSelected">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.category.text</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:category/f:text">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Claim/f:item/f:detail/f:productOrService</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:productOrService">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 0">text: maximum cardinality of 'text' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Claim.item.detail.productOrService</sch:title>
     <sch:rule context="f:Claim/f:item/f:detail/f:productOrService">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.productOrService.extension</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:productOrService/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Claim/f:item/f:detail/f:productOrService/f:coding</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:productOrService/f:coding">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:version) &lt;= 0">version: maximum cardinality of 'version' is 0</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:display) &gt;= 1">display: minimum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:userSelected) &lt;= 0">userSelected: maximum cardinality of 'userSelected' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.productOrService.coding</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:productOrService/f:coding">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.productOrService.coding.extension</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:productOrService/f:coding/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.productOrService.coding.system</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:productOrService/f:coding/f:system">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.productOrService.coding.version</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:productOrService/f:coding/f:version">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.productOrService.coding.code</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:productOrService/f:coding/f:code">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.productOrService.coding.display</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:productOrService/f:coding/f:display">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.productOrService.coding.userSelected</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:productOrService/f:coding/f:userSelected">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.productOrService.text</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:productOrService/f:text">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -2043,14 +2307,89 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Claim/f:item/f:detail/f:quantity</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:quantity">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
+      <sch:assert test="count(f:comparator) &lt;= 0">comparator: maximum cardinality of 'comparator' is 0</sch:assert>
+      <sch:assert test="count(f:unit) &lt;= 1">unit: maximum cardinality of 'unit' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 0">system: maximum cardinality of 'system' is 0</sch:assert>
+      <sch:assert test="count(f:code) &lt;= 0">code: maximum cardinality of 'code' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Claim.item.detail.quantity</sch:title>
     <sch:rule context="f:Claim/f:item/f:detail/f:quantity">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>Claim.item.detail.quantity.extension</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:quantity/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.quantity.value</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:quantity/f:value">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.quantity.comparator</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:quantity/f:comparator">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.quantity.unit</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:quantity/f:unit">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.quantity.system</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:quantity/f:system">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.quantity.code</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:quantity/f:code">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Claim/f:item/f:detail/f:unitPrice</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:unitPrice">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
+      <sch:assert test="count(f:currency) &lt;= 1">currency: maximum cardinality of 'currency' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Claim.item.detail.unitPrice</sch:title>
     <sch:rule context="f:Claim/f:item/f:detail/f:unitPrice">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.unitPrice.extension</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:unitPrice/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.unitPrice.value</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:unitPrice/f:value">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.unitPrice.currency</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:unitPrice/f:currency">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -2061,8 +2400,35 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Claim/f:item/f:detail/f:net</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:net">
+      <sch:assert test="count(f:id) &lt;= 0">id: maximum cardinality of 'id' is 0</sch:assert>
+      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
+      <sch:assert test="count(f:currency) &lt;= 1">currency: maximum cardinality of 'currency' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Claim.item.detail.net</sch:title>
     <sch:rule context="f:Claim/f:item/f:detail/f:net">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.net.extension</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:net/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.net.value</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:net/f:value">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Claim.item.detail.net.currency</sch:title>
+    <sch:rule context="f:Claim/f:item/f:detail/f:net/f:currency">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
